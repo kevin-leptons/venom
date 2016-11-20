@@ -1,0 +1,75 @@
+//
+// ENTRIES
+//
+
+#searchEntry,
+.notification StEntry,
+.modal-dialog StEntry {
+    color: $front_color;
+    caret-color: $front_color;
+    font-size: 1em;
+    caret-size: 1px;
+    selected-color: active_fg_color($front_color);
+    padding: 4px 12px;
+    background-color: $back_color;
+}
+
+#searchEntry,
+.run-dialog-entry,
+.notification StEntry {
+    border-color: 1px solid border_color($front_color);
+    background-color: $back_color;
+    transition-duration: 200ms;
+}
+
+#searchEntry:focus,
+#searchEntry:hover,
+.notification StEntry:focus,
+.modal-dialog StEntry {
+    border: 1px solid focus_border_color($front_color);
+    background-color: focus_bg_color($front_color);
+}
+
+.notification StEntry:focus,
+.modal-dialog StEntry:focus {
+    border: 1px solid focus_border_color($front_color)
+}
+
+#searchEntry {
+    border-color: border_color($front_color);
+    background-color: $back_color;
+    color: $front_color;
+    caret-color: $front_color;
+    height: 32px;
+}
+
+#searchEntry:hover {
+    color: hover_fg_color($front_color);
+    caret-color: hover_fg_color($front_color);
+}
+
+#searchEntry:focus {
+    color: focus_fg_color($front_color);
+    caret-color: focus_fg_color($front_color);
+    font-weight: bold;
+    transition-duration: 0ms;
+}
+
+.notification StEntry,
+.modal-dialog StEntry {
+    border-radius: 0px;
+    padding: 4px 4px;
+}
+
+.prompt-dialog-password-entry .capslock-warning,
+.login-dialog-prompt-entry .capslock-warning {
+    icon-size: 16px;
+    warning-color: $warning_color;
+    padding: 0 4px;
+}
+
+.modal-dialog StEntry:insensitive {
+    color: disabled_fg_color($front_color);
+    border: 1px solid disabled_border_color($front_color);
+    background-color: $back_color;
+}

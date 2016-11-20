@@ -1,0 +1,207 @@
+//
+// CALENDAR POPUPS
+//
+
+#calendarEventsArea {
+    /* this is the width of the second column of the popup */
+    min-width: 320px;
+}
+
+.calendar-vertical-separator {
+    -stipple-width: 1px;
+    -stipple-color: $front_color;
+    width: 0.3em;
+}
+
+#calendarPopup .calendar {
+    padding: 10px;
+}
+
+.calendar {
+    padding: .4em 1.75em .8em 1.75em;
+    spacing-rows: 0px;
+    spacing-columns: 0px;
+}
+
+.calendar-month-label {
+    color: $front_color;
+    font-size: 9.5pt;
+    font-weight: bold;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.calendar-change-month-back {
+    width: 18px;
+    height: 12px;
+    background-image: url("calendar-arrow-left.svg");
+    border-radius: 0px;
+}
+
+.calendar-change-month-back:rtl {
+    background-image: url("calendar-arrow-left.svg");
+}
+
+.calendar-change-month-back:hover {
+    background-image: url("calendar-arrow-left-hover.svg");
+}
+.calendar-change-month-back:active {
+    background-image: url("calendar-arrow-left-active.svg");
+}
+
+.calendar-change-month-forward {
+    width: 18px;
+    height: 12px;
+    background-image: url("calendar-arrow-right.svg");
+    border-radius: 0px;
+}
+
+.calendar-change-month-forward:rtl {
+    background-image: url("calendar-arrow-left.svg");
+}
+
+.calendar-change-month-forward:hover {
+    background-image: url("calendar-arrow-right-hover.svg");
+}
+.calendar-change-month-forward:active {
+    background-image: url("calendar-arrow-right-active.svg");
+}
+
+.datemenu-date-label {
+    padding: .4em 1.7em;
+    font-weight: bold;
+    text-align: center;
+    color: $front_color;
+}
+
+.calendar-day-base {
+    font-size: 9pt;
+    text-align: center;
+    width: 2.4em;
+    height: 2.4em;
+}
+
+.calendar-day-base:hover {
+    background-color: hover_bg_color($front_color);
+}
+
+.calendar-day-base:active {
+    font-size: 9pt;
+    background-color: active_bg_color($front_color);
+    color: active_fg_color($front_color);
+}
+
+.calendar-day-heading {
+    color: $front_color;
+    padding-top: .2em;
+    height: 1.7em;
+}
+
+.calendar-week-number {
+    color: $front_color;
+    font-weight: bold;
+}
+
+/* Hack used in lieu of border-collapse - see calendar.js */
+.calendar-day {
+    border: 1px solid border_color($front_color);
+    color: $front_color;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+.calendar-day-top {
+    border-top-width: 1px;
+}
+
+.calendar-day-left {
+    border-left-width: 1px;
+}
+
+.calendar-work-day {
+}
+
+.calendar-nonwork-day {
+    background-color: $back_color;
+}
+
+.calendar-today {
+    color: active_fg_color($front_color);
+    background: active_bg_color($front_color);
+    font-weight: bold;
+}
+
+.calendar-day-with-events {
+    font-weight: bold;
+    color: $front_color;
+}
+
+.calendar-other-month-day {
+    color: $front_color;
+}
+
+.events-header-vbox {
+    spacing: 6pt;
+    padding-right: .5em;
+}
+
+.events-header-vbox:rtl {
+    padding-left: .5em;
+}
+
+.events-header-hbox {
+    padding: 0.3em 1.4em;
+}
+
+.events-day-header {
+    font-weight: bold;
+    color: $front_color;
+    padding: 0.4em 1.4em 0em 1.4em;
+}
+
+.events-day-header:rtl {
+    padding: 0em 1.4em 0.4em 1.4em;
+}
+
+.events-day-dayname {
+    color: $front_color;
+    text-align: left;
+}
+
+.events-day-dayname:rtl {
+    text-align: right;
+}
+
+.events-day-time {
+    color: $front_color;
+    text-align: right;
+}
+
+.events-day-time:rtl {
+    text-align: left;
+}
+
+.events-day-task {
+    color: $front_color;
+}
+
+.events-day-name-box {
+    min-width: 15pt;
+}
+
+.events-time-box {
+    min-width: 48pt;
+    padding-right: 12pt;
+}
+
+.events-time-box:rtl {
+    padding-right: 0px;
+    padding-left: 12pt;
+}
+
+.events-event-box {
+}
+
+.url-highlighter {
+    link-color: $front_color;
+}

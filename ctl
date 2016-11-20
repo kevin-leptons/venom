@@ -52,19 +52,23 @@ repo_build()
 {
     # build GOB theme
     mkdir -vp $DEST_GOB_GTK3
-    cp -rv $SRC/gob-index.theme $DEST_GOB/index.theme
+    cp $SRC/gob-index.theme $DEST_GOB/index.theme
     bundle exec sass $SRC_GOB_GTK3/gtk-gob.scss $DEST_GOB_GTK3/gtk.css
     mkdir -vp $DEST_GOB_GTK2
-    rsync -rv $SRC_GNOME/* $DEST_GOB_GNOME --exclude=*.swp
-    rsync -rv $SRC_METACITY/* $DEST_GOB_METACITY --exclude=*.swp
+    mkdir -vp $DEST_GOB_GNOME
+    bundle exec sass $SRC_GNOME/gnome-gob.scss $DEST_GOB_GNOME/gnome-shell.css
+    cp -r $SRC_GNOME/asset/* $DEST_GOB_GNOME/
+    #rsync -r $SRC_METACITY/* $DEST_GOB_METACITY --exclude=*.swp
+    echo "build GOB"
 
     # build BOW theme
-    mkdir -vp $DEST_BOW_GTK3
-    cp -rv $SRC/bow-index.theme $DEST_BOW/index.theme
-    bundle exec sass $SRC_BOW_GTK3/gtk-bow.scss $DEST_BOW_GTK3/gtk.css
-    mkdir -vp $DEST_BOW_GTK2
-    rsync -rv $SRC_GNOME/* $DEST_BOW_GNOME --exclude=*.swp
-    rsync -rv $SRC_METACITY/* $DEST_BOW_METACITY --exclude=*.swp
+    #mkdir -vp $DEST_BOW_GTK3
+    #cp $SRC/bow-index.theme $DEST_BOW/index.theme
+    #bundle exec sass $SRC_BOW_GTK3/gtk-bow.scss $DEST_BOW_GTK3/gtk.css
+    #mkdir -vp $DEST_BOW_GTK2
+    #rsync -r $SRC_GNOME/* $DEST_BOW_GNOME --exclude=*.swp
+    #rsync -r $SRC_METACITY/* $DEST_BOW_METACITY --exclude=*.swp
+    #echo "build BOW"
 }
 
 repo_install()
@@ -73,25 +77,32 @@ repo_install()
 
     # install GOB theme
     sudo mkdir -vp $TARGET_GOB
-    sudo cp -rv $DEST_GOB/* $TARGET_GOB
+    sudo cp -r $DEST_GOB/* $TARGET_GOB
+    echo "installed $TARGET_GOB"
 
     # install BOW theme
-    sudo mkdir -vp $TARGET_BOW
-    sudo cp -rv $DEST_BOW/* $TARGET_BOW
+    #sudo mkdir -vp $TARGET_BOW
+    #sudo cp -r $DEST_BOW/* $TARGET_BOW
+    #echo "installed $TARGET_BOW"
 
     # gnome-tweak-tool
-    gtk3-widget-factory
+    gsettings set org.gnome.shell.extensions.user-theme name "venom-gob"
+    #gtk3-widget-factory
 }
 
 repo_clean()
 {
     rm -rf $DEST
+    echo "removed $DEST"
 }
 
 repo_remove()
 {
     sudo rm -rf $TARGET_GOB
+    echo "removed $TARGET_GOB"
+
     sudo rm -rf $TARGET_BOW
+    echo "removed $TARGET_BOW"
 }
 
 show_help()

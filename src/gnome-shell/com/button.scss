@@ -1,0 +1,70 @@
+//
+// BUTTONS
+//
+
+.candidate-page-button,
+.notification-button,
+.notification-icon-button,
+.hotplug-notification-item,
+.hotplug-resident-eject-button,
+.modal-dialog-button,
+.app-view-control {
+    border: 1px solid border_color($front_color);
+}
+
+.modal-dialog-button {
+    font-weight: bold;
+}
+
+.candidate-page-button:hover,
+.notification-button:hover,
+.notification-icon-button:hover,
+.hotplug-notification-item:hover,
+.hotplug-resident-eject-button:hover,
+.modal-dialog-button:hover {
+    color: hover_fg_color($front_color);
+    background: hover_bg_color($front_color);
+    border-color: hover_border_color($front_color);
+}
+
+.notification-button:focus,
+.notification-icon-button:focus,
+.hotplug-notification-item:focus,
+.modal-dialog-button:focus,
+.app-view-control:focus {
+    color: focus_fg_color($front_color);
+    background: focus_bg_color($front_color);
+    border-color: focus_border_color($front_color);
+}
+
+.app-view-control:focus {
+    padding: 3px;
+}
+
+.app-view-control:first-child:ltr:focus,
+.app-view-control:last-child:rtl:focus {
+    border-right-width: 1px;
+}
+
+.candidate-page-button:active,
+.candidate-page-button:pressed,
+.notification-button:active,
+.notification-icon-button:active,
+.hotplug-notification-item:active,
+.hotplug-resident-eject-button:active,
+.modal-dialog-button:active,
+.modal-dialog-button:pressed,
+.app-view-control:checked {
+    color: active_fg_color($front_color);
+    background: active_bg_color($front_color);
+    border-color: active_border_color($front_color);
+}
+
+.candidate-page-button:insensitive,
+.notification-button:insensitive,
+.notification-icon-button:insensitive,
+.modal-dialog-button:insensitive {
+    color: disabled_fg_color($front_color);
+    background: $back_color;
+    border-color: disabled_border_color($front_color);
+}

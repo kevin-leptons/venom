@@ -1,0 +1,19 @@
+//
+// SEARCH BOX
+//
+
+#searchEntry {
+    width: 30em;
+    font-size: 1em;
+    border: 1px solid border_color($front_color);
+}
+
+.search-entry-icon {
+    icon-size: 2.3em;
+    color: $front_color;
+}
+
+#searchEntry:hover .search-entry-icon,
+#searchEntry:focus .search-entry-icon {
+    color: $front_color;
+}

@@ -1,0 +1,133 @@
+//
+// PANELS
+//
+
+#panel {
+    color: $front_color;
+    background: $back_color;
+    border: 1px solid border_color($front_color);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 1.1em;
+    font-family: Aldrich;
+    font-weight: bold;
+    height: 1.85em;
+}
+
+#panel.lock-screen {
+    background: $back_color;
+}
+
+#panel.unlock-screen,
+#panel.login-screen {
+    background: $back_color;
+}
+
+#panelLeft, #panelCenter {
+    spacing: 0px;
+}
+
+#panelLeft:ltr {
+    padding-right: 4px;
+}
+
+#panelLeft:rtl {
+    padding-left: 4px;
+}
+
+#panelRight:ltr {
+    padding-left: 4px;
+}
+
+#panelRight:rtl {
+    padding-right: 4px;
+}
+
+#appMenu {
+    spacing: 4px;
+    background-color: transparent;
+}
+
+/* used for the app menu header only */
+.label-shadow {
+}
+
+.panel-button #appMenuIcon {
+    app-icon-bottom-clip: 1px;
+}
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon {
+    app-icon-bottom-clip: 2px;
+    color: active_fg_color($front_color);
+}
+
+.app-menu-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.panel-button {
+    -natural-hpadding: 12px;
+    -minimum-hpadding: 6px;
+    font-weight: bold;
+    color: $front_color;
+    transition-duration: 100ms;
+}
+
+#panel.unlock-screen .panel-button,
+#panel.lock-screen .panel-button,
+#panel.login-screen .panel-button {
+    color: $front_color;
+}
+
+#panel.unlock-screen .panel-button:hover,
+#panel.lock-screen .panel-button:hover,
+#panel.login-screen .panel-button:hover,
+#panel.unlock-screen .panel-button:active,
+#panel.lock-screen .panel-button:active,
+#panel.login-screen .panel-button:active,
+#panel.unlock-screen .panel-button:focus,
+#panel.lock-screen .panel-button:focus,
+#panel.login-screen .panel-button:focus {
+    color: hover_fg_color($front_color);
+    background-color: hover_bg_color($front_color)
+}
+
+.panel-button:hover {
+    color: hover_fg_color($front_color);
+}
+
+.panel-button:active,
+.panel-button:overview,
+.panel-button:focus {
+    color: active_fg_color($front_color);
+    background-color: active_bg_color($front_color);
+}
+
+.panel-status-button:active,
+.panel-status-button:checked,
+.panel-status-button:focus {
+    color: active_fg_color($front_color);
+    background: active_bg_color($front_color);
+}
+
+.panel-button:active > .system-status-icon,
+.panel-button:checked > .system-status-icon,
+.panel-button:focus > .system-status-icon {
+}
+
+.panel-menu {
+    -boxpointer-gap: 5px;
+
+}
+
+.panel-status-button-box {
+    spacing: 4px;
+}
+
+.lock-screen-status-button-box {
+    spacing: 8px;
+}

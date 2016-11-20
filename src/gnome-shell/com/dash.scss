@@ -1,0 +1,23 @@
+//
+// DASH
+//
+
+#dash {
+    color: $front_color;
+    font-size: 9pt;
+    padding: 4px 0px;
+    border: 2px solid border_color($front_color);
+    border-left: 0;
+    border-radius: 0;
+}
+
+#dash:rtl {
+    border-left: 1px;
+    border-right: 0px;
+}
+
+.placeholder {
+    background-image: url("dash-placeholder.svg");
+    background-size: contain;
+    height: 24px;
+}

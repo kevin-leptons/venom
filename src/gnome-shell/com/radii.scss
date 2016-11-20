@@ -1,0 +1,23 @@
+//
+// RADII
+//
+
+#searchEntry,
+.modal-dialog-button,
+.notification-button,
+.hotplug-notification-item,
+.app-view-controls {
+    border-radius: 0px;
+    border-color:  border_color($front_color);
+}
+
+.app-view-control:first-child:ltr,
+.app-view-control:last-child:rtl {
+    border-radius: 0px 0px 0px 0px;
+    border-right-width: 0px;
+}
+
+.app-view-control:last-child:ltr,
+.app-view-control:first-child:rtl {
+    border-radius: 0px 0px 0px 0px;
+}

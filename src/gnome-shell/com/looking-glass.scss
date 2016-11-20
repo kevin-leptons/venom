@@ -1,0 +1,116 @@
+//
+// LOOKING GLASS
+//
+
+#LookingGlassDialog {
+    background-color: $back_color;
+    spacing: 4px;
+    padding: 4px;
+    border: 2px solid border_color($front_color);
+    border-radius: 0px;
+}
+
+#LookingGlassDialog > #Toolbar {
+    border: 1px solid border_color($front_color);
+    border-radius: 0px;
+}
+
+#LookingGlassDialog .labels {
+    spacing: 4px;
+}
+
+#LookingGlassDialog .notebook-tab {
+    -natural-hpadding: 12px;
+    -minimum-hpadding: 6px;
+    font-weight: bold;
+    color: $front_color;
+    transition-duration: 100ms;
+    padding-left: .3em;
+    padding-right: .3em;
+}
+
+#LookingGlassDialog .notebook-tab:hover {
+    color: #65A7AA;
+}
+
+#LookingGlassDialog .notebook-tab:selected {
+    color: active_bg_color($front_color);
+    border: 1px solid active_border_color($front_color);
+    background: active_bg_color($front_color);
+}
+
+#LookingGlassDialog .lg-inspector-title {
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.lg-dialog StEntry {
+    selection-background-color: active_bg_color($front_color);
+    selected-color: active_fg_color($front_color);
+}
+
+.lg-completions-text {
+    font-size: .9em;
+    font-style: italic;
+}
+
+.lg-obj-inspector-title {
+    spacing: 4px;
+}
+
+.lg-obj-inspector-button {
+    border: 1px solid border_color($front_color);
+    padding: 4px;
+    border-radius: 0px;
+}
+
+.lg-obj-inspector-button:hover {
+    border: 1px solid border_color($front_color);
+}
+
+.lg-dialog .shell-link {
+    color: $front_color;
+}
+
+.lg-dialog .shell-link:hover {
+    color: hover_fg_color($front_color);
+}
+
+#LookingGlassDialog StBoxLayout#EvalBox {
+    padding: 4px;
+    spacing: 4px;
+}
+
+#LookingGlassDialog StBoxLayout#ResultsArea {
+    spacing: 4px;
+}
+
+#lookingGlassExtensions {
+    padding: 4px;
+}
+
+.lg-extension-list {
+    padding: 4px;
+    spacing: 6px;
+}
+
+.lg-extension {
+    border: 1px solid border_color($front_color);
+    border-radius: 0px;
+    padding: 4px;
+}
+
+.lg-extension-name {
+    font-weight: bold;
+}
+
+.lg-extension-meta {
+    spacing: 6px;
+}
+
+#LookingGlassPropertyInspector {
+    background: $back_color;
+    border: 2px solid border_color($front_color);
+    border-radius: 0px;
+    padding: 6px;
+}

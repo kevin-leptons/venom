@@ -1,0 +1,114 @@
+//
+// OVERVIEW
+//
+
+#overview {
+    spacing: 24px;
+    border: none;
+}
+
+.overview-controls {
+    padding-bottom: 32px;
+}
+
+.workspace-thumbnails-background {
+    border: border_color($front_color);
+    border-right: 0px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 11px 7px 11px 11px;
+}
+
+.workspace-thumbnails-background:rtl {
+    border-right: 1px;
+    border-left: 0px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 11px 11px 11px 7px;
+}
+
+.workspace-thumbnails {
+    spacing: 11px;
+    visible-width: 32px; /* Amount visible before hovering */
+}
+
+.workspace-thumbnail-indicator {
+    border: 1px solid border_color($front_color);
+    border-radius: 0px;
+    padding: 1px;
+}
+
+.window-caption {
+    spacing: 25px;
+    background: 0;
+    border-radius: 0px;
+    padding: 4px 12px;
+    -shell-caption-spacing: 12px;
+}
+
+.window-caption:hover {
+    border: 1px solid hover_border_color($front_color);
+}
+
+.window-close, .notification-close {
+    background-image: url("close-window.svg");
+    background-size: 32px;
+    height: 32px;
+    width: 32px;
+}
+
+.window-close {
+    -shell-close-overlap: 16px;
+}
+
+.window-clone-border {
+    border: 4px solid border_color($front_color);
+    border-radius: 0px;
+}
+
+.notification-close {
+    /* we start out in the top right of the
+     * notification, inset.
+     */
+
+    -shell-close-overlap-x: 14px;
+    -shell-close-overlap-y: -12px;
+}
+
+.notification-close:rtl {
+    /* as above, but starting out in the top left of the
+     * notification. */
+
+    -shell-close-overlap-x: -14px;
+}
+
+.window-close:rtl {
+}
+
+.window-picker {
+    -horizontal-spacing: 32px;
+    -vertical-spacing: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 48px;
+}
+
+.window-picker.external-monitor {
+    padding: 32px;
+}
+
+.messages-indicator {
+    color: $front_color;
+    height: 32px;
+}
+
+.messages-indicator-contents {
+    spacing: 12px;
+    padding-bottom: 12px;
+}
+
+.messages-indicator-contents:hover {
+    color: $front_color;
+}
+
+.messages-indicator-highlight {
+    height: 6px;
+}

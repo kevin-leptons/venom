@@ -1,0 +1,26 @@
+$warning_color: orange;
+$danger_color: orange;
+$error_color: red;
+
+@import 'procesor';
+
+@import 'com/text';
+@import 'com/scrollbar';
+@import 'com/checkbox';
+@import 'com/popup';
+@import 'com/switch';
+@import 'com/button';
+@import 'com/radii';
+@import 'com/entry';
+@import 'com/panel';
+@import 'com/user-menu';
+@import 'com/overview';
+@import 'com/dash';
+@import 'com/search-box';
+@import 'com/search-result';
+@import 'com/looking-glass';
+@import 'com/calendar-popup';
+@import 'com/message-tray';
+@import 'com/osd';
+@import 'com/workspace-switcher';
+@import 'com/dialog';

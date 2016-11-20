@@ -1,0 +1,756 @@
+//
+// DIALOGS
+//
+
+/* Dialog Subject Text Style */
+.show-processes-dialog-subject,
+.mount-question-dialog-subject,
+.end-session-dialog-subject {
+    font-size: 14pt;
+    font-weight: bold;
+    color: $front_color;
+}
+
+.modal-dialog {
+    border-radius: 0px;
+    background-color: $back_color;
+    border: 2px solid border_color($front_color);
+
+    padding-right: 42px;
+    padding-left: 42px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.modal-dialog-button-box {
+    spacing: 21px;
+    padding-top: 50px;
+}
+
+.modal-dialog-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px 32px 5px;
+}
+
+.modal-dialog-button:focus {
+    padding: 3px 31px 4px;
+}
+
+/* Run Dialog */
+
+.run-dialog-label {
+    font-size: 12pt;
+    font-weight: bold;
+    color: $front_color;
+    padding-bottom: .4em;
+}
+
+.run-dialog-error-box {
+    padding-top: 15px;
+    spacing: 5px;
+}
+
+.modal-dialog .run-dialog-entry {
+    width: 20em;
+    background-color: $back_color;
+}
+
+.lightbox {
+    background-color: $back_color;
+}
+
+.flashspot {
+    background-color: $back_color;
+}
+
+/* End Session Dialog */
+.end-session-dialog {
+    spacing: 42px;
+}
+
+.end-session-dialog-subject {
+    padding-left: 17px;
+    padding-bottom: 20px;
+}
+
+.end-session-dialog-subject:rtl {
+    padding-left: 0px;
+    padding-right: 17px;
+}
+
+.end-session-dialog-description {
+    padding-left: 17px;
+    width: 28em;
+}
+
+.end-session-dialog-description:rtl {
+    padding-right: 17px;
+}
+
+.end-session-dialog-logout-icon {
+    border: 2px solid border_color($front_color);
+    border-radius: 0px;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+}
+
+.end-session-dialog-shutdown-icon {
+    color: $front_color;
+    width: 32px;
+    height: 32px;
+}
+
+.end-session-dialog-app-list {
+    font-size: 10pt;
+    max-height: 200px;
+    padding-top: 42px;
+    padding-left: 49px;
+    padding-right: 32px;
+}
+
+.end-session-dialog-app-list:rtl {
+    padding-right: 49px;
+    padding-left: 32px;
+}
+
+.end-session-dialog-app-list-item {
+    color: $front_color;
+}
+
+.end-session-dialog-app-list-item:hover {
+    color: $front_color;
+}
+
+.end-session-dialog-app-list-item:ltr {
+    padding-right: 1em;
+}
+
+.end-session-dialog-app-list-item:rtl {
+    padding-left: 1em;
+}
+
+.end-session-dialog-app-list-item-icon:ltr {
+    padding-right: 17px;
+}
+
+.end-session-dialog-app-list-item-icon:rtl {
+    padding-left: 17px;
+}
+
+.end-session-dialog-app-list-item-name {
+    font-size: 10pt;
+}
+
+.end-session-dialog-app-list-item-description {
+    font-size: 8pt;
+    color: $front_color;
+}
+
+/* ShellMountOperation Dialogs */
+.shell-mount-operation-icon {
+    icon-size: 48px;
+}
+
+.mount-password-reask {
+    color: $danger_color;
+}
+
+.show-processes-dialog,
+.mount-question-dialog {
+    spacing: 24px;
+}
+
+.show-processes-dialog-subject,
+.mount-question-dialog-subject {
+    padding-top: 10px;
+    padding-left: 17px;
+    padding-bottom: 6px;
+}
+
+.mount-question-dialog-subject {
+    max-width: 500px;
+}
+
+.show-processes-dialog-subject:rtl,
+.mount-question-dialog-subject:rtl {
+    padding-left: 0px;
+    padding-right: 17px;
+}
+
+.show-processes-dialog-description,
+.mount-question-dialog-description {
+    padding-left: 17px;
+    width: 28em;
+}
+
+.show-processes-dialog-description:rtl,
+.mount-question-dialog-description:rtl {
+    padding-right: 17px;
+}
+
+.show-processes-dialog-app-list {
+    font-size: 10pt;
+    max-height: 200px;
+    padding-top: 24px;
+    padding-left: 49px;
+    padding-right: 32px;
+}
+
+.show-processes-dialog-app-list:rtl {
+    padding-right: 49px;
+    padding-left: 32px;
+}
+
+.show-processes-dialog-app-list-item {
+    color: $front_color;
+}
+
+.show-processes-dialog-app-list-item:hover {
+    color: hover_fg_color($front_color);
+}
+
+.show-processes-dialog-app-list-item:ltr {
+    padding-right: 1em;
+}
+
+.show-processes-dialog-app-list-item:rtl {
+    padding-left: 1em;
+}
+
+.show-processes-dialog-app-list-item-icon:ltr {
+    padding-right: 17px;
+}
+
+.show-processes-dialog-app-list-item-icon:rtl {
+    padding-left: 17px;
+}
+
+.show-processes-dialog-app-list-item-name {
+    font-size: 10pt;
+}
+
+/* Password or Authentication Dialog */
+.prompt-dialog {
+    /* this is the width of the entire modal popup */
+    width: 500px;
+}
+
+.prompt-dialog-main-layout {
+    spacing: 24px;
+    padding: 10px;
+}
+
+.prompt-dialog-message-layout {
+    spacing: 16px;
+}
+
+.prompt-dialog-headline {
+    font-size: 12pt;
+    font-weight: bold;
+    color: $front_color;
+}
+
+.prompt-dialog-password-box {
+    spacing: 1em;
+    padding-bottom: 1em;
+}
+
+.prompt-dialog-error-label {
+    font-size: 10pt;
+    color: $front_color;
+    padding-bottom: 8px;
+}
+
+.prompt-dialog-info-label {
+    font-size: 10pt;
+    padding-bottom: 8px;
+}
+
+.hidden {
+    color: $front_color;
+}
+
+.prompt-dialog-null-label {
+    font-size: 10pt;
+    padding-bottom: 8px;
+}
+
+/* Polkit Dialog */
+
+.polkit-dialog-user-layout {
+    padding-left: 10px;
+    spacing: 10px;
+}
+
+.polkit-dialog-user-layout:rtl {
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.polkit-dialog-user-root-label {
+    color: $front_color;
+}
+
+.polkit-dialog-user-icon {
+    border: 2px solid border_color($front_color);
+    border-radius: 0px;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+}
+
+/* Network Agent Dialog */
+
+.network-dialog-secret-table {
+    spacing-rows: 15px;
+    spacing-columns: 1em;
+}
+
+.keyring-dialog-control-table {
+    spacing-rows: 15px;
+    spacing-columns: 1em;
+}
+
+
+/* Magnifier */
+
+.magnifier-zoom-region {
+    border: 2px solid border_color($front_color);
+}
+
+.magnifier-zoom-region.full-screen {
+    border-width: 0px;
+}
+
+/* On-screen Keyboard */
+
+#keyboard {
+    background: $back_color;
+}
+
+.keyboard-layout {
+    spacing: 10px;
+    padding: 10px;
+}
+
+.keyboard-row {
+    spacing: 15px;
+}
+
+.keyboard-key {
+    min-height: 30px;
+    min-width: 30px;
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 0px;
+    border: 2px solid border_color($front_color);
+    color: $front_color;
+}
+
+.keyboard-key:grayed {
+   color: $front_color;
+   border-color: $back_color;
+}
+
+.keyboard-key:checked,
+.keyboard-key:hover {
+    background: hover_bg_color($front_color);
+    border: 3px solid hover_border_color($front_color);
+}
+
+.keyboard-key:active {
+    background: active_bg_color($front_color);
+}
+
+.keyboard-subkeys {
+    color: $front_color;
+    padding: 5px;
+    -arrow-border-radius: 0px;
+    -arrow-background-color: $back_color;
+    -arrow-border-width: 2px;
+    -arrow-border-color: border_color($front_color);
+    -arrow-base: 20px;
+    -arrow-rise: 10px;
+    -boxpointer-gap: 5px;
+}
+
+/* IBus Candidate Popup */
+
+.candidate-popup-content {
+    padding: 0.5em;
+    spacing: 0.3em;
+}
+
+.candidate-index {
+    padding: 0 0.5em 0 0;
+    color: $front_color;
+}
+
+.candidate-box {
+    padding: 0.3em 0.5em 0.3em 0.5em;
+}
+
+.candidate-box:selected {
+    border-radius: 0px;
+    background-color: active_bg_color($front_color);
+}
+
+.candidate-box:hover {
+    border-radius: 0;
+    background-color: hover_bg_color($front_color);
+}
+.candidate-page-button-box {
+    height: 2em;
+    width: 80px;
+}
+
+.vertical .candidate-page-button-box {
+    padding-top: 0.5em;
+}
+
+.horizontal .candidate-page-button-box {
+    padding-left: 0.5em;
+}
+
+.candidate-page-button-previous {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.candidate-page-button-next {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.candidate-page-button-icon {
+    icon-size: 1em;
+}
+
+/* Login Dialog */
+
+.login-dialog-banner {
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    color: $front_color;
+    padding-bottom: 1em;
+}
+
+.login-dialog-title {
+    font-size: 14pt;
+    font-weight: bold;
+    color: $front_color;
+    padding-bottom: 2em;
+}
+
+.login-dialog {
+    /* Reset border and background */
+    border: 3px solid border_color($front_color);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border-radius: 0px;
+    min-height: 150px;
+    max-height: 700px;
+    min-width: 350px;
+}
+
+.login-dialog-prompt-login-hint-message {
+    font-size: 10.5pt;
+}
+
+.login-dialog-user-list-view {
+    -st-vfade-offset: 1em;
+}
+
+.login-dialog-user-list {
+    spacing: 12px;
+    padding: .2em;
+}
+
+.login-dialog-user-list-item {
+    border-radius: 0px;
+    padding: .2em;
+}
+
+.login-dialog-user-list-item:ltr {
+    padding-right: 1em;
+}
+
+.login-dialog-user-list-item:rtl {
+    padding-left: 1em;
+}
+
+.login-dialog-user-list-item .login-dialog-user-list-item-name {
+    font-size: 20pt;
+    padding-left: 1em;
+}
+
+.login-dialog-user-list:expanded .login-dialog-user-list-item {
+    color: $front_color;
+}
+
+.login-dialog-user-list-item,
+.login-dialog-user-list-item:hover .login-dialog-user-list-item-name,
+.login-dialog-user-list:expanded .login-dialog-user-list-item:focus .login-dialog-user-list-item-name,
+.login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
+    color: focus_fg_color($front_color);
+}
+
+.login-dialog-user-list-item:hover {
+    background-color: hover_bg_color($front_color);
+}
+
+.login-dialog-user-list:expanded .login-dialog-user-list-item:focus {
+    background-color: focus_bg_color($front_color);
+}
+
+.login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
+    background: $back_color;
+    background-size: contain;
+}
+
+.login-dialog-user-list-item-text-box {
+    padding: 0 0.5em;
+}
+
+.login-dialog-user-list-item .login-dialog-timed-login-indicator {
+    background-color: $back_color;
+    height: 2px;
+}
+
+.login-dialog-user-list-item:focus .login-dialog-timed-login-indicator {
+    background-color: focus_bg_color($front_color);
+}
+
+.login-dialog-user-list-item-icon {
+    border: 2px solid border_color($front_color);
+    border-radius: 0px;
+    width: 64px;
+    height: 64px;
+}
+
+.login-dialog-not-listed-label {
+    font-size: 10.5pt;
+    font-weight: bold;
+    color: $front_color;
+    padding-top: 1em;
+}
+
+.login-dialog-not-listed-button:focus .login-dialog-not-listed-label,
+.login-dialog-not-listed-button:hover .login-dialog-not-listed-label {
+    color: $front_color;
+}
+
+.login-dialog-username {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.login-dialog-prompt-layout {
+    padding-top: 24px;
+    padding-bottom: 12px;
+    spacing: 8px;
+}
+
+.login-dialog-prompt-label {
+    color: $front_color;
+    font-size: 14px;
+}
+
+.login-dialog-prompt-entry {
+    width: 15em;
+}
+
+.login-dialog-session-list {
+    color: $front_color;
+    font-size: 10.5pt;
+}
+
+.login-dialog-session-list-button {
+    padding: 4px;
+}
+
+.login-dialog-session-list-button:focus {
+    background-color: focus_bg_color($front_color);
+}
+
+.login-dialog-session-list-button:active {
+    background-color: active_bg_color($front_color);
+}
+
+.login-dialog-session-list-button:hover {
+    font-weight: bold;
+    color: hover_fg_color($front_color);
+}
+
+.login-dialog-session-list-scroll-view {
+    border-radius: 0px;
+    border: 1px solid border_color($front_color);
+    padding: .5em;
+}
+
+.login-dialog-session-list-item:focus {
+    background-color: focus_bg_color($front_color);
+}
+
+.login-dialog-session-list-triangle {
+    padding-right: .5em;
+}
+
+.login-dialog-session-list-item-box {
+    spacing: .25em;
+}
+
+.login-dialog-session-list-item-dot {
+    width: .75em;
+    height: .75em;
+}
+
+.login-dialog .modal-dialog-button-box {
+    spacing: 3px;
+}
+
+.login-dialog .modal-dialog-button {
+    border-radius: 0px;
+    padding: 3px 18px;
+}
+
+.login-dialog .modal-dialog-button:focus {
+    padding: 2px 17px;
+}
+
+.login-dialog .modal-dialog-button:default {
+    border-color: border_color($front_color);
+}
+
+.login-dialog .modal-dialog-button:default:focus {
+    border: 2px solid focus_border_color($front_color);
+    color: focus_fg_color($front_color);
+}
+
+.login-dialog .modal-dialog-button:default:hover {
+    color: hover_fg_color($front_color);
+}
+
+.login-dialog .modal-dialog-button:default:active,
+.login-dialog .modal-dialog-button:default:pressed {
+    background-color: active_bg_color($front_color);
+}
+
+.login-dialog .modal-dialog-button:default:insensitive {
+    border-color:  border_color($front_color);
+    color: $front_color;
+}
+
+.login-dialog-message-warning {
+    color: $warning_color;
+}
+
+.user-widget {
+    spacing: .4em;
+}
+
+.user-widget-label {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* Screen shield */
+
+.screen-shield-background {
+    background: $back_color;
+}
+
+#lockDialogGroup {
+    border: 3px solid border_color($front_color);
+}
+
+.screen-shield-arrows {
+    padding-bottom: 3em;
+}
+
+.screen-shield-arrows Gjs_Arrow {
+    color: $front_color;
+    width: 80px;
+    height: 48px;
+    -arrow-thickness: 12px;
+}
+
+.screen-shield-contents-box {
+    spacing: 48px;
+}
+
+.screen-shield-clock {
+    color: $front_color;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.screen-shield-clock-time {
+    font-size: 72pt;
+}
+
+.screen-shield-clock-date {
+    font-size: 28pt;
+}
+
+#screenShieldNotifications {
+    border-radius: 0px;
+    background-color: $back_color;
+    border: 2px solid border_color($front_color);
+    max-height: 500px;
+    padding: 18px 0;
+}
+
+.screen-shield-notifications-box {
+    spacing: 18px;
+    max-width: 34em;
+}
+
+.screen-shield-notification-source {
+    padding: 13px 24px;
+    spacing: 5px;
+}
+
+.screen-shield-notification-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0px 18px;
+    color: $front_color;
+}
+
+.screen-shield-notification-count-text {
+    padding: 0px 18px;
+}
+
+/* Remove background from notifications, otherwise
+   opacity is doubled and they look darker
+*/
+.screen-shield-notifications-box .notification {
+    background-color: $back_color;
+}
+
+/* Override padding on resident notifications, since
+   the notifications box has its own spacing
+*/
+.screen-shield-notifications-box .summary-notification-stack-scrollview {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.input-source-switcher-symbol {
+   font-size: 34pt;
+   width: 96px;
+   height: 96px;
+}
+
+/* Background menu */
+
+.background-menu {
+    -boxpointer-gap: 4px;
+}

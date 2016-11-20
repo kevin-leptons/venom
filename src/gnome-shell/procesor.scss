@@ -1,0 +1,47 @@
+@function hover_fg_color($color) {
+    @return lighten($color, 30%);
+}
+
+@function focus_fg_color($color) {
+    @return lighten($color, 40%);
+}
+
+@function active_fg_color($color) {
+    @return lighten($color, 60%);
+}
+
+@function hover_bg_color($color) {
+    @return mix($color, $back_color, 30%);
+}
+
+@function focus_bg_color($color) {
+    @return mix($color, $back_color, 40%);
+}
+
+@function active_bg_color($color) {
+    @return mix($color, $back_color, 60%);
+}
+
+@function border_color($color) {
+    @return darken($color, 10%);
+}
+
+@function hover_border_color($color) {
+    @return $color;
+}
+
+@function focus_border_color($color) {
+    @return lighten($color, 10%);
+}
+
+@function active_border_color($color) {
+    @return lighten($color, 20%);
+}
+
+@function disabled_fg_color($color) {
+    @return darken($color, 20%);
+}
+
+@function disabled_border_color($color) {
+    @return darken($color, 20%);
+}
