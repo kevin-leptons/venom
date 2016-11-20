@@ -10,17 +10,34 @@ set -e
 ROOT=$(realpath .)
 
 SRC="$ROOT/src"
-SRC_GTK3="$SRC/gtk-3.0"
+DEST="$ROOT/dest"
+
+# share for both GOB and BOW theme
 SRC_GNOME="$SRC/gnome-shell"
 SRC_METACITY="$SRC/metacity-1"
 
-DEST="$ROOT/dest"
-DEST_GTK2="$DEST/gtk-2.0"
-DEST_GTK3="$DEST/gtk-3.0"
-DEST_GNOME="$DEST/gnome-shell"
-DEST_METACITY="$DEST/metacity-1"
+# green on black theme
+SRC_GOB_GTK3="$SRC/gtk-3.0"
 
-TARGET="/usr/share/themes/venom"
+DEST_GOB="$DEST/venom-gob"
+DEST_GOB_GTK2="$DEST_GOB/gtk-2.0"
+DEST_GOB_GTK3="$DEST_GOB/gtk-3.0"
+DEST_GOB_GNOME="$DEST_GOB/gnome-shell"
+DEST_GOB_METACITY="$DEST_GOB/metacity-1"
+
+TARGET_GOB="/usr/share/themes/venom-gob"
+
+# black on white theme
+SRC_BOW_GTK3="$SRC/gtk-3.0"
+
+DEST_BOW="$DEST/venom-bow"
+DEST_BOW_GTK2="$DEST_BOW/gtk-2.0"
+DEST_BOW_GTK3="$DEST_BOW/gtk-3.0"
+DEST_BOW_GNOME="$DEST_BOW/gnome-shell"
+DEST_BOW_METACITY="$DEST_BOW/metacity-1"
+
+TARGET_BOW="/usr/share/themes/venom-bow"
+
 
 # help menu
 HELP="USAGE:\n
@@ -32,26 +49,37 @@ HELP="USAGE:\n
 
 repo_build()
 {
-    mkdir -vp $DEST_GTK3
-    cp -rv $SRC/index.theme $DEST/index.theme
+    # build GOB theme
+    mkdir -vp $DEST_GOB_GTK3
+    cp -rv $SRC/index.theme $DEST_GOB/index.theme
+    bundle exec sass $SRC_GOB_GTK3/gtk-gob.scss $DEST_GOB_GTK3/gtk.css
+    mkdir -vp $DEST_GOB_GTK2
+    rsync -rv $SRC_GNOME/* $DEST_GOB_GNOME --exclude=*.swp
+    rsync -rv $SRC_METACITY/* $DEST_GOB_METACITY --exclude=*.swp
 
-    bundle exec sass $SRC_GTK3/gtk.scss $DEST_GTK3/gtk.css
-
-    mkdir -vp $DEST_GTK2
-
-    rsync -rv $SRC_GNOME/* $DEST_GNOME --exclude=*.swp
-
-    rsync -rv $SRC_METACITY/* $DEST_METACITY --exclude=*.swp
+    # build BOW theme
+    mkdir -vp $DEST_BOW_GTK3
+    cp -rv $SRC/index.theme $DEST_BOW/index.theme
+    bundle exec sass $SRC_BOW_GTK3/gtk-bow.scss $DEST_BOW_GTK3/gtk.css
+    mkdir -vp $DEST_BOW_GTK2
+    rsync -rv $SRC_GNOME/* $DEST_BOW_GNOME --exclude=*.swp
+    rsync -rv $SRC_METACITY/* $DEST_BOW_METACITY --exclude=*.swp
 }
 
 repo_install()
 {
     repo_build
 
-    sudo mkdir -vp $TARGET
-    sudo rsync -rv $DEST/* $TARGET --exclude=*.swp
-    gtk3-widget-factory
+    # install GOB theme
+    sudo mkdir -vp $TARGET_GOB
+    sudo cp -rv $DEST_GOB/* $TARGET_GOB
+
+    # install BOW theme
+    sudo mkdir -vp $TARGET_BOW
+    sudo cp -rv $DEST_BOW/* $TARGET_BOW
+
     # gnome-tweak-tool
+    gtk3-widget-factory
 }
 
 repo_clean()
