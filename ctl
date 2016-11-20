@@ -11,6 +11,7 @@ ROOT=$(realpath .)
 
 SRC="$ROOT/src"
 DEST="$ROOT/dest"
+TARGET="/usr/share/themes"
 
 # share for both GOB and BOW theme
 SRC_GNOME="$SRC/gnome-shell"
@@ -25,7 +26,7 @@ DEST_GOB_GTK3="$DEST_GOB/gtk-3.0"
 DEST_GOB_GNOME="$DEST_GOB/gnome-shell"
 DEST_GOB_METACITY="$DEST_GOB/metacity-1"
 
-TARGET_GOB="/usr/share/themes/venom-gob"
+TARGET_GOB="$TARGET/venom-gob"
 
 # black on white theme
 SRC_BOW_GTK3="$SRC/gtk-3.0"
@@ -36,7 +37,7 @@ DEST_BOW_GTK3="$DEST_BOW/gtk-3.0"
 DEST_BOW_GNOME="$DEST_BOW/gnome-shell"
 DEST_BOW_METACITY="$DEST_BOW/metacity-1"
 
-TARGET_BOW="/usr/share/themes/venom-bow"
+TARGET_BOW="$TARGET/venom-bow"
 
 
 # help menu
@@ -51,7 +52,7 @@ repo_build()
 {
     # build GOB theme
     mkdir -vp $DEST_GOB_GTK3
-    cp -rv $SRC/index.theme $DEST_GOB/index.theme
+    cp -rv $SRC/gob-index.theme $DEST_GOB/index.theme
     bundle exec sass $SRC_GOB_GTK3/gtk-gob.scss $DEST_GOB_GTK3/gtk.css
     mkdir -vp $DEST_GOB_GTK2
     rsync -rv $SRC_GNOME/* $DEST_GOB_GNOME --exclude=*.swp
@@ -59,7 +60,7 @@ repo_build()
 
     # build BOW theme
     mkdir -vp $DEST_BOW_GTK3
-    cp -rv $SRC/index.theme $DEST_BOW/index.theme
+    cp -rv $SRC/bow-index.theme $DEST_BOW/index.theme
     bundle exec sass $SRC_BOW_GTK3/gtk-bow.scss $DEST_BOW_GTK3/gtk.css
     mkdir -vp $DEST_BOW_GTK2
     rsync -rv $SRC_GNOME/* $DEST_BOW_GNOME --exclude=*.swp
@@ -89,7 +90,8 @@ repo_clean()
 
 repo_remove()
 {
-    sudo rm -rf $TARGET
+    sudo rm -rf $TARGET_GOB
+    sudo rm -rf $TARGET_BOW
 }
 
 show_help()

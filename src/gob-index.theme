@@ -1,0 +1,8 @@
+[X-GNOME-Metatheme]
+Name=venom-gob
+Type=X-GNOME-Metatheme
+Comment=venom-gob
+Encoding=UTF-8
+GtkTheme=venom-gob
+MetacityTheme=venom-gob
+CursorSize=24
