@@ -1,0 +1,72 @@
+//
+// COMBOBOXS
+//
+
+GtkComboBox {
+    //FIXME padding issue
+    padding: 0;
+
+    -GtkComboBox-arrow-scaling: 0.5;
+    -GtkComboBox-shadow-type: none;
+
+    &:insensitive {
+        color: $insensitive_fg_color;
+        text-shadow: none;
+        icon-shadow: none;
+    }
+    &:backdrop {
+        color: $backdrop_fg_color;
+        text-shadow: none;
+        icon-shadow: none;
+    }
+    &:backdrop:insensitive {
+        color: $insensitive_fg_color;
+    }
+    .menuitem { text-shadow: none; }
+    .separator.vertical {
+        // always disable separators
+        -GtkWidget-wide-separators: true;
+    }
+    &.combobox-entry .entry {
+        border-radius: 0;
+        &:dir(rtl) {
+            border-radius: 0;
+        }
+    }
+    &.combobox-entry .button, &.combobox-entry .button:backdrop {
+        // It is needed to specify the backdrop button or it gets overridden
+        border-radius: 0;
+        border-left-style: none;
+        &:dir(rtl) {
+            border-radius: 0;
+            border-left-style: solid;
+            border-right-style: none;
+        }
+    }
+}
+
+.linked > GtkComboBox > .button {
+    // The combo is a composite widget so the way we do
+    // button linking doesn't work, special case needed.
+    // See https://bugzilla.gnome.org/show_bug.cgi?id=733979
+    &:dir(ltr) { @extend %linked_middle; } // specificity bump
+    &:dir(rtl) { @extend %linked_middle:dir(rtl); }
+}
+.linked > GtkComboBox:first-child > .button {
+    @extend %linked:first-child;
+}
+.linked > GtkComboBox:last-child > .button {
+    @extend %linked:last-child;
+}
+.linked > GtkComboBox:only-child > .button {
+    @extend %linked:only-child;
+}
+
+.linked.vertical > GtkComboBoxText > .button,
+.linked.vertical > GtkComboBox > .button { @extend %linked_vertical_middle; }
+.linked.vertical > GtkComboBoxText:first-child > .button,
+.linked.vertical > GtkComboBox:first-child > .button { @extend %linked_vertical:first-child; }
+.linked.vertical > GtkComboBoxText:last-child > .button,
+.linked.vertical > GtkComboBox:last-child > .button { @extend %linked_vertical:last-child; }
+.linked.vertical > GtkComboBoxText:only-child > .button,
+.linked.vertical > GtkComboBox:only-child > .button { @extend %linked_vertical:only-child; }

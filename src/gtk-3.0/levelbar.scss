@@ -1,0 +1,66 @@
+//
+// LEVELBARS
+//
+
+GtkLevelBar {
+  -GtkLevelBar-min-block-width: 34;
+  -GtkLevelBar-min-block-height: 3;
+}
+
+GtkLevelBar.vertical {
+  -GtkLevelBar-min-block-width: 3;
+  -GtkLevelBar-min-block-height: 34;
+}
+
+.level-bar {
+  &.trough {
+    // FIXME: outset not working
+    padding: 2px;
+    border-radius: 0;
+    @include entry();
+    &:backdrop {
+      @include entry(true);
+    }
+  }
+  &.fill-block {
+    // FIXME: it would be nice to set make fill blocks bigger, but we'd need
+    // :nth-child working on discrete indicators
+    border-width: 1px;
+    border-style: solid;
+    border-color: darken($selected_bg_color,10%);
+    background-color: $selected_bg_color;
+    box-shadow: 0 1px transparentize(black, 0.9);
+    border-radius: 0;
+    &:backdrop {
+      border-color: $selected_bg_color;
+      box-shadow: none;
+    }
+    &.indicator-discrete {
+      &.horizontal { margin: 0 1px; }
+      &.vertical { margin: 1px 0; }
+    }
+    &.level-high {
+      border-color: darken($success_color,10%);
+      background-color: $success_color;
+      &:backdrop { border-color: $success_color; }
+    }
+    &.level-low {
+      border-color: darken($warning_color,10%);
+      background-color: $warning_color;
+      &:backdrop { border-color: $warning_color; };
+    }
+    &.empty-fill-block {
+      background-color: transparent;
+      border-color: transparentize($fg_color,0.8);
+      box-shadow: none;
+      &:backdrop { border-color: transparentize($backdrop_fg_color,0.85); }
+    }
+  }
+}
+
+%selected_items {
+  background-color: $selected_bg_color;
+  color: $selected_fg_color;
+  outline-color: transparentize($selected_fg_color, 0.7);
+  &:backdrop { background-color: $borders_color; color: $selected_fg_color; }
+}

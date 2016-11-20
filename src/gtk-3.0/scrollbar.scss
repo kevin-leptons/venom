@@ -1,0 +1,86 @@
+//
+// SCROLLBARS
+//
+
+.scrollbar {
+  background-clip: padding-box;
+  background-image: none;
+  border-style: solid;
+  -GtkRange-trough-border: 0;
+  -GtkScrollbar-has-backward-stepper: false;
+  -GtkScrollbar-has-forward-stepper: false;
+  -GtkRange-slider-width: 20;
+  -GtkScrollbar-min-slider-length: 42; // minimum size for the slider.
+                                       // sadly can't be in '.slider'
+                                       // where it belongs
+
+  -GtkRange-stepper-spacing: 0;
+  -GtkRange-trough-under-steppers: 1;
+  $_slider_margin: 3px;
+  $_slider_fine_tune_margin: 4px;
+
+  .button {
+    border: none;
+  }
+  &.trough { @extend .scrollbars-junction; }
+  &.slider {
+    border-radius: 0;
+    border: 3px solid transparent; //margin :/
+    background-color: mix($bg_color, $fg_color, 50%);
+    &:backdrop, &:insensitive {
+      background-color: mix($bg_color, $fg_color, 90%);
+    }
+    &:hover {
+      background-color: mix($bg_color, $fg_color, 30%);
+    }
+    &:prelight:active {
+      background-color: $selected_bg_color;
+    }
+    &.fine-tune {
+      border-width: 5px;
+      &:prelight:active {
+        background-color: $selected_bg_color;
+      }
+    }
+  }
+  &.overlay-indicator {
+    &:not(.dragging):not(.hovering) { // Overlay scrolling indicator
+      opacity: 0.4;
+
+      -GtkRange-slider-width: 5px;
+
+      .slider {
+        margin: 0;
+        background-color: $fg_color;
+        border: 1px solid $front_color;
+        background-clip: padding-box;
+      }
+
+      .trough {
+        border-style: none;
+        background-color: transparent;
+      }
+
+      // w/o the following margin tweaks the slider shrinks when hovering/dragging
+      &.vertical .slider {
+        margin-top: $_slider_margin - 1px;
+        margin-bottom: $_slider_margin - 1px;
+      }
+
+      &.horizontal .slider {
+        margin-left: $_slider_margin - 1px;
+        margin-right: $_slider_margin - 1px;
+      }
+
+    }
+
+    &.dragging,
+    &.hovering { opacity: 0.7; }
+  }
+}
+
+.scrollbars-junction { // the small square between two scrollbars
+  border-color: transparent;
+  background-color: darken($bg_color, 5%);
+  &:backdrop { background-color: transparent; }
+}

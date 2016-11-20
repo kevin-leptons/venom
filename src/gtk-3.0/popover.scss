@@ -1,0 +1,57 @@
+//
+// POPOVERS
+//
+
+.popover {
+  margin: 10px;
+  padding: 2px;
+  border-color: $borders-color;
+  border-width: 1px;
+  border-style: solid;
+  //background-clip: border-box;
+  background-color: $bg_color;
+
+  box-shadow: 0 2px 3px transparentize(black, 0.5);
+  &:backdrop {
+    box-shadow: none;
+  }
+  & > .list,
+  & > .view,
+  & > .toolbar {
+    background-color: transparent;
+  }
+  .separator {
+    color: $fg_color;
+    background-color: transparent;
+    border: 0;
+  }
+  .button.flat,
+  .button.flat:hover {
+    color: $fg_color;
+    text-shadow: none;
+    transition: none;
+  }
+  &.osd { // Also used for touch cutnpaste overlays
+          // FIXME Doesn't work
+    background-image: none;
+    background-color: $osd_bg_color;
+    border: 1px solid $borders_color;
+    color: $osd_fg_color;
+    .button {
+      color: $front_color;
+      text-shadow: none;
+      @include button(normal, normal, normal);
+      &:hover { @include button(normal, normal, hover); };
+      &:active { @include button(normal, normal, active); };
+      &:insensitive { @include button(normal, disabled, normal); };
+    }
+  }
+}
+
+//touch selection handlebars for the Popover.osd above
+.cursor-handle {
+  background-color: transparent;
+  background-image: none;
+  &.top { -gtk-icon-source: -gtk-icontheme('selection-start-symbolic'); }
+  &.bottom { -gtk-icon-source: -gtk-icontheme('selection-end-symbolic'); }
+}

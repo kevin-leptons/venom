@@ -1,0 +1,67 @@
+//
+// SWITCHS
+//
+
+GtkSwitch {
+    -GtkSwitch-slider-width: 47px;
+    font: bold condensed 9;
+    outline-offset: -4px;
+    &.trough {
+      // similar to the .scale
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 0;
+      border-color: $borders_color;
+      background-color: mix($bg_color,$borders_color,60%);
+      box-shadow: inset 0 1px transparentize(black, 0.9); /*outset not working*/
+      text-shadow: 0 1px transparentize(black, 0.9);
+      &:active {
+        color: lighten($front_color, 30%);
+        border-color: $fg_color;
+        background-color: $selected_bg_color;
+      }
+      &:insensitive {
+        color: $insensitive_fg_color;
+        border-color: $borders_color;
+        background-color: $insensitive_bg_color;
+        text-shadow: none;
+      }
+      &:backdrop {
+        color: $backdrop_fg_color;
+        border-color: $fg_color;
+        background-color: $backdrop_bg_color;
+        box-shadow: none;
+        text-shadow: none;
+        &:active {
+          color: $selected_fg_color;
+          border-color: $backdrop_borders_color;
+          background-color: $backdrop_borders_color;
+          box-shadow: none;
+        }
+        &:insensitive, &:insensitive:active {
+          background-color: $insensitive_bg_color;
+          color: $insensitive_fg_color;
+          border-color: $insensitive_fg_color;
+        }
+      }
+    }
+    &.slider {
+      border-radius: 0;
+      @include button(normal, normal, normal);
+      box-shadow: 0 -2px transparentize($bg_color,0.4),
+                  inset 0 -1px mix($bg_color,$borders_color,50%);
+      &:hover {
+        @include button(normal, normal, hover);
+        box-shadow: 0 -2px transparentize($bg_color,0.4),
+                    inset 0 -1px mix($bg_color,$borders_color,50%);
+      }
+      &:active { border-color: $fg_color; }
+      &:insensitive { @include button(normal, disabled, normal); }
+      &:backdrop { @include button(normal, normal, normal);
+        &:active{ border-color: $backdrop_borders_color; }
+        &:insensitive {
+          @include button(normal, disabled, normal);
+        }
+      }
+    }
+}

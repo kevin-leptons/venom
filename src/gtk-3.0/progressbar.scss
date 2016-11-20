@@ -1,0 +1,60 @@
+//
+// PROGRESSBARS
+//
+
+//FIXME it's a wip ok?
+
+GtkProgressBar {
+    padding: 0;
+    font-size: 83%;
+    color: transparentize($fg_color, 0.6);
+    &:backdrop {
+      color: $insensitive_fg_color;
+    }
+}
+
+// moving bit
+.progressbar {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0;
+  border-color: darken($fg_color, 10%);
+  background-color: darken($fg_color, 10%);
+  // I really prefer these flat w/o this shadow - Lapo
+  box-shadow: inset 0 1px 0 transparentize($borders_edge,0.8);
+  &.vertical {
+    box-shadow: inset 1px 0 0 transparentize($borders_edge,0.8);
+  }
+  &:backdrop {
+    border-color: $selected_bg_color;
+    background-color: $selected_bg_color;
+    box-shadow: none;
+  }
+  &.osd {
+    border-width: 0;
+    border-radius: 0;
+    -GtkProgressBar-xspacing: 0;
+    -GtkProgressBar-yspacing: 2px;
+    -GtkProgressBar-min-horizontal-bar-height: 2px; //FIXME still too tall
+  }
+}
+
+// background
+GtkProgressBar.trough {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0;
+  border-color: $borders_color;
+  background-color: mix($borders_color,$bg_color, 35%);
+  box-shadow: inset 1px 1px transparentize(black, 0.9);
+  &:backdrop{
+    border-color: $backdrop_borders_color;
+    background-color: mix($backdrop_borders_color,$backdrop_bg_color, 35%);
+  }
+  &.osd {
+    background-color: transparent;
+    box-shadow: none;
+    border-width: 0;
+    //FIXME: there is a margin on top
+  }
+}

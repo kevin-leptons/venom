@@ -1,0 +1,140 @@
+//
+// TEXT ENTRIES
+//
+
+.entry {
+    padding: 4px;
+    border-radius: 0;
+    transition: all 200ms ease-out;
+    @include entry();
+
+    &.flat, &.flat:focus {
+        padding: 2px;
+        @include entry();
+        border: none;
+        border-radius: 0;
+    }
+    &:focus { @include entry(false, normal, false, active); }
+    &:insensitive { @include entry(false, normal, true, normal); }
+    &:backdrop { @include entry(true); }
+    &:backdrop:insensitive { @include entry(true, normal, true, normal); }
+    &:selected, &:backdrop:selected {
+        background-color: $selected_bg_color;
+        color: $selected_fg_color;
+    }
+    &:selected,
+    &:selected:focus {
+        @extend %selected_items;
+    }
+    &.progressbar {
+        margin: 1px;
+        border-radius: 0;
+        border-width: 0 0 2px;
+        border-color: $selected_bg_color;
+        border-style: solid;
+        background-image: none;
+        background-color: transparent;
+        box-shadow: none;
+        &:backdrop { background-color: transparent; }
+    }
+    .linked & {
+        &:first-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            &:dir(rtl) { border-right-style: none;}
+        }
+        &:last-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left-style: none;
+            &:dir(rtl) { border-left-style: solid; }
+        }
+    }
+    .linked.vertical & { //FIXME comment stuff and make the whole thing smarter.
+        @include entry();
+        background-image: linear-gradient(to bottom, $base_color);
+        border-bottom-color: mix($borders_color, $base_color, 30%);
+        box-shadow: none;
+        @extend %linked_vertical;
+        &:focus {
+            border-color: $selected_bg_color;
+            box-shadow: 0 -1px 0 0 $selected_bg_color;
+            @extend %linked_vertical;
+        }
+        &:insensitive {
+            @include entry(false, normal, true);
+            border-bottom-color: mix($borders_color, $base_color, 30%);
+            @extend %linked_vertical;
+            &:backdrop {
+                @include entry(true, normal, true);
+                border-bottom-color: mix($backdrop_borders_color, $backdrop_base_color, 30%);
+                @extend %linked_vertical;
+            }
+        }
+        &:backdrop {
+            @include entry(true);
+            border-bottom-color: mix($backdrop_borders_color, $backdrop_base_color, 30%);
+            @extend %linked_vertical;
+        }
+        &:first-child {
+            @include entry();
+            border-bottom-color: mix($borders_color, $base_color, 30%);
+            &:focus { @include entry(false, normal, false, focus); }
+            &:insensitive {
+                @include entry(false, normal, true);
+                border-bottom-color: mix($backdrop_borders_color, $backdrop_base_color, 30%);
+                @extend %linked_vertical:first-child;
+                &:backdrop {
+                    @include entry(true, normal, true);
+                    border-bottom-color: mix($backdrop_borders_color, $backdrop_base_color, 30%);
+                    border-top-style: solid;
+                }
+            }
+            &:backdrop {
+            @include entry(true);
+            border-bottom-color: mix($backdrop_borders_color, $backdrop_base_color, 30%);
+                @extend %linked_vertical:first-child;
+            }
+        }
+        &:last-child {
+            @include entry();
+            border-top-width: 0;
+            background-image: linear-gradient(to bottom, $base_color);
+            box-shadow: none;
+            &:focus {
+                border-color: $selected_bg_color;
+                box-shadow: 0 -1px 0 0 $selected_bg_color;
+                @extend %linked_vertical:last-child;
+            }
+            &:insensitive {
+                @include entry(false, normal, true);
+                @extend %linked_vertical:last-child;
+                &:backdrop {
+                    @include entry(true, normal, true);
+                    @extend %linked_vertical:last-child;
+                }
+            }
+            &:backdrop {
+                @include entry(true);
+                @extend %linked_vertical:last-child;
+            }
+        }
+    }
+
+    &.error {
+        color: $error_color;
+        border-color: $error_color;
+        &:focus { @include entry(false, danger, false, active); }
+        &:selected, &:selected:focus {
+            background-color: $error_color;
+        }
+    }
+    &.warning {
+        color: $warning_color;
+        border-color: $warning_color;
+        &:focus { @include entry(false, warning, false, active); }
+        &:selected, &:selected:focus {
+            background-color: $warning_color;
+        }
+    }
+}

@@ -1,0 +1,4 @@
+dest/
+*.swp
+.sass-cache
+Gemfile.lock

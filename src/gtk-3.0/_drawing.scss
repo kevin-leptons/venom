@@ -1,0 +1,125 @@
+// Drawing mixins
+
+@mixin _entry($fg_color: $fg_color, $disabled:false, $state:normal) {
+    // private drawing entries
+    //
+    // $fg_color: text color
+    // $disabled: true/false
+    // $state: normal/active
+
+    // default for $state: normal and $disabled: false
+    $entry_color: $fg_color;
+    $entry_border_color: darken($fg_color, 10%);
+    $entry_bg_color: 0;
+
+    // convert $state to colors
+    @if $state==active { $entry_bg_color: mix($fg_color, $bg_color, 20%); }
+
+    // convert $disabled to colors
+    @if $disabled==true {
+        $entry_color: darken($entry_color, 10%);
+        $entry_border_color: darken($entry_border_color, 20%);
+        @if $entry_bg_color!=0 {
+            $entry_bg_color: darken($entry_bg_color, 20%);
+        }
+    }
+
+    color: $entry_color;
+    border: 1px solid $entry_border_color;
+    background-color: $entry_bg_color;
+}
+
+@mixin entry($backdrop: false, $action:normal, $disabled:false, $state:normal) {
+    //
+    // drawing entries
+    //
+    // $backdrop: true/false
+    // $action: normal/info/warning/danger
+    // $disabled: true/false
+    // $state: normal/hover/active
+
+    // $action_color for $action: normal
+    $action_color: $fg_color;
+
+    // convert $action to $action_color
+    @if $action==info { $action_color: $info_color; }
+    @if $action==warning { $action_color: $warning_color; }
+    @if $action==danger { $action_color: $danger_color; }
+
+    // convert $backdrop and $action_color to $entry_fg_color
+    $entry_fg_color: $action_color;
+    @if $backdrop==true { $entry_fg_color: darken($action_color, 20%); }
+
+    // draw entry
+    @include _entry($entry_fg_color, $disabled, $state)
+}
+
+@mixin _button($fg_color, $context: normal, $state: normal) {
+    //
+    // Private button drawing function
+    //
+    // $context: normal/disabled
+    // $state: normal/hover/active
+    // $fg_color: text color
+    //
+
+    text-shadow: none;
+    border-width: 1px;
+    border-style: solid;
+    background-image: none;
+    icon-shadow: none;
+
+    // all of states of 'normal' type
+    @if $context==normal and $state==normal {
+      color: $fg_color;
+      border-color: $fg_color;
+      background-color: $bg_color;
+    }
+    @if $context==normal and $state==hover {
+      background-color: mix($fg_color, $bg_color, 30%);
+    }
+    @if $context==normal and $state==active {
+      color: lighten($fg_color, 10%);
+      border-color: lighten($fg_color, 10%);
+      background-color: mix($fg_color, $bg_color, 50%);
+    }
+
+    // all of states of 'disabled' type
+    @if $context==disabled and $state==normal {
+      color: mix($fg_color, $bg_color, 50%);
+      border-color: mix($bg_color,$fg_color, 50%);
+      background-color: mix($bg_color, $base_color, 60%);
+    }
+    @if $context==disabled and $state==active {
+      color: mix($fg_color, $bg_color, 70%);
+      border-color: mix($bg_color,$fg_color, 70%);
+      background-color:  mix($bg_color, $base_color, 80%);
+    }
+}
+
+@mixin button($action: normal, $context:normal, $state:normal) {
+    //
+    // Button drawing function
+    //
+    // $action: normal/info/warning/danger
+    // $context: normal/disabled
+    // $state: normal/hover/active
+    //
+
+    // convert action to fg color of button
+    $btn_fg_color: $fg_color;
+    @if $action==normal {
+        $btn_fg_color: $fg_color;
+    }
+    @else if $action==info {
+        $btn_fg_color: $info_color;
+    }
+    @else if $action==info {
+        $btn_fg_color: $warning_color;
+    }
+    @else if $action==danger {
+        $btn_fg_color: $danger_color;
+    }
+
+    @include _button($btn_fg_color, $context, $state);
+}

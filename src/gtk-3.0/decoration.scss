@@ -1,0 +1,58 @@
+//
+// DECORATIONS
+//
+
+.window-frame {
+  // lamefun trick to get rounded borders regardless of CSD use
+  border-radius: none;
+
+  // this needs to be transparent
+  // see bug #722563
+  $_wm_border: $front_color;
+  $_wm_border_backdrop: $front_color;
+
+
+  box-shadow: 0 0 0 1px $_wm_border; //doing borders with box-shadow
+
+  /* this is used for the resize cursor area */
+  margin: 10px;
+
+  &:backdrop {
+    box-shadow: 0 0 0 1px $_wm_border_backdrop;
+  }
+  &.tiled {
+    border-radius: 0;
+  }
+  &.csd {
+    &.popup {
+      border-radius: 0;
+      box-shadow: 0 0 0 1px $_wm_border;
+    }
+    &.tooltip {
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+  &.solid-csd {
+    border-radius: 0;
+    margin: 4px;
+    background-color: $backdrop_bg_color;
+    border: solid 1px $backdrop_borders_color;
+    box-shadow: none;
+  }
+}
+
+// Window button
+.button.titlebutton {
+  padding: 8px;
+  border-color: transparent;
+  background-image: none;
+  transition-property: border, box-shadow, color;
+  &:hover { @include button(normal, normal, normal); }
+  &:active { @include button(normal, normal, active); }
+  &:backdrop {
+    @include button(normak, normal, normal);
+    border-color: transparent;
+    transition-property: border, box-shadow, color;
+  }
+}

@@ -1,0 +1,184 @@
+//
+// BUTTONS
+//
+
+// stuff for .needs-attention
+@keyframes needs_attention {
+    from {
+        background-image: -gtk-gradient(radial,
+                                        center center, 0,
+                                        center center, 0.01,
+                                        to($_dot_color),
+                                        to(transparent));
+    }
+    to {
+        background-image: -gtk-gradient(radial,
+                                        center center, 0,
+                                        center center, 0.5,
+                                        to($selected_bg_color),
+                                        to(transparent));
+    }
+}
+
+.button {
+    transition: all 200ms ease-out;
+    padding: 4px 6px;
+    @include button(normal, normal, normal);
+    &:hover, &.flat:hover {
+        @include button(normal, normal, hover);
+        -gtk-image-effect: highlight;
+    }
+    &:active, &.flat:active,
+    &:checked, &.flat:checked {
+        @include button(normal, normal, active);
+        transition-duration: 50ms;
+    }
+    &:backdrop, &.flat:backdrop {
+        @include button(normal, normal, normal);
+        &:active, &:checked {
+            @include button(normal, normal, active);
+        }
+        &:insensitive {
+            @include button(normal, disabled, normal);
+        }
+        &:insensitive:active {
+            @include button(normal, disabled, active);
+        }
+    }
+    &:insensitive {
+        @include button(normal, disabled, normal);
+        &:active, &.flat:active {
+            @include button(normal, disabled, active);
+        }
+    }
+    &.flat, &.flat:backdrop, &.flat:insensitive:backdrop {
+        @extend %undecorated_button;
+    }
+
+    .osd & {
+        padding: 6px;
+        border-width: 1px 1px 2px 1px;
+        @include button(normal, normal, normal);
+        @extend %linked;
+        &:hover {
+            @include button(normal, normal, hover);
+            @extend %linked;
+        }
+        &:active, &:checked {
+            @include button(normal, normal, active);
+            @extend %linked;
+        }
+        &:insensitive {
+            @include button(normal, disabled, normal);
+            @extend %linked;
+        }
+        &:backdrop {
+            @include button(normal, normal, normal);
+            @extend %linked;
+        }
+    }
+
+    // Suggested and Destructive Action buttons
+    @each $b_type, $b_action in (suggested-action, info),
+                                (destructive-action, danger) {
+            &.#{$b_type} {
+            @include button($b_action, normal, normal);
+            &:hover {
+                @include button($b_action, normal, hover);
+            }
+            &:active, &:checked {
+                @include button($b_action, normal, active);
+            }
+            &:backdrop {
+                @include button($b_action, normal, normal);
+                &:insensitive {
+                    @include button($b_action, disabled, normal);
+                }
+            }
+            &:insensitive {
+                @include button($b_action, disabled, normal);
+            }
+        }
+    }
+
+    // buttons in header bars and action bars
+    &.image-button { padding: 8px; }
+    &.text-button { padding: 6px 8px 5px; } // due to font metrics
+
+    //inline-toolbar buttons
+    .inline-toolbar &, .inline-toolbar &:backdrop {
+        border-radius: 0;
+        border-width: 1px;
+        @extend %linked;
+    }
+
+    .primary-toolbar & { icon-shadow: none; } // tango icons don't need added shadows
+    .linked > &,
+    .linked > &:hover,
+    .linked > &:active,
+    .linked > &:checked,
+    .linked > &:backdrop { @extend %linked; }
+
+    .linked.vertical > &,
+    .linked.vertical > &:hover,
+    .linked.vertical > &:active,
+    .linked.vertical > &:checked,
+    .linked.vertical > &:backdrop { @extend %linked_vertical; }
+}
+
+// all the following is for the +|- buttons on inline toolbars, that way
+// should really be reprecated...674
+
+.inline-toolbar GtkToolButton > .button { // redefining the button look is
+                                               // needed since those are flat...
+    @include button(normal, normal, normal); // the box-shadow outset doesn't work
+                                          // in this case, hence $edge: none
+    &:hover { @include button(normal, normal, hover); }
+    &:active { @include button(normal, normal, active); }
+    &:insensitive { @include button(normal, disabled, normal); }
+    &:insensitive:active { @include button(normal, disabled, active); }
+    &:backdrop { @include button(normal, normal, normal); };
+    &:backdrop:active { @include button(normal, normal, active); }
+    &:backdrop:insensitive { @include button(normal, disabled, normal); }
+    &:backdrop:insensitive:active { @include button(normal, disabled, active);}
+}
+
+.inline-toolbar.toolbar GtkToolButton { // .inline-toolbar.toolbar here for
+                    // higher specificity than the previous
+                    // "button look" selector
+    & > .button.flat {
+        border-radius: 0;
+        border-left-style: none;
+    }
+    &:dir(rtl) > .button.flat {}
+    &:first-child > .button.flat {
+        border-radius: 0;
+        border-left-style: solid;
+    }
+    &:last-child > .button.flat {
+        border-radius: 0;
+    }
+    &:last-child:dir(rtl) > .button.flat {
+        border-right-style: solid;
+    }
+    &:only-child > .button.flat {
+        border-radius: 0;
+        border-style: solid;
+    }
+}
+
+/* menu buttons */
+.menuitem.button.flat {
+    @extend %undecorated_button;
+    outline-offset: -1px;
+    &:hover, &:selected { @extend %selected_items; }
+    &:backdrop {
+        color: $backdrop_fg_color;
+        @extend %undecorated_button;
+        &:hover { color: $selected_fg_color; background-color: $selected_bg_color; }
+    }
+    &:insensitive { color: $insensitive_fg_color; }
+}
+
+GtkColorButton.button { padding: 4px; } // Uniform padding on the
+                                        // GtkColorButton.button

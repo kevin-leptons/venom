@@ -1,0 +1,247 @@
+@function gtkalpha($c,$a) {
+    @return unquote("alpha(#{$c},#{$a})");
+}
+
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$_dot_color: $selected_bg_color;
+
+* {
+    padding: 0;
+    -GtkToolButton-icon-spacing: 4;
+    -GtkTextView-error-underline-color: $error_color;
+    -GtkPaned-handle-size: 1;
+    -gtk-icon-style: symbolic; //force symbolic style icons
+
+    -GtkCheckButton-indicator-size: 16;
+    -GtkCheckMenuItem-indicator-size: 16;
+
+    // The size for scrollbars. The slider is 2px smaller, but we keep it
+    // up so that the whole area is sensitive to button presses for the
+    // slider. The stepper button is larger in both directions, the slider
+    // only in the width
+
+    -GtkScrolledWindow-scrollbar-spacing: 0;
+    -GtkScrolledWindow-scrollbars-within-bevel: 1;
+
+    -GtkToolItemGroup-expander-size: 11;
+    -GtkExpander-expander-size: 16;
+    -GtkTreeView-expander-size: 11;
+
+    -GtkTreeView-horizontal-separator: 4;
+
+    -GtkMenu-horizontal-padding: 0;
+    -GtkMenu-vertical-padding: 0;
+
+    -GtkWidget-link-color: $link_color;
+    -GtkWidget-visited-link-color: $link_color;
+
+    -GtkWidget-focus-line-width: 1; //
+
+    -GtkDialog-button-spacing: 4;
+    -GtkDialog-action-area-border: 0;
+
+    -GtkStatusbar-shadow-type: none;
+
+    // We use the outline properties to signal the focus properties
+    // to the adwaita engine: using real CSS properties is faster,
+    // and we don't use any outlines for now.
+
+    outline-color: transparentize($fg_color, 0.7);
+    outline-style: dashed;
+    outline-offset: -3px;
+    outline-width: 1px;
+}
+
+
+/***************
+ * Base States *
+ ***************/
+
+.background {
+    color: $fg_color;
+    background-color: $bg_color;
+}
+
+.background:backdrop {
+    text-shadow: none;
+    icon-shadow: none;
+
+    color: lighten($fg_color,10%);
+    background-color: $backdrop_bg_color;
+}
+
+/*
+   These wildcard seems unavoidable, need to investigate.
+   Wildcards are bad and troublesome, use them with care,
+   or better, just don't.
+   Everytime a wildcard is used a kitten dies, painfully.
+*/
+
+*:insensitive {
+    -gtk-image-effect: dim;
+}
+
+.gtkstyle-fallback {
+    background-color: $bg_color;
+    color: $fg_color;
+    &:prelight {
+        background-color: lighten($bg_color, 10%);
+        color: $fg_color;
+    }
+    &:active {
+        background-color: darken($bg_color, 10%);
+        color: $fg_color;
+    }
+    &:insensitive {
+        background-color: $insensitive_bg_color;
+        color: $insensitive_fg_color;
+    }
+    &:selected {
+        background-color: $selected_bg_color;
+        color: $selected_fg_color;
+    }
+}
+
+.view {
+    color: $fg_color;
+    background-color: $base_color;
+    &:backdrop {
+        color: $backdrop_fg_color;
+        background-color: $backdrop_base_color;
+    }
+    &:selected,
+    &:selected:focus,
+    &:selected:hover {
+        @extend %selected_items;
+    }
+}
+
+.rubberband {
+    border: 1px solid $selected_bg_color;
+    background-color: transparentize($selected_bg_color,0.8);
+}
+
+GtkLabel {
+    &:selected,
+    &:selected:focus,
+    &:selected:hover,
+    &:backdrop:selected {
+        @extend %selected_items;
+    }
+}
+
+.label {
+    &:insensitive, &:backdrop:insensitive {
+        color: $insensitive_fg_color;
+        background-color: $insensitive_bg_color;
+    }
+}
+
+%needs_attention {
+    animation: needs_attention 150ms ease-in;
+    $_dot_shadow: $fg_color;
+    $_dot_shadow_r: 0.5;
+    background-image: -gtk-gradient(radial,
+                                    center center, 0,
+                                    center center, 0.5,
+                                    to($_dot_color),
+                                    to(transparent)),
+                      -gtk-gradient(radial,
+                                    center center, 0,
+                                    center center, $_dot_shadow_r,
+                                    to($_dot_shadow),
+                                    to(transparent));
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    background-position: right 3px, right 4px;
+    &:backdrop { background-size: 6px 6px, 0 0;}
+    &:dir(rtl) {
+        background-position: left 3px, left 4px;
+    }
+}
+
+%linked_middle {
+    border-radius: 0;
+    border-left-style: none;
+    &:dir(rtl) {
+        border-radius: 0; // needed when including %linked_middle:dir(rtl)
+        border-right-style: none;
+        border-left-style: solid
+    }
+}
+
+%linked {
+    @extend %linked_middle;
+    &:first-child {
+        border-radius: 0;
+        border-left-style: solid;
+    }
+    &:last-child {
+        border-radius: 0;
+        &:dir(rtl) { border-right-style: solid; }
+    }
+    &:only-child {
+        border-radius: 0;
+        border-style: solid;
+    }
+}
+
+%linked_vertical_middle {
+    border-left-style: solid;
+    border-top-style: none;
+    border-radius: 0;
+}
+
+%linked_vertical {
+    @extend %linked_vertical_middle;
+    &:first-child {
+        border-style: solid;
+        border-radius: 0;
+    }
+    &:last-child {
+        border-radius: 0;
+    }
+    &:only-child {
+        border-radius: 0;
+        border-style: solid;
+    }
+}
+
+%undecorated_button {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+@import 'spiner-animation';
+@import 'text';
+@import 'button';
+@import 'link';
+@import 'spin-button';
+@import 'combobox';
+@import 'toolbar';
+@import 'headerbar';
+@import 'treeview';
+@import 'menu';
+@import 'popover';
+@import 'tab';
+@import 'scrollbar';
+@import 'switch';
+@import 'checkbox-and-radio';
+@import 'scale';
+@import 'progressbar';
+@import 'levelbar';
+@import 'frame';
+@import 'list';
+@import 'notification';
+@import 'expander';
+@import 'calendar';
+@import 'dialog';
+@import 'slidebar';
+@import 'paned';
+@import 'infobar';
+@import 'tooltip';
+@import 'color-picker';
+@import 'decoration';

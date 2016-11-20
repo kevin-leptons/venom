@@ -1,0 +1,108 @@
+//
+// LISTS
+//
+
+.list, .list-row {
+  background-color: $base_color;
+  border-color: $borders_color;
+  &:backdrop {
+    background-color: $backdrop_base_color;
+    border-color: $backdrop_borders_color;
+  }
+}
+
+.list-row,
+.grid-child {
+  padding: 2px;
+}
+
+.list-row.button,
+.list-row.button:backdrop,
+.list-row.button:backdrop:active,
+.list-row.button:backdrop:checked,
+.list-row.button:backdrop:insensitive,
+.list-row.button:backdrop:insensitive:active,
+.list-row.button:backdrop:insensitive:checked,
+.list-row.button:insensitive:active,
+.list-row.button:insensitive:checked {
+  // reset button inherited stuff
+  @extend %undecorated_button;
+  background-color: transparentize($base_color,1); // for the transition
+  border-style: none; // I need no borders here
+  border-radius: 0;   // and no rounded corners
+  box-shadow: none;   // and no box-shadow
+
+}
+
+.list-row.button {
+  @extend %undecorated_button;
+  background-color: transparentize($base_color,1); // for the transition
+  border-style: none; // I need no borders here
+  border-radius: 0;   // and no rounded corners
+  box-shadow: none;   // and no box-shadow
+  &:hover {
+    background-color: mix($fg_color, $base_color, 5%);
+  }
+  &:active {
+    box-shadow: inset 0 2px 2px -2px transparentize(black, 0.8);
+  }
+  &:selected {
+    background-color: $selected_bg_color;
+    &:active { box-shadow: inset 0 2px 3px -1px transparentize(black, 0.5); }
+    &:hover {
+      background-color: mix($fg_color, $selected_bg_color, 10%);
+    }
+    &:backdrop { background-color: $borders_color; }
+  }
+}
+
+.list-row:selected {
+  @extend %selected_items;
+  .button {
+    @include button(normal, normal, normal);
+    border-color: $selected_borders_color;
+    &.flat {
+      @include button(normal, normal, normal);
+      color: $selected_fg_color;
+    }
+    &:hover {
+      @include button(normal, normal, hover);
+      border-color: $selected_borders_color;
+    }
+    &:active, &:checked {
+      @include button(normal, normal, active);
+      border-color: $selected_borders_color;
+    }
+    &:backdrop, &.flat:backdrop {
+      @include button(normal, normal, normal);
+      border-color: $selected_borders_color;
+      &:active, &:checked {
+        @include button(normal, normal, active);
+        border-color: $selected_borders_color;
+      }
+      &:insensitive {
+        @include button(normal, disabled, normal);
+        border-color: $selected_borders_color;
+        &:active, &:checked {
+          @include button(normal, disabled, active);
+          border-color: $selected_borders_color;
+        }
+      }
+    }
+    &.flat:backdrop {
+      @include button(normal, normal, normal);
+      color: $backdrop_base_color;
+    }
+    &:insensitive {
+      @include button(normal, disabled, normal);
+      border-color: $selected_borders_color;
+      &:active, &:checked { @include button(normal, disable,d active); }
+    }
+  }
+}
+
+// transition
+.list-row, list-row.button {
+  transition: all 300ms $ease-out-quad;
+  &:hover { transition: none; }
+}

@@ -1,0 +1,17 @@
+//
+// TOOLTIPS
+//
+
+.tooltip {
+  color: $front_color;
+  padding: 4px; /* not working */
+  border-radius: 0;
+  background-color: transparentize(black,0.2);  //FIXME proper color
+  // border: 2px solid $borders_color; gnome shell style?
+}
+
+.tooltip * { //Yeah this is ugly
+  padding: 4px;
+  background-color: transparent;
+  color: inherit; // just to be sure
+}

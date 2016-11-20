@@ -1,0 +1,98 @@
+//
+// DIAGLOGS
+//
+
+.message-dialog .dialog-action-area .button {
+  padding: 8px;
+}
+
+.message-dialog { // Message Dialog styling
+  -GtkDialog-button-spacing: 0;
+  .titlebar {
+    border-style: none;
+    box-shadow: inset 0 1px $borders_edge;
+  }
+  &.csd { // rounded bottom border styling for csd version
+    // bigger radius for better antialiasing
+    .dialog-action-area .button {
+      padding: 12px;
+      border-radius: 0;
+      @include button(normal, normal, normal);
+      @extend %middle_button;
+      &:hover {
+        @include button(normal, normal, hover);
+        @extend %middle_button;
+      }
+      &:active {
+        @include button(normal, normal, active);
+        @extend %middle_button;
+      }
+      &:insensitive {
+        @include button(normal, disabled, normal);
+        @extend %middle_button;
+      }
+      &:backdrop {
+        @include button(normal, normal, normal);
+        @extend %middle_button;
+      }
+      &:backdrop:insensitive {
+        @include button(normal, disabled, normal);
+        @extend %middle_button;
+      }
+      @each $b_type, $b_action in (suggested-action, info),
+                                 (destructive-action, danger) {
+        &.#{$b_type} {
+          @include button($b_action, normal, normal);
+          @extend %middle_button;
+          &:hover {
+            @include button($b_action, normal, hover);
+            @extend %middle_button;
+          }
+          &:active {
+            @include button($b_action, normal, active);
+            @extend %middle_button;
+          }
+          &:backdrop {
+            @include button($b_action, normal, normal);
+            @extend %middle_button;
+            &:insensitive {
+              @include button($b_action, disabled, normal);
+              @extend %middle_button;
+            }
+          }
+          &:insensitive {
+            @include button($b_action, disabled, normal);
+            @extend %middle_button;
+          }
+        }
+      }
+      &:first-child{ @extend %first_button; }
+      &:last-child { @extend %last_button; }
+    }
+    %middle_button {
+      border-right-style: none;
+      border-bottom-style: none;
+    }
+    %last_button { border-bottom-right-radius: 7px; }
+    %first_button {
+      border-left-style: none;
+      border-bottom-left-radius: 7px;
+    }
+  }
+}
+
+GtkFileChooserDialog {
+  .search-bar {
+    background-color: $base_color;
+    border-color: $bg_color;
+    box-shadow: none;
+    &:backdrop {
+      background-color: $backdrop_base_color;
+      border-color: $backdrop_bg_color;
+    }
+  }
+  .dialog-action-box {
+    border-top: 1px solid $borders_color;
+    &:backdrop { border-top-color: $backdrop_borders_color; }
+  }
+}

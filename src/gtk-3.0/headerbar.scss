@@ -1,0 +1,72 @@
+//
+// header-bar-separator
+//
+
+.titlebar,
+.header-bar {
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: $borders_color;
+    border-radius: 0;
+
+    background-color: transparent;
+    box-shadow: inset 0 -1px mix($borders_color, $bg_color, 30%), // bottom shade
+    inset 0 1px $borders_edge; // top highlight
+    padding: 6px;
+
+    &:backdrop {
+        border-color: $backdrop_borders_color;
+        background-color: $bg_color;
+        background-image: none;
+        box-shadow: none;
+    }
+
+    .title {
+        font: Bold;
+        padding: 0px 12px;
+    }
+    .subtitle {
+        font-size: 80%;
+        padding: 0 12px;
+    }
+    .header-bar-separator,
+    & > GtkBox > .separator.vertical {
+        -GtkWidget-wide-separators: true;
+        -GtkWidget-separator-width: 1px;
+        border-width: 0 1px;
+        border-color: $fg_color;
+        border-style: solid;
+    }
+    &.selection-mode {
+        color: darken($selected_bg_color, 15%);
+        box-shadow: inset 0 -1px mix($borders_color,$bg_color, 30%), //bottom shade
+        inset 0 1px mix($borders_edge,$selected_bg_color, 50%); //top highlight
+        .button {
+            @include button(normal, normal, active);
+            &:hover { @include button(normal, normal, hover); }
+            &:active { @include button(normal, normal, active); }
+            &:insensitive { @include button(normal, disabled, normal); }
+            &:backdrop {
+                @include button(normal, normal, normal);
+                border-color: darken($selected_bg_color, 15%);
+            }
+            &:backdrop:insensitive { @include button(normal, disabled, normal); }
+            &.suggested-action {
+                @include button(info, normal, normal);
+                &:hover { @include button(info, normal, hover); }
+                &:active { @include button(info, normal, active); }
+                &:insensitive { @include button(info, disabled, normal); }
+                &:backdrop { @include button(info, normal, normal); }
+                &:backdrop:insensitive { @include button(info, disabled, normal); }
+            }
+        }
+        .selection-menu {
+            border-width: 0;
+            background-image: none;
+            box-shadow: none;
+        }
+    }
+    .tiled &, .maximized & {
+        border-radius: 0; // squared corners when the window is max'd or tiled
+    }
+}
