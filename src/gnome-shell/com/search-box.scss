@@ -2,10 +2,15 @@
 // SEARCH BOX
 //
 
-#searchEntry {
-    width: 30em;
+.search-entry {
+    width: 320px;
     font-size: 1em;
+    color: $front_color;
     border: 1px solid border_color($front_color);
+    border-radius: 0;
+    background-gradient-direction: vertical;
+    background-gradient-start: $back_color;
+    background-gradient-end: $back_color;
 }
 
 .search-entry-icon {
@@ -15,5 +20,9 @@
 
 #searchEntry:hover .search-entry-icon,
 #searchEntry:focus .search-entry-icon {
-    color: $front_color;
+    color: focus_fg_color($front_color);
+    border: 1px solid focus_border_color($front_color);
+    background-gradient-direction: vertical;
+    background-gradient-start: focus_bg_color($front_color);
+    background-gradient-end: focus_bg_color($front_color);
 }

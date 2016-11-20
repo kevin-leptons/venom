@@ -10,6 +10,9 @@
 .modal-dialog-button,
 .app-view-control {
     border: 1px solid border_color($front_color);
+    background-gradient-direction: vertical;
+    background-gradient-start: $back_color;
+    background-gradient-end: $back_color;
 }
 
 .modal-dialog-button {
@@ -23,7 +26,8 @@
 .hotplug-resident-eject-button:hover,
 .modal-dialog-button:hover {
     color: hover_fg_color($front_color);
-    background: hover_bg_color($front_color);
+    background-gradient-start: hover_bg_color($front_color);
+    background-gradient-end: hover_bg_color($front_color);
     border-color: hover_border_color($front_color);
 }
 
@@ -33,7 +37,8 @@
 .modal-dialog-button:focus,
 .app-view-control:focus {
     color: focus_fg_color($front_color);
-    background: focus_bg_color($front_color);
+    background-gradient-start: focus_bg_color($front_color);
+    background-gradient-end: focus_bg_color($front_color);
     border-color: focus_border_color($front_color);
 }
 
@@ -56,7 +61,8 @@
 .modal-dialog-button:pressed,
 .app-view-control:checked {
     color: active_fg_color($front_color);
-    background: active_bg_color($front_color);
+    background-gradient-start: active_bg_color($front_color);
+    background-gradient-end: active_bg_color($front_color);
     border-color: active_border_color($front_color);
 }
 

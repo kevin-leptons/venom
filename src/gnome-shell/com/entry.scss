@@ -18,7 +18,9 @@
 .run-dialog-entry,
 .notification StEntry {
     border-color: 1px solid border_color($front_color);
-    background-color: $back_color;
+    background-gradient-direction: vertical;
+    background-gradient-start: $back_color;
+    background-gradient-end: $back_color;
     transition-duration: 200ms;
 }
 
@@ -27,12 +29,17 @@
 .notification StEntry:focus,
 .modal-dialog StEntry {
     border: 1px solid focus_border_color($front_color);
-    background-color: focus_bg_color($front_color);
+    background-gradient-direction: vertical;
+    background-gradient-start: focus_bg_color($front_color);
+    background-gradient-end: focus_bg_color($front_color);
 }
 
 .notification StEntry:focus,
 .modal-dialog StEntry:focus {
-    border: 1px solid focus_border_color($front_color)
+    border: 1px solid focus_border_color($front_color);
+    background-gradient-direction: vertical;
+    background-gradient-start: focus_bg_color($front_color);
+    background-gradient-end: focus_bg_color($front_color);
 }
 
 #searchEntry {

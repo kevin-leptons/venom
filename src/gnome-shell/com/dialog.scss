@@ -49,11 +49,15 @@
 .run-dialog-error-box {
     padding-top: 15px;
     spacing: 5px;
+    color: $danger_color;
 }
 
 .modal-dialog .run-dialog-entry {
     width: 20em;
-    background-color: $back_color;
+    color: hover_fg_color($front_color);
+    background-gradient-direction: vertical;
+    background-gradient-start: hover_bg_color($front_color);
+    background-gradient-end: hover_bg_color($front_color);
 }
 
 .lightbox {

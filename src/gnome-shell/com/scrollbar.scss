@@ -6,7 +6,10 @@ StScrollBar {
     padding: 0px;
 }
 
-StScrollView.vfade,
+StScrollView.vfade {
+    -st-vfade-offset: 68px;
+}
+
 StScrollView.hfade {
     -st-hfade-offset: 68px;
 }
@@ -14,7 +17,6 @@ StScrollView.hfade {
 StScrollView StScrollBar {
     min-width: 14px;
     min-height: 14px;
-    background: red;
 }
 
 StScrollBar StBin#trough {
