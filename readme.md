@@ -56,6 +56,8 @@ cd venom
 
 ## Build
 
+**Warning**: Convert icons required more time
+
 ```bash
 # Build all of themes
 ./ctl build
