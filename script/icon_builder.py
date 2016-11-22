@@ -8,15 +8,32 @@ import struct
 from .logger import stdlog, stat_done
 
 
-def hex_to_rgba(hex_str, alpha):
+def str_to_rgba(color_str, alpha):
     '''
-    :param str hex_str: Color hex string in format '#RRGGBB'
+    :param str hex_str: Color hex string in format RGB or name of color
+        red, green, blue, black, white
     :param int alpla: Alpha value in range [0, 255]
     :return: Tuple follow format (R, G, B, A)
+    :raise TypeError: On color string can not formatted
     :rtype: tuple
     '''
-    rgb = struct.unpack('BBB', hex_str[1:].decode('hex'))
-    return rgb + (alpha,)
+
+    if color_str[0] == '#':
+        rgb = struct.unpack('BBB', color_str[1:].decode('hex'))
+        return rgb + (alpha,)
+
+    if color_str == 'red':
+        return (255, 0, 0, alpha)
+    elif color_str == 'green':
+        return (0, 255, 0, alpha)
+    elif color_str == 'blue':
+        return (0, 0, 255, alpha)
+    elif color_str == 'black':
+        return (0, 0, 0, alpha)
+    elif color_str == 'white':
+        return (255, 255, 255, alpha)
+    else:
+        raise TypeError('Color \'{}\' is not supported'.format(color_str))
 
 
 def make_imgmono(src, dest, color):
@@ -41,7 +58,7 @@ def make_imgmono(src, dest, color):
     cv2.imwrite(dest, dest_img)
 
 def compile_icon(src, dest, config):
-    color = hex_to_rgba(config.front_color, 255)
+    color = str_to_rgba(config.front_color, 255)
 
     for root, dirs, files in os.walk(src):
         path = root[len(src):]
