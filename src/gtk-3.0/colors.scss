@@ -1,7 +1,9 @@
 // When color definition differs for dark and light variant,
 // it gets @if ed depending on $variant
 
-
+$info_color: $front_color;
+$warning_color: $danger_color;
+$error_color: $danger_color;
 
 $base_color: $back_color;
 $bg_color: $back_color;
@@ -15,10 +17,6 @@ $borders_color: mix($bg_color,$fg_color,50%);
 $borders_edge: $front_color;
 $link_color: $selected_bg_color;
 
-$info_color: $front_color;
-$warning_color: orange;
-$error_color: red;
-$danger_color: red;
 
 // FIXME: must remove then
 $success_color: $front_color;

@@ -1,4 +1,6 @@
 dest/
-*.swp
+tmp/
+venv/
 .sass-cache
 Gemfile.lock
+*.swp

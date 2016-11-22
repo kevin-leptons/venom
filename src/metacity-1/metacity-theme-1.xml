@@ -54,137 +54,137 @@
     <draw_ops name="blank"></draw_ops>
 
     <draw_ops name="title">
-        <image filename="titlebar-focused-left.png" x="0" y="0" width="object_width" height="height"/>
-        <image filename="titlebar-focused-middle.png" x="9" y="0" width="width - 9" height="height"/>
-        <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+        <image filename="asset/titlebar-focused-left.png" x="0" y="0" width="object_width" height="height"/>
+        <image filename="asset/titlebar-focused-middle.png" x="9" y="0" width="width - 9" height="height"/>
+        <image filename="asset/titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
     </draw_ops>
 
     <draw_ops name="title-shaded">
-        <image filename="titlebar-focused-left.png" x="0" y="0" width="object_width" height="height"/>
-        <image filename="titlebar-focused-middle.png" x="18" y="0" width="width - 36" height="height"/>
-        <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+        <image filename="asset/titlebar-focused-left.png" x="0" y="0" width="object_width" height="height"/>
+        <image filename="asset/titlebar-focused-middle.png" x="18" y="0" width="width - 36" height="height"/>
+        <image filename="asset/titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
     </draw_ops>
 
     <draw_ops name="title-unfocused">
-        <image filename="titlebar-unfocused-left.png" x="0" y="0" width="object_width" height="height"/>
-        <image filename="titlebar-unfocused-middle.png" x="9" y="0" width="width - 9" height="height"/>
-        <image filename="titlebar-unfocused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+        <image filename="asset/titlebar-unfocused-left.png" x="0" y="0" width="object_width" height="height"/>
+        <image filename="asset/titlebar-unfocused-middle.png" x="9" y="0" width="width - 9" height="height"/>
+        <image filename="asset/titlebar-unfocused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
     </draw_ops>
 
     <draw_ops name="title-max">
-        <image filename="titlebar-focused-middle.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/titlebar-focused-middle.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="title-max-unfocused">
-        <image filename="titlebar-unfocused-middle.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/titlebar-unfocused-middle.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="frame-left-focused">
-        <image filename="border-focused-left.png" x="0" y="0" width="8" height="height"/>
+        <image filename="asset/border-focused-left.png" x="0" y="0" width="8" height="height"/>
     </draw_ops>
 
     <draw_ops name="frame-left-unfocused">
-        <image filename="border-unfocused-left.png" x="0" y="0" width="8" height="height"/>
+        <image filename="asset/border-unfocused-left.png" x="0" y="0" width="8" height="height"/>
     </draw_ops>
 
     <draw_ops name="frame-right-focused">
-        <image filename="border-focused-right.png" x="0" y="0" width="8" height="height"/>
+        <image filename="asset/border-focused-right.png" x="0" y="0" width="8" height="height"/>
     </draw_ops>
 
     <draw_ops name="frame-right-unfocused">
-        <image filename="border-unfocused-right.png" x="0" y="0" width="8" height="height"/>
+        <image filename="asset/border-unfocused-right.png" x="0" y="0" width="8" height="height"/>
     </draw_ops>
 
     <draw_ops name="frame-bottom-focused">
-        <image filename="border-focused-bottom.png" x="0" y="0" width="width" height="8"/>
+        <image filename="asset/border-focused-bottom.png" x="0" y="0" width="width" height="8"/>
     </draw_ops>
 
     <draw_ops name="frame-bottom-unfocused">
-        <image filename="border-unfocused-bottom.png" x="0" y="0" width="width" height="8"/>
+        <image filename="asset/border-unfocused-bottom.png" x="0" y="0" width="width" height="8"/>
     </draw_ops>
 
     <draw_ops name="button-close-focused">
-        <image filename="close-focused-active.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/close-focused-active.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-close-unfocused">
-        <image filename="close-focused-normal.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/close-focused-normal.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-close-blurred">
-        <image filename="close-unfocused-normal.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/close-unfocused-normal.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-close-pressed">
-        <image filename="close-focused-pressed.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/close-focused-pressed.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-maximize-focused">
-        <image filename="maximize-focused-active.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/maximize-focused-active.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-maximize-unfocused">
-        <image filename="maximize-focused-normal.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/maximize-focused-normal.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-maximize-blurred">
-        <image filename="maximize-unfocused-normal.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/maximize-unfocused-normal.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-maximize-pressed">
-        <image filename="maximize-focused-pressed.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/maximize-focused-pressed.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-restore-focused">
-        <image filename="restore-focused-active.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/restore-focused-active.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-restore-unfocused">
-        <image filename="restore-focused-normal.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/restore-focused-normal.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-restore-blurred">
-        <image filename="restore-unfocused-normal.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/restore-unfocused-normal.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-restore-pressed">
-        <image filename="restore-focused-pressed.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/restore-focused-pressed.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-minimize-focused">
-        <image filename="minimize-focused-active.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/minimize-focused-active.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-minimize-unfocused">
-        <image filename="minimize-focused-normal.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/minimize-focused-normal.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-minimize-blurred">
-        <image filename="minimize-unfocused-normal.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/minimize-unfocused-normal.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="button-minimize-pressed">
-        <image filename="minimize-focused-pressed.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/minimize-focused-pressed.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="menu_button_icon">
-        <image filename="menu.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/menu.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="menu_button_icon_unfocused">
-        <image filename="menu.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/menu.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="menu_button_normal">
-        <image filename="menu.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/menu.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="menu_button_pressed">
-        <image filename="menu-pressed.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/menu-pressed.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <draw_ops name="menu_button_unfocused">
-        <image filename="menu.png" x="0" y="0" width="width" height="height"/>
+        <image filename="asset/menu.png" x="0" y="0" width="width" height="height"/>
     </draw_ops>
 
     <frame_style name="normal-focused" geometry="normal">

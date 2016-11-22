@@ -69,12 +69,12 @@
 .ripple-box {
     width: 52px;
     height: 52px;
-    background-image: url("corner-ripple-ltr.png");
+    background-image: url("asset/corner-ripple-ltr.png");
     background-size: contain;
 }
 
 .ripple-box:rtl {
-    background-image: url("corner-ripple-rtl.png");
+    background-image: url("asset/corner-ripple-rtl.png");
 }
 
 .switcher-arrow {

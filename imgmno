@@ -1,0 +1,75 @@
+#!/bin/bash
+
+# DESCRIPTIONS
+#
+# Convert all of images in source directory to mono color.
+# Save result with same file name to dest directory
+#
+# USAGE
+#
+# $ imgmono color source dest
+#
+# color: code of color in quote, examples: "#55af66"
+# source: path to directory contains image sources
+# dest: path to directory to store result, if it is not exist, auto created
+#
+# EXAMPLES
+#
+# $ imgmono "#55af66" icons mono-icons
+
+set -e
+
+ROOT_COLOR="$1"
+ROOT_SRC=${2%/}
+ROOT_DEST=${3%/}
+
+if [ $# -ne 3 ]; then
+    echo "USE: imgmono color source dest"
+    exit 1
+fi
+
+imgmono_dir() {
+    if [ $# -ne 3 ]; then
+        echo "USE: convert_dir color source dest"
+    fi
+    local COLOR="$1"
+    local SRC=${2%/}
+    local DEST=${3%/}
+
+    echo "found: $COLOR $SRC $DEST"
+
+    mkdir -vp $DEST
+
+    local FILE
+    for FILE in $SRC/*; do
+        local FILE_NAME=$(basename $FILE)
+
+        # recursive directory
+        if [ -d "$FILE" ]; then
+            imgmono_dir $COLOR $FILE "$DEST/$FILE_NAME"
+            continue
+        fi
+
+        # only convert regular file
+        if ! [ -f "$FILE" ]; then
+            continue
+        fi
+
+        # do not convert existing file
+        local IMG_MONO="$DEST/$FILE_NAME"
+        if [ -f "$IMG_MONO" ]; then
+            continue
+        fi
+
+        # convert to mono color
+        convert "$FILE" -fuzz 50% \
+            -monochrome \
+            -fill "$COLOR" -opaque "#000000" \
+            -transparent "#ffffff" \
+            "$IMG_MONO"
+        echo "converted: $IMG_MONO"
+    done
+}
+
+imgmono_dir $ROOT_COLOR $ROOT_SRC $ROOT_DEST
+echo "done"

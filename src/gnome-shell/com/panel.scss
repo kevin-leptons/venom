@@ -93,7 +93,7 @@
 #panel.lock-screen .panel-button:focus,
 #panel.login-screen .panel-button:focus {
     color: hover_fg_color($front_color);
-    background-color: hover_bg_color($front_color)
+    background-color: hover_bg_color($front_color);
 }
 
 .panel-button:hover {
@@ -104,14 +104,18 @@
 .panel-button:overview,
 .panel-button:focus {
     color: active_fg_color($front_color);
-    background-color: active_bg_color($front_color);
+    background-gradient-direction: vertical;
+    background-gradient-start: active_bg_color($front_color);
+    background-gradient-end: active_bg_color($front_color);
 }
 
 .panel-status-button:active,
 .panel-status-button:checked,
 .panel-status-button:focus {
     color: active_fg_color($front_color);
-    background: active_bg_color($front_color);
+    background-gradient-direction: vertical;
+    background-gradient-start: active_bg_color($front_color);
+    background-gradient-end: active_bg_color($front_color);
 }
 
 .panel-button:active > .system-status-icon,

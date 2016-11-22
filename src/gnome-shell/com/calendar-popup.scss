@@ -34,37 +34,37 @@
 .calendar-change-month-back {
     width: 18px;
     height: 12px;
-    background-image: url("calendar-arrow-left.svg");
+    background-image: url("asset/calendar-arrow-left.svg");
     border-radius: 0px;
 }
 
 .calendar-change-month-back:rtl {
-    background-image: url("calendar-arrow-left.svg");
+    background-image: url("asset/calendar-arrow-left.svg");
 }
 
 .calendar-change-month-back:hover {
-    background-image: url("calendar-arrow-left-hover.svg");
+    background-image: url("asset/calendar-arrow-left-hover.svg");
 }
 .calendar-change-month-back:active {
-    background-image: url("calendar-arrow-left-active.svg");
+    background-image: url("asset/calendar-arrow-left-active.svg");
 }
 
 .calendar-change-month-forward {
     width: 18px;
     height: 12px;
-    background-image: url("calendar-arrow-right.svg");
+    background-image: url("asset/calendar-arrow-right.svg");
     border-radius: 0px;
 }
 
 .calendar-change-month-forward:rtl {
-    background-image: url("calendar-arrow-left.svg");
+    background-image: url("asset/calendar-arrow-left.svg");
 }
 
 .calendar-change-month-forward:hover {
-    background-image: url("calendar-arrow-right-hover.svg");
+    background-image: url("asset/calendar-arrow-right-hover.svg");
 }
 .calendar-change-month-forward:active {
-    background-image: url("calendar-arrow-right-active.svg");
+    background-image: url("asset/calendar-arrow-right-active.svg");
 }
 
 .datemenu-date-label {

@@ -24,7 +24,7 @@
 .ws-switcher-active-up {
     height: 100px;
     border: 0px;
-    background-image: url("ws-switch-arrow-up.png");
+    background-image: url("asset/ws-switch-arrow-up.png");
     background: red;
     border-radius: 0px;
 }
@@ -33,7 +33,7 @@
     height: 100px;
     border: 0px;
     background: active_bg_color($front_color);
-    background-image: url("ws-switch-arrow-down.png");
+    background-image: url("asset/ws-switch-arrow-down.png");
     border-radius: 0px;
 }
 

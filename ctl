@@ -50,44 +50,42 @@ HELP="USAGE:\n
 
 repo_build()
 {
-    # build GOB theme
-    mkdir -vp $DEST_GOB_GTK3
-    cp $SRC/gob-index.theme $DEST_GOB/index.theme
-    bundle exec sass $SRC_GOB_GTK3/gtk-gob.scss $DEST_GOB_GTK3/gtk.css
-    mkdir -vp $DEST_GOB_GTK2
-    mkdir -vp $DEST_GOB_GNOME
-    bundle exec sass $SRC_GNOME/gnome-gob.scss $DEST_GOB_GNOME/gnome-shell.css
-    cp -r $SRC_GNOME/asset/* $DEST_GOB_GNOME/
-    #rsync -r $SRC_METACITY/* $DEST_GOB_METACITY --exclude=*.swp
-    echo "build GOB"
+    ./builder.py build --name venom-green \
+        --front-color "#55af66" --back-color black --danger-color orange
+    ./builder.py build --name venom-orange \
+        --front-color "#ff8c00" --back-color black --danger-color orange
+    ./builder.py build --name venom-teal \
+        --front-color "#008080" --back-color black --danger-color orange
+}
 
-    # build BOW theme
-    #mkdir -vp $DEST_BOW_GTK3
-    #cp $SRC/bow-index.theme $DEST_BOW/index.theme
-    #bundle exec sass $SRC_BOW_GTK3/gtk-bow.scss $DEST_BOW_GTK3/gtk.css
-    #mkdir -vp $DEST_BOW_GTK2
-    #rsync -r $SRC_GNOME/* $DEST_BOW_GNOME --exclude=*.swp
-    #rsync -r $SRC_METACITY/* $DEST_BOW_METACITY --exclude=*.swp
-    #echo "build BOW"
+install_theme()
+{
+    local NAME="$1"
+
+    sudo mkdir -vp "/usr/share/themes/$NAME"
+    sudo cp -r dest/$NAME/* "/usr/share/themes/$NAME"
+
+    sudo mkdir -vp "/usr/share/icons/$NAME"
+    sudo cp -r dest/$NAME/icons/* "/usr/share/icons/$NAME"
+}
+
+active_theme()
+{
+    local NAME="$1"
+
+    gsettings set org.gnome.desktop.interface gtk-theme "$NAME"
+    gsettings set org.gnome.shell.extensions.user-theme name "$NAME"
+    gsettings set org.gnome.desktop.interface icon-theme "$NAME"
+    gsettings set org.gnome.desktop.wm.preferences theme "$NAME"
+
+    gsettings set org.gnome.desktop.background primary-color "#000000"
 }
 
 repo_install()
 {
-    repo_build
-
-    # install GOB theme
-    sudo mkdir -vp $TARGET_GOB
-    sudo cp -r $DEST_GOB/* $TARGET_GOB
-    echo "installed $TARGET_GOB"
-
-    # install BOW theme
-    #sudo mkdir -vp $TARGET_BOW
-    #sudo cp -r $DEST_BOW/* $TARGET_BOW
-    #echo "installed $TARGET_BOW"
-
-    # gnome-tweak-tool
-    gsettings set org.gnome.shell.extensions.user-theme name "venom-gob"
-    #gtk3-widget-factory
+    install_theme "venom-green"
+    install_theme "venom-orange"
+    install_theme "venom-teal"
 }
 
 repo_clean()
@@ -116,6 +114,7 @@ case "$1" in
     install) repo_install; exit 0;;
     clean) repo_clean; exit 0;;
     remove) repo_remove; exit 0;;
+    active) active_theme "$2"; exit 0;;
     -h) show_help; exit 0;;
     *) show_help; exit 1;;
 esac
