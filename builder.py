@@ -27,7 +27,6 @@
 #                 --front-color "#55af66" --back-color "#000000" \
 #                 --danger-color orange
 
-import sass
 import click
 
 from script import ThemeConfig, compile_theme
