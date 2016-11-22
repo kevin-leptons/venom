@@ -33,7 +33,7 @@ class InitCommand(Command):
         if not path.isdir(tmp_dir):
             makedirs(tmp_dir)
         urlretrieve(url, install_file)
-        if Popen([sys.executable, install_file]).wait() != 0:
+        if Popen(['sudo', sys.executable, install_file]).wait() != 0:
             sys.exit(1)
 
         # install virtualenv package
