@@ -5,4 +5,4 @@ sudo: required
 install:
 - python setup.py dev
 script:
-- python ctl build
+- python ctl build venom-green
