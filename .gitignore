@@ -3,5 +3,7 @@ tmp/
 venv/
 .sass-cache
 Gemfile.lock
+*.egg-info/
 *.swp
 *.pyc
+*.pyo

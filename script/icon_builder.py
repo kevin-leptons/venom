@@ -5,6 +5,8 @@ import cv2
 import numpy
 import struct
 
+from .logger import stdlog, stat_done
+
 
 def hex_to_rgba(hex_str, alpha):
     '''
@@ -57,12 +59,12 @@ def compile_icon(src, dest, config):
                 if not os.path.islink(dest_img):
                     os.symlink(os.readlink(src_img), dest_img)
                 else:
-                    print 'skiped: {}'.format(dest_img)
+                    stdlog(stat_done, 'skiped', file)
                 continue
 
             # file is exist, skip
             if os.path.isfile(dest_img):
-                print 'skiped: {}'.format(dest_img)
+                stdlog(stat_done, 'skiped', file)
                 continue
 
             # file is not image, copy it
@@ -73,4 +75,4 @@ def compile_icon(src, dest, config):
             # convert image to mono image
             make_imgmono(src_img, dest_img, color)
 
-            print 'compiled: {}'.format(dest_img)
+            stdlog(stat_done, 'converted', file)

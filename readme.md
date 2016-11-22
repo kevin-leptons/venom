@@ -1,7 +1,7 @@
 # venom
 
 This is very simple themes for gtk-3. It base on two main color. And all of
-icons sync by main color. Package provide three theme color for review. Target platform is **GNOME 3.14**
+icons sync by main color. Package provide three theme color for review. Target platform is `GNOME 3.14`
 
 ## Green on Black
 
@@ -15,42 +15,85 @@ icons sync by main color. Package provide three theme color for review. Target p
 
 ![venom-green](asset/venom-orange.png)
 
-# Contribute
+# Usage
+
+- It will be coming soon with Debian package
+- Now, people can try to use by follow contribution instructions
+
+# Contribution
+
+## Enter virtual environment
 
 ```bash
-# Ensure that installed dependency packages
-sudo apt-get install python python-pip
+# Ensure that git is installed
+# Ensure that python v2.7 is installed and set to default
 
 # Clone repository
 git clone https://github.com/kevin-leptons/venom.git
 cd venom
 
 # Create python virtual environments
+./setup.py init
+
 # Active python virtual environments
-# Install develop packages
-virtualenv venv
 . venv/bin/active
-pip install -r requirements.txt
 
-# Build
-./ctl build
-
-# Install, it will ask for privilege
-./ctl install
-
-# Active green theme
-./ctl active venom-green
-
-# Or active green theme
-./ctl active venom-teal
-
-# Or active green theme
-./ctl active venom-orang
+# Install development packages
+./setup.py dev
 ```
 
-# Usage
+## Retrieve themes
 
 ```bash
-# Coming soon
-# Wait for pack into deb format
+# List name of all of themes
+./ctl list
+
+# Or query properties of theme
+./ctl list <theme-name>
+```
+
+## Build
+
+```bash
+# Build all of themes
+./ctl build
+
+# Or build specific themes
+./ctl build <theme-name-1> <theme-name-2> ...
+```
+
+## Apply/Remove theme
+
+```bash
+# Operation below required privilege permission
+
+# Try build/install/active theme on system
+./ctl apply <theme-name>
+
+# Remove one theme from system
+./ctl remove <theme-name>
+
+# Or remove multi themes from system
+./ctl remove <theme-name-1> <theme-name-2> ...
+```
+
+## Define more themes
+
+Define more theme by add (key, value) to `themes` variable in file [setting.py](setting.py)
+
+```python
+themes = OrderedDict([
+    ...
+    ('venom-red', ThemeConfig('venom-red', '#0000ff', 'black', 'red'))
+])
+```
+
+## Clean build files
+
+```bash
+# Clean all of build files
+./ctl clean
+
+# Clean build files of specific theme
+./ctl clean <theme-name-1> <theme-name-2> ...
 ```

@@ -1,120 +1,129 @@
-#!/bin/bash
+#!/usr/bin/env python
 
-# SPEC      : controller of repository
-# AUTHOR    : kevin leptons <kevin.leptons@gmail.com>
+# DESCRIPTIONS
+#
+# Build GTK3 theme. Builder will mix color and build theme package.
+# It contains
+#   - GTK3 theme
+#   - GNOME shell theme
+#   - Icon theme
+#
+# USAGE
+#
+# $ builder build
+#
+# EXAMPLES
+#
+# $ builder build venom-green
 
-# bash options
-set -e
+import os
+import sys
+import shutil
+import click
 
-# variables
-ROOT=$(realpath .)
+from script.logger import stdlog, stat_done, stat_err
+from script import compile_theme, install_theme, active_theme, remove_theme
 
-SRC="$ROOT/src"
-DEST="$ROOT/dest"
-TARGET="/usr/share/themes"
-
-# share for both GOB and BOW theme
-SRC_GNOME="$SRC/gnome-shell"
-SRC_METACITY="$SRC/metacity-1"
-
-# green on black theme
-SRC_GOB_GTK3="$SRC/gtk-3.0"
-
-DEST_GOB="$DEST/venom-gob"
-DEST_GOB_GTK2="$DEST_GOB/gtk-2.0"
-DEST_GOB_GTK3="$DEST_GOB/gtk-3.0"
-DEST_GOB_GNOME="$DEST_GOB/gnome-shell"
-DEST_GOB_METACITY="$DEST_GOB/metacity-1"
-
-TARGET_GOB="$TARGET/venom-gob"
-
-# black on white theme
-SRC_BOW_GTK3="$SRC/gtk-3.0"
-
-DEST_BOW="$DEST/venom-bow"
-DEST_BOW_GTK2="$DEST_BOW/gtk-2.0"
-DEST_BOW_GTK3="$DEST_BOW/gtk-3.0"
-DEST_BOW_GNOME="$DEST_BOW/gnome-shell"
-DEST_BOW_METACITY="$DEST_BOW/metacity-1"
-
-TARGET_BOW="$TARGET/venom-bow"
+import setting
 
 
-# help menu
-HELP="USAGE:\n
-    $(basename $0) build        build repo
-    $(basename $0) install      install repo to system
-    $(basename $0) clean        clean build
-    $(basename $0) remove       remove repo from system
-    $(basename $0) -h           show help menu"
+@click.group()
+def cli():
+    pass
 
-repo_build()
-{
-    ./builder.py build --name venom-green \
-        --front-color "#55af66" --back-color black --danger-color orange
-    ./builder.py build --name venom-orange \
-        --front-color "#ff8c00" --back-color black --danger-color orange
-    ./builder.py build --name venom-teal \
-        --front-color "#008080" --back-color black --danger-color orange
-}
 
-install_theme()
-{
-    local NAME="$1"
+@cli.command(help='List themes')
+@click.argument('name', required=False)
+def list(name):
+    themes = setting.themes
 
-    sudo mkdir -vp "/usr/share/themes/$NAME"
-    sudo cp -r dest/$NAME/* "/usr/share/themes/$NAME"
+    if name is None:
+        # list name of themes
 
-    sudo mkdir -vp "/usr/share/icons/$NAME"
-    sudo cp -r dest/$NAME/icons/* "/usr/share/icons/$NAME"
-}
+        for name in themes:
+            print name
+    else:
+        # list properties of theme
 
-active_theme()
-{
-    local NAME="$1"
+        if name not in themes:
+            stdlog(stat_err, 'not found theme', name)
+            sys.exit(1)
 
-    gsettings set org.gnome.desktop.interface gtk-theme "$NAME"
-    gsettings set org.gnome.shell.extensions.user-theme name "$NAME"
-    gsettings set org.gnome.desktop.interface icon-theme "$NAME"
-    gsettings set org.gnome.desktop.wm.preferences theme "$NAME"
+        theme = themes[name]
+        print 'name: {}'.format(name)
+        print 'front_color: {}'.format(theme.front_color)
+        print 'back_color: {}'.format(theme.back_color)
+        print 'danger_color: {}'.format(theme.danger_color)
 
-    gsettings set org.gnome.desktop.background primary-color "#000000"
-}
+@cli.command(help='Build theme packages')
+@click.argument('names', nargs=-1)
+def build(names):
+    themes = setting.themes
+    src = setting.src
+    dest = setting.dest
 
-repo_install()
-{
-    install_theme "venom-green"
-    install_theme "venom-orange"
-    install_theme "venom-teal"
-}
+    if len(names) == 0:
+        # build all of themes
+        for name in themes:
+            dest_theme = '{}/{}'.format(dest, themes[name].name)
+            compile_theme(src, dest_theme, themes[name])
+        for name in themes:
+            stdlog(stat_done, 'compiled', name)
+    else:
+        # build only theme was specify
+        for name in names:
+            if name not in themes:
+                stdlog(stat_err, 'not found theme', name)
+                sys.exit(1)
 
-repo_clean()
-{
-    rm -rf $DEST
-    echo "removed $DEST"
-}
+            dest_theme = '{}/{}'.format(dest, name)
+            compile_theme(src, dest_theme, themes[name])
 
-repo_remove()
-{
-    sudo rm -rf $TARGET_GOB
-    echo "removed $TARGET_GOB"
+        for name in names:
+            stdlog(stat_done, 'compiled', name)
 
-    sudo rm -rf $TARGET_BOW
-    echo "removed $TARGET_BOW"
-}
+@cli.command(help='Clean building files')
+@click.argument('names', nargs=-1)
+def clean(names):
+    if len(names) == 0:
+        # clean build files of all of themes
+        shutil.rmtree(setting.dest)
+        stdlog(stat_done, 'clean dest', setting.dest)
 
-show_help()
-{
-    printf "$HELP"
-}
+    else:
+        # clean build files of specific themes
+        for name in names:
+            dest_theme = '{}/{}'.format(setting.dest, name)
+            if os.path.isdir(dest_theme):
+                shutil.rmtree(dest_theme)
 
-# parse arguments
-case "$1" in
-    build) repo_build; exit 0;;
-    install) repo_install; exit 0;;
-    clean) repo_clean; exit 0;;
-    remove) repo_remove; exit 0;;
-    active) active_theme "$2"; exit 0;;
-    -h) show_help; exit 0;;
-    *) show_help; exit 1;;
-esac
+        for name in names:
+            stdlog(stat_done, 'clean dest', name)
+
+
+@cli.command(help='Build, install to system and active it')
+@click.argument('name')
+def apply(name):
+    if name not in setting.themes:
+        stdlog(stat_err, 'not found theme', name)
+        sys.exit(1)
+
+    dest_theme = '{}/{}'.format(setting.dest, name)
+    compile_theme(setting.src, dest_theme, setting.themes[name])
+    stdlog(stat_done, 'compiled', name)
+
+    if install_theme(name) != 0:
+        stdlog(stat_err, 'install is not done', name)
+    active_theme(name)
+
+    stdlog(stat_done, 'applied', name)
+
+
+@cli.command(help='Remove theme from system')
+@click.argument('names', nargs=-1, required=True)
+def remove(names):
+    for name in names:
+        remove_theme(name)
+
+
+cli()
