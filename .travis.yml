@@ -5,4 +5,4 @@ sudo: required
 install:
 - python setup.py dev
 script:
-- python ctl.py build
+- python ctl build
