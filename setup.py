@@ -37,7 +37,7 @@ class InitCommand(Command):
             sys.exit(1)
 
         # install virtualenv package
-        cmd = ['pip', 'install', 'virtualenv']
+        cmd = ['sudo', 'pip', 'install', 'virtualenv']
         if platform.os.name == 'posix':
             cmd.insert(0, 'sudo')
         if Popen(cmd).wait() != 0:
