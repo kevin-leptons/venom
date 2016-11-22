@@ -1,7 +1,7 @@
 # venom
 
 This is very simple themes for gtk-3. It base on two main color. And all of
-icons sync by main color. Package provide three theme color for review
+icons sync by main color. Package provide three theme color for review. Target platform is **GNOME 3.14**
 
 ## Green on Black
 
