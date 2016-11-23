@@ -19,12 +19,12 @@ icons sync by main color. Package provide three theme color for review. Target p
 
 # Usage
 
-Download package [here](https://drive.google.com/open?id=0B6Eqm2oY7b1vVng5Mlh6a3hyX2M)
+Download package [here](https://drive.google.com/open?id=0B6Eqm2oY7b1vQVNsSmxmelAzWkE)
 then install
 
 ```bash
 # Install
-sudo dpkg -i venom_0.0.1-0_all.deb
+sudo dpkg -i venom_0.0.2-0_all.deb
 
 # Active green theme
 venom active venom-green
