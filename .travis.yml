@@ -3,7 +3,7 @@ python:
 - '2.7'
 sudo: required
 install:
-- python setup.py dev
+- ./dev install
 script:
 - python ctl build venom-green
 - python ctl dist
