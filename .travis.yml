@@ -6,3 +6,4 @@ install:
 - python setup.py dev
 script:
 - python ctl build venom-green
+- python ctl dist

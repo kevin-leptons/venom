@@ -5,29 +5,7 @@ from error import ThemeNotFoundError
 
 
 def set_theme(name):
-    # active GTK theme
-    Popen([
-        'gsettings', 'set', 'org.gnome.desktop.interface',
-        'gtk-theme', name]
-    ).wait()
 
-    # active GNOME theme
-    Popen([
-        'gsettings', 'set', 'org.gnome.shell.extensions.user-theme',
-        'name', name]
-    ).wait()
-
-    # active icons theme
-    Popen([
-        'gsettings', 'set', 'org.gnome.desktop.interface', 'icon-theme',
-        name]
-    ).wait()
-
-    # active window theme. it is also called metacity theme
-    Popen([
-        'gsettings', 'set', 'org.gnome.desktop.wm.preferences',
-        'theme', name]
-    ).wait()
 
 def active_theme(name):
     '''

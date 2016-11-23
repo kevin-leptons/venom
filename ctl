@@ -22,7 +22,8 @@ import shutil
 import click
 
 from script.logger import stdlog, stat_done, stat_err
-from script import compile_theme, install_theme, active_theme, remove_theme
+from script import compile_theme, install_theme, active_theme, remove_theme, \
+                   package_debian
 
 import setting
 
@@ -124,6 +125,11 @@ def apply(name):
 def remove(names):
     for name in names:
         remove_theme(name)
+
+
+@cli.command(help='Package venom themes into package')
+def dist():
+    package_debian()
 
 
 cli()

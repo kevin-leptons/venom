@@ -1,6 +1,7 @@
-dest/
-tmp/
 venv/
+tmp/
+dest/
+dist/
 .sass-cache
 Gemfile.lock
 *.egg-info/

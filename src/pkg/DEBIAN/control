@@ -1,0 +1,8 @@
+Package: venom
+Version: {version}
+Section: base
+Priority: optional
+Architecture: amd64
+Depends: python (>= 2.7)
+Maintainer: kevin leptons<kevin.leptons@gmail.com>
+Description: Simple GNOME theme pack
