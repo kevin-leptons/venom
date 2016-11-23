@@ -9,17 +9,17 @@
 .check-box StBin {
     width: 24px;
     height: 22px;
-    background-image: url("asset/checkbox-off.svg");
+    background-image: url("asset/checkbox-off.png");
 }
 
 .check-box:focus StBin {
-    background-image: url("asset/checkbox-off-focused.svg");
+    background-image: url("asset/checkbox-off-focused.png");
 }
 
 .check-box:checked StBin {
-    background-image: url("asset/checkbox.svg");
+    background-image: url("asset/checkbox.png");
 }
 
 .check-box:focus:checked StBin {
-    background-image: url("asset/checkbox-focused.svg");
+    background-image: url("asset/checkbox-focused.png");
 }

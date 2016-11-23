@@ -1,6 +1,7 @@
 import dirsync
 
 from .sass_builder import compile_sass
+from .icon_builder import compile_icon
 
 
 def compile_gnome(src, dest, config):
@@ -22,7 +23,7 @@ def compile_gnome(src, dest, config):
     }
     compile_sass(src_scss, dest_css, sass_vars)
 
-    # copy static files
-    src_static = '{}/asset'.format(src)
-    dest_static = '{}/asset'.format(dest)
-    dirsync.sync(src_static, dest_static, 'sync', create=True)
+    # convet icons
+    src_icons = '{}/asset'.format(src)
+    dest_icons = '{}/asset'.format(dest)
+    compile_icon(src_icons, dest_icons, config)

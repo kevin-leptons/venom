@@ -10,27 +10,31 @@
 
     <constant name="IconTitleSpacing" value="0"/>
 
-    <frame_geometry name="normal" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false" title_scale="medium">
-        <distance name="left_width" value="1"/>
-        <distance name="right_width" value="1"/>
-        <distance name="bottom_height" value="1"/>
+    <frame_geometry name="normal" rounded_top_left="false"
+        rounded_top_right="false" rounded_bottom_left="false"
+        rounded_bottom_right="false" title_scale="medium">
+        <distance name="left_width" value="2"/>
+        <distance name="right_width" value="2"/>
+        <distance name="bottom_height" value="2"/>
         <distance name="left_titlebar_edge" value="6"/>
         <distance name="right_titlebar_edge" value="6"/>
-        <distance name="button_width" value="20"/>
-        <distance name="button_height" value="18"/>
+        <distance name="button_width" value="32"/>
+        <distance name="button_height" value="32"/>
         <distance name="title_vertical_pad" value="0"/>
         <border name="title_border" left="1" right="1" top="5" bottom="1"/>
         <border name="button_border" left="5" right="0" top="5" bottom="5"/>
     </frame_geometry>
 
-    <frame_geometry name="maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false" title_scale="medium">
+    <frame_geometry name="maximized" rounded_top_left="false"
+        rounded_top_right="false" rounded_bottom_left="false"
+        rounded_bottom_right="false" title_scale="medium">
         <distance name="left_width" value="0"/>
         <distance name="right_width" value="0"/>
         <distance name="bottom_height" value="0"/>
         <distance name="left_titlebar_edge" value="6"/>
         <distance name="right_titlebar_edge" value="3"/>
-        <distance name="button_width" value="20"/>
-        <distance name="button_height" value="18"/>
+        <distance name="button_width" value="32"/>
+        <distance name="button_height" value="32"/>
         <distance name="title_vertical_pad" value="0"/>
         <border name="title_border" left="1" right="1" top="5" bottom="1"/>
         <border name="button_border" left="5" right="1" top="5" bottom="5"/>
@@ -44,63 +48,118 @@
     </frame_geometry>
 
     <draw_ops name="title-text-focused">
-        <title color="#4c4c4c" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing -48" y="(height - title_height) / 2"/>
+        <title color="{{active_color}}" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing -48" y="(height - title_height) / 2"/>
     </draw_ops>
 
     <draw_ops name="title-text-unfocused">
-        <title color="#cfcfcf" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing -48" y="(height - title_height) / 2"/>
+        <title color="{{front_color}}" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing -48" y="(height - title_height) / 2"/>
     </draw_ops>
 
     <draw_ops name="blank"></draw_ops>
 
     <draw_ops name="title">
-        <image filename="asset/titlebar-focused-left.png" x="0" y="0" width="object_width" height="height"/>
-        <image filename="asset/titlebar-focused-middle.png" x="9" y="0" width="width - 9" height="height"/>
-        <image filename="asset/titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+        <!-- left border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- top border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="width" height="2" filled="true"/>
+        <!-- right border -->
+        <rectangle color="{{front_color}}" x="width - 2" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- bottom border -->
+        <rectangle color="{{front_color}}" x="0" y="height - 2"
+            width="width" height="2" filled="true"/>
     </draw_ops>
 
     <draw_ops name="title-shaded">
-        <image filename="asset/titlebar-focused-left.png" x="0" y="0" width="object_width" height="height"/>
-        <image filename="asset/titlebar-focused-middle.png" x="18" y="0" width="width - 36" height="height"/>
-        <image filename="asset/titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+        <!-- left border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- top border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="width" height="2" filled="true"/>
+        <!-- right border -->
+        <rectangle color="{{front_color}}" x="width - 2" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- bottom border -->
+        <rectangle color="{{front_color}}" x="0" y="height - 2"
+            width="width" height="2" filled="true"/>
     </draw_ops>
 
     <draw_ops name="title-unfocused">
-        <image filename="asset/titlebar-unfocused-left.png" x="0" y="0" width="object_width" height="height"/>
-        <image filename="asset/titlebar-unfocused-middle.png" x="9" y="0" width="width - 9" height="height"/>
-        <image filename="asset/titlebar-unfocused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+        <!-- left border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- top border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="width" height="2" filled="true"/>
+        <!-- right border -->
+        <rectangle color="{{front_color}}" x="width - 2" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- bottom border -->
+        <rectangle color="{{front_color}}" x="0" y="height - 2"
+            width="width" height="2" filled="true"/>
     </draw_ops>
 
     <draw_ops name="title-max">
-        <image filename="asset/titlebar-focused-middle.png" x="0" y="0" width="width" height="height"/>
+        <!-- left border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- top border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="width" height="2" filled="true"/>
+        <!-- right border -->
+        <rectangle color="{{front_color}}" x="width - 2" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- bottom border -->
+        <rectangle color="{{front_color}}" x="0" y="height - 2"
+            width="width" height="2" filled="true"/>
     </draw_ops>
 
     <draw_ops name="title-max-unfocused">
-        <image filename="asset/titlebar-unfocused-middle.png" x="0" y="0" width="width" height="height"/>
+        <!-- left border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- top border -->
+        <rectangle color="{{front_color}}" x="0" y="0"
+            width="width" height="2" filled="true"/>
+        <!-- right border -->
+        <rectangle color="{{front_color}}" x="width - 2" y="0"
+            width="2" height="height" filled="true"/>
+        <!-- bottom border -->
+        <rectangle color="{{front_color}}" x="0" y="height - 2"
+            width="width" height="2" filled="true"/>
     </draw_ops>
 
     <draw_ops name="frame-left-focused">
-        <image filename="asset/border-focused-left.png" x="0" y="0" width="8" height="height"/>
+        <rectangle color="{{border_focus}}" x="0" y="0"
+            width="width" height="height" filled="true"/>
     </draw_ops>
 
     <draw_ops name="frame-left-unfocused">
-        <image filename="asset/border-unfocused-left.png" x="0" y="0" width="8" height="height"/>
+        <rectangle color="{{border}}" x="0" y="0"
+            width="width" height="height" filled="true"/>
     </draw_ops>
 
     <draw_ops name="frame-right-focused">
-        <image filename="asset/border-focused-right.png" x="0" y="0" width="8" height="height"/>
+        <rectangle color="{{border_focus}}" x="0" y="0"
+            width="width" height="height" filled="true"/>
     </draw_ops>
 
     <draw_ops name="frame-right-unfocused">
-        <image filename="asset/border-unfocused-right.png" x="0" y="0" width="8" height="height"/>
+        <rectangle color="{{border}}" x="0" y="0"
+            width="width" height="height" filled="true"/>
     </draw_ops>
 
     <draw_ops name="frame-bottom-focused">
-        <image filename="asset/border-focused-bottom.png" x="0" y="0" width="width" height="8"/>
+        <rectangle color="{{border_focus}}" x="0" y="0"
+            width="width" height="height" filled="true"/>
     </draw_ops>
 
     <draw_ops name="frame-bottom-unfocused">
-        <image filename="asset/border-unfocused-bottom.png" x="0" y="0" width="width" height="8"/>
+        <rectangle color="{{border}}" x="0" y="0"
+            width="width" height="height" filled="true"/>
     </draw_ops>
 
     <draw_ops name="button-close-focused">

@@ -3,6 +3,8 @@ import shutil
 import dirsync
 
 
+from .icon_builder import compile_icon
+
 def compile_metacity(src, dest, config):
     '''
     Compile Metatcity theme
@@ -16,12 +18,18 @@ def compile_metacity(src, dest, config):
     if not os.path.isdir(dest):
         os.makedirs(dest)
 
-    # copy metacity-theme file
+    # create metacity-theme file
     src_theme = '{}/metacity-theme-1.xml'.format(src)
     dest_theme = '{}/metacity-theme-1.xml'.format(dest)
-    shutil.copyfile(src_theme, dest_theme)
+    with open(src_theme, 'r') as src_f:
+        data = src_f.read().replace('{{front_color}}', config.front_color)
+        data = data.replace('{{active_color}}', config.front_color)
+        data = data.replace('{{border}}', config.front_color)
+        data = data.replace('{{border_focus}}', config.front_color)
+        with open(dest_theme, 'w') as dest_f:
+            dest_f.write(data)
 
-    # copy static files
-    src_static = '{}/asset'.format(src)
-    dest_static = '{}/asset'.format(dest)
-    dirsync.sync(src_static, dest_static, 'sync', create=True)
+    # convert icons
+    src_icons = '{}/asset'.format(src)
+    dest_icons = '{}/asset'.format(dest)
+    compile_icon(src_icons, dest_icons, config)
