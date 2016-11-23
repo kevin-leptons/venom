@@ -1,3 +1,10 @@
+#!/bin/bash
+
+# Use as tool to active GNOME theme
+#
+# AUTHOR: kevin leptons <kevin.leptons@gmail.com>
+#
+
 set -e
 
 VERSION="0.0.1"
@@ -9,6 +16,10 @@ HELP="USAGE:\n
     $(basename $0) -v               print version
     $(basename $0) -h               print help menu\n"
 
+# DESCRIPTIONS
+#
+# Set GTK theme, GNOME shell, Icon and Metatcity of system
+#
 # USAGE
 #
 # $ set_theme <name>
@@ -17,6 +28,7 @@ set_theme() {
     local NAME="$1"
     if [ -z "${NAME// }" ]; then
         echo "name argument is required"
+        return 1
     fi
 
     # active GTK theme
@@ -32,6 +44,20 @@ set_theme() {
     gsettings set org.gnome.desktop.wm.preferences theme "$NAME"
 }
 
+#
+# DESCRIPTIONS
+#
+# Apply theme use command line, contains
+#    - GTK theme
+#    - GNOME theme
+#    - Icons theme
+#
+# Priority: ~/.themes; ~/.local/share/themes; /usr/share/themes
+#
+# But it not ensure that theme is activated or not. Because command line
+# does not inform any things. Best behavior is search theme on variant
+# directory and raise error if no one is exist
+#
 # USAGE
 #
 # $ active_theme <name>
@@ -40,24 +66,28 @@ active_theme() {
     local NAME="$1"
     if [ -z "${NAME// }" ]; then
         echo "name argument is required"
+        return 1
     fi
 
     # find theme on ~/.themes/<name> directory
     local USR_THEME="$HOME/.theme/$NAME"
     if [ -d "$USR_THEME" ]; then
         set_theme "$NAME"
+        exit 0
     fi
 
     # find theme on ~/.local/share/themes/<name>
     local USR_LOCAL_THEME="$HOME/.local/share/themes/$NAME"
     if [ -d "$USR_LOCAL_THEME" ]; then
         set_theme "$NAME"
+        exit 0
     fi
 
     # find theme on /usr/share/themes/<name>
     local USR_SHARE_THEME="/usr/share/themes/$NAME"
     if [ -d "$USR_SHARE_THEME" ]; then
         set_theme "$NAME"
+        exit 0
     fi
 
     # not found theme in any where

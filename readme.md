@@ -19,8 +19,22 @@ icons sync by main color. Package provide three theme color for review. Target p
 
 # Usage
 
-- It will be coming soon with Debian package
-- Now, people can try to use by follow contribution instructions
+Download package [here](https://drive.google.com/file/d/0B6Eqm2oY7b1vNFFRRkNYcDRrRVU/view?usp=sharing)
+then install
+
+```bash
+# Install
+sudo dpkg -i venom_0.0.1-0_all.deb
+
+# Active green theme
+venom active venom-green
+
+# Or active teal theme
+venom active venom-teal
+
+# Or active orange theme
+venom active venom-orange
+```
 
 # Contribution
 
@@ -35,13 +49,17 @@ git clone https://github.com/kevin-leptons/venom.git
 cd venom
 
 # Create python virtual environments
-./setup.py init
+./dev init
 
 # Active python virtual environments
-. venv/bin/active
+source venv/bin/active
 
 # Install development packages
-./setup.py dev
+# Only require on first time or on update dependency package
+./dev install
+
+# Or exit virtual after do not work any more
+deactivate
 ```
 
 ## Retrieve themes
@@ -97,6 +115,13 @@ themes = OrderedDict([
     ...
     ('venom-red', ThemeConfig('venom-red', '#0000ff', 'black', 'red'))
 ])
+```
+
+## Packaging
+
+```bash
+# Packaging debian package
+./ctl dist
 ```
 
 ## Clean build files
