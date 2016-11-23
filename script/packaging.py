@@ -63,7 +63,8 @@ def package_debian():
         # copy theme files
         src_theme = os.path.join(src_themes, theme_name)
         target_theme = os.path.join(dist_themes, theme_name)
-        shutil.copytree(src_theme, target_theme, symlinks=True)
+        ignore = shutil.ignore_patterns('icons')
+        shutil.copytree(src_theme, target_theme, symlinks=True, ignore=ignore)
         stdlog(stat_done, 'theme copied', theme_name)
 
         # copy icon files
@@ -78,4 +79,4 @@ def package_debian():
         sys.exit(1)
 
     # done
-    stdlog(stat_done, 'debian packed', '{}/{}.deb'.format(dist_dir, pkg_name))
+    stdlog(stat_done, 'debian packed', pkg_name)
