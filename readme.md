@@ -19,7 +19,7 @@ icons sync by main color. Package provide three theme color for review. Target p
 
 # Usage
 
-Download package [here](https://drive.google.com/file/d/0B6Eqm2oY7b1vNFFRRkNYcDRrRVU/view?usp=sharing)
+Download package [here](https://drive.google.com/open?id=0B6Eqm2oY7b1vVng5Mlh6a3hyX2M)
 then install
 
 ```bash

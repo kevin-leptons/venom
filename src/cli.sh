@@ -38,7 +38,7 @@ set_theme() {
     gsettings set org.gnome.shell.extensions.user-theme name "$NAME"
 
     # active icons theme
-    gsettings set org.gnome.desktop.interface icon-theme name
+    gsettings set org.gnome.desktop.interface icon-theme "$NAME"
 
     # active window theme. it is also called metacity theme
     gsettings set org.gnome.desktop.wm.preferences theme "$NAME"
