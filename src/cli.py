@@ -1,10 +1,29 @@
+#!/usr/bin/env python
+
 import os
+import sys
 import ConfigParser
 
 from subprocess import Popen
 
-from error import ThemeNotFoundError
-from theme_config import ThemeConfig
+
+class ThemeConfig(object):
+    def __init__(self, front_color, back_color, danger_color):
+        self._front_color = front_color
+        self._back_color = back_color
+        self._danger_color = danger_color
+
+    @property
+    def front_color(self):
+        return self._front_color
+
+    @property
+    def back_color(self):
+        return self._back_color
+
+    @property
+    def danger_color(self):
+        return self._danger_color
 
 
 def read_config(name):
@@ -21,14 +40,18 @@ def read_config(name):
     config.read([theme_config])
 
     return ThemeConfig(
-        name,
         config.get('THEME', 'front_color'),
         config.get('THEME', 'back_color'),
         config.get('THEME', 'danger_color')
     )
 
 
-def set_theme(name):
+def print_help(exename):
+    print 'USAGE'
+    print '    {} active <name>'.format(exename)
+
+
+def active_theme(name):
     config = read_config(name)
 
     # set background
@@ -77,40 +100,23 @@ def set_theme(name):
         print 'error active metacity: {}'.format(name)
         sys.exit(1)
 
-def active_theme(name):
-    '''
-    Apply theme use command line, contains
-        - GTK theme
-        - GNOME theme
-        - Icons theme
 
-    Priority: ~/.themes; ~/.local/share/themes; /usr/share/themes
+def cli():
+    exename = sys.argv[0]
 
-    But it not ensure that theme is activated or not. Because command line
-    does not inform any things. Best behavior is search theme on variant
-    directory and raise error if no one is exist
+    if len(sys.argv) != 3:
+        print_help(exename)
+        sys.exit(1)
+    elif sys.argv[1] == 'active':
+        theme_name = sys.argv[2]
+        if not os.path.isdir('/usr/share/themes/{}'.format(theme_name)):
+            print 'error theme not found: {}'.format(theme_name)
+            sys.exit(1)
 
-    :param str: Name of theme
-    :raise ThemeNotFoundError: On theme not found
-    '''
+        sys.exit(active_theme(theme_name))
+    else:
+        print_help(exename)
+        sys.exit(1)
 
-    # find theme on ~/.themes/<name> directory
-    usr_theme = '~/.themes/{}'.format(name)
-    if not os.path.isdir(usr_theme):
-        set_theme(name)
-        return
 
-    # find theme on ~/.local/share/themes/<name>
-    usr_local_theme = '~/.local/share/themes/{}'.format(name)
-    if not os.path.isdir(usr_local_theme):
-        set_theme(name)
-        return
-
-    # find theme on /usr/share/themes/<name>
-    global_theme = '/usr/share/themes/{}'.format(name)
-    if not os.path.isdir(global_theme):
-        set_theme(name)
-        return
-
-    # not found theme in any where
-    raise ThemeNotFoundError(name)
+cli()
