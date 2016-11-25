@@ -276,7 +276,7 @@
     </draw_ops>
 
     <draw_ops name="button-restore-pressed">
-        <line color="{{front_color}}" width="4" x1="PrelightPad" y1="2*PrelightPad" x2="PrelightPad" y2="height-PrelightPad"/>
+        <line color="{{front_color}}" width="4" x1="PrelightPad+1" y1="2*PrelightPad" x2="PrelightPad+1" y2="height-PrelightPad"/>
         <line color="{{front_color}}" width="4" x1="PrelightPad-1" y1="2*PrelightPad" x2="width-PrelightPad-1" y2="2*PrelightPad"/>
         <line color="{{front_color}}" width="4" x1="width-4-PrelightPad+1" y1="2*PrelightPad" x2="width-4-PrelightPad+1" y2="height-PrelightPad"/>
         <line color="{{front_color}}" width="4" x1="PrelightPad-1" y1="height-PrelightPad" x2="width-PrelightPad-1" y2="height-PrelightPad"/>

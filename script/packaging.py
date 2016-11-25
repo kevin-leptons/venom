@@ -34,6 +34,7 @@ def package_debian():
     src_themes = os.path.join(root, 'dest')
     if not os.path.isdir(src_themes):
         stdlog(stat_err, 'not found builded files', src_themes)
+        sys.exit(1)
 
     vers = get_version()
     pkg_ver = '{}-{}'.format(vers['version'], vers['deb_version'])

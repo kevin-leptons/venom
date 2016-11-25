@@ -88,7 +88,8 @@ def build(names):
 def clean(names):
     if len(names) == 0:
         # clean build files of all of themes
-        shutil.rmtree(setting.dest)
+        if os.path.isdir(setting.dest):
+            shutil.rmtree(setting.dest)
         stdlog(stat_done, 'clean dest', setting.dest)
 
     else:

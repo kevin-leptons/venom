@@ -17,6 +17,9 @@ Then follow instructions
 # Install
 sudo dpkg -i venom_0.0.3-0_all.deb
 
+# Active black theme
+venom active venom-black
+
 # Active green theme
 venom active venom-green
 
@@ -33,9 +36,13 @@ Contribute manual [here](doc/dev.md)
 
 # Screen shoots
 
-## venom-green
+## venom-black
 
+![venom-green](asset/venom-black.png)
+
+## venom-green
 ![venom-green](asset/venom-green.png)
+
 
 ## venom-teal
 
