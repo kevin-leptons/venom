@@ -33,12 +33,26 @@ def set_theme(name):
 
     # set background
     if config is not None:
-        cmd_background = [
+        cmd_bg = [
             'gsettings', 'set', 'org.gnome.desktop.background',
             'primary-color', '"{}"'.format(config.back_color)
         ]
-        if Popen(cmd_background).wait() != 0:
-            print 'error set background: {}'.format(config.back_color)
+        if Popen(cmd_bg).wait() != 0:
+            print 'error set bg primary: {}'.format(config.back_color)
+            sys.exit(1)
+        cmd_bg_shade = [
+            'gsettings', 'set', 'org.gnome.desktop.background',
+            'color-shading-type', 'solid'
+        ]
+        if Popen(cmd_bg_shade).wait() != 0:
+            print 'error set bg shade: solid'
+            sys.exit(1)
+        cmd_bg_img = [
+            'gsettings', 'set', 'org.gnome.desktop.background',
+            'picture-uri', ''
+        ]
+        if Popen(cmd_bg_img).wait() != 0:
+            print 'error set background uri: ""'
             sys.exit(1)
 
     # active GTK theme
