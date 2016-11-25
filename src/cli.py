@@ -1,11 +1,30 @@
 #!/usr/bin/env python
 
+# DESCRIPTIONS
+#
+# Apply theme use command line, contains
+#    - GTK theme
+#    - GNOME theme
+#    - Icons theme
+#
+# But it not ensure that theme is activated or not. Because command line
+# does not inform any things. Best behavior is search theme on variant
+# directory and raise error if no one is exist
+#
+# USAGE
+#
+# $ venom active <name>
+#
+# AUTHOR: kevin leptons <kevin.leptons@gmail.com>
+
 import os
 import sys
 import ConfigParser
 
 from subprocess import Popen
 
+VERSION = "0.0.3"
+DEB_VERSION = "0"
 
 class ThemeConfig(object):
     def __init__(self, front_color, back_color, danger_color):
@@ -48,7 +67,9 @@ def read_config(name):
 
 def print_help(exename):
     print 'USAGE'
-    print '    {} active <name>'.format(exename)
+    print '    {} active <name>     active theme'.format(exename)
+    print '    {} -v, --version     print version'.format(exename)
+    print '    {} -h, --help        print help'.format(exename)
 
 
 def active_theme(name):
@@ -62,7 +83,7 @@ def active_theme(name):
         ]
         if Popen(cmd_background).wait() != 0:
             print 'error set background: {}'.format(config.back_color)
-            sys.exit(1)
+            return 1
 
     # active GTK theme
     cmd_gtk = [
@@ -71,7 +92,7 @@ def active_theme(name):
     ]
     if Popen(cmd_gtk).wait() != 0:
         print 'error active gtk theme: {}'.format(name)
-        sys.exit(1)
+        return 1
 
     # active GNOME theme
     cmd_gnome = [
@@ -80,7 +101,7 @@ def active_theme(name):
     ]
     if Popen(cmd_gnome).wait() != 0:
         print 'error active gnome theme: {}'.format(name)
-        sys.exit(1)
+        return 1
 
     # active icons theme
     cmd_icon = [
@@ -89,7 +110,7 @@ def active_theme(name):
     ]
     if Popen(cmd_icon).wait() != 0:
         print 'error active icon theme: {}'.format(name)
-        sys.exit(1)
+        return 1
 
     # active window theme. it is also called metacity theme
     cmd_metacity = [
@@ -98,22 +119,34 @@ def active_theme(name):
     ]
     if Popen(cmd_metacity).wait() != 0:
         print 'error active metacity: {}'.format(name)
-        sys.exit(1)
+        return 1
+
+    return 0
 
 
 def cli():
-    exename = sys.argv[0]
+    exename = os.path.basename(sys.argv[0])
 
-    if len(sys.argv) != 3:
+    if len(sys.argv) < 2:
         print_help(exename)
         sys.exit(1)
-    elif sys.argv[1] == 'active':
+
+    cmd = sys.argv[1]
+    if cmd == 'active':
+        if len(sys.argv) != 3:
+            print_help(exename)
+            sys.exit(1)
+
         theme_name = sys.argv[2]
         if not os.path.isdir('/usr/share/themes/{}'.format(theme_name)):
             print 'error theme not found: {}'.format(theme_name)
             sys.exit(1)
 
         sys.exit(active_theme(theme_name))
+    elif cmd == '-v' or cmd == '--version':
+        print 'venom v{}'.format(VERSION)
+    elif cmd == '-h' or cmd == '--help':
+        print_help(exename)
     else:
         print_help(exename)
         sys.exit(1)

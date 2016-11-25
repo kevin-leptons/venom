@@ -8,9 +8,9 @@ from logger import stdlog, stat_done, stat_err
 
 
 root = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
-_CLI_FILE = os.path.join(root, 'src', 'cli.sh')
-_VERSION_RE = re.compile(r'VERSION="(.*)"')
-_DEB_VERSION_RE = re.compile(r'DEB_VERSION="(.*)"')
+_CLI_FILE = os.path.join(root, 'src', 'cli.py')
+_VERSION_RE = re.compile(r'VERSION = "(.*)"')
+_DEB_VERSION_RE = re.compile(r'DEB_VERSION = "(.*)"')
 
 
 def get_version():
@@ -60,9 +60,8 @@ def package_debian():
             dist_f.write(data)
 
     # copy commandline
-    src_cli = os.path.join(root, 'src/cli.sh')
     dist_cli = os.path.join(dist_bin, 'venom')
-    shutil.copyfile(src_cli, dist_cli)
+    shutil.copyfile(_CLI_FILE, dist_cli)
     if Popen(['chmod', '+x', dist_cli]).wait() != 0:
         stdlog(stat_err, 'chmod', dist_cli)
         sys.exit(1)
