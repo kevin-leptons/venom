@@ -45,7 +45,7 @@
       &:backdrop { border-color: $backdrop_borders_color; }
     }
 
-    $_header_shade: inset 0 2px 3px -1px transparentize(black, 0.85);
+    $_header_shade: inset 0 2px 3px -1px transparentize($front_color, 0.85);
     &.top {
       box-shadow: $_header_shade,
                   inset 0 -1px $borders_color; // border

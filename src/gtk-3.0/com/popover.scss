@@ -11,7 +11,7 @@
   //background-clip: border-box;
   background-color: $bg_color;
 
-  box-shadow: 0 2px 3px transparentize(black, 0.5);
+  box-shadow: 0 2px 3px transparentize($front_color, 0.5);
   &:backdrop {
     box-shadow: none;
   }

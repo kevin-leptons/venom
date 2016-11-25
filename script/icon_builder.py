@@ -6,7 +6,7 @@ from .logger import stdlog, stat_done
 from .imgproc import str_to_rgba, vector_mono, bitmap_mono
 
 
-def compile_icon(src, dest, config):
+def compile_icon(src, dest, config, fuzz=127):
     color = str_to_rgba(config.front_color, 255)
 
     for root, dirs, files in os.walk(src):
@@ -37,7 +37,7 @@ def compile_icon(src, dest, config):
             if os.path.splitext(src_img)[1] == '.svg':
                 vector_mono(
                     src_img, dest_img,
-                    config.front_color, config.back_color
+                    config.front_color, config.back_color, fuzz
                 )
             else:
                 # file is not image, copy it

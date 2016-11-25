@@ -54,7 +54,7 @@
     border-radius: 0;
     border-color: $borders_color;
     background-color: mix($bg_color,$borders_color,60%);
-    box-shadow: inset 1px 1px transparentize(black, 0.9);
+    box-shadow: inset 1px 1px transparentize($front_color, 0.9);
     &.highlight {
       border-color: $fg_color;
       background-color: $fg_color;

@@ -46,7 +46,7 @@ GtkProgressBar.trough {
   border-radius: 0;
   border-color: $borders_color;
   background-color: mix($borders_color,$bg_color, 35%);
-  box-shadow: inset 1px 1px transparentize(black, 0.9);
+  box-shadow: inset 1px 1px transparentize($front_color, 0.9);
   &:backdrop{
     border-color: $backdrop_borders_color;
     background-color: mix($backdrop_borders_color,$backdrop_bg_color, 35%);
