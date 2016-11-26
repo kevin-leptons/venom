@@ -1,6 +1,6 @@
 # venom
 
-<img src="asset/venom.png" alt="Drawing" style="width: 64px;"/>
+![venom-logo](asset/venom-64.png)
 
 [![Build Status](https://travis-ci.org/kevin-leptons/venom.svg?branch=master)](https://travis-ci.org/kevin-leptons/venom)
 
