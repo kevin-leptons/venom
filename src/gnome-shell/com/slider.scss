@@ -1,0 +1,10 @@
+.slider {
+    height: 1.09em;
+    -slider-height: 5px;
+    -slider-background-color: $back_color;
+    -slider-border-color: border_color($front_color);
+    -slider-active-background-color: $front_color;
+    -slider-active-border-color: $front_color;
+    -slider-border-width: 1px;
+    // -slider-handle-radius: 0px;
+}
