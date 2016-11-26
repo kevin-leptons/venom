@@ -24,13 +24,12 @@
     -minimum-hpadding: 6px;
     font-weight: bold;
     color: $front_color;
-    transition-duration: 100ms;
     padding-left: .3em;
     padding-right: .3em;
 }
 
 #LookingGlassDialog .notebook-tab:hover {
-    color: #65A7AA;
+    color: $front_color;
 }
 
 #LookingGlassDialog .notebook-tab:selected {

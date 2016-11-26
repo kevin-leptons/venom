@@ -21,7 +21,6 @@
     background-gradient-direction: vertical;
     background-gradient-start: $back_color;
     background-gradient-end: $back_color;
-    transition-duration: 200ms;
 }
 
 #searchEntry:focus,
@@ -59,7 +58,6 @@
     color: focus_fg_color($front_color);
     caret-color: focus_fg_color($front_color);
     font-weight: bold;
-    transition-duration: 0ms;
 }
 
 .notification StEntry,

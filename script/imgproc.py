@@ -5,7 +5,12 @@ import struct
 
 
 def rgb_to_gray(rgb):
-    # return int(0.21 * rgb[0] + 0.72 * rgb[1] + 0.07 * rgb[2])
+    '''
+    :param tuple rgb: Tuple with format (R, G, B)
+    :return: Gray color in range [0, 255]
+    :rtype: int
+    '''
+
     return int((rgb[0] + rgb[1] + rgb[2]) / 3)
 
 
@@ -77,7 +82,7 @@ def vector_mono(src, dest, fcolor, bcolor, fuzz=127):
 
 
 def bitmap_mono(src, dest, color):
-    src_img = cv2.imread(src, cv2.IMREAD_GRAYSCALE)
+    src_img = cv2.imread(src, cv2.IMREAD_UNCHANGED)
     w = src_img.shape[0]
     h = src_img.shape[1]
 
@@ -87,12 +92,18 @@ def bitmap_mono(src, dest, color):
     # convert image grayscale to destination color
     for x in range(w):
         for y in range(h):
-            if src_img.item(x, y) <= 127:
+            b = src_img.item(x, y, 0)
+            g = src_img.item(x, y, 1)
+            r = src_img.item(x, y, 2)
+            a = src_img.item(x, y, 3)
+            gray = rgb_to_gray((r, b, g))
+
+            if a == 0 or gray > 127:
+                dest_img.itemset(x, y, 3, 0)
+            else:
                 dest_img.itemset(x, y, 0, color[2]) # blue
                 dest_img.itemset(x, y, 1, color[1]) # green
                 dest_img.itemset(x, y, 2, color[0]) # red
                 dest_img.itemset(x, y, 3, color[3]) # alpha
-            else:
-                dest_img.itemset(x, y, 3, 0)
 
     cv2.imwrite(dest, dest_img)

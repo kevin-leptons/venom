@@ -10,16 +10,16 @@
     @return lighten($color, 60%);
 }
 
-@function hover_bg_color($color) {
-    @return mix($color, $back_color, 30%);
+@function hover_bg_color($color, $alpha:1) {
+    @return rgba(mix($color, $back_color, 30%), $alpha);
 }
 
-@function focus_bg_color($color) {
-    @return mix($color, $back_color, 40%);
+@function focus_bg_color($color, $alpha:1) {
+    @return rgba(mix($color, $back_color, 40%), $alpha);
 }
 
-@function active_bg_color($color) {
-    @return mix($color, $back_color, 60%);
+@function active_bg_color($color, $alpha:1) {
+    @return rgba(mix($color, $back_color, 60%), $alpha);
 }
 
 @function border_color($color) {

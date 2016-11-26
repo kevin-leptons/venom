@@ -1,5 +1,7 @@
 # venom
 
+<img src="asset/venom.png" alt="Drawing" style="width: 64px;"/>
+
 [![Build Status](https://travis-ci.org/kevin-leptons/venom.svg?branch=master)](https://travis-ci.org/kevin-leptons/venom)
 
 This is `mono-color`, `high-contrast` themes for `GNOME-3.14`

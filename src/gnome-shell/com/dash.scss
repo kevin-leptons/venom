@@ -9,6 +9,7 @@
     border: 2px solid border_color($front_color);
     border-left: 0;
     border-radius: 0;
+    background: $back_color;
 }
 
 #dash:rtl {
@@ -17,7 +18,17 @@
 }
 
 .placeholder {
-    background-image: url("asset/dash-placeholder.png");
+    background: $back_color;
     background-size: contain;
     height: 24px;
+}
+
+.dash-label {
+    -x-offset: 8px;
+    color: $front_color;
+    border-radius: 0px;
+    border: 1px solid border_color($front_color);
+    text-align: center;
+    padding: 4px 12px;
+    background: $back_color;
 }

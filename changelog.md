@@ -1,5 +1,17 @@
 # venom change log
 
+# v0.0.5
+
+- add venom logo
+- improve search entry
+- improve page indicator of application searching
+- improve calendar change month: back and forward button
+- improve text of top panel
+- improve dash menu
+- improve search results
+- improve close button of application when show
+- improve background of viewing and searching
+
 # v0.0.4
 
 - fix background of window title bar

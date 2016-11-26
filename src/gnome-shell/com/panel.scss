@@ -51,6 +51,9 @@
 
 /* used for the app menu header only */
 .label-shadow {
+    color: $front_color;
+    text-shadow: none;
+    background: $back_color;
 }
 
 .panel-button #appMenuIcon {
@@ -61,7 +64,6 @@
 .panel-button:checked #appMenuIcon,
 .panel-button:focus #appMenuIcon {
     app-icon-bottom-clip: 2px;
-    color: active_fg_color($front_color);
 }
 
 .app-menu-icon {
@@ -74,7 +76,7 @@
     -minimum-hpadding: 6px;
     font-weight: bold;
     color: $front_color;
-    transition-duration: 100ms;
+    text-shadow: none;
 }
 
 #panel.unlock-screen .panel-button,
@@ -92,18 +94,18 @@
 #panel.unlock-screen .panel-button:focus,
 #panel.lock-screen .panel-button:focus,
 #panel.login-screen .panel-button:focus {
-    color: hover_fg_color($front_color);
     background-color: hover_bg_color($front_color);
 }
 
 .panel-button:hover {
-    color: hover_fg_color($front_color);
+    color: $front_color;
+    background: hover_bg_color($front_color);
 }
 
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
-    color: active_fg_color($front_color);
+    color: $front_color;
     background-gradient-direction: vertical;
     background-gradient-start: active_bg_color($front_color);
     background-gradient-end: active_bg_color($front_color);
@@ -125,7 +127,6 @@
 
 .panel-menu {
     -boxpointer-gap: 5px;
-
 }
 
 .panel-status-button-box {

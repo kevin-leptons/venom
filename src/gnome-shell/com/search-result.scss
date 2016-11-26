@@ -24,7 +24,10 @@
 
 .search-section-separator {
     height: 1px;
-    background: redborder_color($front_color);
+    background-color: $front_color;
+    background-gradient-direction: none;
+    background-gradient-start: border_color($front_color);
+    background-gradient-end: border_color($front_color);
 }
 
 .search-section-content {
@@ -40,14 +43,6 @@
 
 .list-search-results {
     spacing: 3px;
-}
-
-.dash-label {
-    border-radius: 0px;
-    padding: 4px 12px;
-    border: 1px solid border_color($back_color);
-    text-align: center;
-    -x-offset: 8px;
 }
 
 /* Application Launchers, Grid and List results */
@@ -117,9 +112,9 @@
 .search-provider-icon,
 .list-search-result,
 .grid-search-result .overview-icon {
+    text-shadow: none;
     border-radius: 0px;
     padding: 3px;
-    transition-duration: 100ms;
     text-align: center;
 }
 
@@ -148,10 +143,10 @@
 .search-provider-icon:hover,
 .list-search-result:hover,
 .grid-search-result:hover .overview-icon {
-    background-color: hover_bg_color($front_color);
-    transition-duration: 100ms;
-    color: hover_fg_color($front_color);
+    text-shadow: none;
+    color: $front_color;
     border: 1px solid hover_border_color($front_color);
+    background-color: hover_bg_color($front_color);
 }
 
 .app-display .app-well-app > .overview-icon {
@@ -178,13 +173,14 @@
 .show-apps:checked > .overview-icon,
 .show-apps:active > .overview-icon {
     border-radius: 0px;
-    transition-duration: 100ms;
+    background-gradient-direction: vertical;
+    background-gradient-start: active_bg_color($front_color);
+    background-gradient-end: active_bg_color($front_color);
 }
 
 .show-apps:checked .show-apps-icon,
 .show-apps:focus .show-apps-icon {
     color: $front_color;
-    transition-duration: 100ms;
 }
 
 .app-well-app:focus > .overview-icon,
@@ -196,7 +192,7 @@
 .grid-search-result:selected .overview-icon,
 .search-provider-icon:selected,
 .list-search-result:selected {
-    color: active_fg_color($front_color);
+    color: $front_color;
     border: 1px solid active_border_color($front_color);
-    background-color: active_bg_color($front_color);
+    background: focus_bg_color($front_color)
 }
