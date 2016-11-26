@@ -18,7 +18,7 @@
   margin: 10px;
 
   &:backdrop {
-    box-shadow: 0 0 0 1px $_wm_border_backdrop;
+    box-shadow: 0 0 0 2px $_wm_border_backdrop;
   }
   &.tiled {
     border-radius: 0;
