@@ -10,8 +10,8 @@
     border-radius: 0;
 
     background-color: $back_color;
-    box-shadow: inset 0 -1px mix($borders_color, $bg_color, 30%), // bottom shade
-                inset 0 1px $borders_edge; // top highlight
+    box-shadow: inset 0 -1px mix($borders_color, $bg_color, 30%);//, // bottom shade
+                // inset 0 1px $borders_edge; // top highlight
     padding: 6px;
 
     &:backdrop {
