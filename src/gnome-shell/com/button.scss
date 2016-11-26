@@ -2,6 +2,50 @@
 // BUTTONS
 //
 
+.button {
+	border-radius: 2px;
+	border: none;
+	margin-top: 0.5em;
+	padding: 4px 32px;
+	color: red;
+	font-weight: bold;
+	background-color: red;
+	background-gradient-direction: none;
+	background-gradient-start: red;
+	background-gradient-end: red;
+	box-shadow: none;
+	text-shadow: none;
+	icon-shadow: none; }
+	.button:hover, .button:focus {
+		color: red;
+		border: none;
+		background-color: red;
+		background-gradient-direction: none;
+		background-gradient-start: red;
+		background-gradient-end: red;
+		box-shadow: none;
+		text-shadow: none;
+		icon-shadow: none; }
+	.button:insensitive {
+		color: red;
+		border: none;
+		background-color: red;
+		background-gradient-direction: none;
+		box-shadow: none;
+		text-shadow: none;
+		icon-shadow: none; }
+	.button:active {
+		color: #fff;
+		border: none;
+		background-color: red;
+		background-gradient-direction: none;
+		background-gradient-start: red;
+		background-gradient-end: red;
+		box-shadow: none;
+		text-shadow: none;
+		icon-shadow: none; }
+
+
 .candidate-page-button,
 .notification-button,
 .notification-icon-button,

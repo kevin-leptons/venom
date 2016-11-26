@@ -136,3 +136,24 @@
 .lock-screen-status-button-box {
     spacing: 8px;
 }
+
+/* Botones Apagado... */
+.system-menu-action {
+	color: $front_color;
+	border-radius: 32px;
+	/* wish we could do 50% */
+	padding: 13px;
+	border: 1px solid border_color($front_color);
+}
+.system-menu-action:hover, .system-menu-action:focus {
+	color: $front_color;
+	background-color: hover_bg_color($front_color);
+	padding: 13px;
+}
+.system-menu-action:active {
+	color: $front_color;
+	background-color: active_bg_color($front_color);
+}
+.system-menu-action > StIcon {
+	icon-size: 16px;
+}

@@ -77,20 +77,25 @@
 }
 
 .calendar-day-base {
-    font-size: 9pt;
+    color: $front_color;
     text-align: center;
     width: 2.4em;
     height: 2.4em;
+    padding: 0.1em;
+    margin: 2px;
+    border-radius: 1.4em;
+    border: 1px solid $back_color !important;
 }
 
 .calendar-day-base:hover {
-    background-color: hover_bg_color($front_color);
+    border-color: border_color($front_color) !important;
+    background: $back_color;
 }
 
 .calendar-day-base:active {
-    font-size: 9pt;
-    background-color: active_bg_color($front_color);
-    color: active_fg_color($front_color);
+    color: $front_color;
+    border-color: border_color($front_color) !important;
+    background: hover_bg_color($front_color);
 }
 
 .calendar-day-heading {
@@ -124,6 +129,7 @@
 }
 
 .calendar-nonwork-day {
+    color: $front_color;
     background-color: $back_color;
 }
 
@@ -139,7 +145,8 @@
 }
 
 .calendar-other-month-day {
-    color: $front_color;
+    color: darken($front_color, 60%);
+    background-color: hover_bg_color($front_color);
 }
 
 .events-header-vbox {

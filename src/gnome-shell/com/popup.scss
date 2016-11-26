@@ -19,17 +19,13 @@
 
 .popup-submenu-menu-item:open {
     background-color: active_bg_color($front_color);
-    border-radius: 0px;
-    border: 1px $front_color;
-    border-bottom: 0px;
-    color: active_fg_color($front_color);
+    border: 0;
+    color: $front_color;
 }
 
 .popup-sub-menu {
-    border: 1px $front_color;
-    border-radius: 0px;
     color: $front_color;
-
+    border-width: 0;
 }
 
 .popup-sub-menu:scrolled .popup-menu-item:ltr {
@@ -46,7 +42,6 @@
 
 .popup-sub-menu StScrollBar StBin#trough {
     border-width: 0px;
-    background: red;
 }
 
 .popup-sub-menu StScrollBar StBin#vhandle {
@@ -72,8 +67,8 @@
 
 .popup-menu-item {
     color: $front_color;
-    padding: .4em 1.75em;
-    spacing: 1em;
+    padding: .4em 1.75em .4em 0em;
+    spacing: 12px;
     background-color: $back_color;
 }
 
@@ -95,11 +90,19 @@
 
 .popup-separator-menu-item {
     height: 1px;
-    padding: 8px 0px;
+    margin: 6px 46px;
+    background-color: transparent;
+    border-color: $front_color;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    -gradient-height: 0px;
+    -gradient-start: 0;
+    -gradient-end: 0;
 }
 
 .popup-alternating-menu-item:alternate {
     font-weight: bold;
+    background: red;
 }
 
 .popup-slider-menu-item {

@@ -1,5 +1,12 @@
 # venom change log
 
+# v0.0.6
+
+- fix wrong color of volume slider
+- fix wrong color of Botones Apagado
+- improve separator of popup menu
+- improve calendar
+
 # v0.0.5
 
 - add venom logo

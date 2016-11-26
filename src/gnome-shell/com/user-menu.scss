@@ -17,7 +17,7 @@
 
 .status-chooser-user-icon {
     background-size: contain;
-    border: border_color($front_color);
+    border: 1px solid border_color($front_color);
     border-radius: 0px;
     width: 48pt;
     height: 48pt;
