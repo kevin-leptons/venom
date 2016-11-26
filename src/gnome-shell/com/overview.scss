@@ -9,7 +9,6 @@
 }
 
 .page-indicator {}
-.page-indicator:checked:active {}
 .page-indicator .page-indicator-icon {
 	width: 32px;
 	height: 32px;
@@ -31,8 +30,14 @@
     height: 20px;
     border-width: 8px;
 }
+.page-indicator:checked:active {
+    background: $front_color
+}
 .page-indicator:checked .page-indicator-icon {
-	background: $front_color;
+    width: 20px;
+    height: 20px;
+    border-width: 8px;
+	background: $back_color;
 }
 
 

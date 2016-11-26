@@ -6,6 +6,7 @@
 - fix wrong color of Botones Apagado
 - improve separator of popup menu
 - improve calendar
+- improve page indicator of application searching
 
 # v0.0.5
 
