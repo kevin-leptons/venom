@@ -1,0 +1,26 @@
+ //
+ // NAUTILUS - FILE EXPLORER
+ //
+
+.nautilus-window {}
+.nautilus-window notebook, .nautilus-window notebook > stack {}
+
+/* Floating status bar */
+.floating-bar {
+  background-color: $back_color;
+  border: 2px solid $borders_color;
+  border-bottom: 0;
+  border-radius: 0;
+}
+.floating-bar.left {
+    border-left: 0;
+}
+.floating-bar.right {
+    border-right: 0;
+}
+.floating-bar:backdrop {}
+.floating-bar button {}
+
+/* View */
+.nautilus-list-view .view, .nautilus-list-view iconview {}
+.nautilus-list-view .view.dnd, .nautilus-list-view iconview.dnd {}
