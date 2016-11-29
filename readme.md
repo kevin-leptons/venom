@@ -10,7 +10,8 @@ This is `mono-color`, `high-contrast` themes for `GNOME-3.14`
 
 # Installation
 
-Download [venom_0.0.5-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vaXpWZzM4dU1XeE0), then follow instructions
+Download [venom_0.0.5-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vdWhSbzBvM2JiSnM),
+then follow instructions
 
 ```bash
 # Install
