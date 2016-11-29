@@ -23,7 +23,7 @@ import click
 
 from script.logger import stdlog, stat_done, stat_err
 from script import compile_theme, install_theme, active_theme, remove_theme, \
-                   package_debian
+                   package_debian, diff_file
 
 import setting
 
@@ -131,6 +131,14 @@ def remove(names):
 @cli.command(help='Package venom themes into package')
 def dist():
     package_debian()
+
+
+@cli.command(help='Create new directory with file only in original directory')
+@click.argument('odir')
+@click.argument('sdir')
+@click.argument('dest')
+def dfile(odir, sdir, dest):
+    diff_file(odir, sdir, dest)
 
 
 cli()
