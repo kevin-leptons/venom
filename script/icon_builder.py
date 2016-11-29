@@ -22,10 +22,10 @@ def compile_icon(src, dest, config, fuzz=127):
 
             # file is symbol link, copy it
             if os.path.islink(src_img):
-                if not os.path.islink(dest_img):
-                    os.symlink(os.readlink(src_img), dest_img)
-                else:
+                if os.path.isfile(dest_img) or os.path.islink(dest_img):
                     stdlog(stat_done, 'skiped', file)
+                else:
+                    os.symlink(os.readlink(src_img), dest_img)
                 continue
 
             # file is exist, skip
