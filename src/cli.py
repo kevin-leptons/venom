@@ -23,7 +23,7 @@ import ConfigParser
 
 from subprocess import Popen
 
-VERSION = "0.0.5"
+VERSION = "0.0.6"
 DEB_VERSION = "0"
 
 class ThemeConfig(object):
