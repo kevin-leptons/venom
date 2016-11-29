@@ -31,7 +31,7 @@ venom active venom-orange
 
 # Other links
 
-- [Pre-build](doc/legacy-version.md)
+- [Pre-build](doc/pre-build.md)
 - [Change log](changelog.md)
 - [Contribute manual](doc/dev.md)
 - [Screenshots](doc/screenshot.md)
