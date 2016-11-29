@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="exaile.svg">
+   sodipodi:docname="gladish.svg">
   <metadata
      id="metadata16">
     <rdf:RDF>
@@ -45,7 +45,7 @@
      inkscape:showpageshadow="false"
      borderlayer="true"
      inkscape:zoom="2.4583333"
-     inkscape:cx="69.43018"
+     inkscape:cx="-9.2816855"
      inkscape:cy="46.338834"
      inkscape:window-x="100"
      inkscape:window-y="69"
@@ -122,7 +122,7 @@
   </defs>
   <path
      sodipodi:type="star"
-     style="fill:#30d400;fill-opacity:1;stroke:#28d000;stroke-width:1.26026785;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.26026784999999997;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path5203"
      sodipodi:sides="3"
      sodipodi:cx="12"
@@ -140,7 +140,7 @@
      transform="matrix(1.8833423,0,0,1.8856986,38.95318,24.886566)" />
   <path
      sodipodi:type="arc"
-     style="fill:#30d400;fill-opacity:0;fill-rule:nonzero;stroke:#28d000;stroke-width:8.36833954;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:7;stroke-opacity:1;stroke-dasharray:none"
+     style="fill:none;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:8.36833953999999913;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:7;stroke-opacity:1;stroke-dasharray:none"
      id="path3769"
      sodipodi:cx="72.983055"
      sodipodi:cy="1.6949135"

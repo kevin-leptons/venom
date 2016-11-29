@@ -14,7 +14,7 @@
    height="512"
    width="512"
    version="1.0"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="four-in-a-row.svg">
   <defs
      id="defs236" />
@@ -27,17 +27,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="2092"
+     inkscape:window-width="1916"
+     inkscape:window-height="1005"
      id="namedview234"
      showgrid="false"
      inkscape:zoom="1.2553908"
-     inkscape:cx="210.12635"
+     inkscape:cx="55.99108"
      inkscape:cy="299.01219"
      inkscape:window-x="0"
-     inkscape:window-y="68"
+     inkscape:window-y="31"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg2817" />
+     inkscape:current-layer="g4695" />
   <metadata
      id="metadata57">
     <rdf:RDF>
@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1111,131 +1111,68 @@
          y="-16320.331"
          id="tspan4089-7-2-9-9-28" /></text>
     <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-203.69504"
-       transform="scale(1,-1)"
-       cx="135.3425"
-       id="circle5085" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cx="227.44873"
-       cy="-203.69504"
-       transform="scale(1,-1)"
-       id="circle5087" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-203.69504"
-       transform="scale(1,-1)"
-       cx="319.55496"
-       id="circle5089" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cx="135.3425"
-       cy="-295.80127"
-       transform="scale(1,-1)"
-       id="circle5091" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-295.80127"
-       transform="scale(1,-1)"
-       cx="227.44873"
-       id="circle5093" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cx="319.55496"
-       cy="-295.80127"
-       transform="scale(1,-1)"
-       id="circle5095" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-387.9075"
-       transform="scale(1,-1)"
-       cx="135.3425"
-       id="circle5097" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cx="227.44873"
-       cy="-387.9075"
-       transform="scale(1,-1)"
-       id="circle5099" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-387.9075"
-       transform="scale(1,-1)"
-       cx="319.55496"
-       id="circle5101" />
-    <circle
        id="circle4370"
        cx="135.3425"
        transform="scale(1,-1)"
        cy="-194.48441"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <circle
        id="circle4372"
        transform="scale(1,-1)"
        cy="-194.48441"
        cx="227.44873"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <circle
        id="circle4374"
        cx="319.55496"
        transform="scale(1,-1)"
        cy="-194.48441"
        r="36.842495"
-       style="fill:#ba174e;fill-opacity:0.99607843" />
+       style="fill:#00000f;fill-opacity:1" />
     <circle
        id="circle4386"
        transform="scale(1,-1)"
        cy="-286.59064"
        cx="135.3425"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <circle
        id="circle4388"
        cx="227.44873"
        transform="scale(1,-1)"
        cy="-286.59064"
        r="36.842495"
-       style="fill:#ba174e;fill-opacity:0.99607843" />
+       style="fill:#00000f;fill-opacity:1" />
     <circle
        id="circle4390"
        transform="scale(1,-1)"
        cy="-286.59064"
        cx="319.55496"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <circle
        id="circle4396"
        cx="135.3425"
        transform="scale(1,-1)"
        cy="-378.69687"
        r="36.842495"
-       style="fill:#ba174e;fill-opacity:0.99607843" />
+       style="fill:#00000f;fill-opacity:1" />
     <circle
        id="circle4398"
        transform="scale(1,-1)"
        cy="-378.69687"
        cx="227.44873"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <circle
        id="circle4400"
        cx="319.55496"
        transform="scale(1,-1)"
        cy="-378.69687"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <text
        x="9154.626"
        y="130.52298"
@@ -2270,102 +2207,57 @@
          y="-16297.45"
          id="tspan4089-7-2-9-9-28-9" /></text>
     <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-113.42097"
-       transform="scale(1,-1)"
-       cx="226.97849"
-       id="circle5085-3" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        r="36.842495"
        cx="319.08469"
        cy="-113.42097"
-       transform="scale(1,-1)"
-       id="circle5087-6" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-113.42097"
-       transform="scale(1,-1)"
-       cx="411.19095"
-       id="circle5089-7" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cx="411.19095"
-       cy="-205.52722"
-       transform="scale(1,-1)"
-       id="circle5095-5" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-297.63345"
-       transform="scale(1,-1)"
-       cx="411.19095"
-       id="circle5101-3" />
+       transform="matrix(1,0,0,-1,0,-8)"
+       id="circle5087-6"
+       sodipodi:cx="319.08469"
+       sodipodi:cy="-113.42097"
+       sodipodi:rx="36.842495"
+       sodipodi:ry="36.842495" />
     <circle
        id="circle4370-5"
        cx="226.97849"
        transform="scale(1,-1)"
        cy="-104.21034"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
-    <circle
-       id="circle4372-6"
-       transform="scale(1,-1)"
-       cy="-104.21034"
-       cx="319.08469"
-       r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <circle
        id="circle4374-2"
        cx="411.19095"
        transform="scale(1,-1)"
        cy="-104.21034"
        r="36.842495"
-       style="fill:#ba174e;fill-opacity:0.99607843" />
+       style="fill:#00000f;fill-opacity:1" />
     <circle
        id="circle4390-9"
        transform="scale(1,-1)"
        cy="-196.31659"
        cx="411.19095"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <circle
        id="circle4400-1"
        cx="411.19095"
        transform="scale(1,-1)"
        cy="-288.42282"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-389.30939"
-       transform="scale(1,-1)"
-       cx="413.14853"
-       id="circle5101-3-2" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <circle
        id="circle4400-1-7"
        cx="413.14853"
        transform="scale(1,-1)"
        cy="-380.09875"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
-    <circle
-       style="opacity:0.3;fill:#000000;fill-opacity:1"
-       r="36.842495"
-       cy="-113.59541"
-       transform="scale(1,-1)"
-       cx="136.0264"
-       id="circle5101-3-0" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     <circle
        id="circle4400-1-9"
        cx="136.0264"
        transform="scale(1,-1)"
        cy="-104.38478"
        r="36.842495"
-       style="fill:#ffffff;fill-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
   </g>
 </svg>

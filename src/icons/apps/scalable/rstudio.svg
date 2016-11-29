@@ -13,7 +13,7 @@
    height="48"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    viewBox="0 0 13.546666 13.546668"
    sodipodi:docname="rstudio.svg">
   <defs
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="10.875"
-     inkscape:cx="26.504635"
+     inkscape:cx="8.7115316"
      inkscape:cy="22.075298"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -39,10 +39,10 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      showguides="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1">
     <sodipodi:guide
        position="-6.6748425e-06,47.999999"
@@ -143,7 +143,7 @@
      id="layer1"
      transform="translate(38.119153,-397.84494)">
     <rect
-       style="fill:#2980b9;fill-opacity:1;stroke:none"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
        id="rect4118"
        width="12.249096"
        height="12.249084"
@@ -151,12 +151,12 @@
        y="398.55856"
        ry="6.1245418" />
     <g
-       style="font-size:11.28888988px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ecf0f1;fill-opacity:1;stroke:none;font-family:Iceberg;-inkscape-font-specification:Iceberg"
+       style="font-size:11.28888987999999927px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Iceberg;-inkscape-font-specification:Iceberg"
        id="text3772"
        transform="matrix(0.79095141,0,0,0.79095141,-6.2272838,84.293544)">
       <path
          d="m -30.22906,409.13382 -1.736328,-3.40651 c -0.106573,0.0147 -0.216816,0.0257 -0.330729,0.0331 -0.110247,0.007 -0.224165,0.011 -0.341754,0.011 -0.13597,0 -0.275611,-0.006 -0.418924,-0.0165 -0.139644,-0.011 -0.284797,-0.0257 -0.43546,-0.0441 l 0,2.80018 1.245747,0.39687 0,0.226 -3.274219,0 0,-0.226 1.014236,-0.39687 0,-6.88468 -1.014236,-0.39688 0,-0.226 3.103342,0 c 0.477716,1e-5 0.902151,0.0551 1.273308,0.16537 0.371146,0.10657 0.683501,0.25908 0.937066,0.45751 0.257227,0.19844 0.45199,0.4373 0.584288,0.71658 0.132285,0.27561 0.198431,0.58245 0.198437,0.92053 -6e-6,0.4961 -0.128623,0.93707 -0.38585,1.32291 -0.253565,0.38218 -0.630229,0.67433 -1.129992,0.87644 l 1.604037,3.1309 0.810286,0.31419 0,0.226 -1.703255,0 m -2.028472,-7.55165 -1.234723,0 0,3.54431 c 0.150663,0.0184 0.292141,0.0331 0.424436,0.0441 0.135963,0.007 0.268255,0.011 0.396875,0.011 1.418456,0 2.127686,-0.61001 2.127691,-1.83004 -5e-6,-0.59163 -0.146996,-1.03444 -0.440972,-1.32843 -0.293986,-0.29397 -0.718422,-0.44096 -1.273307,-0.44097"
-         style="fill:#ecf0f1;fill-opacity:1;font-family:Amethysta;-inkscape-font-specification:Amethysta"
+         style="fill:#000000;fill-opacity:1;font-family:Amethysta;-inkscape-font-specification:Amethysta"
          id="path3777"
          inkscape:connector-curvature="0" />
     </g>

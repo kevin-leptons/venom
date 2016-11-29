@@ -13,7 +13,7 @@
    height="24"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48+devel r12667"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="emblem-synchronizing.svg">
   <defs
      id="defs4" />
@@ -36,10 +36,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
-     inkscape:window-height="714"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-y="31"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -59,7 +59,7 @@
      id="layer1"
      transform="translate(0,-1028.3622)">
     <path
-       style="fill:#2980b9;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1"
        id="path3865"
        inkscape:connector-curvature="0"
        d="m 5.7942846,1032.8753 0,4.9024 c 0,4.0767 0.1432005,5.0526 0.3026357,5.7203 0.5993851,2.5103 2.211879,3.9494 4.8104377,4.2968 1.406656,0.188 4.247652,-0.03 6.481955,-0.4965 l 0.816402,-0.1676 0,-14.2554 -4.137139,-0.013 0,11.377 -4.1371452,0 0,-8.0156 -1.551431,0 2.0685772,-3.3586 z" />

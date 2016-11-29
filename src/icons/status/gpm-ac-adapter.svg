@@ -1,1 +1,58 @@
-battery-full-charged.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   id="svg2"
+   xml:space="preserve"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="gpm-ac-adapter.svg"><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="-15.355932"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs10" /><metadata
+     id="metadata29"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /><dc:creator><cc:Agent><dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>network</rdf:li><rdf:li>status</rdf:li><rdf:li>offline</rdf:li><rdf:li>disconnected</rdf:li></rdf:Bag></dc:subject><dc:description>A plug</dc:description><dc:contributor><cc:Agent><dc:title>Jakub Steiner did the previous non-pixel perfect version.</dc:title></cc:Agent></dc:contributor><cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" /><cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" /><cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" /><cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><g
+     id="layer1"><g
+       transform="matrix(0.95516418,0,0,0.96551724,-0.9536642,1.3103449)"
+       id="g3755"
+       style="fill:#000000;fill-opacity:1;stroke:none"><path
+         d="m 7,21 8,0 c 1,-4 2,-11 9,-12 l 10,0 0,5 9,0 c 3,0 3,5 0,5 l -9,0 0,9 9,0 c 3,0 3,5 0,5 l -9,0 0,5 -10,0 C 17,37 16,31 15,27 l -8,0 0,-6 z"
+         id="path2182"
+         style="fill-rule:evenodd;fill:#000000;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" /></g></g></svg>

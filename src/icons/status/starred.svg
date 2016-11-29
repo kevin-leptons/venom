@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg11300"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="starred.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="16.583333"
+     inkscape:cx="16.673366"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11300" />
+  <defs
+     id="defs11" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+        <dc:title />
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>object rotate right</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path
+     sodipodi:type="star"
+     style="fill:#000000;fill-opacity:1;stroke:none"
+     id="path2997"
+     sodipodi:sides="5"
+     sodipodi:cx="11.186441"
+     sodipodi:cy="37.423729"
+     sodipodi:r1="28.04273"
+     sodipodi:r2="15.928759"
+     sodipodi:arg1="-0.31716343"
+     sodipodi:arg2="0.3111551"
+     inkscape:flatsided="false"
+     inkscape:rounded="0.2"
+     inkscape:randomized="0"
+     d="M 37.830509,28.677966 C 38.9417,32.06322 27.44114,38.908585 26.35031,42.300453 25.25948,45.692322 30.613817,57.958249 27.737626,60.061154 24.861435,62.16406 14.797238,53.341712 11.234294,53.352416 7.6713498,53.363119 -2.3396582,62.245776 -5.228432,60.16019 -8.1172058,58.074603 -2.8366625,45.776728 -3.9478526,42.391474 -5.0590428,39.006221 -16.600523,32.230078 -15.509693,28.838209 -14.418862,25.446341 -1.0911101,26.668183 1.7850807,24.565278 4.6612716,22.462372 7.5392524,9.3918289 11.102197,9.3811252 c 3.562944,-0.010704 6.519404,13.0423118 9.408178,15.1278988 2.888774,2.085586 16.208944,0.783689 17.320134,4.168942 z"
+     inkscape:transform-center-x="0.018383071"
+     inkscape:transform-center-y="-1.952785"
+     transform="matrix(0.74782639,0,0,0.78283671,15.652866,-3.3438839)" />
+</svg>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2160"
+   height="48px"
+   width="48px"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="software-update-urgent.svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="16.570428"
+     inkscape:cx="0.61741279"
+     inkscape:cy="24.000227"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <metadata
+     id="metadata2165">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Updates</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>updates</rdf:li>
+            <rdf:li>available</rdf:li>
+            <rdf:li>software</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>Based on same icon in GNOME icon theme</dc:description>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <path
+       id="path2163"
+       d="m15.41 1.0323c1.937-0.75724 7.341 5.5376 9.421 5.5756 2.069 0.0378 7.659-6.0592 9.554-5.229 1.906 0.8344 1.276 9.1071 2.719 10.604 1.437 1.49 9.7 1.131 10.454 3.058 0.757 1.938-5.538 7.342-5.576 9.421-0.038 2.069 6.059 7.659 5.229 9.555-0.834 1.905-9.107 1.275-10.604 2.719-1.49 1.436-1.131 9.7-3.059 10.453-1.937 0.757-7.341-5.538-9.42-5.576-2.07-0.038-7.659 6.059-9.555 5.229-1.905-0.834-1.275-9.106-2.719-10.604-1.436-1.49-9.6997-1.131-10.453-3.058-0.75727-1.938 5.5376-7.342 5.5756-9.421 0.0378-2.069-6.0592-7.659-5.229-9.554 0.8344-1.906 9.1064-1.276 10.604-2.719 1.489-1.437 1.131-9.7004 3.058-10.454z"
+       transform="matrix(.74762 .30258 -.29975 .74851 12.898 -1.4539)"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:1.24006178;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path8989"
+       style="stroke-linejoin:round;fill-rule:evenodd;stroke:none;stroke-linecap:round;stroke-width:1.14749999999999996px;fill:#000000;fill-opacity:1"
+       d="m21.074 16.351c0-4.659 5.852-5.4 5.852 0 0 0-1.463 11.609-2.926 11.609s-2.926-11.609-2.926-11.609z" />
+    <path
+       id="path5170"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="m27 34.933a3 3 0 1 1 -6 0 3 3 0 1 1 6 0z"
+       transform="translate(0 -2.0667)" />
+  </g>
+</svg>

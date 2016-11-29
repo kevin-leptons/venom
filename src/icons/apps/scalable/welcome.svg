@@ -13,7 +13,7 @@
    height="48"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48+devel r12923"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="welcome.svg">
   <defs
      id="defs4" />
@@ -24,16 +24,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8505242"
-     inkscape:cx="9.8308255"
-     inkscape:cy="7.7250181"
+     inkscape:zoom="8.0625"
+     inkscape:cx="33.933567"
+     inkscape:cy="12.184266"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="669"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="31"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -101,14 +101,14 @@
      id="layer1"
      transform="translate(0,-1004.3622)">
     <rect
-       style="fill:#bdc3c7;fill-opacity:1;stroke:none"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
        id="rect4109"
        width="40"
        height="40"
        x="4"
        y="1008.3622" />
     <rect
-       style="fill:#8e44ad;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect876"
        width="14"
        height="14"
@@ -122,7 +122,7 @@
        height="14"
        width="14"
        id="rect4113"
-       style="fill:#2980b9;fill-opacity:1;stroke:none" />
+       style="fill:#000000;fill-opacity:1;stroke:none" />
     <rect
        ry="0"
        y="1029.3622"
@@ -130,9 +130,9 @@
        height="14"
        width="14"
        id="rect4115"
-       style="fill:#2980b9;fill-opacity:1;stroke:none" />
+       style="fill:#000000;fill-opacity:1;stroke:none" />
     <rect
-       style="fill:#8e44ad;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect4117"
        width="14"
        height="14"

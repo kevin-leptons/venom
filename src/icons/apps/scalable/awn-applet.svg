@@ -15,7 +15,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.48.5 r10040"
    version="1.0"
-   sodipodi:docname="awn.svg"
+   sodipodi:docname="avant-window-navigator.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <defs
      id="defs4" />
@@ -27,17 +27,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="220.993"
+     inkscape:cx="124.243"
      inkscape:cy="50.831609"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      width="128px"
      height="128px"
      showgrid="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-bbox="true"
      inkscape:object-paths="false"
@@ -61,7 +61,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#3465a4;fill-opacity:1;stroke:none"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect2987"
        width="109"
        height="109"
@@ -69,43 +69,28 @@
        y="10"
        ry="15" />
     <rect
-       style="fill:#555753;fill-opacity:1;stroke:none"
-       id="rect2989"
-       width="109"
-       height="17.597"
-       x="9"
-       y="101.403"
-       ry="15" />
-    <rect
-       style="fill:#555753;fill-opacity:1;stroke:none"
-       id="rect2991"
-       width="109"
-       height="11.882128"
-       x="8.9908466"
-       y="98.355179" />
-    <rect
-       style="fill:#eeeeec;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect2995"
        width="20.000002"
        height="19.969969"
        x="15.85355"
        y="84.595741" />
     <rect
-       style="fill:#eeeeec;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect2995-7"
        width="20.000002"
        height="19.969969"
        x="40.63361"
        y="84.665352" />
     <rect
-       style="fill:#eeeeec;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect2995-2"
        width="20.000002"
        height="19.969969"
        x="66.10984"
        y="84.787384" />
     <rect
-       style="fill:#eeeeec;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect2995-77"
        width="20.000002"
        height="19.969969"

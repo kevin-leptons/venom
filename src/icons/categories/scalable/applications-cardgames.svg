@@ -13,7 +13,7 @@
    height="48px"
    id="svg3304"
    sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="applications-cardgames.svg"
    version="1.1">
   <defs
@@ -26,17 +26,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="15.958333"
-     inkscape:cx="13.002611"
-     inkscape:cy="21.493473"
+     inkscape:cx="27.765746"
+     inkscape:cy="16.480418"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1280"
-     inkscape:window-height="716"
-     inkscape:window-x="15"
-     inkscape:window-y="24"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1038"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata3309">
     <rdf:RDF>
@@ -90,14 +90,6 @@
        x="0.0000000"
        y="0.0000000" />
     <rect
-       ry="2.8198433"
-       y="4.0000000"
-       x="7.0000000"
-       height="40.000000"
-       width="34.000000"
-       id="rect4768"
-       style="fill:#ffffff;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:8.0000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;stroke-miterlimit:4.0000000;stroke-dasharray:none" />
-    <rect
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="rect4040"
        width="34.000000"
@@ -106,7 +98,7 @@
        y="4.0000000"
        ry="2.8198433" />
     <path
-       style="fill:#e04613;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 23.755431,15.989556 C 27.441246,8.9295045 37.892679,12.770494 36.880758,19.436032 C 35.878137,26.040312 27.002603,34.530897 23.880758,36.000000 C 20.548295,34.468233 11.940811,26.092254 11.063525,19.498694 C 10.151211,12.641860 19.295032,8.9086163 23.755431,15.989556 z "
        id="path5496"
        sodipodi:nodetypes="czczc" />
@@ -114,9 +106,9 @@
        sodipodi:nodetypes="czczc"
        id="path6950"
        d="M 12.512983,7.7505473 C 13.239136,6.3596263 15.298203,7.1163507 15.098842,8.4295475 C 14.901313,9.7306751 13.152718,11.403430 12.537674,11.692862 C 11.881136,11.391084 10.185351,9.7409091 10.012515,8.4418927 C 9.8327772,7.0910081 11.634228,6.3555111 12.512983,7.7505473 z "
-       style="fill:#e04613;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       style="fill:#e04613;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 35.400616,40.249453 C 36.126769,41.640374 38.185836,40.883649 37.986475,39.570452 C 37.788946,38.269325 36.040351,36.596570 35.425307,36.307138 C 34.768769,36.608916 33.072984,38.259091 32.900148,39.558107 C 32.720410,40.908992 34.521861,41.644489 35.400616,40.249453 z "
        id="path6952"
        sodipodi:nodetypes="czczc" />

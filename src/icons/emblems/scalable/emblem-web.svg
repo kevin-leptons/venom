@@ -13,7 +13,7 @@
    height="24"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48+devel r12667"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="emblem-web.svg">
   <defs
      id="defs4" />
@@ -24,16 +24,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.4963768"
-     inkscape:cx="38.34289"
-     inkscape:cy="17.528054"
+     inkscape:zoom="33.985507"
+     inkscape:cx="35.923876"
+     inkscape:cy="11.52415"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="714"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -87,12 +87,12 @@
        id="rect3292"
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none" />
     <path
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="M 12 4.5 C 7.845 4.5 4.5 7.845 4.5 12 C 4.5 16.155 7.845 19.5 12 19.5 C 16.155 19.5 19.5 16.155 19.5 12 C 19.5 7.845 16.155 4.5 12 4.5 z M 12 6.5 C 15.047 6.5 17.5 8.953 17.5 12 C 17.5 15.047 15.047 17.5 12 17.5 C 8.953 17.5 6.5 15.047 6.5 12 C 6.5 8.953 8.953 6.5 12 6.5 z "
        transform="translate(0,1028.3622)"
        id="rect3272" />
     <rect
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect3279"
        width="12"
        height="1"
@@ -106,7 +106,7 @@
        height="1"
        width="12"
        id="rect3281"
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        transform="matrix(0,-1,1,0,0,0)" />
     <rect
        ry="1"
@@ -141,7 +141,7 @@
        y="1038.3622"
        ry="2" />
     <path
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="m 8.6035155,1036.036 c 1.0203312,0.5192 2.1688085,0.8262 3.3964845,0.8262 1.227676,0 2.376153,-0.307 3.396484,-0.8262 -0.31154,-0.2446 -0.65081,-0.4535 -1.011718,-0.6269 -0.737722,0.2908 -1.540729,0.4531 -2.384766,0.4531 -0.844037,0 -1.647044,-0.1623 -2.3847657,-0.4531 -0.3609081,0.1734 -0.700178,0.3823 -1.0117188,0.6269 z"
        id="path3330" />
     <rect
@@ -153,7 +153,7 @@
        y="1032.8622"
        ry="2" />
     <path
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="m 8.6034999,1044.6884 c 1.0203,-0.5192 2.1688001,-0.8262 3.3965001,-0.8262 1.2277,0 2.3762,0.307 3.3965,0.8262 -0.3116,0.2446 -0.6508,0.4535 -1.0117,0.6269 -0.7378,-0.2908 -1.5408,-0.4531 -2.3848,-0.4531 -0.844,0 -1.647,0.1623 -2.3848001,0.4531 -0.3609,-0.1734 -0.7001,-0.3823 -1.0117,-0.6269 z"
        id="path3336" />
   </g>

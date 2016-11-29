@@ -13,7 +13,7 @@
    height="38.4pt"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="ghex.svg">
   <metadata
      id="metadata20">
@@ -36,17 +36,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1440"
-     inkscape:window-height="836"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview18"
      showgrid="false"
      inkscape:showpageshadow="false"
      borderlayer="true"
      inkscape:zoom="5.6568543"
-     inkscape:cx="-31.258765"
+     inkscape:cx="-65.465055"
      inkscape:cy="1.809272"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2"
      showguides="true"
@@ -95,7 +95,7 @@
   <defs
      id="defs4" />
   <rect
-     style="fill:#2c3e50;fill-opacity:1;stroke:none"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
      id="rect4106"
      width="40"
      height="40"
@@ -106,23 +106,24 @@
      id="g3800"
      transform="matrix(0.88520309,-0.29814392,0.2992355,0.88844404,-2.9692245,9.4709636)"
      inkscape:transform-center-x="-0.79549513"
-     inkscape:transform-center-y="1.0606602">
+     inkscape:transform-center-y="1.0606602"
+     style="fill:#000000;fill-opacity:1">
     <path
        id="path3766"
        d="m 23.579276,18.051724 -8.514483,0 -4.257241,-7.373758 4.257242,-7.3737582 8.514482,4e-7 4.257241,7.3737588 z"
-       style="fill:#27ae60;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        transform="matrix(0.88085212,0,0,0.88150434,13.379604,14.095401)"
        inkscape:connector-curvature="0" />
     <path
        id="path3766-7"
        d="m 23.579276,18.051724 -8.514483,0 -4.257241,-7.373758 4.257242,-7.3737582 8.514482,4e-7 4.257241,7.3737588 z"
-       style="fill:#27ae60;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        transform="matrix(0.88085212,0,0,0.88150434,1.6204591,7.2759932)"
        inkscape:connector-curvature="0" />
     <path
        id="path3766-2"
        d="m 23.579276,18.051724 -8.514483,0 -4.257241,-7.373758 4.257242,-7.3737582 8.514482,4e-7 4.257241,7.3737588 z"
-       style="fill:#27ae60;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        transform="matrix(0.88085212,0,0,0.88150434,1.6148234,20.943139)"
        inkscape:connector-curvature="0" />
   </g>

@@ -1,1 +1,151 @@
-audio-x-playlist.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg1872"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="playlist.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview23"
+     showgrid="false"
+     inkscape:zoom="13.906433"
+     inkscape:cx="34.722051"
+     inkscape:cy="30.016296"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs10">
+    <linearGradient
+       id="linearGradient3242">
+      <stop
+         id="stop3244"
+         style="stop-color:#f8b17e;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3246"
+         style="stop-color:#e35d4f;stop-opacity:1"
+         offset="0.26238" />
+      <stop
+         id="stop3248"
+         style="stop-color:#c6262e;stop-opacity:1"
+         offset="0.66093999" />
+      <stop
+         id="stop3250"
+         style="stop-color:#690b54;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2490">
+      <stop
+         id="stop2492"
+         style="stop-color:#911313;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop2494"
+         style="stop-color:#bc301e;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata1877">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>bookmark</rdf:li>
+            <rdf:li>view</rdf:li>
+            <rdf:li>edit</rdf:li>
+            <rdf:li>web</rdf:li>
+            <rdf:li>favorites</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:coverage>Manage bookmarks in web browser</dc:coverage>
+        <dc:description>A book with a bookmark</dc:description>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="32"
+       height="36"
+       rx="2.9600999"
+       ry="2.9590001"
+       x="9"
+       y="6"
+       id="rect1880"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4" />
+    <rect
+       width="25.627119"
+       height="25.627119"
+       x="11.8"
+       y="12.000001"
+       id="rect4126"
+       style="fill:none" />
+    <path
+       d="m 23.012239,30.152543 a 4.27132,3.2033899 0 0 1 -8.54264,0 4.27132,3.2033899 0 1 1 8.54264,0 z"
+       id="path3149" />
+    <path
+       d="M 23.011865,30.152543 V 20.008475 l 8.542373,2.135593 v 10.144068 h 2.669491 V 17.872881 L 20.342373,14.135593 v 16.01695 h 2.669492 z"
+       id="path3153"
+       style="fill-rule:evenodd" />
+    <use
+       transform="translate(11.211864,2.1355932)"
+       id="use4124"
+       x="0"
+       y="0"
+       width="48"
+       height="48"
+       xlink:href="#path3149" />
+  </g>
+</svg>

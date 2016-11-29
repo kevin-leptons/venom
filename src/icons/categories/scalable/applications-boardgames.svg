@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,12 +14,21 @@
    height="48px"
    id="svg6009"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="applications-boardgames.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.1">
   <defs
-     id="defs6011" />
+     id="defs6011">
+    <linearGradient
+       id="linearGradient5198"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5200" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#dddddd"
@@ -27,16 +37,16 @@
      inkscape:pageopacity="0.32941176"
      inkscape:pageshadow="2"
      inkscape:zoom="8"
-     inkscape:cx="19.696413"
+     inkscape:cx="-4.491087"
      inkscape:cy="22.446886"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata6014">
@@ -92,21 +102,21 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer">
     <rect
-       style="opacity:1;fill:#ffd400;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
        id="rect6019"
        width="39.875"
        height="39.875"
        x="4.125"
        y="4.25" />
     <rect
-       style="fill:#00e2ff;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect6025"
        width="19.9375"
        height="19.9375"
        x="24.0625"
        y="4.25" />
     <rect
-       style="fill:#00e2ff;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect6027"
        width="19.9375"
        height="19.9375"

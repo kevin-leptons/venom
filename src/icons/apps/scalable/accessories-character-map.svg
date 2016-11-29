@@ -13,8 +13,8 @@
    id="svg2"
    height="512"
    width="512"
-   inkscape:version="0.91+devel r14221 custom"
-   sodipodi:docname="gnome-character-map.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="accessories-character-map.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -25,14 +25,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1760"
-     inkscape:window-height="1017"
+     inkscape:window-height="1005"
      id="namedview30"
      showgrid="false"
      inkscape:zoom="0.640625"
      inkscape:cx="256"
      inkscape:cy="256"
      inkscape:window-x="0"
-     inkscape:window-y="32"
+     inkscape:window-y="31"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <defs
@@ -160,14 +160,9 @@
   </metadata>
   <path
      inkscape:connector-curvature="0"
-     id="path2996"
-     d="m 60.043531,440.87564 c -1.28268,-1.28268 -1.42079,-20.03978 -1.42079,-192.96904 0,-172.929264 0.13811,-191.686364 1.42079,-192.969047 1.28268,-1.282684 20.03978,-1.420791 192.969029,-1.420791 172.92926,0 191.68636,0.138107 192.96904,1.420791 1.28268,1.282683 1.42079,20.039783 1.42079,192.969047 0,172.92926 -0.13811,191.68636 -1.42079,192.96904 -1.28268,1.28268 -20.03978,1.42079 -192.96904,1.42079 -172.929249,0 -191.686349,-0.13811 -192.969029,-1.42079 z"
-     style="fill:#ffffff;fill-opacity:1" />
-  <path
-     inkscape:connector-curvature="0"
      id="path2992"
      d="m 44.623461,466.59113 c -0.26175,-0.68878 -0.36053,-95.97733 -0.21951,-211.75233 l 0.2564,-210.500004 211.499999,0 211.5,0 0,211.500004 0,211.5 -211.28049,0.25233 c -168.499419,0.20123 -211.376859,-0.001 -211.756399,-1 z M 438.04063,425.48306 c 0.82646,-0.99583 1.05807,-49.2465 0.87244,-181.75 l -0.25272,-180.394264 -182.5,0 -182.499999,0 -0.25272,180.394264 c -0.18563,132.5035 0.046,180.75417 0.87244,181.75 1.68022,2.02453 362.080339,2.02453 363.760559,0 z"
-     style="fill:#b3b3b3"
+     style="fill:#000000;fill-opacity:1"
      sodipodi:nodetypes="cscccccscsscccscs" />
   <path
      style="opacity:0.3;fill:#000000;fill-opacity:1"
@@ -191,7 +186,7 @@
      inkscape:connector-curvature="0" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:284.84368896px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c5c5c;fill-opacity:1;stroke:none;stroke-width:7.12109232px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:284.84368896000000859px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.12109231999999981px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="223.02397"
      y="390.3494"
      id="text4143"
@@ -201,5 +196,5 @@
        id="tspan4145"
        x="223.02397"
        y="390.3494"
-       style="fill:#5c5c5c;fill-opacity:1;stroke-width:7.12109232px">à</tspan></text>
+       style="fill:#000000;fill-opacity:1;stroke-width:7.12109231999999981px">à</tspan></text>
 </svg>

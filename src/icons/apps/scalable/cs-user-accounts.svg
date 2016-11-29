@@ -34,16 +34,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview59"
      showgrid="false"
-     inkscape:zoom="4.9166667"
-     inkscape:cx="24"
-     inkscape:cy="24"
+     inkscape:zoom="13.906433"
+     inkscape:cx="14.779308"
+     inkscape:cy="29.156593"
      inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <defs
      id="defs4">
@@ -104,12 +104,14 @@
        id="path27" />
   </g>
   <g
-     id="g29">
+     id="g29"
+     style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none">
     <path
        d="m 24 1 c 12.703 0 23 10.297 23 23 c 0 12.703 -10.297 23 -23 23 -12.703 0 -23 -10.297 -23 -23 0 -12.703 10.297 -23 23 -23 z"
        fill="url(#linearGradient3764)"
        fill-opacity="1"
-       id="path31" />
+       id="path31"
+       style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none" />
   </g>
   <g
      id="g33" />
@@ -126,34 +128,30 @@
            id="g41">
           <!-- color: #d0d5db -->
           <g
-             id="g43">
-            <path
-               d="m 28.332 14 l 2.891 0 c 4.336 0 4.336 4.285 4.336 4.285 l 0 4.238 c 0 1.43 -2.895 4.336 -2.895 4.336 l 0 1.426 l 4.336 2.855 l 0 2.859 l -15.891 0 l 0 -2.859 l 5.781 -2.855 l 0 -1.426 c 0 0 -2.902 -2.902 -2.891 -4.336 l 0 -4.238 c 0 0 0 -4.285 4.332 -4.285 m -10.11 2.859 l 2.887 0 l 0 5.668 c 0 1.43 2.895 4.336 2.895 4.336 l -5.777 2.855 l 0 2.859 l -7.223 -0.043 l 0 -1.43 l 5.773 -2.816 l 0 -1.426 c 0 0 -2.898 -2.898 -2.887 -4.332 l 0 -1.387 c 0 -4.281 4.332 -4.281 4.332 -4.281 m 0 -0.008"
-               fill="#000"
-               stroke="none"
-               fill-rule="nonzero"
-               fill-opacity="1"
-               id="path45" />
-          </g>
+             id="g43" />
         </g>
       </g>
     </g>
   </g>
   <g
-     id="g47">
+     id="g47"
+     style="fill:#000000;fill-opacity:1">
     <g
        clip-path="url(#clipPath-612590636)"
-       id="g49">
+       id="g49"
+       style="fill:#000000;fill-opacity:1">
       <!-- color: #d0d5db -->
       <g
-         id="g51">
+         id="g51"
+         style="fill:#000000;fill-opacity:1">
         <path
            d="m 28.332 14 l 2.891 0 c 4.336 0 4.336 4.285 4.336 4.285 l 0 4.238 c 0 1.43 -2.895 4.336 -2.895 4.336 l 0 1.426 l 4.336 2.855 l 0 2.859 l -15.891 0 l 0 -2.859 l 5.781 -2.855 l 0 -1.426 c 0 0 -2.902 -2.902 -2.891 -4.336 l 0 -4.238 c 0 0 0 -4.285 4.332 -4.285 m -10.11 2.859 l 2.887 0 l 0 5.668 c 0 1.43 2.895 4.336 2.895 4.336 l -5.777 2.855 l 0 2.859 l -7.223 -0.043 l 0 -1.43 l 5.773 -2.816 l 0 -1.426 c 0 0 -2.898 -2.898 -2.887 -4.332 l 0 -1.387 c 0 -4.281 4.332 -4.281 4.332 -4.281 m 0 -0.008"
            fill="#283d70"
            stroke="none"
            fill-rule="nonzero"
            fill-opacity="1"
-           id="path53" />
+           id="path53"
+           style="fill:#000000;fill-opacity:1" />
       </g>
     </g>
   </g>

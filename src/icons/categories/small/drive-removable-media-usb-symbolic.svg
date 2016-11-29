@@ -10,7 +10,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    width="100%"
    height="100%"
    sodipodi:docname="drive-removable-media-usb-symbolic.svg">
@@ -36,15 +36,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="704"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview6"
      showgrid="true"
      inkscape:zoom="29.5"
      inkscape:cx="1.6271186"
      inkscape:cy="8"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2">
     <inkscape:grid
@@ -52,7 +52,7 @@
        id="grid2987" />
   </sodipodi:namedview>
   <path
-     style="fill:#bebebe"
+     style="fill:#000000;fill-opacity:1"
      d="m 4,1 0.03125,2.03125 -0.09375,0 c -0.50273,0 -0.9058673,0.403521 -0.90625,0.90625 l 0,8.0625 C 3.03125,12 3,16 8,16 c 5,0 5.03125,-4 5.03125,-4 L 13,3.9375 C 12.999602,3.4347712 12.596481,3.0312505 12.09375,3.03125 L 12,3.03125 12,1 C 12,1 12,0 11,0 L 5,0 C 4,0 4,1 4,1 z m 2.03125,1 1,0 0,1.03125 -1,0 z m 3,0 1,0 0,1.03125 -1,0 z m -3.125,3.03125 4.21875,0 c 0.502731,0 0.908547,0.4035262 0.90625,0.90625 L 11,11 C 10.98629,14 8,13.966102 8,13.966102 8,13.966102 4.9937114,14 5,11 L 5,5.9375 C 5.00105,5.434772 5.40352,5.03125 5.90625,5.03125 z"
      id="path4"
      inkscape:connector-curvature="0"

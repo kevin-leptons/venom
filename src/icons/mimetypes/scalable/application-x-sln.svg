@@ -1,1 +1,157 @@
-application-x-mono-develop.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg1872"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="application-x-csproj.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview22"
+     showgrid="false"
+     inkscape:zoom="13.906433"
+     inkscape:cx="7.849072"
+     inkscape:cy="25.331767"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs10">
+    <linearGradient
+       id="linearGradient3242">
+      <stop
+         id="stop3244"
+         style="stop-color:#f8b17e;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3246"
+         style="stop-color:#e35d4f;stop-opacity:1"
+         offset="0.26238" />
+      <stop
+         id="stop3248"
+         style="stop-color:#c6262e;stop-opacity:1"
+         offset="0.66093999" />
+      <stop
+         id="stop3250"
+         style="stop-color:#690b54;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2490">
+      <stop
+         id="stop2492"
+         style="stop-color:#911313;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop2494"
+         style="stop-color:#bc301e;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="24"
+       y1="1.9999999"
+       x2="24"
+       y2="46.01725"
+       id="linearGradient2626"
+       xlink:href="#linearGradient3211"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.9777778,-1.276704,3.5358576)" />
+    <linearGradient
+       id="linearGradient3211">
+      <stop
+         id="stop3213"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3215"
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata1877">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>bookmark</rdf:li>
+            <rdf:li>view</rdf:li>
+            <rdf:li>edit</rdf:li>
+            <rdf:li>web</rdf:li>
+            <rdf:li>favorites</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:coverage>Manage bookmarks in web browser</dc:coverage>
+        <dc:description>A book with a bookmark</dc:description>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="32"
+       height="36"
+       rx="2.9600999"
+       ry="2.9590001"
+       x="9"
+       y="6"
+       id="rect1880"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4" />
+    <path
+       d="m 19.676057,11.684869 c -3.272152,3.74e-4 -7.212351,2.433639 -8.788094,6.430313 0,3.107985 0,6.215969 0,9.323953 0.731832,2.854641 1.889719,5.056309 2.866847,7.421653 l 4.501219,-1.875508 c -1.033566,-2.117228 -2.389041,-4.230237 -2.866847,-5.278215 -1.337659,-2.934349 -1.826431,-4.247358 -1.71475,-6.483898 0.107986,-2.1623 0.855548,-3.494395 2.17023,-4.769149 1.314708,-1.274642 3.106501,-1.908122 5.278215,-1.607578 4.599371,0.637201 6.079396,4.118257 6.189175,5.814075 0.09034,1.394785 -0.887246,4.829824 -4.420839,4.661976 -2.449623,-0.11656 -3.826541,-1.501228 -3.992153,-3.804601 -0.121995,-1.697603 1.520624,-3.384327 4.179704,-2.518539 0.428002,0.139272 0.456962,-0.628285 -0.0268,-1.018133 -1.245389,-1.003626 -6.179067,-0.61995 -6.162384,3.322328 0.01546,3.653326 2.937814,6.092421 5.760489,6.108797 5.9116,0.03479 7.045683,-4.631816 6.832207,-7.850341 -0.236541,-3.566414 -4.707555,-7.877724 -9.806227,-7.877133 z"
+       id="path3607"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+    <path
+       d="m 36.204173,13.375081 -4.501219,1.875508 c 1.03354,2.117468 2.389051,4.229885 2.866848,5.278215 1.337659,2.934357 1.82643,4.247238 1.71475,6.483898 -0.107978,2.16194 -0.855522,3.467481 -2.170231,4.742356 -1.31469,1.274642 -3.10651,1.935044 -5.278214,1.634371 -4.599398,-0.636721 -6.079398,-4.118262 -6.189175,-5.814075 -0.09034,-1.394546 0.887253,-4.829824 4.420839,-4.661976 2.449623,0.116561 3.826551,1.474445 3.992152,3.777809 0.121996,1.697491 -1.520633,3.411229 -4.179704,2.545331 -0.428026,-0.139152 -0.456955,0.628286 0.0268,1.018133 1.245388,1.003738 6.20585,0.619832 6.189175,-3.322328 -0.01546,-3.653206 -2.964606,-6.119206 -5.787282,-6.135589 -5.911616,-0.03503 -7.045676,4.658254 -6.832205,7.877133 0.236533,3.566054 4.707545,7.878092 9.806226,7.877133 3.363435,-1.86e-4 7.440776,-2.581148 8.922058,-6.778622 0,-2.847803 0,-5.661815 0,-8.493371 -0.717843,-3.091429 -1.970077,-5.408677 -3.000813,-7.903926 z"
+       id="path3611"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+  </g>
+</svg>

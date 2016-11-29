@@ -10,7 +10,7 @@
    viewBox="0 0 128 128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="clipit.svg"
    width="128"
    height="128">
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,16 +35,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1103"
-     inkscape:window-height="658"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview95"
      showgrid="false"
      inkscape:zoom="3.4766083"
-     inkscape:cx="89.674224"
+     inkscape:cx="34.01653"
      inkscape:cy="52.189201"
-     inkscape:window-x="126"
-     inkscape:window-y="55"
-     inkscape:window-maximized="0"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <defs
      id="defs4">
@@ -95,84 +95,79 @@
      id="g33"
      transform="translate(0,80)" />
   <rect
-     style="opacity:1;fill:#c87137;fill-opacity:1;stroke:none;stroke-width:6.80000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     style="fill:none;stroke:#000000;stroke-width:5.6171279;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect3437"
-     width="82.541542"
-     height="99.502129"
-     x="12.31954"
-     y="9.1607475"
-     ry="8.9180517" />
+     width="62.439301"
+     height="89.754807"
+     x="11.728104"
+     y="8.5693111"
+     ry="8.0444307" />
   <g
      id="g67"
      clip-path="url(#clipPath-461194074)"
-     transform="matrix(2.7796524,0,0,3.3685618,17.973066,0.39778172)">
+     transform="matrix(1.6104925,0,0,2.1514625,60.846191,44.996727)"
+     style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
     <!-- color: #41afd2 -->
     <g
-       id="g69">
+       id="g69"
+       style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
       <path
-         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path71"
          d="m 14,12 20,0 c 1.105,0 2,0.895 2,2 l 0,20 c 0,1.105 -0.895,2 -2,2 l -20,0 c -1.105,0 -2,-0.895 -2,-2 l 0,-20 c 0,-1.105 0.895,-2 2,-2 m 0,0" />
       <path
-         style="fill:#fbebcf;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path73"
          d="m 14,12 c -1.109,0 -2,0.891 -2,2 l 0,20 c 0,1.109 0.891,2 2,2 l 10,0 0,-24 m -10,0" />
       <path
-         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path75"
          d="m 14,12 c -1.109,0 -2,0.891 -2,2 l 0,20 c 0,1.109 0.891,2 2,2 l 1,0 c -1.109,0 -2,-0.891 -2,-2 l 0,-20 c 0,-1.109 0.891,-2 2,-2 m -1,0" />
       <path
-         style="fill:#fbebcf;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path77"
          d="m 33,12 c 1.109,0 2,0.891 2,2 l 0,20 c 0,1.109 -0.891,2 -2,2 l 1,0 c 1.109,0 2,-0.891 2,-2 l 0,-20 c 0,-1.109 -0.891,-2 -2,-2 m -1,0" />
       <path
-         style="fill:#2d2d2d;fill-opacity:0.4;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path79"
          d="m 15,14 7,0 0,2 -7,0 m 0,-2" />
       <path
-         style="fill:#2d2d2d;fill-opacity:0.4;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path81"
          d="m 26,32 7,0 0,2 -7,0 m 0,-2" />
       <path
-         style="fill:#2d2d2d;fill-opacity:0.4;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path83"
          d="m 15,19 18,0 0,1 -18,0 m 0,-1" />
       <path
-         style="fill:#2d2d2d;fill-opacity:0.4;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path85"
          d="m 15,22 18,0 0,1 -18,0 m 0,-1" />
       <path
-         style="fill:#2d2d2d;fill-opacity:0.4;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path87"
          d="m 15,25 18,0 0,1 -18,0 m 0,-1" />
       <path
-         style="fill:#2d2d2d;fill-opacity:0.4;fill-rule:nonzero;stroke:none"
+         style="fill:none;stroke:#000000;stroke-width:1.30720139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          inkscape:connector-curvature="0"
          id="path89"
          d="m 15,28 18,0 0,1 -18,0 m 0,-1" />
     </g>
   </g>
   <rect
-     style="opacity:1;fill:#483737;fill-opacity:1;stroke:none;stroke-width:6.80000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect4239"
-     width="27.813162"
-     height="4.4807758"
-     x="38.703846"
-     y="12.566216" />
-  <rect
-     style="opacity:1;fill:#a99f8e;fill-opacity:1;stroke:none;stroke-width:6.80000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     style="fill:#00000c;fill-opacity:1;stroke:none"
      id="rect4239-7"
      width="14.993366"
      height="9.6509018"
-     x="45.604454"
-     y="5.1557016" />
+     x="35.838264"
+     y="1.4298816" />
 </svg>

@@ -1,11 +1,83 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created using Karbon, part of Calligra: http://www.calligra.org/karbon -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.4pt" height="38.4pt">
-<defs/>
-<g id="layer0">
-  <rect id="shape0" transform="translate(9.00002, 9.00002)" fill="#2c3e50" fill-rule="evenodd" stroke="#003bc3" stroke-width="0.00000000000" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2.01260191180" width="24.00949041260pt" height="24.00949041260pt"/>
-  <path id="path4149" transform="translate(16.0807, 14.1805)" fill="#ecf0f1" fill-rule="evenodd" d="M16.8539 0L0 16.8539L2.80382 19.6577L19.6577 2.80382Z"/>
-  <rect id="rect3339" transform="matrix(0.707107 -0.707107 0.707107 0.707107 12.4088 27.509)" fill="#ecf0f1" fill-rule="evenodd" width="3.20000000000pt" height="6.98239976000pt"/>
- </g>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="38.4pt"
+   height="38.4pt"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="vcs-normal.svg">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="-15.355932"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer0" />
+  <defs
+     id="defs4" />
+  <g
+     id="layer0"
+     style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">
+    <rect
+       id="shape0"
+       transform="translate(9.00002, 9.00002)"
+       fill="#2c3e50"
+       fill-rule="evenodd"
+       stroke="#003bc3"
+       stroke-width="0.00000000000"
+       stroke-linecap="square"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2.01260191180"
+       width="24.00949041260pt"
+       height="24.00949041260pt"
+       style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       id="path4149"
+       transform="translate(16.0807, 14.1805)"
+       fill="#ecf0f1"
+       fill-rule="evenodd"
+       d="M16.8539 0L0 16.8539L2.80382 19.6577L19.6577 2.80382Z"
+       style="fill:#000000;stroke:none;stroke-opacity:1;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" />
+    <rect
+       id="rect3339"
+       transform="matrix(0.707107 -0.707107 0.707107 0.707107 12.4088 27.509)"
+       fill="#ecf0f1"
+       fill-rule="evenodd"
+       width="3.20000000000pt"
+       height="6.98239976000pt"
+       style="fill:#000000;stroke:none;stroke-opacity:1;stroke-width:1.99999937999999999;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" />
+  </g>
 </svg>

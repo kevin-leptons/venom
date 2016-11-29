@@ -11,7 +11,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    width="100%"
    height="100%"
    sodipodi:docname="drive-removable-media-usb-symbolic-1.svg">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -79,15 +79,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="712"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview6"
      showgrid="true"
      inkscape:zoom="67.825682"
      inkscape:cx="7.9996727"
-     inkscape:cy="16.758281"
+     inkscape:cy="3.7838446"
      inkscape:window-x="0"
-     inkscape:window-y="29"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2"
      showguides="true"
@@ -97,11 +97,12 @@
        id="grid3790" />
   </sodipodi:namedview>
   <g
-     id="g3854">
+     id="g3854"
+     style="fill:#000000;fill-opacity:1">
     <path
        sodipodi:nodetypes="cccccccccccccccccccccccccc"
        inkscape:connector-curvature="0"
-       style="color:#bebebe;fill:#bebebe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#bebebe;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="M 7,3 7,5.6061995 4.2617915,7.675809 C 4.102729,7.772119 3.9984612,7.83778 4,8 L 4,9 3,9 3,12 6,12 6,9 5,9 5,8.5 7,6.75 7,13 5,13 8.0000015,16 11,13 9,13 9,5.35 11,6.75 11,9 12,9 12,6.5 C 12.0025,6.347082 11.973695,6.154415 11.830592,6.056452 L 9,4 9,3 z"
        id="path4707-3" />
     <path
@@ -112,11 +113,11 @@
        sodipodi:cy="3.2254596"
        sodipodi:cx="2.7027667"
        id="path3792"
-       style="fill:#bebebe;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
-       style="fill:#bebebe;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="path3813"
        sodipodi:cx="2.7027667"
        sodipodi:cy="3.2254596"

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg3304"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="network-cellular-connected.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview28"
+     showgrid="false"
+     inkscape:zoom="16.07438"
+     inkscape:cx="12.03364"
+     inkscape:cy="23.799999"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3017" />
+  <defs
+     id="defs21" />
+  <metadata
+     id="metadata3309">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Andreas Nilsson</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>phone</rdf:li>
+            <rdf:li>mobile</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     width="48"
+     height="48.400002"
+     x="0"
+     y="0"
+     id="rect2171"
+     style="fill:none" />
+  <g
+     transform="translate(5.5570331,-6.711864)"
+     id="g3011">
+    <path
+       d="m 9.4897449,24.946844 a 14,14 0 0 0 -0.1,12.688"
+       id="path3163"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+    <path
+       d="m 4.4957449,19.324344 a 19,19 0 0 0 -0.1759995,22.925"
+       id="path3167"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round" />
+  </g>
+  <g
+     transform="matrix(-1,0,0,1,42.442967,-6.711864)"
+     id="g3027">
+    <path
+       d="m 9.4897449,24.946844 a 14,14 0 0 0 -0.1,12.688"
+       id="path3033"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+    <path
+       d="m 4.4957449,19.324344 a 19,19 0 0 0 -0.1759995,22.925"
+       id="path3035"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round" />
+  </g>
+  <g
+     id="layer1">
+    <g
+       transform="translate(0.14286,0.14286)"
+       id="g4956">
+      <g
+         transform="matrix(0.69230769,0,0,1,-36.732259,2.8472957)"
+         id="g3017">
+        <rect
+           width="26"
+           height="33.969002"
+           rx="2.7079"
+           ry="3.0483"
+           x="74.518021"
+           y="7.0408425"
+           id="rect4967"
+           style="fill:none;stroke:#000000;stroke-opacity:1" />
+        <rect
+           width="5.9797001"
+           height="11.005"
+           rx="2.0406001"
+           ry="1.9888999"
+           x="94.538017"
+           y="1.0042424"
+           id="rect5574" />
+        <rect
+           width="20"
+           height="13"
+           rx="1.7916"
+           ry="1.8966"
+           x="77.518021"
+           y="10.009542"
+           id="rect4969"
+           style="fill:none;stroke:#000000;stroke-opacity:1" />
+        <path
+           d="m 82.599017,24.714542 v 13.642 h 2 v -13.642 h -2 z"
+           id="path4973"
+           style="fill-rule:evenodd" />
+        <path
+           d="m 90.505017,24.948542 v 13.642 h 2 v -13.642 h -2 z"
+           id="path5552"
+           style="fill-rule:evenodd" />
+        <path
+           d="m 76.130017,28.058542 v 2 h 23.156 v -2 h -23.156 z"
+           id="path5554"
+           style="fill-rule:evenodd" />
+        <path
+           d="m 75.473017,33.009542 v 2.112 h 23.157 v -2.112 h -23.157 z"
+           id="path5556"
+           style="fill-rule:evenodd" />
+      </g>
+    </g>
+  </g>
+</svg>

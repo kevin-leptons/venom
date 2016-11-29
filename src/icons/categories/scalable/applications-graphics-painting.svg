@@ -26,18 +26,18 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.9479165"
-     inkscape:cx="35.917991"
+     inkscape:cx="11.571988"
      inkscape:cy="31.894297"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:grid-points="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="716"
-     inkscape:window-x="15"
-     inkscape:window-y="24"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata1311">
     <rdf:RDF>
@@ -56,7 +56,7 @@
      inkscape:groupmode="layer">
     <path
        sodipodi:type="arc"
-       style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
        id="path2987"
        sodipodi:cx="17.237223"
        sodipodi:cy="16.796854"
@@ -73,12 +73,12 @@
        y="0.0000000"
        ry="0.0000000" />
     <path
-       style="fill:#262729;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 21.000000,28.000000 L 25.000000,30.000000 C 30.645697,26.712538 38.486676,20.641328 41.427261,11.000000 L 31.000000,4.0000000 C 24.965924,8.5653126 22.882044,17.647007 21.000000,28.000000 z "
        id="path3020"
        sodipodi:nodetypes="ccccc" />
     <path
-       style="fill:#e04613;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 9.0000000,43.000000 C 20.000000,44.000000 25.460900,41.000000 24.000000,32.000000 L 20.000000,30.000000 C 12.000000,32.000000 17.000000,39.000000 9.0000000,43.000000 z "
        id="path3748"
        sodipodi:nodetypes="cccc" />

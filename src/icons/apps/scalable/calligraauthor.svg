@@ -13,7 +13,7 @@
    height="38.4pt"
    id="svg2"
    version="1.1"
-   inkscape:version="0.49 r12742"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="calligraauthor.svg">
   <metadata
      id="metadata12">
@@ -35,15 +35,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="718"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview10"
      showgrid="false"
      inkscape:zoom="6.9532164"
-     inkscape:cx="6.4098554"
+     inkscape:cx="-21.418992"
      inkscape:cy="20.784747"
-     inkscape:window-x="-2"
-     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2">
     <sodipodi:guide
@@ -150,14 +150,14 @@
   <defs
      id="defs4" />
   <rect
-     style="fill:#34495e;fill-opacity:1;stroke:none"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
      id="rect4043"
      width="34"
      height="40"
      x="7.000001"
      y="3.9999826" />
   <path
-     style="fill:#e74c3c;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      d="m 30.000001,3.9999826 11,0 0,11.0000194 -5.5,-4 -5.5,4 z"
      id="rect4140"
      inkscape:connector-curvature="0"
@@ -168,9 +168,9 @@
      height="40"
      width="7"
      id="rect4175"
-     style="fill:#2980b9;fill-opacity:1;stroke:none" />
+     style="fill:#000000;fill-opacity:1;stroke:none" />
   <path
-     style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      d="m 36.5,15.000002 c 0,0 -4.778263,0.742929 -9.412063,3.536209 0.837147,0.683165 1.573546,1.519895 2.14748,2.513978 0.171815,0.297591 0.320587,0.600149 0.455647,0.90733 -0.92999,-1.267598 -2.14231,-2.226177 -3.492627,-2.856702 -0.524872,0.350107 -1.041682,0.73129 -1.547215,1.139115 0.186927,0.257842 0.364079,0.528134 0.526964,0.810257 0.171815,0.297591 0.320587,0.600149 0.455646,0.90733 -0.389729,-0.531209 -0.83407,-1.003294 -1.311468,-1.42637 C 21.104421,23.246653 18.5,27.206503 18.5,33.000002 c 0,0 3.758995,-5.420522 10.194585,-7.432974 -2.028184,-0.617173 -4.263831,-0.532545 -6.317632,0.37046 0.270556,-0.198497 0.550308,-0.386848 0.847898,-0.558661 2.462257,-1.421585 5.297438,-1.573869 7.75787,-0.655734 C 36.219105,22.085569 36.5,15.000002 36.5,15.000002 Z"
      id="path4201"
      inkscape:connector-curvature="0" />

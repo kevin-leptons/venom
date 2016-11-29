@@ -16,7 +16,7 @@ def rgb_to_gray(rgb):
 
 def str_to_rgba(color_str, alpha=1):
     '''
-    :param str hex_str: Color hex string in format RGB or name of color
+    :param str hex_str: Color hex string in format RGB, RRGGBB or color name:
         red, green, blue, black, white
     :param int alpla: Alpha value in range [0, 255]
     :return: Tuple follow format (R, G, B, A)
@@ -25,7 +25,21 @@ def str_to_rgba(color_str, alpha=1):
     '''
 
     if color_str[0] == '#':
-        rgb = struct.unpack('BBB', color_str[1:].decode('hex'))
+        new_str = None
+        if len(color_str) == 7:
+            # color in RRGGBB format
+            new_str = color_str[1:]
+        elif len(color_str) == 4:
+            # color in RGB format
+            new_str = '{}{}{}{}{}{}'.format(
+                color_str[1], color_str[1],
+                color_str[2], color_str[2],
+                color_str[3], color_str[3]
+            )
+        else:
+            raise TypeError('Color format \'{}\' is invalid', color_str)
+
+        rgb = struct.unpack('BBB', new_str.decode('hex'))
         return rgb + (alpha,)
 
     if color_str == 'red':
@@ -64,16 +78,20 @@ def vector_mono(src, dest, fcolor, bcolor, fuzz=127):
     with open(src, 'r') as sf:
         data = sf.read()
 
-        # find all of hex colors
-        src_colors = re.findall('#[a-fA-F0-9]{6}', data)
+        # find all of hex colors in format RGB and RRGGBB
+        src_colors = re.findall('[:"]#[a-fA-F0-9]+[;"]', data)
 
         # remove repeated colors
-        src_colors = set(src_colors)
+        src_colors = list(set(src_colors))
+
+        # create maps for match string and color
+        map_colors = [(i, i[1:-1]) for i in src_colors[:]]
 
         # replace each colors
-        for src_color in src_colors:
+        for match_str, src_color in map_colors:
             dest_rgba = mono_rgba(src_color, fcolor, bcolor, fuzz)
-            data = re.sub(src_color, dest_rgba[0], data)
+            dest_str = match_str.replace(src_color, dest_rgba[0])
+            data = re.sub(match_str, dest_str, data)
 
         # create new vector file
         with open(dest, 'w') as df:

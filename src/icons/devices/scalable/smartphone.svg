@@ -13,8 +13,8 @@
    height="512"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="gnome-dev-ipod.svg"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="multimedia-player.svg"
    viewBox="0 0 511.99999 511.99999">
   <metadata
      id="metadata18">
@@ -38,15 +38,15 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1046"
+     inkscape:window-height="1007"
      id="namedview16"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="0.41796875"
-     inkscape:cx="-645.89647"
-     inkscape:cy="160.67123"
-     inkscape:window-x="2048"
-     inkscape:window-y="34"
+     inkscape:zoom="1.1821941"
+     inkscape:cx="224.55739"
+     inkscape:cy="219.89258"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2"
      units="px" />
@@ -67,25 +67,15 @@
     </filter>
   </defs>
   <path
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#003bc3;stroke-width:0;stroke-linecap:square;stroke-linejoin:bevel;opacity:0.5;filter:url(#filter4192)"
-     inkscape:connector-curvature="0"
-     d="m 127.85555,55.251179 0.0613,403.914121 c 19.01836,21.51376 232.06822,25.20671 256.22761,-1.1624 L 383.37032,56.412539 C 359.4655,28.305569 145.44294,29.000369 127.85555,55.251179 Z"
-     id="shape01-6" />
-  <path
-     style="fill:#9b9b9b;fill-rule:evenodd;stroke:#003bc3;stroke-width:0;stroke-linecap:square;stroke-linejoin:bevel;fill-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999992;stroke-linecap:square;stroke-linejoin:bevel;fill-opacity:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
      inkscape:connector-curvature="0"
      d="m 127.93806,51.20321 0.0613,412.0585 c 19.00608,21.94849 231.91832,25.71468 256.06376,-1.18565 L 383.28894,52.388048 C 359.39923,23.714309 145.51417,24.423119 127.93806,51.20321 Z"
      id="shape0" />
   <path
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#003bc3;stroke-width:0;stroke-linecap:square;stroke-linejoin:bevel"
-     inkscape:connector-curvature="0"
-     d="m 127.85553,55.984523 0.0613,403.914117 c 19.01836,21.51376 232.06823,25.20671 256.22762,-1.1624 L 383.37031,57.14588 C 359.46549,29.038917 145.44292,29.733709 127.85553,55.984523 Z"
-     id="shape01" />
-  <path
      inkscape:connector-curvature="0"
      id="shape1"
-     d="m 132.73242,72.117295 0,15.705363 0.11507,0 0,324.253562 -0.0453,0 0,35.23555 245.91796,-0.71058 0.16017,-33.81447 -0.28316,0 -0.5977,-326.093623 0.15041,-14.005677 -245.41796,-0.570158 z"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#003bc3;stroke-width:0;stroke-linecap:square;stroke-linejoin:bevel" />
+     d="m 132.73242,71.523987 0,15.705363 0.11507,5.55e-4 0,324.253565 -0.0453,-2.2e-4 0,35.23555 245.91796,0.47493 0.16017,-33.8137 -0.28316,-10e-4 -0.5977,-326.096509 0.15041,-14.004952 -245.41796,-1.753257 z"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <circle
      style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#003bc3;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:2.01260185"
      stroke-miterlimit="2.01260185242"

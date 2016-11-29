@@ -13,7 +13,7 @@
    height="24"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48+devel r12667"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="emblem-document.svg">
   <defs
      id="defs4" />
@@ -30,10 +30,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="714"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -95,7 +95,7 @@
        x="4.5"
        y="1032.8622" />
     <path
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="m 4.5,4.5 0,2 0,11 0,2 15,0 0,-2 0,-4 -2,0 0,4 -11,0 0,-11 4,0 0,-2 -4,0 z"
        id="rect4072"
        inkscape:connector-curvature="0"
@@ -109,9 +109,9 @@
        sodipodi:cy="1040.3622"
        sodipodi:rx="1.0006928"
        sodipodi:ry="1.0000308"
-       d="m 6.5,1040.3622 a 1.0006928,1.0000308 0 1 1 0,0 1.0006928,1.0000308 0 1 1 0,0 z" />
+       d="m 6.5,1040.3622 c 0,0.5523 -0.4480254,1 -1.0006928,1 -0.5526674,0 -1.0006929,-0.4477 -1.0006929,-1 0,-0.5523 0.4480255,-1 1.0006929,-1 0.5526674,0 1.0006928,0.4477 1.0006928,1 z" />
     <path
-       d="m 19.5,1040.8622 a 1.0006928,1.0000308 0 1 1 0,0 1.0006928,1.0000308 0 1 1 0,0 z"
+       d="m 19.5,1040.8622 c 0,0.5523 -0.448025,1 -1.000692,1 -0.552668,0 -1.000693,-0.4477 -1.000693,-1 0,-0.5523 0.448025,-1 1.000693,-1 0.552667,0 1.000692,0.4477 1.000692,1 z"
        sodipodi:ry="1.0000308"
        sodipodi:rx="1.0006928"
        sodipodi:cy="1040.8622"
@@ -120,14 +120,14 @@
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none"
        sodipodi:type="arc" />
     <rect
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect4084"
        width="7"
        height="7"
        x="12.5"
        y="1032.8622" />
     <path
-       d="m 12.5,1033.8622 a 1.0006928,1.0000308 0 1 1 0,0 1.0006928,1.0000308 0 1 1 0,0 z"
+       d="m 12.5,1033.8622 c 0,0.5523 -0.448025,1 -1.000692,1 -0.552668,0 -1.000693,-0.4477 -1.000693,-1 0,-0.5523 0.448025,-1 1.000693,-1 0.552667,0 1.000692,0.4477 1.000692,1 z"
        sodipodi:ry="1.0000308"
        sodipodi:rx="1.0006928"
        sodipodi:cy="1033.8622"

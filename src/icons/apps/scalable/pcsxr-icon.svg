@@ -12,7 +12,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="PCSX2.svg">
+   sodipodi:docname="pcsxr-icon.svg">
   <metadata
      id="metadata19">
     <rdf:RDF>
@@ -38,10 +38,10 @@
      id="namedview17"
      showgrid="false"
      inkscape:zoom="2.4583333"
-     inkscape:cx="93.696981"
+     inkscape:cx="14.985116"
      inkscape:cy="37.579774"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <defs
@@ -65,7 +65,7 @@
   </defs>
   <rect
      id="rect13"
-     style="fill:#06a4ff;fill-opacity:1"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none"
      y="7.5155611"
      x="8"
      height="112.38973"
@@ -74,6 +74,6 @@
   <path
      inkscape:connector-curvature="0"
      id="path15"
-     style="fill:#ffffff;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      d="m 29.937589,31.32764 68.768898,0.05912 0,37.60707 -57.829736,0 0,9.993076 57.652341,0 0,13.895693 -68.17759,0.0591 -0.05912,-34.414019 55.819294,0 0.05912,-13.126996 -56.292337,0 z" />
 </svg>

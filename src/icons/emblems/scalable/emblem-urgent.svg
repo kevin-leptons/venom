@@ -13,7 +13,7 @@
    height="24"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48+devel r12667"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="emblem-urgent.svg">
   <defs
      id="defs4" />
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16.821968"
-     inkscape:cx="10.779707"
-     inkscape:cy="13.578243"
+     inkscape:cx="11.314722"
+     inkscape:cy="13.043228"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="714"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -94,14 +94,14 @@
        y="1032.8622"
        ry="0" />
     <path
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="m 12,4.5 -9.5,15 19,0 z m 0,4 6,9 -12,0 z"
        transform="translate(0,1028.3622)"
        id="path3260"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />
     <path
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="m 13,1044.8622 c 0,-0.5236 -0.476815,-1.0001 -1.00045,-1 -0.523635,0 -0.99955,0.4764 -0.99955,1 0,0.5236 0.475915,1 0.99955,1 0.523635,10e-5 1.00045,-0.4763 1.00045,-1 z"
        id="path3285"
        inkscape:connector-curvature="0" />
@@ -120,6 +120,6 @@
        height="3.999999"
        width="2"
        id="rect3293"
-       style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
   </g>
 </svg>

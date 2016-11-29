@@ -1,1 +1,71 @@
-application-images.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1307"
+   height="48px"
+   width="48px"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="gnome-mime-application-x-killustrator.svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="-84.305085"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <metadata
+     id="metadata1312">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       id="rect1315"
+       style="fill-rule:evenodd;fill:none;stroke:#000000;stroke-opacity:1;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+       rx="3.4419"
+       ry="3.3179"
+       height="34"
+       width="40"
+       y="7"
+       x="4" />
+    <path
+       id="path2188"
+       style="fill-rule:evenodd;fill:#000000;fill-opacity:1;stroke:none"
+       d="m4.062 33.062l8.938-11.062c1.643-1.798 2.791-0.992 4 0l8 9c3.093 3.109-1.008 6.093-3 3l-7-8-9.5116 11.946" />
+    <path
+       id="path3962"
+       style="fill-rule:evenodd;fill:#000000;fill-opacity:1;stroke:none"
+       d="m19.829 25.122l10.24-9.202c1.643-1.798 2.791-0.992 4 0l7.814 6.148c3.093 3.108-1.008 6.093-3 3l-6.814-5.148-11.186 10.148" />
+  </g>
+</svg>

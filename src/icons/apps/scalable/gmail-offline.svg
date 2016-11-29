@@ -35,17 +35,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1118"
-     inkscape:window-height="682"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview79"
      showgrid="false"
      inkscape:zoom="3.4766083"
      inkscape:cx="13.72242"
      inkscape:cy="58.930314"
-     inkscape:window-x="25"
-     inkscape:window-y="39"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2" />
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3136" />
   <defs
      id="defs4">
     <linearGradient
@@ -151,35 +151,25 @@
         <g
            id="g3136">
           <path
-             id="path3138"
-             d="m 11.984,15 24.03,0 c 0.543,0 0.977,0.441 0.977,0.984 l 0,16.03 c 0,0.543 -0.438,0.977 -0.977,0.977 l -24.03,0 C 11.437,32.991 11,32.553 11,32.014 l 0,-16.03 C 11,15.441 11.438,15 11.984,15 m 0,0"
-             inkscape:connector-curvature="0"
-             style="fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-          <path
-             id="path3140"
-             d="M 37,17 24,25.656 35,33 l 1,0 c 0.547,0 1,-0.453 1,-1 m 0,-15"
-             inkscape:connector-curvature="0"
-             style="fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-          <path
              id="path3142"
              d="m 35,15 0,18 1,0 c 0.547,0 1,-0.453 1,-1 l 0,-16 c 0,-0.543 -0.453,-0.996 -1,-0.996 m -1,0"
              inkscape:connector-curvature="0"
-             style="fill:#0054b1;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
           <path
              id="path3144"
              d="m 12,15 c -0.543,0 -0.996,0.453 -0.996,0.996 l 0,16 c 0,0.547 0.453,1 0.996,1 l 1,0 0,-18 m -1,0"
              inkscape:connector-curvature="0"
-             style="fill:#0087f8;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
           <path
              id="path3146"
              d="m 12,15 c -0.543,0 -0.996,0.453 -0.996,0.996 l 0,1 13,8.656 0,-3.313 -11,-7.344 -1,0 M 12,14.999"
              inkscape:connector-curvature="0"
-             style="fill:#0087f8;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
           <path
              id="path3148"
              d="m 36,15 c 0.547,0 1,0.453 1,0.996 l 0,1 -13,8.656 0,-3.313 10.996,-7.344 1,0 M 36,14.999"
              inkscape:connector-curvature="0"
-             style="fill:#0087f8;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
         </g>
       </g>
     </g>

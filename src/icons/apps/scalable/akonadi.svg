@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="akonadiconsole.svg">
+   sodipodi:docname="akonadi.svg">
   <metadata
      id="metadata11">
     <rdf:RDF>
@@ -36,17 +36,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview9"
      showgrid="false"
      inkscape:showpageshadow="false"
      borderlayer="true"
      inkscape:zoom="2.4583332"
-     inkscape:cx="149.14078"
+     inkscape:cx="70.428911"
      inkscape:cy="67.62106"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2">
     <sodipodi:guide
@@ -133,21 +133,21 @@
   <defs
      id="defs4" />
   <rect
-     style="fill:#2c3e50;fill-opacity:1;stroke:none"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
      id="rect853"
      width="103.15484"
      height="121.35869"
      x="12.000018"
      y="2.6413124" />
   <rect
-     style="fill:#3498db;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      id="rect4178"
      width="21.23777"
      height="121.35869"
      x="12.000018"
      y="2.6413124" />
   <path
-     style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      d="m 74.19629,36.016247 c -15.127361,0 -27.305705,12.178344 -27.305705,27.305704 0,0.168082 0.02063,0.330278 0.02367,0.497753 -0.0049,0.187196 -0.02367,0.368718 -0.02367,0.557036 0,2.45985 0.43822,4.811538 1.20292,7.004186 3.423595,11.16776 13.784162,19.246729 26.102785,19.246729 15.12736,0 27.3057,-12.178344 27.3057,-27.305704 0,-15.12736 -12.17834,-27.305704 -27.3057,-27.305704 z m 0,6.067934 c 11.765724,0 21.23777,9.472046 21.23777,21.23777 0,11.673583 -9.32769,21.079154 -20.965187,21.225907 7.186036,-2.269498 12.696015,-8.240528 14.286903,-15.709062 -3.87562,4.468517 -9.586966,7.300483 -15.993509,7.300483 -9.060631,0 -16.730454,-5.64597 -19.762267,-13.617294 0.42187,-11.388433 9.701101,-20.437804 21.19629,-20.437804 z"
      id="rect4192"
      inkscape:connector-curvature="0" />

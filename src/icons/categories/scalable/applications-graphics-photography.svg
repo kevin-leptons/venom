@@ -14,7 +14,7 @@
    inkscape:version="0.48.5 r10040"
    width="512"
    height="512"
-   sodipodi:docname="gnome-screenshot.svg">
+   sodipodi:docname="applications-graphics-photography.svg">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,16 +38,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1154"
-     inkscape:window-height="673"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1.3037281"
-     inkscape:cx="223.49269"
+     inkscape:cx="75.072172"
      inkscape:cy="293.92501"
-     inkscape:window-x="15"
-     inkscape:window-y="39"
-     inkscape:window-maximized="0"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
      inkscape:current-layer="g3772" />
   <g
      id="g3772"
@@ -59,20 +59,10 @@
        height="278.32428"
        width="364.04819"
        id="rect2996"
-       style="fill:#5fdfe1;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:12.51935577;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:12.51935577000000066;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <path
-       style="fill:#48484c"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
        d="m 186.16234,366.10593 c -0.37866,-36.4375 -0.5453,-79.975 -0.37032,-96.75 l 0.31815,-30.5 102.00005,-0.31257 c 56.1,-0.17191 125.9625,-0.006 155.25,0.3692 l 53.25,0.68176 0,96.3808 0,96.38081 -154.8797,0 -154.8797,0 z"
        id="path2989" />
-    <path
-       sodipodi:type="arc"
-       style="fill:#48484c;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:14.83705425;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="path3763"
-       sodipodi:cx="403.07483"
-       sodipodi:cy="365.88058"
-       sodipodi:rx="36.433979"
-       sodipodi:ry="31.831791"
-       d="m 439.50881,365.88058 a 36.433979,31.831791 0 1 1 -72.86796,0 36.433979,31.831791 0 1 1 72.86796,0 z"
-       transform="matrix(1.4872618,0,0,1.7022876,-196.71727,-285.00188)" />
   </g>
 </svg>

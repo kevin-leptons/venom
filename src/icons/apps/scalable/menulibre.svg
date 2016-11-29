@@ -14,7 +14,7 @@
    inkscape:version="0.48.5 r10040"
    width="600"
    height="600"
-   sodipodi:docname="alacarte.svg">
+   sodipodi:docname="menulibre.svg">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -113,14 +113,14 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="0.70710678"
-     inkscape:cx="463.22603"
+     inkscape:cx="189.57571"
      inkscape:cy="276.66058"
      inkscape:window-x="143"
      inkscape:window-y="51"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <path
-     style="fill:#4c4c4c;fill-opacity:1;stroke:none"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none"
      d="m 583.89693,299.73353 c 0,157.08925 -127.34594,284.43516 -284.43505,284.43516 -157.08913,0 -284.435022,-127.34591 -284.435022,-284.43516 0,-157.08905 127.345892,-284.434954 284.435022,-284.434954 157.08911,0 284.43505,127.345904 284.43505,284.434954 z"
      id="path3805-0"
      clip-path="none"
@@ -135,7 +135,7 @@
      y="-298.86456"
      ry="38.604485" />
   <path
-     style="fill:#006ede;fill-opacity:1;stroke:none"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:17.71933645;stroke-miterlimit:4;stroke-dasharray:none"
      d="m 1117.4096,-672.17837 c 0,173.96979 -141.03037,315.0001 -315.00005,315.0001 -173.96969,0 -314.99999,-141.03031 -314.99999,-315.0001 0,-173.9696 141.0303,-314.9999 314.99999,-314.9999 173.96968,0 315.00005,141.0303 315.00005,314.9999 z"
      id="path3805"
      clip-path="url(#clipPath3899)"
@@ -143,7 +143,7 @@
      mask="none"
      transform="matrix(0.90296835,0,0,0.90296835,-425.03571,906.59603)" />
   <rect
-     style="fill:#ffffff;fill-rule:evenodd;stroke:none"
+     style="fill:#000000;fill-rule:evenodd;stroke:none;fill-opacity:1"
      id="rect3909"
      width="154.63333"
      height="24.831631"
@@ -151,7 +151,7 @@
      y="237.30406"
      ry="12.415815" />
   <rect
-     style="fill:#ffffff;fill-rule:evenodd;stroke:none"
+     style="fill:#000000;fill-rule:evenodd;stroke:none;fill-opacity:1"
      id="rect3909-6"
      width="154.63333"
      height="24.831631"
@@ -159,7 +159,7 @@
      y="280.42081"
      ry="12.415815" />
   <rect
-     style="fill:#ffffff;fill-rule:evenodd;stroke:none"
+     style="fill:#000000;fill-rule:evenodd;stroke:none;fill-opacity:1"
      id="rect3909-2"
      width="154.63333"
      height="24.831631"

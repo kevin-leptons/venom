@@ -10,7 +10,7 @@
    viewBox="0 0 512 512"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="gnome-taquin.svg"
    width="512"
    height="512">
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,15 +35,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3840"
-     inkscape:window-height="2092"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview81"
      showgrid="false"
-     inkscape:zoom="3.5507812"
-     inkscape:cx="256"
-     inkscape:cy="256"
+     inkscape:zoom="1.7753906"
+     inkscape:cx="144.69453"
+     inkscape:cy="273.65619"
      inkscape:window-x="0"
-     inkscape:window-y="68"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <defs
@@ -63,17 +63,12 @@
     </linearGradient>
   </defs>
   <path
-     d="m 50.78261,481.21739 0,-430.43478 156.52174,0 0,136.95652 58.69565,0 0,-136.95652 156.52174,0 0,136.95652 58.69565,0 0,293.47826 z"
-     style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:none"
-     id="path23"
-     inkscape:connector-curvature="0" />
-  <path
      inkscape:connector-curvature="0"
      id="path31"
-     style="fill:#000000;fill-opacity:1;stroke:none"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none"
      d="m 40.782611,471.21739 0,-430.434779 156.521739,0 0,136.956519 58.69565,0 0,-136.956519 156.52173,0 0,136.956519 58.69566,0 0,293.47826 z" />
   <path
-     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
      d="M 60.347656 60.347656 L 60.347656 177.73828 L 177.73828 177.73828 L 177.73828 60.347656 L 60.347656 60.347656 z M 275.56445 60.347656 L 275.56445 177.73828 L 392.95703 177.73828 L 392.95703 60.347656 L 275.56445 60.347656 z M 60.347656 197.30469 L 60.347656 314.69531 L 177.73828 314.69531 L 177.73828 197.30469 L 60.347656 197.30469 z M 197.30469 197.30469 L 197.30469 314.69531 L 314.69531 314.69531 L 314.69531 197.30469 L 197.30469 197.30469 z M 334.26172 197.30469 L 334.26172 314.69531 L 451.65234 314.69531 L 451.65234 197.30469 L 334.26172 197.30469 z M 60.347656 334.26172 L 60.347656 451.65234 L 177.73828 451.65234 L 177.73828 334.26172 L 60.347656 334.26172 z M 197.30469 334.26172 L 197.30469 451.65234 L 314.69531 451.65234 L 314.69531 334.26172 L 197.30469 334.26172 z M 334.26172 334.26172 L 334.26172 451.65234 L 451.65234 451.65234 L 451.65234 334.26172 L 334.26172 334.26172 z "
      id="rect33" />
   <path

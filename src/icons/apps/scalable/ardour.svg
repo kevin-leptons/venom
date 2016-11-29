@@ -10,7 +10,7 @@
    viewBox="0 0 512 512"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91+devel r14080 custom"
+   inkscape:version="0.48.5 r10040"
    width="512"
    height="512"
    sodipodi:docname="ardour.svg">
@@ -36,14 +36,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="960"
-     inkscape:window-height="1008"
+     inkscape:window-height="1005"
      id="namedview59"
      showgrid="false"
      inkscape:zoom="0.5814296"
      inkscape:cx="166.11944"
      inkscape:cy="244.58814"
-     inkscape:window-x="960"
-     inkscape:window-y="32"
+     inkscape:window-x="956"
+     inkscape:window-y="31"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <defs
@@ -116,7 +116,7 @@
     </linearGradient>
   </defs>
   <path
-     style="fill:#f64747;fill-opacity:0.99607843;stroke:none;stroke-width:10.72644997"
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10.72644996999999911"
      d="M 256,31 C 256,31 41.790591,459.34489 31.000001,480.99966 256,278.49981 255.77674,480.99966 481,480.99966 475.14253,469.59161 256,31 256,31 Z"
      id="path3004-1-8"
      inkscape:connector-curvature="0"

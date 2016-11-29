@@ -13,7 +13,7 @@
    height="48"
    id="svg3780"
    version="1.1"
-   inkscape:version="0.48+devel r12859"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="applications-system.svg">
   <defs
      id="defs3782" />
@@ -30,10 +30,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="673"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1">
     <sodipodi:guide
        position="9,39.000017"
@@ -84,9 +84,9 @@
        sodipodi:cy="1041.3622"
        sodipodi:rx="2.0013857"
        sodipodi:ry="2.0000615"
-       d="m 25.999999,1041.3622 a 2.0013857,2.0000615 0 0 1 -2.001386,2 2.0013857,2.0000615 0 0 1 -2.001385,-2 2.0013857,2.0000615 0 0 1 2.001385,-2.0001 2.0013857,2.0000615 0 0 1 2.001386,2.0001 z" />
+       d="m 25.999999,1041.3622 c 0,1.1046 -0.896051,2 -2.001386,2 -1.105334,0 -2.001385,-0.8954 -2.001385,-2 0,-1.1046 0.896051,-2.0001 2.001385,-2.0001 1.105335,0 2.001386,0.8955 2.001386,2.0001 z" />
     <rect
-       style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect3278"
        width="4"
        height="30"
@@ -100,9 +100,9 @@
        height="30"
        width="4"
        id="rect3286"
-       style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
     <rect
-       style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect3288"
        width="4"
        height="30"

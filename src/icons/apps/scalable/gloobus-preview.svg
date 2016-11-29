@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="gloobus-preview.svg">
+   sodipodi:docname="covergloobus.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -30,10 +30,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -97,7 +97,7 @@
      id="layer1"
      transform="translate(0,-924.3622)">
     <path
-       style="fill:#128ddb;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="path3239-0"
        inkscape:connector-curvature="0"
        d="m 64.986828,991.29753 c -0.86292,-3.83256 3.65752,-6.0529 6.735565,-5.64323 6.016634,0.80131 8.869381,7.6727 7.483957,13.17862 -2.106808,8.37388 -11.439911,12.14098 -19.091769,9.63288 -10.39764,-3.4071 -14.955269,-15.69715 -11.39331,-25.78922 4.537174,-12.85707 19.328601,-18.40079 31.448033,-13.6226 14.801728,5.83614 21.114096,23.76034 15.302635,38.40022 -6.890709,17.3583 -27.236625,24.7001 -43.804274,17.6116 -19.217462,-8.2234 -27.296473,-31.83511 -19.211998,-51.01074 9.219831,-21.86646 35.151938,-31.01637 56.160604,-21.6011 23.638419,10.59222 33.488939,39.91548 23.121229,63.62114 -11.53834,26.3805 -43.070801,37.3399 -68.516749,25.5911 -28.062472,-12.9557 -39.6871856,-47.99761 -27.030682,-76.23179 9.924044,-22.13676 32.610754,-36.06633 56.351693,-35.43959" />

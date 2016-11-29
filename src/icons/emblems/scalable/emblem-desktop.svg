@@ -13,7 +13,7 @@
    height="24"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48+devel r12662"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="emblem-desktop.svg">
   <defs
      id="defs4" />
@@ -30,10 +30,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="714"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-y="31"
      inkscape:window-maximized="1">
     <sodipodi:guide
        position="4.5,19.500017"
@@ -70,7 +70,7 @@
      id="layer1"
      transform="translate(0,-1028.3622)">
     <path
-       style="fill:#34495e;stroke:none;fill-opacity:1"
+       style="fill:#000000;stroke:none;fill-opacity:1"
        d="M 4.5 4.5 L 4.5 17.5 L 19.5 17.5 L 19.5 4.5 L 4.5 4.5 z M 6.5 6.5 L 17.5 6.5 L 17.5 15.5 L 6.5 15.5 L 6.5 6.5 z "
        transform="translate(0,1028.3622)"
        id="rect3260" />
@@ -82,9 +82,9 @@
        sodipodi:cy="1046.8622"
        sodipodi:rx="1.0006928"
        sodipodi:ry="1.0000308"
-       d="m 13,1046.8622 a 1.0006928,1.0000308 0 1 1 0,0 1.0006928,1.0000308 0 1 1 0,0 z" />
+       d="m 13,1046.8622 c 0,0.5523 -0.448026,1 -1.000693,1 -0.552668,0 -1.000693,-0.4477 -1.000693,-1 0,-0.5523 0.448025,-1 1.000693,-1 0.552667,0 1.000693,0.4477 1.000693,1 z" />
     <path
-       d="m 13,1044.8621 a 1.0006928,1.0000308 0 1 1 0,0 1.0006928,1.0000308 0 1 1 0,0 z"
+       d="m 13,1044.8621 c 0,0.5523 -0.448026,1 -1.000693,1 -0.552668,0 -1.000693,-0.4477 -1.000693,-1 0,-0.5523 0.448025,-1.0001 1.000693,-1.0001 0.552667,0 1.000693,0.4478 1.000693,1.0001 z"
        sodipodi:ry="1.0000308"
        sodipodi:rx="1.0006928"
        sodipodi:cy="1044.8621"
@@ -100,7 +100,7 @@
        sodipodi:cy="1033.8621"
        sodipodi:rx="1.0006928"
        sodipodi:ry="1.0000308"
-       d="m 13,1033.8621 a 1.0006928,1.0000308 0 1 1 0,0 1.0006928,1.0000308 0 1 1 0,0 z" />
+       d="m 13,1033.8621 c 0,0.5523 -0.448026,1 -1.000693,1 -0.552668,0 -1.000693,-0.4477 -1.000693,-1 0,-0.5523 0.448025,-1.0001 1.000693,-1.0001 0.552667,0 1.000693,0.4478 1.000693,1.0001 z" />
     <path
        sodipodi:type="arc"
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none"
@@ -109,10 +109,10 @@
        sodipodi:cy="-5.5"
        sodipodi:rx="1.0006928"
        sodipodi:ry="1.0000308"
-       d="m 1040.362,-5.5 a 1.0006928,1.0000308 0 1 1 0,0 1.0006928,1.0000308 0 1 1 0,0 z"
+       d="m 1040.362,-5.5 c 0,0.5523017 -0.448,1.0000308 -1.0007,1.0000308 -0.5526,0 -1.0007,-0.4477291 -1.0007,-1.0000308 0,-0.5523017 0.4481,-1.0000308 1.0007,-1.0000308 0.5527,0 1.0007,0.4477291 1.0007,1.0000308 z"
        transform="matrix(0,1,-1,0,0,0)" />
     <path
-       d="m 1040.362,-18.5 a 1.0006928,1.0000308 0 1 1 0,0 1.0006928,1.0000308 0 1 1 0,0 z"
+       d="m 1040.362,-18.5 c 0,0.552302 -0.448,1.000031 -1.0007,1.000031 -0.5526,0 -1.0007,-0.447729 -1.0007,-1.000031 0,-0.552302 0.4481,-1.000031 1.0007,-1.000031 0.5527,0 1.0007,0.447729 1.0007,1.000031 z"
        sodipodi:ry="1.0000308"
        sodipodi:rx="1.0006928"
        sodipodi:cy="-18.5"
@@ -122,7 +122,7 @@
        sodipodi:type="arc"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
-       style="fill:#34495e;stroke:none;fill-opacity:1"
+       style="fill:#000000;stroke:none;fill-opacity:1"
        id="rect3284"
        width="6"
        height="2"

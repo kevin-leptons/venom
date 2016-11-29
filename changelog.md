@@ -4,9 +4,11 @@
 
 - fix wrong color of volume slider
 - fix wrong color of Botones Apagado
+- fix transparent background of status bar of nautilus
 - improve separator of popup menu
 - improve calendar
 - improve page indicator of application searching
+- big improve for icons
 
 # v0.0.5
 

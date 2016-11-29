@@ -1,1 +1,192 @@
-application-executable.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg1872"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="application-x-desktop.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview27"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="-15.355932"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs10">
+    <linearGradient
+       x1="25.261343"
+       y1="22.105263"
+       x2="25.261343"
+       y2="25.862095"
+       id="linearGradient3049"
+       xlink:href="#linearGradient5727-8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1.3100005,0.28399966)" />
+    <linearGradient
+       id="linearGradient5727-8">
+      <stop
+         id="stop5729-8"
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop5731-4"
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="25"
+       y1="12"
+       x2="25"
+       y2="35"
+       id="linearGradient5736"
+       xlink:href="#linearGradient5727"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1.3100005,0.28399966)" />
+    <linearGradient
+       id="linearGradient5727">
+      <stop
+         id="stop5729"
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop5731"
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       cx="28.897007"
+       cy="10.416596"
+       r="19.99999"
+       fx="30.345285"
+       fy="10.416596"
+       id="radialGradient5300-8"
+       xlink:href="#linearGradient3242"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3047329,-3.2752053e-8,0,2.1461101,-12.89286,13.928839)" />
+    <linearGradient
+       id="linearGradient3242">
+      <stop
+         id="stop3244"
+         style="stop-color:#f8b17e;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3246"
+         style="stop-color:#e35d4f;stop-opacity:1"
+         offset="0.26238" />
+      <stop
+         id="stop3248"
+         style="stop-color:#c6262e;stop-opacity:1"
+         offset="0.66093999" />
+      <stop
+         id="stop3250"
+         style="stop-color:#690b54;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="21.587072"
+       y1="11.492184"
+       x2="21.587072"
+       y2="36.646912"
+       id="linearGradient5302-1"
+       xlink:href="#linearGradient2490"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.81001352,-0.16945435)" />
+    <linearGradient
+       id="linearGradient2490">
+      <stop
+         id="stop2492"
+         style="stop-color:#911313;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop2494"
+         style="stop-color:#bc301e;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata1877">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>bookmark</rdf:li>
+            <rdf:li>view</rdf:li>
+            <rdf:li>edit</rdf:li>
+            <rdf:li>web</rdf:li>
+            <rdf:li>favorites</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:coverage>Manage bookmarks in web browser</dc:coverage>
+        <dc:description>A book with a bookmark</dc:description>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="32"
+       height="36"
+       rx="2.9600999"
+       ry="2.9590001"
+       x="9"
+       y="6"
+       id="rect1880"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4" />
+    <path
+       d="m 35.878051,23.552772 -1.41306,-4.769075 -3.297138,0.94204 c -0.647652,-0.94204 -1.589692,-1.766324 -2.590608,-2.355099 l 0.529898,-3.238262 -5.416728,-0.706529 -0.47102,3.120506 c -0.176632,0.05888 -0.412142,0.117756 -0.588774,0.176633 -0.70653,0.176631 -1.354183,0.529897 -1.942958,0.883162 l -2.53173,-1.942958 -3.356016,4.062547 2.649487,2.06071 c -0.235511,0.647652 -0.353265,1.354183 -0.353265,2.119589 l -3.297139,0.94204 1.41306,4.769075 3.297137,-0.942039 c 0.647652,0.942039 1.589692,1.766323 2.59061,2.355097 l -0.529898,3.238262 5.416727,0.706529 0.47102,-3.120505 c 0.176633,-0.05888 0.412142,-0.117756 0.588775,-0.176634 0.706529,-0.176631 1.354181,-0.529895 1.942956,-0.883162 l 2.53173,1.942958 3.356016,-4.062545 -2.649485,-2.060712 c 0.235509,-0.647652 0.353265,-1.354182 0.353265,-2.119589 l 3.297138,-0.942039 z m -10.303557,3.47377 c -1.648569,0.47102 -3.414893,-0.471019 -3.944791,-2.119589 -0.529896,-1.648569 0.471021,-3.414893 2.119589,-3.944789 1.64857,-0.471021 3.414893,0.471019 3.944791,2.119587 0.47102,1.64857 -0.47102,3.414894 -2.119589,3.944791 z"
+       id="path9"
+       style="fill:#000000;fill-opacity:1" />
+  </g>
+</svg>

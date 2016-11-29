@@ -25,19 +25,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4319391"
-     inkscape:cx="120.05365"
-     inkscape:cy="-34.679999"
+     inkscape:zoom="8.1002708"
+     inkscape:cx="50.682455"
+     inkscape:cy="55.910057"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4078"
      showgrid="false"
      units="px"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      showguides="false">
     <sodipodi:guide
@@ -78,7 +78,7 @@
        id="g4078"
        transform="matrix(2.8855549,0,0,2.8855549,-1.5641369,-558.44564)">
       <rect
-         style="fill:#34495e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-opacity:1"
          id="rect3282"
          width="11.28889"
          height="11.28889"
@@ -86,7 +86,7 @@
          y="284.58221"
          ry="5.6444449" />
       <rect
-         style="fill:#2c3e50;fill-opacity:1;stroke:none"
+         style="fill:#000000;fill-opacity:1;stroke:none"
          id="rect3297"
          width="1.9755548"
          height="1.9755548"
@@ -100,23 +100,7 @@
          height="1.9755548"
          width="1.9755548"
          id="rect3303"
-         style="fill:#2c3e50;fill-opacity:1;stroke:none" />
-      <rect
-         ry="0.7055552"
-         y="289.52109"
-         x="3.668889"
-         height="1.4111104"
-         width="1.4111104"
-         id="rect3305"
-         style="fill:#f39c12;fill-opacity:1;stroke:none" />
-      <rect
-         style="fill:#f5c973;fill-opacity:1;stroke:none"
-         id="rect3307"
-         width="1.4111104"
-         height="1.4111104"
-         x="8.4666681"
-         y="289.52109"
-         ry="0.7055552" />
+         style="fill:#000000;fill-opacity:1;stroke:none" />
       <rect
          ry="0.98777741"
          y="289.23886"
@@ -124,15 +108,7 @@
          height="1.9755548"
          width="1.9755548"
          id="rect3311"
-         style="fill:#2c3e50;fill-opacity:1;stroke:none" />
-      <rect
-         style="fill:#f7bc5e;fill-opacity:1;stroke:none"
-         id="rect3313"
-         width="1.4111104"
-         height="1.4111104"
-         x="6.0677786"
-         y="289.52109"
-         ry="0.7055552" />
+         style="fill:#000000;fill-opacity:1;stroke:none" />
     </g>
   </g>
 </svg>

@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="rss.svg">
+   sodipodi:docname="akregator.svg">
   <metadata
      id="metadata11">
     <rdf:RDF>
@@ -36,8 +36,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview9"
      showgrid="false"
      inkscape:showpageshadow="false"
@@ -46,7 +46,7 @@
      inkscape:cx="74.938546"
      inkscape:cy="56.135081"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2"
      showguides="false">
@@ -88,6 +88,6 @@
   <path
      id="rect4116-7"
      d="m 10.355131,12.432508 0,21.358844 21.358864,0 c 35.498416,0 64.076599,28.578223 64.076599,64.076658 l 0,21.35887 21.358866,0 0,-21.35887 c 0,-47.331231 -38.104235,-85.435502 -85.435465,-85.435502 l -21.358864,0 z m 0,42.717763 0,21.35887 21.358864,0 c 11.832796,0 21.358869,9.526074 21.358869,21.358869 l 0,21.35887 21.35887,0 0,-21.35887 c 0,-23.665639 -19.052139,-42.717739 -42.717739,-42.717739 l -21.358864,0 z m 12.459346,39.157903 c -6.90249,0 -12.459346,5.556856 -12.459346,12.459356 0,6.9025 5.556856,12.45935 12.459346,12.45935 6.902463,0 12.459325,-5.55685 12.459325,-12.45935 0,-6.9025 -5.556862,-12.459356 -12.459325,-12.459356 z"
-     style="fill:#f39c12;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      inkscape:connector-curvature="0" />
 </svg>

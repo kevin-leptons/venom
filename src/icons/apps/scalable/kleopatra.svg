@@ -39,10 +39,10 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      showguides="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1">
     <sodipodi:guide
        position="-6.6748425e-06,47.999999"
@@ -147,7 +147,7 @@
      transform="translate(38.119153,-397.84494)">
     <path
        sodipodi:type="star"
-       style="fill:#e2b70d;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="path3002-4-7"
        sodipodi:sides="3"
        sodipodi:cx="-41.459591"
@@ -164,7 +164,7 @@
        inkscape:transform-center-y="-0.36345225" />
     <path
        sodipodi:type="star"
-       style="fill:#f1c40f;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="path3002"
        sodipodi:sides="3"
        sodipodi:cx="-41.459591"
@@ -181,7 +181,7 @@
        inkscape:transform-center-y="-6.2092951" />
     <path
        sodipodi:type="star"
-       style="fill:#f4d144;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="path3002-4"
        sodipodi:sides="3"
        sodipodi:cx="-41.459591"

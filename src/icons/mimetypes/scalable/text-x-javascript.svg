@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -7,50 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="48"
-   viewBox="0 0 48 48"
-   height="48"
-   id="svg2"
    version="1.1"
-   inkscape:version="0.91+devel r"
-   sodipodi:docname="application-x-javascript.svg">
-  <metadata
-     id="metadata20">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs18">
-    <filter
-       height="1.12"
-       y="-0.06"
-       width="1.12"
-       x="-0.06"
-       id="filter4201"
-       style="color-interpolation-filters:sRGB"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur4203"
-         stdDeviation="0.2826087"
-         inkscape:collect="always" />
-    </filter>
-    <clipPath
-       id="clipPath4157"
-       clipPathUnits="userSpaceOnUse">
-      <path
-         style="fill:#f9f8f2;fill-opacity:1;stroke-width:1.00658333"
-         inkscape:connector-curvature="0"
-         id="path4159"
-         d="m 27.642964,3.2951379 13.085584,13.0855841 -11.072418,0 c -0.977824,0 -2.013166,-1.035372 -2.013166,-2.013167 l 0,-11.0724171 z" />
-    </clipPath>
-  </defs>
-  <sodipodi:namedview
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   id="svg2"
+   xml:space="preserve"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="text-x-javascript.svg"><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -59,45 +25,40 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="959"
-     inkscape:window-height="1026"
-     id="namedview16"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview13"
      showgrid="false"
-     inkscape:zoom="4.1313825"
-     inkscape:cx="25.427472"
-     inkscape:cy="23.6159"
-     inkscape:window-x="960"
-     inkscape:window-y="27"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2" />
-  <path
-     d="m 9.797669,4.203584 c -0.8944343,0 -1.73913,0.8446957 -1.73913,1.7391304 l 0,36.5217396 c 0,0.844721 0.8944348,1.73913 1.73913,1.73913 l 27.826087,0 c 0.844722,0 1.739131,-0.894435 1.739131,-1.73913 l 0,-26.956522 L 28.058539,4.203584 Z"
-     id="path4-1"
-     inkscape:connector-curvature="0"
-     style="fill:#f9de69;fill-opacity:1;stroke-width:0.86956519" />
-  <path
-     d="m 28.248139,4.2710929 11.304348,11.3043481 -9.565218,0 c -0.844721,0 -1.73913,-0.894435 -1.73913,-1.739131 l 0,-9.5652171 z"
-     id="path8-3"
-     inkscape:connector-curvature="0"
-     style="fill:#000000;fill-opacity:0.39200003;stroke-width:0.86956519;filter:url(#filter4201)"
-     clip-path="url(#clipPath4157)"
-     transform="translate(-0.28928697,0.20358399)" />
-  <path
-     d="m 28.058539,4.203584 11.304348,11.304348 -9.565218,0 c -0.844721,0 -1.73913,-0.894435 -1.73913,-1.739131 l 0,-9.565217 z"
-     id="path8-1"
-     inkscape:connector-curvature="0"
-     style="fill:#ffeea1;fill-opacity:1;stroke-width:0.86956519" />
-  <g
-     transform="matrix(0.86956522,0,0,0.86956522,8.347826,10.086957)"
-     id="g10"
-     style="fill:#ffffff">
-    <path
-       d="m 12,8 4,0 0,20 -8,0 0,-4 4,0 z"
-       id="path12"
-       inkscape:connector-curvature="0" />
-    <path
-       d="m 18,8 8,0 0,4 -4,0 0,4 4,0 0,12 -8,0 0,-4 4,0 0,-4 -4,0 z"
-       id="path14"
-       inkscape:connector-curvature="0" />
-  </g>
-</svg>
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-9.3207791"
+     inkscape:cy="14.864392"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" /><defs
+     id="defs19" /><metadata
+     id="metadata19"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /><dc:creator><cc:Agent><dc:title>Jakub Stainer</dc:title></cc:Agent></dc:creator><cc:license
+           rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" /></cc:Work><cc:License
+         rdf:about="http://creativecommons.org/licenses/GPL/2.0/"><cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" /><cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" /><cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" /><cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><path
+     d="M 39,41 H 9 V 6 h 21 l 9,10 v 25 z"
+     id="path7"
+     style="stroke:#000000;stroke-width:4;stroke-linejoin:round;fill:none" /><g
+     transform="translate(0.20338983,2.6440678)"
+     id="flowRoot2995"
+     style="font-size:4px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><g
+       id="text2991"
+       style="fill:#000000;font-family:Sans"><path
+         d="m 22.79261,31.199714 c -5e-6,0.374003 -0.044,0.726002 -0.132,1.056 -0.08067,0.330002 -0.227338,0.619668 -0.44,0.869 -0.205337,0.242001 -0.48767,0.436334 -0.847,0.583 -0.352003,0.139334 -0.799336,0.209 -1.342,0.209 -0.498668,0 -0.927668,-0.05867 -1.287,-0.176 -0.359334,-0.124666 -0.656333,-0.267666 -0.891,-0.429 l 0.572,-1.331 c 0.212666,0.124669 0.439999,0.234669 0.682,0.33 0.241999,0.09534 0.505999,0.143002 0.792,0.143 0.417998,2e-6 0.718664,-0.102665 0.902,-0.308 0.18333,-0.205331 0.274997,-0.549997 0.275,-1.034 l 0,-4.972 1.716,0 0,5.06"
+         id="path2996"
+         style="font-size:11px;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Bold" /><path
+         d="m 26.524876,32.453714 c 0.241997,2e-6 0.439997,-0.01833 0.594,-0.055 0.16133,-0.044 0.289663,-0.099 0.385,-0.165 0.09533,-0.07333 0.161329,-0.157665 0.198,-0.253 0.03666,-0.09533 0.055,-0.201664 0.055,-0.319 -4e-6,-0.249331 -0.117337,-0.454664 -0.352,-0.616 -0.23467,-0.168663 -0.638003,-0.34833 -1.21,-0.539 -0.249336,-0.088 -0.498669,-0.186996 -0.748,-0.297 -0.249335,-0.117329 -0.473001,-0.260329 -0.671,-0.429 -0.198001,-0.175995 -0.359334,-0.384995 -0.484,-0.627 -0.124667,-0.249328 -0.187001,-0.549994 -0.187,-0.902 -1e-6,-0.351994 0.066,-0.667327 0.198,-0.946 0.131999,-0.285993 0.318999,-0.527993 0.561,-0.726 0.241998,-0.197992 0.535332,-0.348325 0.88,-0.451 0.344664,-0.109992 0.73333,-0.164992 1.166,-0.165 0.513329,8e-6 0.956996,0.05501 1.331,0.165 0.373995,0.110008 0.681995,0.231008 0.924,0.363 l -0.495,1.353 c -0.212672,-0.109994 -0.451005,-0.205327 -0.715,-0.286 -0.256671,-0.08799 -0.568337,-0.131993 -0.935,-0.132 -0.41067,7e-6 -0.707669,0.05867 -0.891,0.176 -0.176002,0.110006 -0.264002,0.28234 -0.264,0.517 -2e-6,0.139339 0.033,0.256672 0.099,0.352 0.066,0.09534 0.157664,0.183339 0.275,0.264 0.124664,0.07334 0.263997,0.143005 0.418,0.209 0.16133,0.05867 0.33733,0.121005 0.528,0.187 0.395996,0.146672 0.740662,0.293338 1.034,0.44 0.293328,0.139338 0.535328,0.304338 0.726,0.495 0.197994,0.190671 0.344661,0.414337 0.44,0.671 0.09533,0.25667 0.142994,0.568336 0.143,0.935 -6e-6,0.711335 -0.249339,1.265001 -0.748,1.661 -0.498671,0.388667 -1.250337,0.583 -2.255,0.583 -0.337336,0 -0.641669,-0.022 -0.913,-0.066 -0.271335,-0.03667 -0.513335,-0.08433 -0.726,-0.143 -0.205334,-0.05867 -0.385001,-0.120999 -0.539,-0.187 -0.146667,-0.066 -0.271334,-0.128333 -0.374,-0.187 l 0.484,-1.364 c 0.227332,0.124669 0.505999,0.238335 0.836,0.341 0.337331,0.09534 0.747998,0.143002 1.232,0.143"
+         id="path2998"
+         style="font-size:11px;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Bold" /></g></g></svg>

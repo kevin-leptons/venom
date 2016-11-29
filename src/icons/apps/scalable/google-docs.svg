@@ -24,17 +24,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1018"
-     inkscape:window-height="654"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="213.55423"
-     inkscape:cy="164.02818"
-     inkscape:window-x="152"
-     inkscape:window-y="59"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2"
+     inkscape:zoom="1.3366282"
+     inkscape:cx="-13.285245"
+     inkscape:cy="116.15493"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3933"
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
@@ -62,13 +62,13 @@
     <path
        id="rect3017"
        d="m 459.46875,-83.90625 c -7.78481,0 -14.03125,6.277686 -14.03125,14.0625 l 0,289.1875 c 0,7.78481 6.24644,14.03125 14.03125,14.03125 l 235.8125,0 c 7.78481,0 14.03125,-6.24644 14.03125,-14.03125 l 0,-226.375 -8.28125,-8.1875 -44.75,-44.375 -24.5,-24.28125 -0.0312,-0.03125 -172.28125,0 z"
-       style="fill:#2185f8;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none"
        inkscape:connector-curvature="0" />
     <path
        sodipodi:nodetypes="cccc"
        inkscape:connector-curvature="0"
        d="m 631.69845,-7.1929531 77.63081,0.1323871 -77.57553,-76.844438 z"
-       style="fill:#9bc5ff;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        inkscape:label="Triangle"
        id="path3800" />
     <rect
@@ -77,34 +77,27 @@
        height="16.970562"
        width="179.60512"
        id="rect3852"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+       style="fill:#000000;fill-opacity:1;stroke:none" />
     <rect
        y="61.985718"
        x="487.04031"
        height="16.970562"
        width="179.60512"
        id="rect3852-6"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+       style="fill:#000000;fill-opacity:1;stroke:none" />
     <rect
        y="103.44156"
        x="487.04031"
        height="16.970562"
        width="179.60512"
        id="rect3852-7"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+       style="fill:#000000;fill-opacity:1;stroke:none" />
     <rect
        y="145.45375"
        x="487.04031"
        height="16.970562"
        width="97.580734"
        id="rect3852-5"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
-    <path
-       sodipodi:nodetypes="cccc"
-       inkscape:connector-curvature="0"
-       d="m 709.32503,-7.063346 -0.0278,77.503752 -77.60354,-77.635627 z"
-       style="opacity:0.79032258;fill:#1c6bbf;fill-opacity:1;stroke:none"
-       inkscape:label="Triangle"
-       id="path3800-6" />
+       style="fill:#000000;fill-opacity:1;stroke:none" />
   </g>
 </svg>

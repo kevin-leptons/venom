@@ -14,7 +14,7 @@
    height="512"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91+devel r14033 custom"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="9gag.svg"
    inkscape:export-filename="/home/alecive/Scrivania/firefoxTest1.png"
    inkscape:export-xdpi="100"
@@ -28,15 +28,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7992233"
-     inkscape:cx="641.79218"
+     inkscape:cx="399.68212"
      inkscape:cy="338.1216"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1011"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:object-paths="true"
      inkscape:snap-intersection-paths="true"
@@ -825,12 +825,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <rect
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:61.30405807;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:61.30405807000000351;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="rect3484"
      width="450"
      height="450"
@@ -857,7 +857,7 @@
      sodipodi:nodetypes="ccccccccccccccc" />
   <path
      id="path7"
-     style="fill:#ffffff;fill-opacity:1;stroke-width:1.02173436"
+     style="fill:#000000;fill-opacity:1;stroke-width:1.02173435999999995"
      d="m 201.59764,196.54889 c 18.16895,-10.30945 36.22032,-20.85411 54.35007,-31.24197 18.22775,10.40746 36.3967,20.93252 54.64406,31.30077 -18.24736,10.42707 -36.43592,20.89333 -54.64406,31.33998 -18.09056,-10.50545 -36.31831,-20.81491 -54.35007,-31.39878 z M 122.64988,181.1827 c 0.0392,10.42707 0.0195,20.87373 0.0195,31.32038 44.4718,25.34247 88.80641,50.90053 133.27822,76.20379 26.79284,-15.4642 53.58566,-30.94799 80.33931,-46.47098 0.098,20.48172 -0.11763,40.94385 0.11763,61.42558 -26.63604,15.85617 -53.72288,30.94798 -80.45692,46.64736 -26.79285,-15.58178 -53.72288,-30.96757 -80.57452,-46.45137 -17.75737,10.03506 -35.45593,20.14854 -53.17409,30.24239 44.41301,25.93046 89.1984,51.23372 133.74861,76.94857 44.43259,-25.49926 88.9828,-50.76332 133.337,-76.41938 -0.098,-51.1749 -0.0785,-102.34981 -0.0195,-153.52473 -44.3738,-25.61686 -88.86521,-51.05732 -133.29782,-76.57618 -44.4522,25.49926 -88.88481,51.05732 -133.31741,76.65457 z"
      inkscape:connector-curvature="0" />
   <g

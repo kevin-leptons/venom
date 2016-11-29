@@ -35,17 +35,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="807"
-     inkscape:window-height="568"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview75"
      showgrid="false"
      inkscape:zoom="2.4583333"
-     inkscape:cx="79.606893"
+     inkscape:cx="0.89502753"
      inkscape:cy="52.587831"
-     inkscape:window-x="15"
-     inkscape:window-y="39"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="g55" />
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4">
     <linearGradient
@@ -93,7 +93,7 @@
   </defs>
   <path
      sodipodi:type="arc"
-     style="fill:#5f9ea0;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.41764835;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3054"
      sodipodi:cx="10.881356"
      sodipodi:cy="33.050846"
@@ -105,96 +105,47 @@
      id="g33"
      transform="translate(0,80)" />
   <g
-     id="g35"
-     transform="matrix(3.9688546,0,0,3.9688546,-31.197817,-24.743992)">
-    <g
-       clip-path="url(#clipPath-712187796)"
-       id="g37">
-      <g
-         transform="translate(1,1)"
-         id="g39">
-        <g
-           id="g41"
-           style="opacity:0.1">
-          <!-- color: #474747 -->
-          <g
-             id="g43">
-            <path
-               d="m 31.24,26.05 c 3.621,7.941 -7.242,7.941 -7.242,0 0,0 0,0 0,-3.973 14.484,-11.91 14.484,-3.969 7.242,3.973 m 0,0"
-               id="path45"
-               inkscape:connector-curvature="0"
-               style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
-            <path
-               d="m 24.363,21.277 c 0.727,1.984 0.176,8.688 -0.359,8.734 -0.535,0.043 -1.086,-6.75 -0.363,-8.734 -1.086,-0.797 -1.086,-1.59 0.363,-1.59 1.449,0 1.449,0.793 0.359,1.59 m 0,0"
-               id="path47"
-               inkscape:connector-curvature="0"
-               style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
-            <path
-               d="m 16.758,26.05 c -3.621,7.941 7.242,7.941 7.242,0 0,0 0,0 0,-3.973 C 9.516,10.167 9.516,18.108 16.758,26.05 m 0,0"
-               id="path49"
-               inkscape:connector-curvature="0"
-               style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
-            <path
-               d="m -43.37,149.81 c 0.363,-2.777 3.27,-3.574 3.27,-3.574"
-               transform="translate(67.734998,-129.72426)"
-               stroke-miterlimit="4"
-               id="path51"
-               inkscape:connector-curvature="0"
-               style="fill:#000000;stroke:#f9b928;stroke-width:0.0382982;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
-            <path
-               d="m -44.1,149.81 c -0.363,-2.777 -3.27,-3.574 -3.27,-3.574"
-               transform="translate(67.734998,-129.72426)"
-               stroke-miterlimit="4"
-               id="path53"
-               inkscape:connector-curvature="0"
-               style="fill:#000000;stroke:#f9b928;stroke-width:0.0382982;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
-          </g>
-        </g>
-      </g>
-    </g>
-  </g>
-  <g
      id="g55"
      transform="translate(0,80.20339)"
      style="fill:#4169e1">
     <g
        clip-path="url(#clipPath-723437142)"
        id="g57"
-       style="fill:#ffff00"
+       style="fill:#000000;fill-opacity:1"
        transform="matrix(3.9688546,0,0,3.9688546,-31.197817,-104.14015)">
       <!-- color: #474747 -->
       <g
          id="g59"
-         style="fill:#ffff00">
+         style="fill:#000000;fill-opacity:1">
         <path
            d="m 31.24,26.05 c 3.621,7.941 -7.242,7.941 -7.242,0 0,0 0,0 0,-3.973 14.484,-11.91 14.484,-3.969 7.242,3.973 m 0,0"
            id="path61"
            inkscape:connector-curvature="0"
-           style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
         <path
            d="m 24.363,21.277 c 0.727,1.984 0.176,8.688 -0.359,8.734 -0.535,0.043 -1.086,-6.75 -0.363,-8.734 -1.086,-0.797 -1.086,-1.59 0.363,-1.59 1.449,0 1.449,0.793 0.359,1.59 m 0,0"
            id="path63"
            inkscape:connector-curvature="0"
-           style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
         <path
            d="m 16.758,26.05 c -3.621,7.941 7.242,7.941 7.242,0 0,0 0,0 0,-3.973 C 9.516,10.167 9.516,18.108 16.758,26.05 m 0,0"
            id="path65"
            inkscape:connector-curvature="0"
-           style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
         <path
            d="m -43.37,149.81 c 0.363,-2.777 3.27,-3.574 3.27,-3.574"
            transform="translate(67.734998,-129.72426)"
            stroke-miterlimit="4"
            id="path67"
            inkscape:connector-curvature="0"
-           style="fill:#ffff00;stroke:#f9b928;stroke-width:0.0382982;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+           style="fill:#000000;stroke:#f9b928;stroke-width:0.03829820000000000;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;fill-opacity:1" />
         <path
            d="m -44.1,149.81 c -0.363,-2.777 -3.27,-3.574 -3.27,-3.574"
            transform="translate(67.734998,-129.72426)"
            stroke-miterlimit="4"
            id="path69"
            inkscape:connector-curvature="0"
-           style="fill:#ffff00;stroke:#f9b928;stroke-width:0.0382982;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+           style="fill:#000000;stroke:#f9b928;stroke-width:0.03829820000000000;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;fill-opacity:1" />
       </g>
     </g>
   </g>

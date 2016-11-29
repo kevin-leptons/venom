@@ -18,7 +18,7 @@
    id="svg7384"
    style="enable-background:new"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    width="15.981825">
   <sodipodi:namedview
      inkscape:bbox-nodes="true"
@@ -57,11 +57,11 @@
      inkscape:snap-page="false"
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-to-guides="true"
-     inkscape:window-height="706"
+     inkscape:window-height="1007"
      inkscape:window-maximized="1"
-     inkscape:window-width="1366"
+     inkscape:window-width="1920"
      inkscape:window-x="0"
-     inkscape:window-y="32"
+     inkscape:window-y="31"
      inkscape:zoom="1">
     <inkscape:grid
        color="#000000"
@@ -173,6 +173,6 @@
        inkscape:connector-curvature="0"
        d="m 388.1877,3 c -0.6627,0 -1.1875,0.54894 -1.1875,1.21875 l 0,3.78125 2,0 0,-3 3,0 0,-2 -3.8125,0 z m 5.8125,0 0,2 3,0 0,3 2,0 0,-3.78125 C 399.0002,3.54899 398.4754,3 397.8127,3 l -3.8125,0 z m -7,7 0,3.78125 c 0,0.66976 0.5248,1.21875 1.1875,1.21875 l 3.8125,0 0,-2 -3,0 0,-3 -2,0 z m 10,0 0,3 -3,0 0,2 3.8125,0 c 0.6627,0 1.1875,-0.54894 1.1875,-1.21875 l 0,-3.78125 -2,0 z"
        id="path5311"
-       style="color:#555555;fill:#555555;stroke:none" />
+       style="color:#555555;fill:#000000;stroke:none;fill-opacity:1" />
   </g>
 </svg>

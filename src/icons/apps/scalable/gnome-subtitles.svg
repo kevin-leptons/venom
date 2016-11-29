@@ -13,7 +13,7 @@
    inkscape:version="0.48.5 r10040"
    width="100%"
    height="100%"
-   sodipodi:docname="gnome-subtitles.svg">
+   sodipodi:docname="aegisub.svg">
   <metadata
      id="metadata65">
     <rdf:RDF>
@@ -35,16 +35,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview63"
      showgrid="false"
      inkscape:zoom="1.7383042"
      inkscape:cx="115.83024"
      inkscape:cy="62.946335"
-     inkscape:window-x="15"
-     inkscape:window-y="39"
-     inkscape:window-maximized="0"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <defs
      id="defs4">
@@ -97,25 +97,25 @@
   <g
      id="g49"
      transform="matrix(4.4553375,0,0,4.4343411,-42.079328,-47.026412)"
-     style="fill:#fdca01">
+     style="fill:#000000;fill-opacity:1">
     <g
        clip-path="url(#clipPath-165128749)"
        id="g51"
-       style="fill:#fdca01">
+       style="fill:#000000;fill-opacity:1">
       <!-- color: #474747 -->
       <g
          id="g53"
-         style="fill:#fdca01">
+         style="fill:#000000;fill-opacity:1">
         <path
            d="m 19.09,12 c -3.926,0 -7.094,3.168 -7.094,7.094 l 0,7.813 c 0,3.926 3.168,7.094 7.094,7.094 l 9.813,0 c 3.926,0 7.094,-3.168 7.094,-7.094 l 0,-7.813 C 35.997,15.168 32.829,12 28.903,12 m -14.906,6 20,0 0,2 -20,0 m 0,2 20,0 0,2 -20,0 m 0,2 20,0 0,2 -20,0 m 0,-2"
            id="path55"
            inkscape:connector-curvature="0"
-           style="fill:#fdca01;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
         <path
            d="m 34,30 -14.996,0 -3,8 m 18,-8"
            id="path57"
            inkscape:connector-curvature="0"
-           style="fill:#fdca01;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
       </g>
     </g>
   </g>

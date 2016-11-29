@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2383"
+   height="48px"
+   width="48px"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="stock_weather-night-clear.svg">
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="4.1458321"
+     inkscape:cx="-67.736504"
+     inkscape:cy="12.109381"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <metadata
+     id="metadata2388">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Weather Clean Night</dc:title>
+        <dc:date>December 2008</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>weather</rdf:li>
+            <rdf:li>night</rdf:li>
+            <rdf:li>moon</rdf:li>
+            <rdf:li>clean</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>A half moon with a twinkle-twinkle-little-star and a cloud over it</dc:description>
+        <cc:license
+           rdf:resource="" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     style="fill:none">
+    <g
+       id="g3785"
+       style="fill:none;stroke:#000000;stroke-opacity:1">
+      <path
+         id="path3273"
+         style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:9;fill:#000000;stroke-opacity:1;fill-opacity:1"
+         d="m17.148 9.5516c-0.514 1.9064-1.201 3.8514-1.201 5.9604 0 8.436 6.961 15.274 15.549 15.274 2.508 0 4.875-0.96 6.952-1.614-1.038 5.756-7.907 9.314-14.348 9.314-8.587 0-15.548-6.839-15.548-15.275-0.0004-5.972 2.889-12.773 8.596-13.659z" />
+    </g>
+    <g
+       id="g3781"
+       style="fill:none"
+       transform="translate(-2.6532671,1.9899503)">
+      <path
+         id="path3277"
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round"
+         d="M 12.501,10.252 C 11.829,11.121 8.9385,8.7151 7.8839,9.0234 6.8293,9.3318 5.6904,12.916 4.656,12.545 3.6215,12.175 5.0168,8.6827 4.3977,7.7749 3.7785,6.8672 0.0181,6.8916 0.0508,5.7933 0.083441,4.695 3.8358,4.9428 4.5078,4.0735 5.1798,3.2042 3.9945,-0.3647 5.0492,-0.673 6.1038,-0.98131 7.0276,2.664 8.0621,3.0344 9.0965,3.4049 12.124,1.1749 12.744,2.0826 c 0.619,0.9077 -2.563,2.9128 -2.595,4.0111 -0.033,1.0983 3.024,3.2889 2.352,4.1583 z"
+         transform="matrix(1.018,0,0,0.98036,28.447,6.1764)"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

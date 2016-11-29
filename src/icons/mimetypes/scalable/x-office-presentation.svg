@@ -1,1 +1,134 @@
-application-presentation.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3203"
+   height="48"
+   width="48"
+   version="1.0"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="x-office-presentation.svg">
+  <defs
+     id="defs19" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview17"
+     showgrid="false"
+     inkscape:zoom="13.906433"
+     inkscape:cx="-6.4139866"
+     inkscape:cy="28.398882"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3801" />
+  <metadata
+     id="metadata3208">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="" />
+        <dc:title>Office Presentation</dc:title>
+        <dc:date>December 2008</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>office</rdf:li>
+            <rdf:li>presentation</rdf:li>
+            <rdf:li>keynote</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>A blackboard with a graph</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g3017">
+    <rect
+       x="-4.4408921e-16"
+       y="0"
+       width="48"
+       height="48"
+       style="fill:none"
+       id="rect3319" />
+    <path
+       d="M 39,41 H 9.0000003 V 6.0000005 H 30 L 39,16 v 25 z"
+       style="stroke:#000000;stroke-width:4;stroke-linejoin:round;fill:none"
+       id="path7"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="layer1"
+     transform="matrix(0.52539952,0,0,0.52539952,35.580655,14.442421)"
+     style="fill:#ffffff">
+    <g
+       id="g3801">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -39,7 H -5"
+         style="fill:#ffffff;stroke:none"
+         id="path3164" />
+      <path
+         inkscape:connector-curvature="0"
+         d="M -22,41 V 26"
+         style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+         id="path3215" />
+      <rect
+         x="-38"
+         y="6"
+         width="32"
+         height="23"
+         ry="2.1549001"
+         style="fill:none;stroke:#000000;stroke-width:3.806627;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3730" />
+      <g
+         style="fill:#ffffff"
+         transform="translate(-46,0)"
+         id="g3027">
+        <path
+           inkscape:connector-curvature="0"
+           id="path3726"
+           style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+           d="m 24,34 -9.733,7.786" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path3728"
+           style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+           d="m 24,34 10,8" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path3736"
+           style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+           d="m 34,14 -6,6 -8,-3 -5,6" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path3162"
+           style="fill:#ffffff;stroke:#000000;stroke-width:6;stroke-linecap:round"
+           d="M 7,7 H 41" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -13,7 +13,7 @@
    height="38.4pt"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="calligraplan.svg">
   <metadata
      id="metadata20">
@@ -36,17 +36,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview18"
      showgrid="false"
      inkscape:showpageshadow="false"
      borderlayer="true"
      inkscape:zoom="4.9166667"
-     inkscape:cx="5.7066619"
+     inkscape:cx="-33.64927"
      inkscape:cy="19.199757"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2">
     <sodipodi:guide
@@ -85,21 +85,16 @@
   <defs
      id="defs4" />
   <rect
-     style="fill:#bdc3c7;fill-opacity:1;stroke:none"
+     style="fill:none;stroke:#000000;stroke-width:5.97481823;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="rect4106"
-     width="44.881355"
-     height="44.881355"
-     x="1.559323"
-     y="1.9661026"
-     ry="22.440678" />
+     width="33.418201"
+     height="33.62159"
+     x="7.697679"
+     y="7.2908998"
+     ry="16.810795" />
   <path
-     style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:none"
-     d="m 23.995617,13.186439 c -2.937682,1.74e-4 -5.85595,1.210076 -7.931669,3.287208 -2.07572,2.077131 -3.284287,4.995889 -3.284287,7.933131 0,2.93724 1.208567,5.855998 3.284287,7.933129 2.075719,2.077132 4.993987,3.287035 7.931669,3.287209 2.937681,1.75e-4 5.857685,-1.208606 7.936052,-3.285748 2.078368,-2.077141 3.28867,-4.997023 3.28867,-7.93459 0,-2.937569 -1.210302,-5.85745 -3.28867,-7.934592 -2.078367,-2.077142 -4.998371,-3.285921 -7.936052,-3.285747 z"
-     id="path4113"
-     inkscape:connector-curvature="0" />
-  <path
-     style="fill:#bdc3c7;fill-opacity:1;fill-rule:evenodd;stroke:none"
-     d="m 22.503955,17.674574 0,8.228248 1.496045,0 1.496045,0 5.236158,0 0,-2.99209 -5.236158,0 0,-5.236158 -2.99209,0 z"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+     d="m 20.503955,19.674574 0,8.228248 1.496045,0 1.496045,0 5.236158,0 0,-2.99209 -5.236158,0 0,-5.236158 -2.99209,0 z"
      id="path3272"
      inkscape:connector-curvature="0" />
 </svg>

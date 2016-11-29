@@ -13,7 +13,7 @@
    height="38.4pt"
    id="svg2"
    version="1.1"
-   inkscape:version="0.49 r12742"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="calligraflow.svg">
   <metadata
      id="metadata17">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,17 +36,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="718"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview15"
      showgrid="false"
      inkscape:showpageshadow="false"
      borderlayer="true"
-     inkscape:zoom="4.9166665"
-     inkscape:cx="5.0341616"
-     inkscape:cy="20.730677"
-     inkscape:window-x="-2"
-     inkscape:window-y="23"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="5.0341614"
+     inkscape:cy="20.730676"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2">
     <sodipodi:guide
@@ -193,7 +193,7 @@
   <defs
      id="defs4" />
   <rect
-     style="fill:#3498db;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      id="rect4091"
      width="20"
      height="7"
@@ -205,9 +205,9 @@
      height="7"
      width="20"
      id="rect4093"
-     style="fill:#3498db;fill-opacity:1;stroke:none" />
+     style="fill:#000000;fill-opacity:1;stroke:none" />
   <rect
-     style="fill:#3498db;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      id="rect4095"
      width="1"
      height="18"
@@ -219,18 +219,18 @@
      height="5.5"
      width="1"
      id="rect4097"
-     style="fill:#2ecc71;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      transform="matrix(0,1,-1,0,0,0)" />
   <rect
      transform="matrix(0,1,-1,0,0,0)"
-     style="fill:#2ecc71;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      id="rect4099"
      width="1"
      height="5.5"
      x="18.112701"
      y="-39.5" />
   <rect
-     style="fill:#2ecc71;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      id="rect4101"
      width="10"
      height="7"
@@ -242,17 +242,17 @@
      height="7"
      width="10"
      id="rect4103"
-     style="fill:#2ecc71;fill-opacity:1;stroke:none" />
+     style="fill:#000000;fill-opacity:1;stroke:none" />
   <rect
      y="37.112701"
      x="19"
      height="7"
      width="10"
      id="rect4105"
-     style="fill:#34495e;fill-opacity:1;stroke:none" />
+     style="fill:#000000;fill-opacity:1;stroke:none" />
   <rect
      transform="scale(-1,-1)"
-     style="fill:#2ecc71;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      id="rect4107"
      width="1"
      height="8.999999"
@@ -264,7 +264,7 @@
      height="8.999999"
      width="1"
      id="rect4149"
-     style="fill:#2ecc71;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      transform="scale(-1,-1)" />
   <rect
      y="31.112701"
@@ -272,9 +272,9 @@
      height="5.9999995"
      width="1"
      id="rect4169"
-     style="fill:#2ecc71;fill-opacity:1;stroke:none" />
+     style="fill:#000000;fill-opacity:1;stroke:none" />
   <rect
-     style="fill:#2ecc71;fill-opacity:1;stroke:none"
+     style="fill:#000000;fill-opacity:1;stroke:none"
      id="rect4204"
      width="1.0000005"
      height="19.999998"

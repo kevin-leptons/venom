@@ -25,17 +25,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284272"
-     inkscape:cx="166.2007"
+     inkscape:cx="97.788121"
      inkscape:cy="38.787988"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:showpageshadow="false"
      borderlayer="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      showguides="false">
     <sodipodi:guide
@@ -128,12 +128,12 @@
      id="layer1"
      transform="translate(0,-924.3622)">
     <path
-       style="fill:#2ecc71;fill-opacity:1;stroke:none"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 56.696447,930.3622 c -23.19808,0 -41.876738,18.6012 -42.033008,41.76113 l -0.01699,0 0,42.33887 0,20.3 c 0,6.4264 5.1736,11.6 11.6,11.6 6.4264,0 11.6,-5.1736 11.6,-11.6 0,6.4264 5.1736,11.6 11.6,11.6 l 2.9,0 c 6.4264,0 11.6,-5.1736 11.6,-11.6 0,6.4264 5.1736,11.6 11.6,11.6 l 2.9,0 c 6.4264,0 11.599999,-5.1736 11.599999,-11.6 0,6.4264 5.1736,11.6 11.600002,11.6 6.4264,0 11.6,-5.1736 11.6,-11.6 l 0,-60.9 0,-1.73887 -0.0171,0 C 113.07319,948.9634 94.394527,930.3622 71.196447,930.3622 l -14.5,0 z"
        id="rect4102"
        inkscape:connector-curvature="0" />
     <rect
-       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect4121"
        width="26.1"
        height="26.1"
@@ -146,23 +146,7 @@
        height="26.1"
        width="26.1"
        id="rect4123"
-       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        ry="13.05" />
-    <rect
-       ry="3.625"
-       y="968.78717"
-       x="54.150002"
-       height="7.25"
-       width="7.25"
-       id="rect4127"
-       style="fill:#34495e;fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:#34495e;fill-opacity:1;stroke:none"
-       id="rect4129"
-       width="7.25"
-       height="7.25"
-       x="100.55"
-       y="968.78717"
-       ry="3.625" />
   </g>
 </svg>

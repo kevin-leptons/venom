@@ -11,10 +11,10 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
+   inkscape:version="0.48.5 r10040"
    width="600"
    height="600"
-   sodipodi:docname="alacarte.svg">
+   sodipodi:docname="gnome-menu.svg">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -62,17 +62,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1204"
-     inkscape:window-height="675"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="0.70710678"
-     inkscape:cx="463.22603"
+     inkscape:cx="189.57571"
      inkscape:cy="276.66058"
-     inkscape:window-x="143"
-     inkscape:window-y="51"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2" />
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3343" />
   <rect
      style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      id="rect3800"
@@ -89,7 +89,7 @@
        clip-path="none"
        id="path3805-0"
        d="m 583.89693,299.73353 c 0,157.08925 -127.34594,284.43516 -284.43505,284.43516 -157.08913,0 -284.435022,-127.34591 -284.435022,-284.43516 0,-157.08905 127.345892,-284.434954 284.435022,-284.434954 157.08911,0 284.43505,127.345904 284.43505,284.434954 z"
-       style="fill:#4c4c4c;fill-opacity:1;stroke:none" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none" />
     <path
        transform="matrix(0.90296835,0,0,0.90296835,-425.03571,906.59603)"
        mask="none"
@@ -97,7 +97,7 @@
        clip-path="url(#clipPath3899)"
        id="path3805"
        d="m 1117.4096,-672.17837 c 0,173.96979 -141.03037,315.0001 -315.00005,315.0001 -173.96969,0 -314.99999,-141.03031 -314.99999,-315.0001 0,-173.9696 141.0303,-314.9999 314.99999,-314.9999 173.96968,0 315.00005,141.0303 315.00005,314.9999 z"
-       style="fill:#db4c00;fill-opacity:1;stroke:none" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:35.43867291;stroke-miterlimit:4;stroke-dasharray:none" />
     <rect
        ry="12.415815"
        y="237.30406"
@@ -105,7 +105,7 @@
        height="24.831631"
        width="154.63333"
        id="rect3909"
-       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+       style="fill:#000000;fill-rule:evenodd;stroke:none;fill-opacity:1" />
     <rect
        ry="12.415815"
        y="280.42081"
@@ -113,7 +113,7 @@
        height="24.831631"
        width="154.63333"
        id="rect3909-6"
-       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+       style="fill:#000000;fill-rule:evenodd;stroke:none;fill-opacity:1" />
     <rect
        ry="12.415815"
        y="323.98904"
@@ -121,6 +121,6 @@
        height="24.831631"
        width="154.63333"
        id="rect3909-2"
-       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+       style="fill:#000000;fill-rule:evenodd;stroke:none;fill-opacity:1" />
   </g>
 </svg>

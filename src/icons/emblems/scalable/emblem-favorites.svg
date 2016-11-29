@@ -13,8 +13,8 @@
    height="24"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48+devel r12667"
-   sodipodi:docname="emblem-favorites.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="emblem-favorite.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -30,10 +30,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="714"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -58,6 +58,6 @@
        id="path817"
        d="m 3.8750138,1038.4872 6.1160522,0 2.008935,-5.625 2.008934,5.625 6.116051,0 -5.093485,3.6491 2.280985,5.7259 -5.312485,-3.125 -4.6875,3.125 1.7656181,-5.6407 -5.2031053,-3.7343 z"
        inkscape:connector-curvature="0"
-       style="fill:#34495e;fill-opacity:1;stroke-width:0.2;stroke-linejoin:round" />
+       style="fill:#000000;fill-opacity:1;stroke-width:0.20000000000000001;stroke-linejoin:round" />
   </g>
 </svg>
