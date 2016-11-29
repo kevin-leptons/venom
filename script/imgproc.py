@@ -87,7 +87,7 @@ def vector_mono(src, dest, fcolor, bcolor, fuzz=127):
 
             # ignore invalid color format
             for src_color in src_colors[:]:
-                if not (len(src_color) == 3 or len(src_color) == 6):
+                if len(src_color) not in (6, 9):
                     src_colors.remove(src_color)
 
             # create maps for match string and color
