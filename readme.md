@@ -10,12 +10,12 @@ This is `mono-color`, `high-contrast` themes for `GNOME-3.14`
 
 # Installation
 
-Download [venom_0.0.5-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vdWhSbzBvM2JiSnM),
+Download [venom_0.0.6-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vdWhSbzBvM2JiSnM),
 then follow instructions
 
 ```bash
 # Install
-sudo dpkg -i venom_0.0.5-0_all.deb
+sudo dpkg -i venom_0.0.6-0_all.deb
 
 # Active black theme
 venom active venom-black
