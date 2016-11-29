@@ -8,7 +8,8 @@
 - improve separator of popup menu
 - improve calendar
 - improve page indicator of application searching
-- big improve for icons
+- big improve for mono icons
+- add more application icons
 
 # v0.0.5
 
