@@ -1,5 +1,10 @@
 # venom change log
 
+# v0.0.7
+
+- add more application icons
+- reduce size of icons
+
 # v0.0.6
 
 - fix wrong color of volume slider

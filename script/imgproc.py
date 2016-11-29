@@ -76,27 +76,34 @@ def mono_rgba(color, front_color, back_color, fuzz):
 def vector_mono(src, dest, fcolor, bcolor, fuzz=127):
 
     with open(src, 'r') as sf:
-        data = sf.read()
+        try:
+            data = sf.read()
 
-        # find all of hex colors in format RGB and RRGGBB
-        src_colors = re.findall('[:"]#[a-fA-F0-9]+[;"]', data)
+            # find all of hex colors in format RGB and RRGGBB
+            src_colors = re.findall('[:"]#[a-fA-F0-9]+[;"]', data)
 
-        # remove repeated colors
-        src_colors = list(set(src_colors))
+            # remove repeated colors
+            src_colors = list(set(src_colors))
 
-        # create maps for match string and color
-        map_colors = [(i, i[1:-1]) for i in src_colors[:]]
+            # ignore invalid color format
+            for src_color in src_colors[:]:
+                if not (len(src_color) == 3 or len(src_color) == 6):
+                    src_colors.remove(src_color)
 
-        # replace each colors
-        for match_str, src_color in map_colors:
-            dest_rgba = mono_rgba(src_color, fcolor, bcolor, fuzz)
-            dest_str = match_str.replace(src_color, dest_rgba[0])
-            data = re.sub(match_str, dest_str, data)
+            # create maps for match string and color
+            map_colors = [(i, i[1:-1]) for i in src_colors[:]]
 
-        # create new vector file
-        with open(dest, 'w') as df:
-            df.write(data)
-    pass
+            # replace each colors
+            for match_str, src_color in map_colors:
+                dest_rgba = mono_rgba(src_color, fcolor, bcolor, fuzz)
+                dest_str = match_str.replace(src_color, dest_rgba[0])
+                data = re.sub(match_str, dest_str, data)
+
+            # create new vector file
+            with open(dest, 'w') as df:
+                df.write(data)
+        except Exception as e:
+            raise RuntimeError('Convert file error: {}'.format(src), e)
 
 
 def bitmap_mono(src, dest, color):
