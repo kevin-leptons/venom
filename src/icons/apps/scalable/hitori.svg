@@ -16,7 +16,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.48.5 r10040"
    version="1.0"
-   sodipodi:docname="org.gnome.Hitori.svg"
+   sodipodi:docname="hitori.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="C:\Users\Cube\Pictures\Inkscape-Files\hitori\hitori48.png"
    inkscape:export-xdpi="90"
@@ -514,16 +514,16 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.976885"
-     inkscape:cx="5.210602"
-     inkscape:cy="24.279677"
+     inkscape:zoom="8.3349908"
+     inkscape:cx="2.3809242"
+     inkscape:cy="12.879647"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="883"
-     inkscape:window-x="0"
-     inkscape:window-y="31"
+     inkscape:window-height="1038"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
      showguides="true"
@@ -561,42 +561,6 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="shadow"
-     style="display:none"
-     sodipodi:insensitive="true">
-    <rect
-       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.28571343px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter7983);enable-background:accumulate"
-       id="rect7965"
-       width="32"
-       height="31.999998"
-       x="31.5"
-       y="8.5"
-       transform="matrix(0.4375,0,0,0.4375,-9.2812503,0.7812496)" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="shadow#1"
-     style="display:inline">
-    <rect
-       style="opacity:0.7;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;filter:url(#filter6431);enable-background:accumulate"
-       id="rect6429"
-       width="33"
-       height="1.1940982"
-       x="7"
-       y="40"
-       transform="matrix(1.1818182,0,0,0.8374512,-4.2727273,5.501953)" />
-    <rect
-       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;overflow:visible;enable-background:accumulate"
-       id="rect5657"
-       width="32"
-       height="32"
-       x="7.4999995"
-       y="7.5000005" />
-  </g>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -667,17 +631,5 @@
        width="8"
        id="rect6424"
        style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.99999994000000003px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="glow"
-     style="display:none"
-     sodipodi:insensitive="true">
-    <path
-       style="opacity:0.6;fill:url(#linearGradient5888);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 3,3 L 20,3 C 16.619318,13.077652 6.50947,6.0909092 3,20 L 3,3 z"
-       id="rect7995"
-       sodipodi:nodetypes="cccc" />
   </g>
 </svg>
