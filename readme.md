@@ -26,16 +26,16 @@ sudo apt-get install -f
 
 ```bash
 # Active black theme
-venom active venom-black
+venom active black
 
 # Or active green theme
-venom active venom-green
+venom active green
 
 # Or active teal theme
-venom active venom-teal
+venom active teal
 
 # Or active orange theme
-venom active venom-orange
+venom active orange
 
 # For detail, look man page
 man venom

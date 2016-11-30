@@ -55,7 +55,7 @@ def list(name):
             sys.exit(1)
 
         theme = themes[name]
-        print 'name: {}'.format(name)
+        print 'name: {}'.format(short_theme_name(name))
         print 'front_color: {}'.format(theme.front_color)
         print 'back_color: {}'.format(theme.back_color)
         print 'danger_color: {}'.format(theme.danger_color)
