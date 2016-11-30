@@ -5,5 +5,5 @@ sudo: required
 install:
 - ./dev install
 script:
-- python ctl build venom-green
+- python ctl build black
 - python ctl dist
