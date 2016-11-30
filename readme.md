@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/kevin-leptons/venom.svg?branch=master)](https://travis-ci.org/kevin-leptons/venom)
 
-- This is themes for `GNOME-3.14.x` with `mono-color`, `high-contrast`,
+- This is themes for `Debian-8` with `monochrome`, `high-contrast`,
 `no-border-radius`, `no-shadow`
 - It help people `focus` on work and `improve` performance of GNOME shell
 

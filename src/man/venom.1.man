@@ -1,7 +1,7 @@
 .TH man 1 "{{build_date}}" "{{version}}" "venom man page"
 
 .SH NAME
-venom \- Themes for GNOME-3.14.x
+venom \- Themes for Debian-8
 
 .SH SYNOPSIS
 .B
