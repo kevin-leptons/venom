@@ -19,16 +19,16 @@ complicated things. And it also improve performance of GNOME as a result
 .SH CMD-ACTIVE
 .TP 4
 Active theme by name. Name must be one of
-venom-black
+black
 .br
-venom-green
+green
 .br
-venom-teal
+teal
 .br
-venom-orange
+orange
 .TP
 Example
-venom active venom-black
+venom active black
 
 .SH FILES
 For each path to file below,

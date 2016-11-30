@@ -26,7 +26,7 @@ from os import path
 from script.logger import stdlog, stat_done, stat_err
 from script import compile_theme, install_theme, active_theme, remove_theme, \
                    package_debian, diff_file, compile_manpage
-from script.util import real_theme_name
+from script.util import real_theme_name, short_theme_name
 
 import setting
 
@@ -39,17 +39,17 @@ def cli():
 @cli.command(help='List themes')
 @click.argument('name', required=False)
 def list(name):
-    name = real_theme_name(name)
     themes = setting.themes
 
     if name is None:
         # list name of themes
 
         for name in themes:
-            print name
+            print short_theme_name(name)
     else:
         # list properties of theme
 
+        name = real_theme_name(name)
         if name not in themes:
             stdlog(stat_err, 'not found theme', name)
             sys.exit(1)
