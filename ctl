@@ -21,9 +21,11 @@ import sys
 import shutil
 import click
 
+from os import path
+
 from script.logger import stdlog, stat_done, stat_err
 from script import compile_theme, install_theme, active_theme, remove_theme, \
-                   package_debian, diff_file
+                   package_debian, diff_file, compile_manpage
 
 import setting
 
@@ -61,7 +63,12 @@ def list(name):
 def build(names):
     themes = setting.themes
     src = setting.src
-    dest = setting.dest
+    dest = os.path.join(setting.dest, 'themes')
+
+    # create man page
+    man_src = os.path.join(src, 'man')
+    man_dest = os.path.join(setting.dest, 'man')
+    compile_manpage(man_src, man_dest)
 
     if len(names) == 0:
         # build all of themes
@@ -95,7 +102,7 @@ def clean(names):
     else:
         # clean build files of specific themes
         for name in names:
-            dest_theme = '{}/{}'.format(setting.dest, name)
+            dest_theme = path.join(setting.dest, 'themes', name)
             if os.path.isdir(dest_theme):
                 shutil.rmtree(dest_theme)
 
@@ -110,7 +117,7 @@ def apply(name):
         stdlog(stat_err, 'not found theme', name)
         sys.exit(1)
 
-    dest_theme = '{}/{}'.format(setting.dest, name)
+    dest_theme = path.join(setting.dest, 'themes', name)
     compile_theme(setting.src, dest_theme, setting.themes[name])
     stdlog(stat_done, 'compiled', name)
 

@@ -1,0 +1,70 @@
+.TH man 1 "{{build_date}}" "{{version}}" "venom man page"
+
+.SH NAME
+venom \- Themes for GNOME-3.14.x
+
+.SH SYNOPSIS
+.B
+venom
+active [NAME]
+
+.SH DESCRIPTION
+venom is package contains themes with mono-color, high-contrast,
+no-border-radius, no-shadow. It also contains tool called venom to
+active themes
+
+Target of venom is help people focus on work, without effected from
+complicated things. And it also improve performance of GNOME as a result
+
+.SH CMD-ACTIVE
+.TP 4
+Active theme by name. Name must be one of
+venom-black
+.br
+venom-green
+.br
+venom-teal
+.br
+venom-orange
+.TP
+Example
+venom active venom-black
+
+.SH FILES
+For each path to file below,
+.B
+<name>
+is theme name, specify in CMD-ACTIVE section
+
+.TP 4
+/usr/share/themes/<name>/theme.conf
+Configurations of theme
+
+.TP
+/usr/share/themes/<name>/gtk-3.0/
+Asset of GTK-3.0 theme
+
+.TP
+/usr/share/themes/<name>/gtk-2.0/
+It is not contains any thing, but it is required to sytem realize GTK-3.0 theme
+
+.TP
+/usr/share/themes/<name>/gnome-shell/
+Asset of GNOME-3.14.x theme
+
+.TP
+/usr/share/themes/<name>/metacity-1
+Asset of window decoration
+
+.TP
+/usr/share/icons/<name>/
+Icons of theme
+
+.SH SEE ALSO
+None
+
+.SH BUGS
+Depend on user's perspective
+
+.SH AUTHOR
+Kevin Leptons <kevin.leptons@bmail.com>

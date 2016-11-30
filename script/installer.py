@@ -13,7 +13,7 @@ def install_theme(name):
     :rtype: int
     '''
 
-    dest = 'dest/{}'.format(name)
+    dest = 'dest/themes/{}'.format(name)
     dest_theme = '{}/*'.format(dest)
     dest_icon = '{}/icons/*'.format(dest)
     target_theme = '/usr/share/themes/{}'.format(name)

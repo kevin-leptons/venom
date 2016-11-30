@@ -1,37 +1,18 @@
 import os
 import sys
-import re
 import shutil
 from subprocess import Popen
 
 from logger import stdlog, stat_done, stat_err
+from version import get_version
 
 
 root = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
 _CLI_FILE = os.path.join(root, 'src', 'cli.py')
-_VERSION_RE = re.compile(r'VERSION = "(.*)"')
-_DEB_VERSION_RE = re.compile(r'DEB_VERSION = "(.*)"')
-
-
-def get_version():
-    '''
-    Get version of package from src/cli.sh
-
-    :return: Dictionary contain two key 'version' and 'deb_version'
-    :rtype: dict
-    '''
-
-    with open(_CLI_FILE, 'rb') as f:
-        data = f.read()
-        ver = _VERSION_RE.search(data).group(1)
-        deb_ver = _DEB_VERSION_RE.search(data).group(1)
-
-        return {'version': ver, 'deb_version': deb_ver}
-
 
 def package_debian():
     src_metadata = os.path.join(root, 'src', 'pkg', 'DEBIAN', 'control')
-    src_themes = os.path.join(root, 'dest')
+    src_themes = os.path.join(root, 'dest/themes')
     if not os.path.isdir(src_themes):
         stdlog(stat_err, 'not found builded files', src_themes)
         sys.exit(1)
@@ -53,6 +34,13 @@ def package_debian():
     os.makedirs(dist_bin)
     os.makedirs(dist_themes)
     os.makedirs(dist_icons)
+
+    # create man page
+    dest_man = os.path.join(root, 'dest/man/venom.1.gz')
+    dist_man = os.path.join(dist_pkg, 'usr/share/man/man1/venom.1.gz')
+    os.makedirs(os.path.dirname(dist_man))
+    shutil.copyfile(dest_man, dist_man)
+    stdlog(stat_done, 'copied', dist_man)
 
     # create meta data
     with open(src_metadata, 'r') as src_f:

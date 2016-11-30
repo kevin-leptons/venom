@@ -4,9 +4,9 @@
 
 [![Build Status](https://travis-ci.org/kevin-leptons/venom.svg?branch=master)](https://travis-ci.org/kevin-leptons/venom)
 
-This is `mono-color`, `high-contrast` themes for `GNOME-3.14`
-
-![venom-green](asset/venom-black.png)
+- This is themes for `GNOME-3.14.x` with `mono-color`, `high-contrast`,
+`no-border-radius`, `no-shadow`
+- It help people `focus` on work and `improve` performance of GNOME shell
 
 # Installation
 
@@ -17,10 +17,18 @@ then follow instructions
 # Install
 sudo dpkg -i venom_0.0.6-0_all.deb
 
+# If missing packages is occur
+# Let install them
+sudo apt-get install -f
+```
+
+# Usage
+
+```bash
 # Active black theme
 venom active venom-black
 
-# Active green theme
+# Or active green theme
 venom active venom-green
 
 # Or active teal theme
@@ -28,7 +36,17 @@ venom active venom-teal
 
 # Or active orange theme
 venom active venom-orange
+
+# For detail, look man page
+man venom
 ```
+
+If need for restore other default themes, let use
+[gnome-tweak-tool](https://wiki.gnome.org/action/show/Apps/GnomeTweakTool?action=show&redirect=GnomeTweakTool)
+
+# First look
+
+![venom-green](asset/venom-black.png)
 
 # Other links
 
