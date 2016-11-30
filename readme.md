@@ -32,7 +32,7 @@ venom active venom-orange
 
 # Other links
 
-- [Pre-build](doc/pre-build.md)
 - [Change log](changelog.md)
 - [Contribute manual](doc/dev.md)
 - [Screenshots](doc/screenshot.md)
+- [Pre-build](https://drive.google.com/open?id=0B6Eqm2oY7b1vVG55VjJrcGE3aU0)
