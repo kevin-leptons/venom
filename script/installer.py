@@ -1,3 +1,6 @@
+import shutil
+
+from os import path
 from subprocess import Popen
 
 from .logger import stdlog, stat_done, stat_err
@@ -55,9 +58,9 @@ def remove_theme(name):
     target_theme = '/usr/share/themes/{}'.format(name)
     target_icon = '/usr/share/icons/{}'.format(name)
 
-    if Popen(['sudo', 'rm', '-r', target_theme]).wait() != 0:
-        stdlog(stat_err, 'can not remove theme', name)
-    if Popen(['sudo', 'rm', '-r', target_icon]).wait() != 0:
-        stdlog(stat_err, 'can not remove icons', name)
+    if path.isdir(target_theme):
+        shutil.rmtree(target_theme)
+    if path.isdir(target_icon):
+        shutil.rmtree(target_icon)
 
     stdlog(stat_done, 'removed', name)

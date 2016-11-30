@@ -1,5 +1,10 @@
 # venom change log
 
+# v0.0.8
+
+- use short name of theme name
+- make background of black theme darker
+
 # v0.0.7
 
 - fix runtime dependency packages

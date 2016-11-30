@@ -26,6 +26,7 @@ from os import path
 from script.logger import stdlog, stat_done, stat_err
 from script import compile_theme, install_theme, active_theme, remove_theme, \
                    package_debian, diff_file, compile_manpage
+from script.util import real_theme_name
 
 import setting
 
@@ -38,6 +39,7 @@ def cli():
 @cli.command(help='List themes')
 @click.argument('name', required=False)
 def list(name):
+    name = real_theme_name(name)
     themes = setting.themes
 
     if name is None:
@@ -79,6 +81,7 @@ def build(names):
             stdlog(stat_done, 'compiled', name)
     else:
         # build only theme was specify
+        names = [real_theme_name(name) for name in names[:]]
         for name in names:
             if name not in themes:
                 stdlog(stat_err, 'not found theme', name)
@@ -101,6 +104,7 @@ def clean(names):
 
     else:
         # clean build files of specific themes
+        names = [real_theme_name(name) for name in names[:]]
         for name in names:
             dest_theme = path.join(setting.dest, 'themes', name)
             if os.path.isdir(dest_theme):
@@ -113,6 +117,7 @@ def clean(names):
 @cli.command(help='Build, install to system and active it')
 @click.argument('name')
 def apply(name):
+    name = real_theme_name(name)
     if name not in setting.themes:
         stdlog(stat_err, 'not found theme', name)
         sys.exit(1)
@@ -131,6 +136,7 @@ def apply(name):
 @cli.command(help='Remove theme from system')
 @click.argument('names', nargs=-1, required=True)
 def remove(names):
+    names = [real_theme_name(name) for name in names[:]]
     for name in names:
         remove_theme(name)
 

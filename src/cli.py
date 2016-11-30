@@ -26,6 +26,11 @@ from subprocess import Popen
 VERSION = "0.0.7"
 DEB_VERSION = "0"
 
+
+def real_theme_name(short_name):
+    return 'venom-{}'.format(short_name)
+
+
 class ThemeConfig(object):
     def __init__(self, front_color, back_color, danger_color):
         self._front_color = front_color
@@ -151,7 +156,7 @@ def cli():
             print_help(exename)
             sys.exit(1)
 
-        theme_name = sys.argv[2]
+        theme_name = real_theme_name(sys.argv[2])
         if not os.path.isdir('/usr/share/themes/{}'.format(theme_name)):
             print 'error theme not found: {}'.format(theme_name)
             sys.exit(1)
