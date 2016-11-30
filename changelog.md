@@ -2,8 +2,10 @@
 
 # v0.0.7
 
+- add man page
 - add more application icons
 - reduce size of icons
+- improve directory icon
 
 # v0.0.6
 

@@ -27,7 +27,7 @@ class InitCommand(Command):
 
     def run(self):
         # install pip - python package manager
-        url = ''
+        url = 'https://bootstrap.pypa.io/get-pip.py'
         tmp_dir = path.join(root, 'tmp')
         install_file = path.join(tmp_dir, 'install-pip.py')
         if not path.isdir(tmp_dir):
