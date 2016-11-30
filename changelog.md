@@ -2,6 +2,7 @@
 
 # v0.0.7
 
+- fix runtime dependency packages
 - add man page
 - add more application icons
 - reduce size of icons
