@@ -59,7 +59,7 @@ source venv/bin/active
 ## Define more themes
 
 Define more theme by add (key, value) to `themes` variable in file
-[setting.py](../setting.py). ThemeConfig created by
+[setting.py](../setting.py). `ThemeConfig` created by
 
 - First argument is name of theme
 - Second argument is front color, use to display text, border.
