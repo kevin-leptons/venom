@@ -10,12 +10,12 @@
 
 # Installation
 
-Download [venom_0.0.7-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1veEVwTkFRSkdTd3c),
+Download [venom_0.0.8-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vdG9tSk1Qb0NHSHM),
 then follow instructions
 
 ```bash
 # Install
-sudo dpkg -i venom_0.0.7-0_all.deb
+sudo dpkg -i venom_0.0.8-0_all.deb
 
 # If missing packages is occur
 # Let install them
