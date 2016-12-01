@@ -6,7 +6,6 @@ EXPORT  : active_theme()
 AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
 '''
 
-
 import os
 import sys
 import ConfigParser
