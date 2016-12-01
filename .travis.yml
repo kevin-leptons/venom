@@ -1,9 +1,8 @@
 language: python
 python:
-- '2.7'
+    - '2.7'
 sudo: required
 install:
-- ./dev install
+    - ./dev install
 script:
-- python ctl build black
-- python ctl dist
+    - python ctl test

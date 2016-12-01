@@ -1,9 +1,5 @@
 import os
-import shutil
-import dirsync
 
-
-from .icon_builder import compile_icon
 
 def compile_metacity(src, dest, config):
     '''

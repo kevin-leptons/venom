@@ -1,5 +1,3 @@
-import shutil
-
 from os import path
 from subprocess import Popen
 
@@ -59,8 +57,8 @@ def remove_theme(name):
     target_icon = '/usr/share/icons/{}'.format(name)
 
     if path.isdir(target_theme):
-        shutil.rmtree(target_theme)
+        Popen(['sudo', 'rm', '-r', target_theme])
     if path.isdir(target_icon):
-        shutil.rmtree(target_icon)
+        Popen(['sudo', 'rm', '-r', target_icon])
 
     stdlog(stat_done, 'removed', name)

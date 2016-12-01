@@ -27,6 +27,7 @@ from script.logger import stdlog, stat_done, stat_err
 from script import compile_theme, install_theme, active_theme, remove_theme, \
                    package_debian, diff_file, compile_manpage
 from script.util import real_theme_name, short_theme_name
+from script.test import run_test
 
 import setting
 
@@ -152,6 +153,11 @@ def dist():
 @click.argument('dest')
 def dfile(odir, sdir, dest):
     diff_file(odir, sdir, dest)
+
+
+@cli.command(help='Runt unit testing')
+def test():
+    assert run_test() == 0
 
 
 cli()

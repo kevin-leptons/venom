@@ -1,5 +1,3 @@
-import dirsync
-
 from .sass_builder import compile_sass
 from .icon_builder import compile_icon
 

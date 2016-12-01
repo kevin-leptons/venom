@@ -2,7 +2,8 @@
 
 # v0.0.8
 
-- use short name of theme name
+- fix background of progress bar in treeview
+- use short name of theme
 - make background of black theme darker
 
 # v0.0.7

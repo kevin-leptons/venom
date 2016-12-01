@@ -2,6 +2,8 @@ venv/
 tmp/
 dest/
 dist/
+.cache/
+__pycache__/
 .sass-cache
 Gemfile.lock
 *.egg-info/

@@ -50,16 +50,26 @@ column-header {
 GtkTreeView.view.progressbar { //Progressbar in treeview cells
     color: $base_color;
     border-radius: 0;
+    background: $front_color;
+    border: 1px solid $front_color;
     &:selected {
         color: $selected_bg_color;
         &:backdrop {
             color: $selected_bg_color;
             background-image: none;
-            background-color: $backdrop_base_color;
+            background-color: $front_color;
         }
     }
     &:backdrop {
         color: $backdrop_base_color;
         background-image: none;
+    }
+}
+GtkTreeView.view.trough {
+    background-color: $back_color;
+    border: 1px solid $front_color;
+
+    &:selected {
+        background-color: $back_color;
     }
 }

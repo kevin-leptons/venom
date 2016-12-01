@@ -92,6 +92,7 @@ def set_theme(name):
         print 'error active metacity: {}'.format(name)
         sys.exit(1)
 
+
 def active_theme(name):
     '''
     Apply theme use command line, contains

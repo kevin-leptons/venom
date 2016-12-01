@@ -10,6 +10,7 @@ from version import get_version
 root = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
 _CLI_FILE = os.path.join(root, 'src', 'cli.py')
 
+
 def package_debian():
     src_metadata = os.path.join(root, 'src', 'pkg', 'DEBIAN', 'control')
     src_themes = os.path.join(root, 'dest/themes')

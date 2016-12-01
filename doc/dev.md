@@ -39,6 +39,9 @@ deactivate
 **Warning**: Convert icons required more time
 
 ```bash
+# Clean, build, test any thing
+./ctl test
+
 # Build all of themes
 ./ctl build
 

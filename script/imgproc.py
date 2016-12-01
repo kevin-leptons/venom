@@ -126,9 +126,9 @@ def bitmap_mono(src, dest, color):
             if a == 0 or gray > 127:
                 dest_img.itemset(x, y, 3, 0)
             else:
-                dest_img.itemset(x, y, 0, color[2]) # blue
-                dest_img.itemset(x, y, 1, color[1]) # green
-                dest_img.itemset(x, y, 2, color[0]) # red
-                dest_img.itemset(x, y, 3, color[3]) # alpha
+                dest_img.itemset(x, y, 0, color[2])  # blue
+                dest_img.itemset(x, y, 1, color[1])  # green
+                dest_img.itemset(x, y, 2, color[0])  # red
+                dest_img.itemset(x, y, 3, color[3])  # alpha
 
     cv2.imwrite(dest, dest_img)
