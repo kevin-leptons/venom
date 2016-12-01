@@ -1,9 +1,18 @@
+'''
+SPEC    : Use to compile metacity-theme-1
+
+EXPORT  : compile_metacity()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
 import os
 
 
 def compile_metacity(src, dest, config):
     '''
-    Compile Metatcity theme
+    Read metacity-theme-1 is specify by src, replace few of information then
+    write to dest
 
     :param str src: Source directory of gnome-shell
     :param str dest: Destination directory
