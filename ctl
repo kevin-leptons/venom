@@ -155,7 +155,7 @@ def dfile(odir, sdir, dest):
     diff_file(odir, sdir, dest)
 
 
-@cli.command(help='Runt unit testing')
+@cli.command(help='Run unit testing')
 def test():
     assert run_test() == 0
 

@@ -19,9 +19,6 @@ source venv/bin/active
 # Install development packages
 # Only require on first time or on update dependency package
 ./dev install
-
-# Or exit virtual after do not work any more
-deactivate
 ```
 
 ## Retrieve themes
@@ -36,12 +33,7 @@ deactivate
 
 ## Build
 
-**Warning**: Convert icons required more time
-
 ```bash
-# Clean, build, test any thing
-./ctl test
-
 # Build all of themes
 ./ctl build
 
@@ -49,7 +41,7 @@ deactivate
 ./ctl build <theme-name-1> <theme-name-2> ...
 ```
 
-## Apply/Remove theme
+## Apply/Remove theme to system
 
 ```bash
 # Operation below required privilege permission
@@ -78,7 +70,7 @@ It is hex code in RGB format
 ```python
 themes = OrderedDict([
     ...
-    ('venom-red', ThemeConfig('venom-red', '#0000ff', 'black', 'red'))
+    ('venom-red', ThemeConfig('venom-red', '#ff0000', 'black', 'red'))
 ])
 ```
 
@@ -89,12 +81,22 @@ themes = OrderedDict([
 ./ctl dist
 ```
 
-## Clean build files
+# Testing
+
+```bash
+# Clean, build, test any thing
+./ctl test
+```
+
+## Clean and exit
 
 ```bash
 # Clean all of build files
 ./ctl clean
 
-# Clean build files of specific theme
+# Or clean build files of specific theme
 ./ctl clean <theme-name-1> <theme-name-2> ...
+
+# Or exit virtualenv after work
+deactivate
 ```
