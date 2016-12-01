@@ -1,3 +1,11 @@
+'''
+SPEC    : Use to package theme
+
+EXPORT  : package_debian()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmai.com>
+'''
+
 import os
 import sys
 import shutil
@@ -12,6 +20,11 @@ _CLI_FILE = os.path.join(root, 'src', 'cli.py')
 
 
 def package_debian():
+    '''
+    Package theme has built and store in 'dest' in debian format. Store
+    result in 'dist/venom_<version>_all.deb'
+    '''
+
     src_metadata = os.path.join(root, 'src', 'pkg', 'DEBIAN', 'control')
     src_themes = os.path.join(root, 'dest/themes')
     if not os.path.isdir(src_themes):
