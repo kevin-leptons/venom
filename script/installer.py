@@ -1,3 +1,11 @@
+'''
+SPEC    : Use to install/remove theme to system
+
+EXPORT  : install_theme(), remove_theme()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
 from os import path
 from subprocess import Popen
 
