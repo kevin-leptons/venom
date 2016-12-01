@@ -1,3 +1,11 @@
+'''
+SPEC    : Compare files between two directories
+
+EXPORT  : diff_file()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
 import os
 import shutil
 
@@ -6,9 +14,10 @@ from logger import stdlog, stat_done
 
 def diff_file(odir, sdir, dest):
     '''
-    Create new directory with same structrure with odir, contains files in
-    odir and not in sdir. If dest directory is not exist, create it. If dest
-    directory is exist, terminate
+    Rescursive compare two directories called: original directory and
+    sub directory. Then create new directory called dest directory with same
+    structure with original directory, store files which is only exist
+    in original directory and not exist in sub directory
 
     :param str odir: Original directory
     :param str sdir: Directory to compare with odir

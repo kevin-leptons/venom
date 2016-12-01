@@ -1,7 +1,7 @@
 '''
 SPEC    : Use to create configuration file of theme
 
-EXPORT  : compile_config
+EXPORT  : compile_config()
 
 AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
 '''
