@@ -1,14 +1,23 @@
+'''
+SPEC    : Use to build gnome theme
+
+EXPORT  : compile_gnome()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
 from .sass_builder import compile_sass
 from .icon_builder import compile_icon
 
 
 def compile_gnome(src, dest, config):
     '''
-    Compile gnome-shell theme
+    Compile gnome-shell theme from. All of asset store in src directory,
+    compiler will read, build by config. Then store result in dest directory
 
-    :param str src: Source directory of gnome-shell
-    :param str dest: Destination directory
-    :param ThemeConfig config: Theme configurations
+    :param str src: Directory contains asset of gnome-shell
+    :param str dest: Directory to store result
+    :param ThemeConfig config: Theme configuration
     '''
 
     # compile gnome-shell scss
