@@ -1,3 +1,12 @@
+'''
+SPEC    : Use to active theme on system
+
+EXPORT  : active_theme()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
+
 import os
 import sys
 import ConfigParser
@@ -8,7 +17,7 @@ from error import ThemeNotFoundError
 from theme_config import ThemeConfig
 
 
-def read_config(name):
+def _read_config(name):
     theme_config = '/usr/share/themes/{}/theme.conf'.format(name)
     if not os.path.isfile(theme_config):
         return None
@@ -29,8 +38,8 @@ def read_config(name):
     )
 
 
-def set_theme(name):
-    config = read_config(name)
+def _set_theme(name):
+    config = _read_config(name)
 
     # set background
     if config is not None:
@@ -83,7 +92,7 @@ def set_theme(name):
         print 'error active icon theme: {}'.format(name)
         sys.exit(1)
 
-    # active window theme. it is also called metacity theme
+    # active metacity theme. it is also called metacity theme
     cmd_metacity = [
         'gsettings', 'set', 'org.gnome.desktop.wm.preferences',
         'theme', '"{}"'.format(name)
@@ -95,10 +104,11 @@ def set_theme(name):
 
 def active_theme(name):
     '''
-    Apply theme use command line, contains
+    Apply theme though command line, contains
         - GTK theme
         - GNOME theme
         - Icons theme
+        - Metacity theme
 
     Priority: ~/.themes; ~/.local/share/themes; /usr/share/themes
 
@@ -113,19 +123,19 @@ def active_theme(name):
     # find theme on ~/.themes/<name> directory
     usr_theme = '~/.themes/{}'.format(name)
     if not os.path.isdir(usr_theme):
-        set_theme(name)
+        _set_theme(name)
         return
 
     # find theme on ~/.local/share/themes/<name>
     usr_local_theme = '~/.local/share/themes/{}'.format(name)
     if not os.path.isdir(usr_local_theme):
-        set_theme(name)
+        _set_theme(name)
         return
 
     # find theme on /usr/share/themes/<name>
     global_theme = '/usr/share/themes/{}'.format(name)
     if not os.path.isdir(global_theme):
-        set_theme(name)
+        _set_theme(name)
         return
 
     # not found theme in any where
