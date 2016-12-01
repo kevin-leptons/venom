@@ -1,3 +1,11 @@
+'''
+SPEC    : Use to read version from 'cli.py' file
+
+EXPORT  : get_version()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
 import os
 import re
 
