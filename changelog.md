@@ -1,5 +1,9 @@
 # venom change log
 
+# v0.0.9
+
+- improve window button: close, maximize, minimize, restore
+
 # v0.0.8
 
 - fix background of progress bar in treeview
