@@ -1,10 +1,18 @@
+'''
+SPEC    : Use to compile sass to css
+
+EXPORT  : compile_sass()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
 import os
 import sass
 
 
 def compile_sass(src, dest, vars={}):
     '''
-    Compile sass file to css
+    Compile sass file to css with pre-defined variables specify by vars
 
     :param str src: Path to scss source file
     :param str dest: Path to css destination file
