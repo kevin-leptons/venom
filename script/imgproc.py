@@ -1,3 +1,13 @@
+'''
+SPEC    : Provide function to work with colors and image
+
+EXPORT  : rgb_to_gray(), str_to_rgba(), mono_rgba(), vector_mono(),
+          bitmap_mono()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
+
 import re
 import cv2
 import numpy
@@ -6,6 +16,8 @@ import struct
 
 def rgb_to_gray(rgb):
     '''
+    Convert RGB to gray
+
     :param tuple rgb: Tuple with format (R, G, B)
     :return: Gray color in range [0, 255]
     :rtype: int
@@ -16,7 +28,9 @@ def rgb_to_gray(rgb):
 
 def str_to_rgba(color_str, alpha=1):
     '''
-    :param str hex_str: Color hex string in format RGB, RRGGBB or color name:
+    Convert hex color and alpha to tuple contains RGBA value
+
+    :param str color_str: Color hex string in format #RGB, #RRGGBB or color name:
         red, green, blue, black, white
     :param int alpla: Alpha value in range [0, 255]
     :return: Tuple follow format (R, G, B, A)
@@ -58,8 +72,17 @@ def str_to_rgba(color_str, alpha=1):
 
 def mono_rgba(color, front_color, back_color, fuzz):
     '''
-    Convert color to color in mono mode (front_color, back_color)
+    Convert color to monochrome mode (front_color, back_color). Color will be
+    convert to gray. If gray less than fuzz, return front_color,
+    else return back_color
 
+    :param str color: Color string in format #RGB, #RRGGBB or name of color:
+        red, green, blue, black, white
+    :param str front_color: Color string in format #RGB, #RRGGBB or name of color:
+        red, green, blue, black, white
+    :param str back_color: Color string in format #RGB, #RRGGBB or name of color:
+        red, green, blue, black, white
+    :param int fuzz: Value decide converting
     :return: Tuple with (rgb, alpha)
     :rtype: tuple
     '''
@@ -74,6 +97,18 @@ def mono_rgba(color, front_color, back_color, fuzz):
 
 
 def vector_mono(src, dest, fcolor, bcolor, fuzz=127):
+    '''
+    Convert vector image specify by src to monochrome. Then store result
+    in dest. If dest is not exist, auto create it
+
+    :param str src: Path to source vector image
+    :param str dest: Path to destination vector image
+    :param str fcolor: Color string in format #RGB, #RRGGBB or name of color:
+        red, green, blue, black, white
+    :param str bcolor: Color string in format #RGB, #RRGGBB or name of color:
+        red, green, blue, black, white
+    :param int fuzz: Valude decide converting
+    '''
 
     with open(src, 'r') as sf:
         try:
@@ -107,6 +142,16 @@ def vector_mono(src, dest, fcolor, bcolor, fuzz=127):
 
 
 def bitmap_mono(src, dest, color):
+    '''
+    Convert bitmap image specify src to monochrome, then store result in
+    dest. If dest is not exist, auto create it
+
+    :param str src: Path to source image
+    :param str dest: Path to destination image
+    :param str color: Color string in format #RGB, #RRGGBB or name of color:
+        red, green, blue, black, white
+    '''
+
     src_img = cv2.imread(src, cv2.IMREAD_UNCHANGED)
     w = src_img.shape[0]
     h = src_img.shape[1]
