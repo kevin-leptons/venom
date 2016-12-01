@@ -1,3 +1,11 @@
+'''
+SPEC    : Use to compile one theme
+
+EXPORT  : compile_theme()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
 import os
 import dirsync
 
@@ -12,14 +20,14 @@ from .metacity_builder import compile_metacity
 
 def compile_theme(src, dest, config):
     '''
-    Compile GTK theme. Theme after compiled will contains
+    Compile theme, includes:
         - GTK3 theme
         - GNOME shell theme
         - Icon theme
+        - Metacity theme
 
-    :param str src: Source directory. It must 'src' directory, contains
-        resources to build theme
-    :param str dest: Destination directory
+    :param str src: Path to directory contains asset of theme
+    :param str dest: Path to destination directory to store result
     :param ThemeConfig: Configuration of theme
     '''
 
