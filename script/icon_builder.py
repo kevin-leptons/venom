@@ -1,3 +1,11 @@
+'''
+SPEC    : Build icon theme
+
+EXPORT  : compile_icon()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
 import os
 import shutil
 import imghdr
@@ -7,6 +15,21 @@ from .imgproc import str_to_rgba, vector_mono, bitmap_mono
 
 
 def compile_icon(src, dest, config, fuzz=127):
+    '''
+    Recursive convert icons in src directory to monochrome, then store
+    resutl in dest directory with same structure. It not change contents
+    and size of image. It supported two type of image: bitmap and vector.
+    With bitmap, supported RGBA chanels. With vector, not really read
+    specifications of svg, simple is find and replace hex color
+
+    :param str src: Directory contains icons to convert
+    :param str dest: Directory to store result
+    :param ThemeConfig config: Contains configuration of theme
+    :param int fuzz: Value will decide source color must be convert to what.
+        Source color will be convert to gray. If gray less than fuzz, it
+        will convert to front_color, else convert to back_color
+    '''
+
     color = str_to_rgba(config.front_color, 255)
 
     for root, dirs, files in os.walk(src):
