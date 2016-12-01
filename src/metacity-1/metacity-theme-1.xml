@@ -24,7 +24,7 @@
         <distance name="button_height" value="24"/>
         <distance name="title_vertical_pad" value="0"/>
         <border name="title_border" left="1" right="1" top="1" bottom="1"/>
-        <border name="button_border" left="1" right="0" top="1" bottom="1"/>
+        <border name="button_border" left="1" right="1" top="1" bottom="1"/>
     </frame_geometry>
 
     <frame_geometry name="maximized" rounded_top_left="false"
@@ -38,15 +38,15 @@
         <distance name="button_width" value="24"/>
         <distance name="button_height" value="24"/>
         <distance name="title_vertical_pad" value="0"/>
-        <border name="title_border" left="1" right="1" top="1" bottom="1"/>
-        <border name="button_border" left="1" right="1" top="1" bottom="1"/>
+        <border name="title_border" left="0" right="0" top="0" bottom="0"/>
+        <border name="button_border" left="0" right="0" top="0" bottom="0"/>
     </frame_geometry>
 
     <frame_geometry name="border" parent="normal" has_title="false">
-        <distance name="button_width" value="0"/>
+        <distance name="button_width" value="24"/>
         <distance name="button_height" value="24"/>
-        <border name="title_border" left="1" right="1" top="1" bottom="1"/>
-        <border name="button_border" left="1" right="1" top="1" bottom="1"/>
+        <border name="title_border" left="0" right="0" top="0" bottom="0"/>
+        <border name="button_border" left="0" right="0" top="0" bottom="0"/>
     </frame_geometry>
 
     <draw_ops name="title-text-focused">
@@ -114,39 +114,22 @@
     </draw_ops>
 
     <draw_ops name="title-max">
-        <!-- left border -->
-        <line color="{{border_focus}}" width="2" x1="0" y1="0"
-            x2="0" y2="height"/>
-        <!-- top border -->
-        <line color="{{border_focus}}" width="2" x1="0" y1="0"
-            x2="width" y2="0"/>
-        <!-- right border -->
-        <line color="{{border_focus}}" width="2" x1="width-2" y1="0"
-            x2="width-2" y2="height"/>
         <!-- bottom border -->
-        <line color="{{border_focus}}" width="2" x1="0" y1="height-2"
-            x2="width-2" y2="height-2"/>
+        <line color="{{border}}" width="2" x1="0" y1="height-2"
+            x2="width" y2="height-2"/>
         <!-- background -->
-        <rectangle color="{{back_color}}" x="2" y="2"
-            width="width - 4" height="height - 4" filled="true"/>
+        <rectangle color="{{back_color}}" x="0" y="0"
+            width="width" height="height-2" filled="true"/>
     </draw_ops>
 
     <draw_ops name="title-max-unfocused">
-        <!-- left border -->
-        <line color="{{border_focus}}" width="2" x1="0" y1="0"
-            x2="0" y2="height"/>
-        <!-- top border -->
         <line color="{{border_focus}}" width="2" x1="0" y1="0"
             x2="width" y2="0"/>
-        <!-- right border -->
-        <line color="{{border_focus}}" width="2" x1="width-2" y1="0"
-            x2="width-2" y2="height"/>
-        <!-- bottom border -->
         <line color="{{border_focus}}" width="2" x1="0" y1="height-2"
-            x2="width-2" y2="height-2"/>
+            x2="width" y2="height-2"/>
         <!-- background -->
-        <rectangle color="{{back_color}}" x="2" y="2"
-            width="width - 4" height="height - 4" filled="true"/>
+        <rectangle color="{{back_color}}" x="0" y="0"
+            width="width - 2" height="height - 2" filled="true"/>
     </draw_ops>
 
     <!-- window border focused -->
