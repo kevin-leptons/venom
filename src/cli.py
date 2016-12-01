@@ -1,21 +1,28 @@
 #!/usr/bin/env python
 
-# DESCRIPTIONS
-#
-# Apply theme use command line, contains
-#    - GTK theme
-#    - GNOME theme
-#    - Icons theme
-#
-# But it not ensure that theme is activated or not. Because command line
-# does not inform any things. Best behavior is search theme on variant
-# directory and raise error if no one is exist
-#
-# USAGE
-#
-# $ venom active <name>
-#
-# AUTHOR: kevin leptons <kevin.leptons@gmail.com>
+'''
+DESCRIPTIONS
+
+Apply theme use command line, contains
+    - GTK theme
+    - GNOME theme
+    - Icons theme
+
+It not ensure that theme is activated or not. Because command line
+does not inform any things. Best solution are search theme on variant
+directory and raise error if no one is exist
+
+USAGE
+
+$ venom active <name>
+
+EXAMPLES
+
+$ venom active black
+$ venom active orange
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
 
 import os
 import sys

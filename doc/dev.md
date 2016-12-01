@@ -81,7 +81,7 @@ themes = OrderedDict([
 ./ctl dist
 ```
 
-# Testing
+## Testing
 
 ```bash
 # Clean, build, dist, test any thing
