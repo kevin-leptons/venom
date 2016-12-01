@@ -6,6 +6,7 @@ EXPORT  : ThemeConfig()
 AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
 '''
 
+
 class ThemeConfig(object):
     '''
     Configuration of theme. Use by compiler

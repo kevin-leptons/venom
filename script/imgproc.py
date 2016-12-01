@@ -30,8 +30,8 @@ def str_to_rgba(color_str, alpha=1):
     '''
     Convert hex color and alpha to tuple contains RGBA value
 
-    :param str color_str: Color hex string in format #RGB, #RRGGBB or color name:
-        red, green, blue, black, white
+    :param str color_str: Color hex string in format #RGB,
+        #RRGGBB or color name: red, green, blue, black, white
     :param int alpla: Alpha value in range [0, 255]
     :return: Tuple follow format (R, G, B, A)
     :raise TypeError: On color string can not formatted
@@ -78,10 +78,10 @@ def mono_rgba(color, front_color, back_color, fuzz):
 
     :param str color: Color string in format #RGB, #RRGGBB or name of color:
         red, green, blue, black, white
-    :param str front_color: Color string in format #RGB, #RRGGBB or name of color:
-        red, green, blue, black, white
-    :param str back_color: Color string in format #RGB, #RRGGBB or name of color:
-        red, green, blue, black, white
+    :param str front_color: Color string in format #RGB,
+        #RRGGBB or name of color: red, green, blue, black, white
+    :param str back_color: Color string in format #RGB,
+        #RRGGBB or name of color: red, green, blue, black, white
     :param int fuzz: Value decide converting
     :return: Tuple with (rgb, alpha)
     :rtype: tuple
