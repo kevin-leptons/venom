@@ -44,6 +44,19 @@
     padding-right: 4px;
 }
 
+.panel-corner {
+    -panel-corner-radius: 0;
+    -panel-corner-background-color: black;
+    -panel-corner-border-width: 0;
+    -panel-corner-border-color: 0;
+}
+
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus {
+    -panel-corner-border-color: 0;
+}
+
 #appMenu {
     spacing: 4px;
     background-color: transparent;
