@@ -1,3 +1,11 @@
+'''
+SPEC    : Use to create man page
+
+EXPORT  : compile_manpage()
+
+AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+'''
+
 import os
 import gzip
 
@@ -11,6 +19,14 @@ from .version import get_version
 
 
 def compile_manpage(src, dest):
+    '''
+    Read man pages in directory specify by src, replace few information
+    and write to dest with same file name. If dest is not exist, auto create it
+
+    :param str src: Path to directory which is contains man page file
+    :param str dest: Path to directory to store result
+    '''
+
     version = get_version()['version']
     build_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
