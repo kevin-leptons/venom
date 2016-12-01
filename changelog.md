@@ -2,8 +2,9 @@
 
 # v0.0.9
 
-- improve window button: close, maximize, minimize, restore
 - remove panel corner
+- improve window button: close, maximize, minimize, restore
+- improve title of maximized window
 
 # v0.0.8
 
