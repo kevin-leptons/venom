@@ -65,8 +65,8 @@ def remove_theme(name):
     target_icon = '/usr/share/icons/{}'.format(name)
 
     if path.isdir(target_theme):
-        Popen(['sudo', 'rm', '-r', target_theme])
+        Popen(['sudo', 'rm', '-r', target_theme]).wait()
     if path.isdir(target_icon):
-        Popen(['sudo', 'rm', '-r', target_icon])
+        Popen(['sudo', 'rm', '-r', target_icon]).wait()
 
     stdlog(stat_done, 'removed', name)
