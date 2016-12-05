@@ -51,6 +51,6 @@ If need for restore other default themes, let use
 # Other links
 
 - [Change log](changelog.md)
-- [Contribute manual](doc/dev.md)
+- [Development](doc/dev.md)
 - [Screenshots](doc/screenshot.md)
 - [Pre-build](https://drive.google.com/open?id=0B6Eqm2oY7b1vVG55VjJrcGE3aU0)
