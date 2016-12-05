@@ -1,6 +1,6 @@
 # venom change log
 
-# v0.0.9
+# v1.0.0
 
 - remove panel corner
 - improve window button: close, maximize, minimize, restore
