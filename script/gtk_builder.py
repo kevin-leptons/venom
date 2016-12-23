@@ -6,7 +6,10 @@ EXPORT  : compile_gtk()
 AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
 '''
 
+from os import path
+
 from .sass_builder import compile_sass
+from .icon_builder import compile_icon
 
 
 def compile_gtk(src, dest, config):
@@ -28,3 +31,8 @@ def compile_gtk(src, dest, config):
         'danger_color': config.danger_color
     }
     compile_sass(src_scss, dest_scss, sass_vars)
+
+    # compile asset
+    icon_src = path.join(src, 'asset')
+    icon_dest = path.join(dest, 'asset')
+    compile_icon(icon_src, icon_dest, config)

@@ -1,5 +1,9 @@
 # venom change log
 
+# v1.0.1
+
+- add venom logo to wallpaper
+
 # v1.0.0
 
 - remove panel corner

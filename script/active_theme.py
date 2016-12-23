@@ -56,9 +56,14 @@ def _set_theme(name):
         if Popen(cmd_bg_shade).wait() != 0:
             print 'error set bg shade: solid'
             sys.exit(1)
+        wallpaper = '/'.join([
+            '/usr/share/themes',
+            name,
+            'gtk-3.0/asset/venom-wallpaper.svg'
+        ])
         cmd_bg_img = [
             'gsettings', 'set', 'org.gnome.desktop.background',
-            'picture-uri', ''
+            'picture-uri', wallpaper
         ]
         if Popen(cmd_bg_img).wait() != 0:
             print 'error set background uri: ""'
