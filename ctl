@@ -22,6 +22,8 @@ import shutil
 import click
 
 from os import path
+from subprocess import Popen
+from sys import executable
 
 from script.logger import stdlog, stat_done, stat_err
 from script import compile_theme, install_theme, active_theme, remove_theme, \
@@ -140,6 +142,19 @@ def remove(names):
     names = [real_theme_name(name) for name in names[:]]
     for name in names:
         remove_theme(name)
+
+
+@cli.command(help='Clean all of build from system and try apply again')
+@click.argument('name')
+def use(name):
+    if Popen([executable, 'ctl', 'remove', name]).wait() != 0:
+        sys.exit(1)
+    if Popen([executable, 'ctl', 'clean', name]).wait() != 0:
+        sys.exit(1)
+    if Popen([executable, 'ctl', 'build', name]).wait() != 0:
+        sys.exit(1)
+    if Popen([executable, 'ctl', 'apply', name]).wait() != 0:
+        sys.exit(1)
 
 
 @cli.command(help='Package venom themes into package')
