@@ -1,5 +1,10 @@
 # venom change log
 
+# v1.1.0
+
+- add color: coffee, white
+- change CLI interface: "venom active <name>" to "venom use <name>"
+
 # v1.0.1
 
 - add venom logo to wallpaper

@@ -9,7 +9,7 @@ themes = OrderedDict([
     ('venom-orange', ThemeConfig('venom-orange', '#ff8c00', 'black', 'red')),
     ('venom-green', ThemeConfig('venom-green', '#55af66', 'black', 'red')),
     ('venom-teal', ThemeConfig('venom-teal', '#008080', 'black', 'red')),
-    ('venom-cofee', ThemeConfig('venom-cofee', '#854442', '#fff4e6', 'red'))
+    ('venom-coffee', ThemeConfig('venom-coffee', '#854442', '#fff4e6', 'red'))
 ])
 
 src = 'src'
