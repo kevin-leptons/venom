@@ -10,7 +10,7 @@
 
 # Installation
 
-Download [venom_1.1.0-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vM2hjU3hNYUlYYnM),
+Download [venom_1.1.0-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vOXlTRVliTkRhSW8),
 then follow instructions
 
 ```bash
