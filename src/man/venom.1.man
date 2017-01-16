@@ -6,19 +6,19 @@ venom \- Themes for Debian-8
 .SH SYNOPSIS
 .B
 venom
-active [NAME]
+use [NAME]
 
 .SH DESCRIPTION
 venom is package contains themes with mono-color, high-contrast,
 no-border-radius, no-shadow. It also contains tool called venom to
-active themes
+use themes
 
 Target of venom is help people focus on work, without effected from
 complicated things. And it also improve performance of GNOME as a result
 
-.SH CMD-ACTIVE
+.SH CMD-USE
 .TP 4
-Active theme by name. Name must be one of
+Use theme by name. Name must be one of
 black
 .br
 green
@@ -28,13 +28,13 @@ teal
 orange
 .TP
 Example
-venom active black
+venom use black
 
 .SH FILES
 For each path to file below,
 .B
 <name>
-is theme name, specify in CMD-ACTIVE section
+is theme name, specify in CMD-USE section
 
 .TP 4
 /usr/share/themes/<name>/theme.conf
