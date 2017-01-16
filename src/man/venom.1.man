@@ -67,4 +67,4 @@ None
 Depend on user's perspective
 
 .SH AUTHOR
-Kevin Leptons <kevin.leptons@bmail.com>
+Kevin Leptons <kevin.leptons@gmail.com>
