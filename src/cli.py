@@ -30,7 +30,7 @@ import ConfigParser
 
 from subprocess import Popen
 
-VERSION = "1.0.2"
+VERSION = "1.1.2"
 DEB_VERSION = "0"
 
 
@@ -164,7 +164,7 @@ def cli():
         sys.exit(1)
 
     cmd = sys.argv[1]
-    if cmd == 'active':
+    if cmd == 'use':
         if len(sys.argv) != 3:
             print_help(exename)
             sys.exit(1)
