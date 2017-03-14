@@ -1,5 +1,9 @@
 # venom change log
 
+# v1.1.1
+
+- change osd color
+
 # v1.1.0
 
 - add color: coffee, white

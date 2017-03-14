@@ -23,9 +23,9 @@ $success_color: $front_color;
 $suggested_color: $front_color;
 $destructive_color: orange;
 
-$osd_fg_color: cyan;
-$osd_bg_color: cyan;
-$osd_borders_color: cyan;
+$osd_fg_color: $fg_color;
+$osd_bg_color: $bg_color;
+$osd_borders_color: borders_color;
 
 //insensitive state derived colors
 $insensitive_fg_color: mix($fg_color, $bg_color, 50%);
