@@ -30,9 +30,12 @@ from script import compile_theme, install_theme, active_theme, remove_theme, \
                    package_debian, diff_file, compile_manpage
 from script.util import real_theme_name, short_theme_name
 from script.test import run_test
+from script.package_config import PackageConfig
 
 import setting
 
+
+pkg_config = PackageConfig('venom', setting.src, setting.dest)
 
 @click.group()
 def cli():
@@ -79,7 +82,7 @@ def build(names):
         # build all of themes
         for name in themes:
             dest_theme = '{}/{}'.format(dest, themes[name].name)
-            compile_theme(src, dest_theme, themes[name])
+            compile_theme(src, dest_theme, themes[name], pkg_config)
         for name in themes:
             stdlog(stat_done, 'compiled', name)
     else:
@@ -91,7 +94,7 @@ def build(names):
                 sys.exit(1)
 
             dest_theme = '{}/{}'.format(dest, name)
-            compile_theme(src, dest_theme, themes[name])
+            compile_theme(src, dest_theme, themes[name], pkg_config)
 
         for name in names:
             stdlog(stat_done, 'compiled', name)
@@ -126,7 +129,7 @@ def apply(name):
         sys.exit(1)
 
     dest_theme = path.join(setting.dest, 'themes', name)
-    compile_theme(setting.src, dest_theme, setting.themes[name])
+    compile_theme(setting.src, dest_theme, setting.themes[name], pkg_config)
     stdlog(stat_done, 'compiled', name)
 
     if install_theme(name) != 0:

@@ -18,7 +18,7 @@ from .icon_builder import compile_icon
 from .metacity_builder import compile_metacity
 
 
-def compile_theme(src, dest, config):
+def compile_theme(src, dest, config, pkg_config):
     '''
     Compile theme, includes:
         - GTK3 theme
@@ -29,6 +29,7 @@ def compile_theme(src, dest, config):
     :param str src: Path to directory contains asset of theme
     :param str dest: Path to destination directory to store result
     :param ThemeConfig: Configuration of theme
+    :param PackageConfig: Configuration of package
     '''
 
     # create congig file
@@ -37,17 +38,17 @@ def compile_theme(src, dest, config):
     # build gtk theme
     gtk3_src = path.join(src, 'gtk-3.0')
     gtk3_dest = path.join(dest, 'gtk-3.0')
-    compile_gtk(gtk3_src, gtk3_dest, config)
+    compile_gtk(gtk3_src, gtk3_dest, config, pkg_config)
 
     # build gnome theme
     gnome_src = path.join(src, 'gnome-shell')
     gnome_dest = path.join(dest, 'gnome-shell')
-    compile_gnome(gnome_src, gnome_dest, config)
+    compile_gnome(gnome_src, gnome_dest, config, pkg_config)
 
     # build icon theme
     icon_src = path.join(src, 'icons')
     icon_dest = path.join(dest, 'icons')
-    compile_icon(icon_src, icon_dest, config)
+    compile_icon(icon_src, icon_dest, config, pkg_config)
 
     # build metatcity theme
     metacity_src = path.join(src, 'metacity-1')

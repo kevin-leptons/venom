@@ -9,17 +9,18 @@ AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
 from os import path
 
 from .sass_builder import compile_sass
-from .icon_builder import compile_icon
+from .icon_converter import convert_icon
 
 
-def compile_gtk(src, dest, config):
+def compile_gtk(src, dest, config, pkg_config):
     '''
     Compile GTK3 theme. Compile will asset in src directory, build by config
     then store result in dest directory
 
     :param str src: Directory contains asset of GTK3 theme
     :param str dest: Directory to store result
-    :param ThemeConfig config: Theme configuration
+    :param ThemeConfig config: Theme's configuration
+    :param PackageConfig config: Package's configuration
     '''
 
     # compile scss
@@ -35,4 +36,4 @@ def compile_gtk(src, dest, config):
     # compile asset
     icon_src = path.join(src, 'asset')
     icon_dest = path.join(dest, 'asset')
-    compile_icon(icon_src, icon_dest, config)
+    convert_icon(icon_src, icon_dest, config)

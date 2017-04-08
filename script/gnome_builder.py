@@ -7,10 +7,10 @@ AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
 '''
 
 from .sass_builder import compile_sass
-from .icon_builder import compile_icon
+from .icon_converter import convert_icon
 
 
-def compile_gnome(src, dest, config):
+def compile_gnome(src, dest, config, pkg_config):
     '''
     Compile gnome-shell theme from. All of asset store in src directory,
     compiler will read, build by config. Then store result in dest directory
@@ -18,6 +18,7 @@ def compile_gnome(src, dest, config):
     :param str src: Directory contains asset of gnome-shell
     :param str dest: Directory to store result
     :param ThemeConfig config: Theme configuration
+    :param PackageConfig pkg_config: Package configuration
     '''
 
     # compile gnome-shell scss
@@ -33,4 +34,4 @@ def compile_gnome(src, dest, config):
     # convet icons
     src_icons = '{}/asset'.format(src)
     dest_icons = '{}/asset'.format(dest)
-    compile_icon(src_icons, dest_icons, config)
+    convert_icon(src_icons, dest_icons, config)

@@ -105,6 +105,15 @@ def _set_theme(name):
         print 'error active metacity: {}'.format(name)
         sys.exit(1)
 
+    # active cursors
+    cmd_cursor = [
+        'gsettings', 'set', 'org.gnome.desktop.interface',
+        'cursor-theme', name
+    ]
+    if Popen(cmd_cursor).wait() != 0:
+        print 'error active cursors: {}'.format(name)
+        sys.exit(1)
+
 
 def active_theme(name):
     '''

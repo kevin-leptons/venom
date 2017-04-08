@@ -3,8 +3,10 @@
 ## Enter virtual environment
 
 ```bash
-# Ensure that git is installed
+# Ensure that git was installed
 # Ensure that python v2.7 is installed and set to default
+# Ensure that inkscape, xcursorgen was installed
+apt-get install git python2.7 inkscape xcursorgen
 
 # Clone repository
 git clone https://github.com/kevin-leptons/venom.git
