@@ -1,7 +1,7 @@
 .TH man 1 "{{build_date}}" "{{version}}" "venom man page"
 
 .SH NAME
-venom \- Themes for Debian-8
+venom \- GNOME Themes for Debian-8 system
 
 .SH SYNOPSIS
 .B
@@ -11,60 +11,61 @@ use [NAME]
 .SH DESCRIPTION
 venom is package contains themes with mono-color, high-contrast,
 no-border-radius, no-shadow. It also contains tool called venom to
-use themes
+apply themes. It change GTK-3 theme, GNOME, metacity, icons and
+wallpaper.
 
-Target of venom is help people focus on work, without effected from
-complicated things. And it also improve performance of GNOME as a result
+It is help people focus on work, without effected from
+complicated things. And it also improve performance of GNOME as a result.
 
 .SH CMD-USE
 .TP 4
 Use theme by name. Name must be one of
 black
 .br
-green
-.br
-teal
-.br
 orange
+.br
+green
 .TP
 Example
-venom use black
+
+$ venom use black
 
 .SH FILES
 For each path to file below,
 .B
 <name>
-is theme name, specify in CMD-USE section
+is theme name, specify in CMD-USE section.
 
 .TP 4
 /usr/share/themes/<name>/theme.conf
-Configurations of theme
+Configurations of theme.
 
 .TP
 /usr/share/themes/<name>/gtk-3.0/
-Asset of GTK-3.0 theme
+Directory contains asset of GTK-3.0 theme.
 
 .TP
 /usr/share/themes/<name>/gtk-2.0/
-It is not contains any thing, but it is required to sytem realize GTK-3.0 theme
+Directory, it isn't contains any thing, but it is required to system
+realize GTK-3.0 theme.
 
 .TP
 /usr/share/themes/<name>/gnome-shell/
-Asset of GNOME-3.14.x theme
+Directory contains asset of GNOME-3.14.x theme.
 
 .TP
 /usr/share/themes/<name>/metacity-1
-Asset of window decoration
+Directory contains asset of window decoration.
 
 .TP
 /usr/share/icons/<name>/
-Icons of theme
+Directory contains icons of theme.
 
 .SH SEE ALSO
-None
+Venom repository at https://github.com/kevin-leptons/venom.
 
 .SH BUGS
-Depend on user's perspective
+Depend on user's perspective.
 
 .SH AUTHOR
 Kevin Leptons <kevin.leptons@gmail.com>

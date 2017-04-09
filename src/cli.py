@@ -30,7 +30,7 @@ import ConfigParser
 
 from subprocess import Popen
 
-VERSION = "1.1.1"
+VERSION = "1.2.0"
 DEB_VERSION = "0"
 
 

@@ -10,10 +10,6 @@ More [venom-black screenshots](venom-black.md)
 
 ![venom-green](../asset/venom-green.png)
 
-## venom-teal
-
-![venom-green](../asset/venom-teal.png)
-
 ## venom-orange
 
 ![venom-green](../asset/venom-orange.png)

@@ -8,12 +8,11 @@ AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
 
 import os
 import sys
-import dirsync
 from subprocess import Popen
-from sys import executable
 
 from .icon_converter import convert_icon
 from .logger import stdlog, stat_done
+
 
 def compile_icon(src, dest, config, pkg_config, fuzz=127):
     '''
@@ -32,10 +31,17 @@ def compile_icon(src, dest, config, pkg_config, fuzz=127):
         will convert to front_color, else convert to back_color
     '''
 
-    # compile application icons
+    # compile icons
     convert_icon(src, dest, config, ['cursors'], fuzz)
 
     # compile cursor icons
+    # temparory disable because package manager can't remve default
+    # icon file in '/usr/share/icons/default/index.theme' or in
+    # '~/.icons/default/index.theme'
+    # _compile_cursor(src, dest, config, pkg_config, fuzz)
+
+
+def _compile_cursor(src, dest, config, pkg_config, fuzz=127):
     tmp = '{}/tmp/{}'.format(pkg_config.dest, config.name)
     tmp_svg = '{}/cursor-svg'.format(tmp)
     tmp_png_32 = '{}/cursor-png-32'.format(tmp)
@@ -71,7 +77,7 @@ def compile_icon(src, dest, config, pkg_config, fuzz=127):
             output_file_32 = '{}/{}.png'.format(tmp_png_32, input_name)
             if os.path.isfile(output_file_32):
                 stdlog(stat_done, 'skiped', output_file_32)
-                continue;
+                continue
             cmd = [
                 'inkscape', '-z', '-e', output_file_32, '-w', '32', '-h', '32',
                 input_file
@@ -83,15 +89,13 @@ def compile_icon(src, dest, config, pkg_config, fuzz=127):
             output_file_64 = '{}/{}.png'.format(tmp_png_64, input_name)
             if os.path.isfile(output_file_64):
                 stdlog(stat_done, 'skiped', output_file_64)
-                continue;
+                continue
             cmd = [
                 'inkscape', '-z', '-e', output_file_64, '-w', '64', '-h', '64',
                 input_file
             ]
             if Popen(cmd).wait() != 0:
                 sys.exit(1)
-
-
 
     # convert png files above to cusor files
     for (root, dirs, files) in os.walk(cursor_config):
@@ -105,7 +109,7 @@ def compile_icon(src, dest, config, pkg_config, fuzz=127):
             output_file = '{}/{}'.format(cursor_dest, config_name)
             if os.path.isfile(output_file):
                 stdlog(stat_done, 'skiped', output_file)
-                continue;
+                continue
             cmd = [
                 'xcursorgen', input_file, output_file,
                 '-p', tmp

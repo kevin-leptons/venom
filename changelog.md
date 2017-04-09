@@ -1,9 +1,12 @@
 # venom change log
 
+# v1.2.0
+
+- remove theme color: white, teal, coffee
+
 # v1.1.1
 
 - change osd color
-- add cursor icons
 
 # v1.1.0
 
