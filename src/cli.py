@@ -85,6 +85,12 @@ def print_help(exename):
     print '    {} -h, --help        print help'.format(exename)
 
 
+def cmd_list():
+    names = ['black', 'green', 'orange']
+    for name in names:
+        print name
+
+
 def active_theme(name):
     config = read_config(name)
 
@@ -165,7 +171,9 @@ def cli():
         sys.exit(1)
 
     cmd = sys.argv[1]
-    if cmd == 'use':
+    if cmd == 'list':
+        cmd_list()
+    elif cmd == 'use':
         if len(sys.argv) != 3:
             print_help(exename)
             sys.exit(1)
