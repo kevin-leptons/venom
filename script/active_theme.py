@@ -113,6 +113,9 @@ def _set_theme(name):
     if Popen(cmd_cursor).wait() != 0:
         print 'error active cursors: {}'.format(name)
         sys.exit(1)
+    f = open('/usr/share/icons/default/index.theme', 'w+')
+    f.write('[Icon Theme]\nInherits={}'.format(name))
+    f.close()
 
 
 def active_theme(name):

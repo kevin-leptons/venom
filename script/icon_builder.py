@@ -35,10 +35,7 @@ def compile_icon(src, dest, config, pkg_config, fuzz=127):
     convert_icon(src, dest, config, ['cursors'], fuzz)
 
     # compile cursor icons
-    # temparory disable because package manager can't remve default
-    # icon file in '/usr/share/icons/default/index.theme' or in
-    # '~/.icons/default/index.theme'
-    # _compile_cursor(src, dest, config, pkg_config, fuzz)
+    _compile_cursor(src, dest, config, pkg_config, fuzz)
 
 
 def _compile_cursor(src, dest, config, pkg_config, fuzz=127):
