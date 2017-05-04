@@ -30,7 +30,7 @@ import ConfigParser
 
 from subprocess import Popen
 
-VERSION = "1.2.0"
+VERSION = "1.3.0"
 DEB_VERSION = "0"
 
 
@@ -79,7 +79,8 @@ def read_config(name):
 
 def print_help(exename):
     print 'USAGE'
-    print '    {} active <name>     active theme'.format(exename)
+    print '    {} list              list them name'.format(exename)
+    print '    {} use <name>        active theme'.format(exename)
     print '    {} -v, --version     print version'.format(exename)
     print '    {} -h, --help        print help'.format(exename)
 

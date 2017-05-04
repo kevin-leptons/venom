@@ -5,6 +5,10 @@ venom \- GNOME Themes for Debian-8 system
 
 .SH SYNOPSIS
 .B
+venom 
+list
+
+.B
 venom
 use [NAME]
 
@@ -16,6 +20,13 @@ wallpaper.
 
 It is help people focus on work, without effected from
 complicated things. And it also improve performance of GNOME as a result.
+
+.B
+venom list 
+show them names.
+.B
+venom use
+active theme by name.
 
 .SH CMD-USE
 .TP 4

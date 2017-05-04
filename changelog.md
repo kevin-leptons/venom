@@ -1,5 +1,10 @@
 # venom change log
 
+# v1.3.0
+
+- fix wrong command 'venom --help'
+- add cursor theme
+
 # v1.2.0
 
 - remove theme color: white, teal, coffee
