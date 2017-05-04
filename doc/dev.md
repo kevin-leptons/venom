@@ -13,14 +13,14 @@ git clone https://github.com/kevin-leptons/venom.git
 cd venom
 
 # Create python virtual environments
-./dev init
+./env init
 
 # Active python virtual environments
 source venv/bin/active
 
 # Install development packages
 # Only require on first time or on update dependency package
-./dev install
+./env install
 ```
 
 ## Retrieve themes

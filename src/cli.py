@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 '''
 DESCRIPTIONS
@@ -26,12 +26,32 @@ AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
 
 import os
 import sys
-import ConfigParser
+import configparser
+from os import path
+from os.path import isdir
+from subprocess import Popen, CalledProcessError
 
-from subprocess import Popen
-
-VERSION = "1.3.0"
+VERSION = "maj.min.rev"
 DEB_VERSION = "0"
+DEF_THEME_NAME = 'Adwaita'
+DEF_ICON_NAME = 'gnome'
+DEF_SHELL_NAME = ''
+DEF_BACKGROUND_COLOR = '#ffffff'
+_GEXT_USER_THEME = 'user-theme@gnome-shell-extensions.gcampax.github.com'
+
+
+class ThemeNotFoundError(Exception):
+    def __init__(self, path):
+        self._path = path
+
+    def __str__(self):
+        return self._path
+
+
+def call(args, cwd=None):
+    exit_code = Popen(args, cwd=cwd).wait()
+    if exit_code != 0:
+        raise CalledProcessError(exit_code, args)
 
 
 def real_theme_name(short_name):
@@ -67,7 +87,7 @@ def read_config(name):
         'back_color': '#000000',
         'danger_color': '#ff0000'
     }
-    config = ConfigParser.ConfigParser(default_config)
+    config = configparser.ConfigParser(default_config)
     config.read([theme_config])
 
     return ThemeConfig(
@@ -78,94 +98,104 @@ def read_config(name):
 
 
 def print_help(exename):
-    print 'USAGE'
-    print '    {} list              list them name'.format(exename)
-    print '    {} use <name>        active theme'.format(exename)
-    print '    {} -v, --version     print version'.format(exename)
-    print '    {} -h, --help        print help'.format(exename)
+    print('USAGE')
+    print('    {} list              list them name'.format(exename))
+    print('    {} use <name>        active theme'.format(exename))
+    print('    {} -v, --version     print version'.format(exename))
+    print('    {} -h, --help        print help'.format(exename))
 
 
 def cmd_list():
-    names = ['black', 'green', 'orange']
+    names = ['default', 'black', 'green', 'orange']
     for name in names:
-        print name
+        print(name)
 
 
 def active_theme(name):
+    theme_dir = path.join('/usr/share/themes', name)
+    if not isdir(theme_dir):
+        raise ThemeNotFoundError(theme_dir)
+
     config = read_config(name)
 
-    # set background
-    if config is not None:
+    # enable user-theme extension
+    # then gnome-shell theme have able to active
+    # igore error beause no way to verify extension was enabled
+    try:
+        call(['gnome-shell-extension-tool', '-e', _GEXT_USER_THEME])
+    except:
+        pass
+
+    # background
+    cmd_bg_shade = [
+        'gsettings', 'set', 'org.gnome.desktop.background',
+        'color-shading-type', 'solid'
+    ]
+    call(cmd_bg_shade)
+    if config is None:
+        # theme configuration not found, it isn't venom theme
+        # use default solid background
+        cmd_bg = [
+            'gsettings', 'set', 'org.gnome.desktop.background',
+            'primary-color', '"{}"'.format(DEF_BACKGROUND_COLOR)
+        ]
+        call(cmd_bg)
+    else:
+        # them configuration was found, it's venom theme
+        # use venom image as background
         cmd_bg = [
             'gsettings', 'set', 'org.gnome.desktop.background',
             'primary-color', '"{}"'.format(config.back_color)
         ]
-        if Popen(cmd_bg).wait() != 0:
-            print 'error set bg primary: {}'.format(config.back_color)
-            sys.exit(1)
-        cmd_bg_shade = [
-            'gsettings', 'set', 'org.gnome.desktop.background',
-            'color-shading-type', 'solid'
-        ]
-        if Popen(cmd_bg_shade).wait() != 0:
-            print 'error set bg shade: solid'
-            sys.exit(1)
+        call(cmd_bg)
 
-        wallpaper = '/'.join([
-            '/usr/share/themes',
-            name,
-            'gtk-3.0/asset/venom-wallpaper.svg'
-        ])
+        wallpaper = path.join('/usr/share/themes', name,
+                              'gtk-3.0/asset/venom-wallpaper.svg')
         cmd_bg_img = [
             'gsettings', 'set', 'org.gnome.desktop.background',
             'picture-uri', wallpaper
         ]
-        if Popen(cmd_bg_img).wait() != 0:
-            print 'error set background uri: ""'
-            sys.exit(1)
+        call(cmd_bg_img)
 
     # active GTK theme
     cmd_gtk = [
         'gsettings', 'set', 'org.gnome.desktop.interface',
         'gtk-theme', '"{}"'.format(name)
     ]
-    if Popen(cmd_gtk).wait() != 0:
-        print 'error active gtk theme: {}'.format(name)
-        return 1
+    call(cmd_gtk)
 
     # active GNOME theme
+    shell_name = name
+    if name == DEF_THEME_NAME:
+        shell_name = DEF_SHELL_NAME
     cmd_gnome = [
         'gsettings', 'set', 'org.gnome.shell.extensions.user-theme',
-        'name', '"{}"'.format(name)
+        'name', '"{}"'.format(shell_name)
     ]
-    if Popen(cmd_gnome).wait() != 0:
-        print 'error active gnome theme: {}'.format(name)
-        return 1
+    call(cmd_gnome)
 
     # active icons theme
+    icon_name = name
+    if name == DEF_THEME_NAME:
+        icon_name = DEF_ICON_NAME
     cmd_icon = [
         'gsettings', 'set', 'org.gnome.desktop.interface',
-        'icon-theme', '"{}"'.format(name)
+        'icon-theme', '"{}"'.format(icon_name)
     ]
-    if Popen(cmd_icon).wait() != 0:
-        print 'error active icon theme: {}'.format(name)
-        return 1
+    call(cmd_icon)
 
     # active window theme. it is also called metacity theme
     cmd_metacity = [
         'gsettings', 'set', 'org.gnome.desktop.wm.preferences',
         'theme', '"{}"'.format(name)
     ]
-    if Popen(cmd_metacity).wait() != 0:
-        print 'error active metacity: {}'.format(name)
-        return 1
-
-    return 0
+    call(cmd_metacity)
 
 
 def cli():
     exename = os.path.basename(sys.argv[0])
 
+    # not match with any commands
     if len(sys.argv) < 2:
         print_help(exename)
         sys.exit(1)
@@ -178,14 +208,12 @@ def cli():
             print_help(exename)
             sys.exit(1)
 
-        theme_name = real_theme_name(sys.argv[2])
-        if not os.path.isdir('/usr/share/themes/{}'.format(theme_name)):
-            print 'error theme not found: {}'.format(theme_name)
-            sys.exit(1)
-
-        sys.exit(active_theme(theme_name))
+        if sys.argv[2] == 'default':
+            active_theme(DEF_THEME_NAME)
+        else:
+            active_theme(real_theme_name(sys.argv[2]))
     elif cmd == '-v' or cmd == '--version':
-        print 'venom v{}'.format(VERSION)
+        print('venom v{}'.format(VERSION))
     elif cmd == '-h' or cmd == '--help':
         print_help(exename)
     else:

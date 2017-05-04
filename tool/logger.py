@@ -19,4 +19,4 @@ def stdlog(stat, action, msg):
     :param str msg: Message from action
     '''
 
-    print '{} {}: {}'.format(stat, action, msg)
+    print('{} {}: {}'.format(stat, action, msg))

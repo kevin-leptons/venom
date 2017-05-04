@@ -12,6 +12,7 @@ import re
 import cv2
 import numpy
 import struct
+import codecs
 
 
 def rgb_to_gray(rgb):
@@ -53,7 +54,7 @@ def str_to_rgba(color_str, alpha=1):
         else:
             raise TypeError('Color format \'{}\' is invalid', color_str)
 
-        rgb = struct.unpack('BBB', new_str.decode('hex'))
+        rgb = struct.unpack('BBB', codecs.decode(new_str, 'hex_codec'))
         return rgb + (alpha,)
 
     if color_str == 'red':

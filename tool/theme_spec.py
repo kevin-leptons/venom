@@ -1,22 +1,23 @@
 '''
-SPEC    : Specify theme configuration
+SYNOPSIS
 
-EXPORT  : ThemeConfig()
+    class ThemeSpec
 
-AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+    THEME_SPECS
+
+DESCRIPTION
+
+    Specify them arguments and give list of specs in THEME_SPECS.
+
+AUTHOR
+
+    Kevin Leptons <kevin.leptons@gmail.com>
 '''
 
+from collections import OrderedDict
 
-class ThemeConfig(object):
-    '''
-    Configuration of theme. Use by compiler
 
-    :param str name: Name of theme
-    :param str front_color: Color use for text, border
-    :param str back_color: Color use for background
-    :param str danger_color: Color use for critical action
-    '''
-
+class ThemeSpec(object):
     def __init__(self, name, front_color, back_color, danger_color):
         self._name = name
         self._front_color = front_color
@@ -38,3 +39,10 @@ class ThemeConfig(object):
     @property
     def danger_color(self):
         return self._danger_color
+
+
+THEME_SPECS = OrderedDict([
+    ('venom-black', ThemeSpec('venom-black', '#000000', '#fefefe', 'red')),
+    ('venom-orange', ThemeSpec('venom-orange', '#ff8c00', 'black', 'red')),
+    ('venom-green', ThemeSpec('venom-green', '#55af66', 'black', 'red')),
+])

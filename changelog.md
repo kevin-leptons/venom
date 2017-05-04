@@ -3,7 +3,8 @@
 # v1.3.0
 
 - fix wrong command 'venom --help'
-- add cursor theme
+- fix not auto enable user-theme extension
+- add command 'venom list' to show list of themes
 
 # v1.2.0
 

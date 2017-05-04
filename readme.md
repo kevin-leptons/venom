@@ -30,12 +30,12 @@ sudo dpkg -i venom_1.2.0-0_all.deb
 # You can replace black with green or orange
 venom use black
 
+# Restore default theme
+venom use default
+
 # For detail manual, look man page
 man venom
 ```
-
-If you need for restore other default themes, let use
-[gnome-tweak-tool](https://wiki.gnome.org/action/show/Apps/GnomeTweakTool?action=show&redirect=GnomeTweakTool). And set themes to Adwaita
 
 # REFERENCES
 

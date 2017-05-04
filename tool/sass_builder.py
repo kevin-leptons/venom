@@ -1,24 +1,22 @@
 '''
-SPEC    : Use to compile sass to css
+SYNOPSIS
 
-EXPORT  : compile_sass()
+    build_sass(src, dest, vars={})
 
-AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+DESCRIPTION
+
+    Build SASS to CSS.
+
+AUTHORS
+
+    Kevin Leptons <kevin.leptons@gmail.com>
 '''
 
 import os
 import sass
 
 
-def compile_sass(src, dest, vars={}):
-    '''
-    Compile sass file to css with pre-defined variables specify by vars
-
-    :param str src: Path to scss source file
-    :param str dest: Path to css destination file
-    :params dict vars: Optional variables
-    '''
-
+def build_sass(src, dest, vars={}):
     # create string, contains scss variables
     vars_scss = ''
     for key in vars:

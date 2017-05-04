@@ -4,7 +4,7 @@ Section: base
 Priority: optional
 Architecture: all
 Depends: gnome-shell (>= 3.14), gnome-shell (<< 3.15),
-         python (>= 2.7), python (<<3), gnome-shell-extensions(>=3.14),
-         gnome-shell-extensions(<<3.15)
+         gnome-shell-extensions(>=3.14), gnome-shell-extensions(<<3.15),
+         python (>= 2.7), python (<< 3)
 Maintainer: kevin leptons<kevin.leptons@gmail.com>
 Description: Simple GNOME theme pack

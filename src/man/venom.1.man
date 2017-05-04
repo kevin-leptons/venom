@@ -30,12 +30,8 @@ active theme by name.
 
 .SH CMD-USE
 .TP 4
-Use theme by name. Name must be one of
-black
-.br
-orange
-.br
-green
+Use theme by name. Name must be one of:
+black, orange, green, default
 .TP
 Example
 
@@ -76,7 +72,41 @@ Directory contains icons of theme.
 Venom repository at https://github.com/kevin-leptons/venom.
 
 .SH BUGS
-Depend on user's perspective.
+venom won't actives any themes after installed or restore default theme before
+removed because installing and removing is runs under root account, 
+current user won't be affected by 
+.B
+gsettings
+command.
+
+venom doesn't contains cursor theme, because it's dangerous. If error occurs,
+or venom was removed before restores default icon cursor then your cursor will 
+disapears.
+
+So you must run command
+.B
+venom use default
+to restore default theme before remove venom from your system.
+
+Some time
+.B
+venom use
+won't change themes as expected because
+.B
+gnome-shell
+doesn't load it correctly. Both solutions
+.B
+gnome-shell --replace
+and
+.B
+killall -HUP gnome-shell
+had bugs. If something isn't correct, use
+.B
+Alt + F2 
+then type  
+.B
+r
+to restart GNOME shell.
 
 .SH AUTHOR
 Kevin Leptons <kevin.leptons@gmail.com>

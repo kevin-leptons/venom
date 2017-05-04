@@ -9,7 +9,7 @@ AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
 import os
 import shutil
 
-from logger import stdlog, stat_done
+from .logger import stdlog, stat_done
 
 
 def diff_file(odir, sdir, dest):

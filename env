@@ -9,10 +9,12 @@ set -e
 # help menu
 HELP="USAGE:\n
     $(basename $0) init     enter development environemnt
+    $(basename $0) install  install development packages
     $(basename $0) clean    exit development environemnt
     $(basename $0) -h       print help menu\n"
 TMP_DIR="tmp"
 VENV_DIR="venv"
+PYTHON_EXE=$(which python3)
 
 # Initialize development environemnt
 # If any components is missing, auto create it
@@ -42,7 +44,7 @@ dev_init() {
 
     # create virtualenv
     if [ ! -d $VENV_DIR ]; then
-        virtualenv -p /usr/bin/python2.7 "$VENV_DIR"
+        virtualenv -p $PYTHON_EXE "$VENV_DIR"
     fi
 }
 
