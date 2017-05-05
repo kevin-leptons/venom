@@ -44,8 +44,9 @@ from os.path import isdir, realpath, dirname
 from sys import executable
 
 from tool.logger import stdlog, stat_done, stat_err
-from tool.builder import Version, PkgSpec, pkg_build_clean, pkg_build, \
-                         pkg_dist, pkg_dist_clean, list_theme
+from tool.types import Version, PkgSpec
+from tool.builder import pkg_build_clean, pkg_build, pkg_dist, \
+                         pkg_dist_clean, list_theme
 from tool.util import real_theme_name, short_theme_name
 from tool.test import run_test
 from tool.shell import rm
