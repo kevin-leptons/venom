@@ -13,10 +13,10 @@ DESCRIPTION
 
     *list theme* show all of theme names to pass to *build [theme-name]*.
 
-    *build* build all of themes.  
+    *build* build all of themes.
 
     *build --clean* clean all of build files.
-    
+
     *build theme-name...* build specify themes by names, list by
     *list theme*
 
@@ -35,22 +35,13 @@ AUTHORS
     Kevin Leptons <kevin.leptons@gmail.com>
 '''
 
-import os
-import sys
-import shutil
 import click
 from os import path
-from os.path import isdir, realpath, dirname
-from sys import executable
+from os.path import realpath, dirname
 
-from tool.logger import stdlog, stat_done, stat_err
 from tool.types import Version, PkgSpec
 from tool.builder import pkg_build_clean, pkg_build, pkg_dist, \
-                         pkg_dist_clean, list_theme
-from tool.util import real_theme_name, short_theme_name
-from tool.test import run_test
-from tool.shell import rm
-
+                         pkg_dist_clean, pkg_test, list_theme
 
 ROOT = realpath(dirname(__file__))
 
@@ -104,7 +95,7 @@ def dfile(odir, sdir, dest):
 
 @cli.command(help='Run unit tests')
 def test():
-    assert run_test() == 0
+    pkg_test(pkg_spec)
 
 
 cli()

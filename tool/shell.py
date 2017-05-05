@@ -8,10 +8,9 @@ SYNOPSIS
 
 DESCRIPTION
 
-    Run shell with args, wait for complete. If it error, raise
-    CalledProcessError
+    Bash interface functions.
 
-AUTHOR
+AUTHORS
 
     Kevin Leptons <kevin.leptons@gmail.com>
 '''

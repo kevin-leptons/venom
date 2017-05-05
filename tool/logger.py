@@ -1,12 +1,24 @@
 '''
-SPEC    : Use write log message in only format
+SYNOPSIS
 
-EXPORT  : stat_done, stat_warn, stat_err, stdlog()
+    const STAT_DONE
+    const STAT_WARN
+    const STAT_ERR
+
+    stdlog(stat, action, msg)
+
+DESCRIPTION
+
+    Logging functions.
+
+AUTHORS
+
+    Kevin Leptons <kevin.leptons@gmail.com>
 '''
 
-stat_done = 'done'
-stat_warn = 'warn'
-stat_err = 'error'
+STAT_DONE = 'done'
+STAT_WARN = 'warn'
+STAT_ERR = 'error'
 
 
 def stdlog(stat, action, msg):

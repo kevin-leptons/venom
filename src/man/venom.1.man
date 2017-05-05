@@ -13,14 +13,18 @@ venom
 use [NAME]
 
 .SH DESCRIPTION
-Venom is package contains themes with mono-color, high-contrast,
+Venom is package contains themes with monochrome, high-contrast,
 no-border-radius, no-shadow. It also contains tool called
 .B
 venom
-to active themes. It change GTK-3, GNOME, metacity, icons theme and wallpaper.
+to active that themes. 
+.B
+venom
+changes GTK-3, GNOME, metacity, icons theme and 
+wallpaper.
 
 Venom helps people focus on work, without effected from
-complicated things. And it also improve performance of GNOME as a result.
+complicated things. And it also improves performance of GNOME as a result.
 
 .B
 venom list
@@ -71,8 +75,8 @@ Directory contains icons of theme.
 Few of monochrome icons are missing. Dont' wory about it, it's still
 appears but in colored.
 
-Venom won't actives any themes after installed or restore default theme before
-removed because installing and removing is runs under root account,
+Venom won't actives any themes after installed or restores default theme 
+before removed because installing and removing is runs under root account,
 current user won't be affected by
 .B
 gsettings
@@ -82,7 +86,7 @@ Venom doesn't contains cursor theme, because it's dangerous. If error occurs,
 or Venom was removed before restores default icon cursor then your cursor will
 disapears.
 
-So you must run command
+You must run command
 .B
 venom use default
 to restore default theme before remove venom from your system.
@@ -90,10 +94,10 @@ to restore default theme before remove venom from your system.
 Some time
 .B
 venom use
-won't change themes as expected because
+won't changes themes immediately because
 .B
 gnome-shell
-doesn't load it correctly. Both solutions
+doesn't loads it correctly. Both solutions
 .B
 gnome-shell --replace
 and
@@ -107,8 +111,10 @@ then type
 r
 to restart GNOME shell.
 
-.SH SEE ALSO
+.SH REFERENCES 
 Venom repository at https://github.com/kevin-leptons/venom.
 
-.SH AUTHOR
+Screen record video at https://www.youtube.com/watch?v=3z9AfzKiYHM&t=65s
+
+.SH AUTHORS
 Kevin Leptons <kevin.leptons@gmail.com>

@@ -21,7 +21,7 @@ import imghdr
 from os import path, symlink, readlink
 from os.path import isfile, islink
 
-from .logger import stdlog, stat_done
+from .logger import stdlog, STAT_DONE
 from .imgproc import str_to_rgba, vector_mono, bitmap_mono
 from .shell import cp, mkdir
 
@@ -45,14 +45,14 @@ def convert_icon(src, dest, front_color, back_color, skips=[], fuzz=127):
             # file is symbol link, copy it
             if islink(src_img):
                 if isfile(dest_img) or islink(dest_img):
-                    stdlog(stat_done, 'skiped', file)
+                    stdlog(STAT_DONE, 'skiped', file)
                 else:
                     symlink(readlink(src_img), dest_img)
                 continue
 
             # file is exist, skip
             if isfile(dest_img):
-                stdlog(stat_done, 'skiped', file)
+                stdlog(STAT_DONE, 'skiped', file)
                 continue
 
             # file is vector, convert here
@@ -70,4 +70,4 @@ def convert_icon(src, dest, front_color, back_color, skips=[], fuzz=127):
                 # file is not vector, convert by here
                 bitmap_mono(src_img, dest_img, color)
 
-            stdlog(stat_done, 'converted', file)
+            stdlog(STAT_DONE, 'converted', file)

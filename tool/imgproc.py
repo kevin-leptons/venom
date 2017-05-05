@@ -1,10 +1,19 @@
 '''
-SPEC    : Provide function to work with colors and image
+SYNOPSIS
 
-EXPORT  : rgb_to_gray(), str_to_rgba(), mono_rgba(), vector_mono(),
-          bitmap_mono()
+    rgb_to_gray(rgb)
+    str_to_rgba(color_str, alpha=1)
+    mono_rgba(color, front_color, back_color, fuzz)
+    vector_mono(src, dest, fcolor, bcolor, fuzz=127)
+    bitmap_mono(src, dest, color)
 
-AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+DESCRIPTION
+
+    Image processing functions.
+
+AUTHORS
+
+    Kevin Leptons <kevin.leptons@gmail.com>
 '''
 
 

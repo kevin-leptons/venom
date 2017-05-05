@@ -5,6 +5,7 @@ SYNOPSIS
     pkg_build_clean(spec)
     pkg_dist(spec)
     pkg_dist_clean(spec)
+    pkg_test(spec)
     list_theme()
 
 DESCRIPTION
@@ -24,7 +25,7 @@ from .man_builder import build_manpage
 from .theme_builder import build_theme
 from .packaging import pack_debian
 from .util import real_theme_name
-from .shell import rm
+from .shell import rm, call
 from .types import ThemeSpec
 
 _THEME_SPECS = OrderedDict([
@@ -78,3 +79,7 @@ def list_theme():
               theme_spec.name, theme_spec.front_color,
               theme_spec.back_color, theme_spec.danger_color)
         print(msg)
+
+
+def pkg_test(spec):
+    call(['pytest', spec.test])

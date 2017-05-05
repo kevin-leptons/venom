@@ -1,9 +1,16 @@
 '''
-SPEC    : Contains utility functions
+SYNOPSIS
 
-EXPORT  : real_theme_name(), short_theme_name()
+    real_theme_name(short_name)
+    short_theme_name(name)
 
-AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+DESCRIPTION
+
+    Utilities are use in tools.
+
+AUTHORS
+
+    Kevin Leptons <kevin.leptons@gmail.com>
 '''
 
 
