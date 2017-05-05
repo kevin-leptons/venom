@@ -23,22 +23,45 @@ Download [venom_1.2.0-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vR
 then follow instructions
 
 ```bash
-# Install
+# install
 dpkg -i venom_1.2.0-0_all.deb
 apt-get install -f
 
-# Use theme
-# You can replace black with green or orange
+# use theme
+# you can replace black with green or orange
 venom use black
 
-# For detail manual, look man page
+# for detail manual, look man page
 man venom
 ```
+
+# DEVELOPMENT
+
+```bash
+# get source files
+git clone https://github.com/kevin-leptons/venom.git
+cd venom
+
+# enter python virtual environemtn
+./env init
+. venv/bin/active
+./env install
+
+# test
+./ctl test
+
+# build and pack
+./ctl build
+./ctl dist
+```
+
+[Full development documents](doc/dev.md)
 
 # REFERENCES
 
 - [Homepage](https://kevin-leptons.github.io/venom/)
 - [Change log](changelog.md)
-- [Development](doc/dev.md)
 - [Screenshots](doc/screenshot.md)
 - [Pre-builds](https://drive.google.com/open?id=0B6Eqm2oY7b1vVG55VjJrcGE3aU0)
+- [GNOME](https://en.wikipedia.org/wiki/GNOME)
+- [Debian](https://en.wikipedia.org/wiki/Debian)

@@ -1,15 +1,15 @@
-# venom screenshots
+# SCREEN SHOTS
 
-## venom-black
+## VENOM-BLACK
 
 ![venom-green](../asset/venom-black.png)
 
 More [venom-black screenshots](venom-black.md)
 
-## venom-green
+## VENOM-GREEN
 
 ![venom-green](../asset/venom-green.png)
 
-## venom-orange
+## VENOM-ORANGE
 
 ![venom-green](../asset/venom-orange.png)

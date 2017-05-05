@@ -1,67 +1,36 @@
-# Contributions
+# DEVELOPMENT
 
-## Enter virtual environment
+## ENTER VIRTUAL ENVIRONMENT
 
 ```bash
-# Ensure that git was installed
-# Ensure that python v2.7 is installed and set to default
-# Ensure that inkscape, xcursorgen was installed
-apt-get install git python2.7 inkscape xcursorgen
+# Ensure that packages blow was installed
+apt-get install git python2 python3 inkscape xcursorgen
 
 # Clone repository
 git clone https://github.com/kevin-leptons/venom.git
 cd venom
 
-# Create python virtual environments
+# Create python virtual environment
+# Only require on first time
 ./env init
 
 # Active python virtual environments
-source venv/bin/active
+. venv/bin/active
 
 # Install development packages
-# Only require on first time or on update dependency package
+# Only require on first time or dependency package was updated
 ./env install
 ```
 
-## Retrieve themes
+## THEME SPECIFICATIONS
 
 ```bash
-# List name of all of themes
-./ctl list
-
-# Or query properties of theme
-./ctl list <theme-name>
+# List name of all of themes and it's properties
+./ctl list theme
 ```
 
-## Build
-
-```bash
-# Build all of themes
-./ctl build
-
-# Or build specific themes
-./ctl build <theme-name-1> <theme-name-2> ...
-```
-
-## Apply/Remove theme to system
-
-```bash
-# Operation below required privilege permission
-
-# Try build/install/active theme on system
-./ctl apply <theme-name>
-
-# Remove one theme from system
-./ctl remove <theme-name>
-
-# Or remove multi themes from system
-./ctl remove <theme-name-1> <theme-name-2> ...
-```
-
-## Define more themes
-
-Define more theme by add (key, value) to `themes` variable in file
-[setting.py](../setting.py). `ThemeConfig` created by
+To modify theme specs, inspect [tool/builder.py](../tool/builder.py),
+then add new instances of `ThemeSpec` follow format.
 
 - First argument is name of theme
 - Second argument is front color, use to display text, border.
@@ -70,48 +39,67 @@ It is hex code in RGB format
 - Fourth argument is danger color, use for warning, error text
 
 ```python
-themes = OrderedDict([
+THEME_SPECS = OrderedDict([
     ...
-    ('venom-red', ThemeConfig('venom-red', '#ff0000', 'black', 'red'))
+    ('venom-orange', ThemeSpec('venom-orange', '#ff8c00', 'black', 'red')),
+    ('venom-red', ThemeSpec('venom-red', '#ff0000', 'black', 'red'))
 ])
 ```
 
-## Packaging
+## BUILD
 
 ```bash
-# Packaging debian package
-./ctl dist
+# Build all of themes
+# Or build specific themes
+./ctl build
+./ctl build black green...
+
+# Clean all of themes
+# Or clean specific themes
+./ctl build --clean
+./cll build --clean black green...
+
 ```
 
-## Testing
+## TEST
 
 ```bash
-# Clean, build, dist, test any thing
+# Run all of unit tests
 ./ctl test
+
+# Run specify unit test
+pytest test/<unit-test>.py
 ```
 
-## Clean and exit
+
+## PACK
 
 ```bash
-# Clean all of build files
-./ctl clean
+# Pack theme into debian package format
+# result is put into 'dist/venom_<version>_all.deb'
+./ctl dist
 
-# Or clean build files of specific theme
-./ctl clean <theme-name-1> <theme-name-2> ...
-
-# Or exit virtualenv after work
-deactivate
+# Or clean distribution files
+./ctl dist --clean
 ```
 
-# External source
+# EXTERNAL SOURCES
 
-Venom built on few of external sources. However, source code is restructured,
-and rewritten; image is converted, and some files is removed to reduce size.
-List of sources below
+Venom use on few of external sources. However, source code was restructured,
+and rewritten; image is converted, and some files was removed to reduce size.
+List of external sources below:
 
-- GTK3 theme is cloned from
+- GTK3 theme was cloned from
 [gtk-3.16/theme/HighContrast](https://github.com/GNOME/gtk/tree/gtk-3-16/gtk/theme/HighContrast)
 follow [GNU Library General pubic license](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.en.html)
-- Icons theme is cloned from
+- Icons theme was cloned from
 [Flat-Remix](https://github.com/daniruiz/Flat-Remix)
 follow [Createtive Commons Attribution-ShareAlike 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/)
+
+# REFERENCES
+
+- [Debian - Wikipedia](https://en.wikipedia.org/wiki/Debian)
+- [GNOME - Wikipedia](https://en.wikipedia.org/wiki/GNOME)
+- [Python - Wikipedia](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [Virtual Environment - wikipedia](https://en.wikipedia.org/wiki/Virtual_environment_software)
+- [Python Virtual Environment](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
