@@ -46,7 +46,7 @@ THEME_SPECS = OrderedDict([
 ])
 ```
 
-# UPDATE VERSION
+## UPDATE VERSION
 
 If version needs to update, inspect [ctl](../ctl), then modify
 **pkg_version** variable.
