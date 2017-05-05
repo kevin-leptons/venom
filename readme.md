@@ -24,14 +24,12 @@ then follow instructions
 
 ```bash
 # Install
-sudo dpkg -i venom_1.2.0-0_all.deb
+dpkg -i venom_1.2.0-0_all.deb
+apt-get install -f
 
 # Use theme
 # You can replace black with green or orange
 venom use black
-
-# Restore default theme
-venom use default
 
 # For detail manual, look man page
 man venom
@@ -39,6 +37,7 @@ man venom
 
 # REFERENCES
 
+- [Homepage](https://kevin-leptons.github.io/venom/)
 - [Change log](changelog.md)
 - [Development](doc/dev.md)
 - [Screenshots](doc/screenshot.md)

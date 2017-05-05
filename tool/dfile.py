@@ -1,9 +1,18 @@
 '''
-SPEC    : Compare files between two directories
+SYNOPSIS
 
-EXPORT  : diff_file()
+    diff_file(odir, sdir, dest)
 
-AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+DESCRIPTION
+
+    Rescursive compare two directories called: original directory and
+    sub directory. Then create new directory called dest directory with same
+    structure with original directory, store files which is only exist
+    in original directory and not exist in sub directory
+
+AUTHORS
+
+    Kevin Leptons <kevin.leptons@gmail.com>
 '''
 
 import os
@@ -13,18 +22,6 @@ from .logger import stdlog, stat_done
 
 
 def diff_file(odir, sdir, dest):
-    '''
-    Rescursive compare two directories called: original directory and
-    sub directory. Then create new directory called dest directory with same
-    structure with original directory, store files which is only exist
-    in original directory and not exist in sub directory
-
-    :param str odir: Original directory
-    :param str sdir: Directory to compare with odir
-    :param str dest: New directory
-    :raise RuntimeError: On dest directory is exist
-    '''
-
     if os.path.isdir(dest):
         raise RuntimeError('{} is early exists', dest)
 

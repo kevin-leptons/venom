@@ -1,8 +1,12 @@
 from sys import executable
-from subprocess import Popen
+from subprocess import call
 
 
 def test_build_and_dist():
-    assert Popen([executable, 'ctl', 'clean']).wait() == 0
-    assert Popen([executable, 'ctl', 'build', 'black']).wait() == 0
-    assert Popen([executable, 'ctl', 'dist']).wait() == 0
+    assert call([executable, 'ctl', 'build', '--clean']) == 0
+    assert call([executable, 'ctl', 'build', 'black']) == 0
+
+    assert call([executable, 'ctl', 'dist']) == 0
+    assert call([executable, 'ctl', 'dist', '--clean']) == 0
+
+    assert call([executable, 'ctl', 'build', '--clean', 'black']) == 0
