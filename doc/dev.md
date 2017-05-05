@@ -46,6 +46,16 @@ THEME_SPECS = OrderedDict([
 ])
 ```
 
+# UPDATE VERSION
+
+If version needs to update, inspect [ctl.py](../ctl.py), then modify
+**pkg_version** variable.
+
+```python
+# correspond with major, minor and revision number
+pkg_ver = Version(1, 3, 0)
+```
+
 ## BUILD
 
 ```bash
