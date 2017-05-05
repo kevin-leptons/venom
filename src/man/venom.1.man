@@ -91,7 +91,7 @@ You must run command
 venom use default
 to restore default theme before remove venom from your system.
 
-Some time
+Sometime
 .B
 venom use
 won't changes themes immediately because

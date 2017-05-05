@@ -25,12 +25,12 @@ May, 2017
 
 # USAGE
 
-Download [venom_1.2.0-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vRnM3bklZZjB2TW8),
+Download [venom_1.3.0-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vYU5KdVJWRVo4YWc),
 then follow instructions
 
 ```bash
 # install
-dpkg -i venom_1.2.0-0_all.deb
+dpkg -i venom_1.3.0-0_all.deb
 apt-get install -f
 
 # use theme
