@@ -3,7 +3,8 @@
 # v1.3.0
 
 - fix wrong command 'venom --help'
-- fix not auto enable user-theme extension
+- fix non auto enable gnome-shell extension: user-theme
+- fix few of wrong content in man page
 - add command 'venom list' to show list of themes
 
 # v1.2.0
