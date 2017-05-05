@@ -48,7 +48,7 @@ THEME_SPECS = OrderedDict([
 
 # UPDATE VERSION
 
-If version needs to update, inspect [ctl.py](../ctl.py), then modify
+If version needs to update, inspect [ctl](../ctl), then modify
 **pkg_version** variable.
 
 ```python
