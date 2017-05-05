@@ -13,35 +13,34 @@ venom
 use [NAME]
 
 .SH DESCRIPTION
-venom is package contains themes with mono-color, high-contrast,
-no-border-radius, no-shadow. It also contains tool called venom to
-apply themes. It change GTK-3 theme, GNOME, metacity, icons and
-wallpaper.
+Venom is package contains themes with mono-color, high-contrast,
+no-border-radius, no-shadow. It also contains tool called
+.B
+venom
+to active themes. It change GTK-3, GNOME, metacity, icons theme and wallpaper.
 
-It is help people focus on work, without effected from
+Venom helps people focus on work, without effected from
 complicated things. And it also improve performance of GNOME as a result.
 
 .B
 venom list
-show them names.
+show theme's names.
 .B
-venom use
-active theme by name.
 
-.SH CMD-USE
-.TP 4
-Use theme by name. Name must be one of:
-black, orange, green, default
-.TP
-Example
+venom use
+active theme by theme's name. Theme's name are list by
+.B
+venom list
+
+.SH EXAMPLES
 
 $ venom use black
 
 .SH FILES
-For each path to file below,
+For each path below,
 .B
 <name>
-is theme name, specify in CMD-USE section.
+is theme's name.
 
 .TP 4
 /usr/share/themes/<name>/theme.conf
@@ -68,22 +67,19 @@ Directory contains asset of window decoration.
 /usr/share/icons/<name>/
 Directory contains icons of theme.
 
-.SH SEE ALSO
-Venom repository at https://github.com/kevin-leptons/venom.
-
 .SH BUGS
-Some monochrome icons are missing. Dont' wory about it, it's still
+Few of monochrome icons are missing. Dont' wory about it, it's still
 appears but in colored.
 
-venom won't actives any themes after installed or restore default theme before
+Venom won't actives any themes after installed or restore default theme before
 removed because installing and removing is runs under root account,
 current user won't be affected by
 .B
 gsettings
 command.
 
-venom doesn't contains cursor theme, because it's dangerous. If error occurs,
-or venom was removed before restores default icon cursor then your cursor will
+Venom doesn't contains cursor theme, because it's dangerous. If error occurs,
+or Venom was removed before restores default icon cursor then your cursor will
 disapears.
 
 So you must run command
@@ -110,6 +106,9 @@ then type
 .B
 r
 to restart GNOME shell.
+
+.SH SEE ALSO
+Venom repository at https://github.com/kevin-leptons/venom.
 
 .SH AUTHOR
 Kevin Leptons <kevin.leptons@gmail.com>

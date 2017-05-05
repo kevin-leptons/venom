@@ -1,27 +1,27 @@
 #!/usr/bin/env python3
 
 '''
+SYNOPSIS
+
+    <cmd> list theme
+    <cmd> use <name>
+    <cmd> -v, --version
+    <cmd> -h, --help
+
 DESCRIPTIONS
 
-Apply theme use command line, contains
-    - GTK theme
-    - GNOME theme
-    - Icons theme
+    *list* show all of theme's names.
 
-It not ensure that theme is activated or not. Because command line
-does not inform any things. Best solution are search theme on variant
-directory and raise error if no one is exist
-
-USAGE
-
-$ venom active <name>
+    *use <name>* active theme by theme's name. Theme's names are list
+    by *list theme*.
 
 EXAMPLES
 
-$ venom active black
-$ venom active orange
+    $ venom use black
 
-AUTHOR  : kevin leptons <kevin.leptons@gmail.com>
+AUTHORS
+
+    Kevin Leptons <kevin.leptons@gmail.com>
 '''
 
 import os
@@ -30,6 +30,7 @@ import configparser
 from os import path
 from os.path import isdir
 from subprocess import Popen, CalledProcessError
+from gi.repository import Gio
 
 VERSION = "maj.min.rev"
 DEB_VERSION = "0"
@@ -38,6 +39,7 @@ DEF_ICON_NAME = 'gnome'
 DEF_SHELL_NAME = ''
 DEF_BACKGROUND_COLOR = '#ffffff'
 _GEXT_USER_THEME = 'user-theme@gnome-shell-extensions.gcampax.github.com'
+_ENABLED_EXTENSIONS_KEY = 'enabled-extensions'
 
 
 class ThemeNotFoundError(Exception):
@@ -111,6 +113,17 @@ def cmd_list():
         print(name)
 
 
+def enable_gnome_extension(name):
+    settings = Gio.Settings(schema='org.gnome.shell')
+    extensions = settings.get_strv(_ENABLED_EXTENSIONS_KEY)
+
+    if name in extensions:
+        return
+
+    extensions.append(name)
+    settings.set_strv(_ENABLED_EXTENSIONS_KEY, extensions)
+
+
 def active_theme(name):
     theme_dir = path.join('/usr/share/themes', name)
     if not isdir(theme_dir):
@@ -119,12 +132,7 @@ def active_theme(name):
     config = read_config(name)
 
     # enable user-theme extension
-    # then gnome-shell theme have able to active
-    # igore error beause no way to verify extension was enabled
-    try:
-        call(['gnome-shell-extension-tool', '-e', _GEXT_USER_THEME])
-    except:
-        pass
+    enable_gnome_extension(_GEXT_USER_THEME)
 
     # background
     cmd_bg_shade = [
