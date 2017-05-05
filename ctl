@@ -45,7 +45,7 @@ from tool.builder import pkg_build_clean, pkg_build, pkg_dist, \
 
 ROOT = realpath(dirname(__file__))
 
-pkg_ver = Version(1, 3, 0)
+pkg_ver = Version(1, 4, 0)
 pkg_spec = PkgSpec('venom', pkg_ver, ROOT, path.join(ROOT, 'src'),
                    path.join(ROOT, 'dest'), path.join(ROOT, 'dist'),
                    path.join(ROOT, 'test'))
