@@ -6,6 +6,10 @@
 
 GNOME theme for Debian-8 system
 
+Kevin Leptons <kevin.leptons@gmail.com> <br>
+CC by 4.0 License <br>
+May, 2017
+
 # FEATURES
 
 - Monochrome
