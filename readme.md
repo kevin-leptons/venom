@@ -19,7 +19,9 @@ May, 2017
 - Help people focus on work
 - Improve performance of GNOME
 
-[![venom video](http://img.youtube.com/vi/3z9AfzKiYHM/maxresdefault.jpg)](http://www.youtube.com/watch?v=3z9AfzKiYHM)
+[Screen record on Youtube](http://www.youtube.com/watch?v=3z9AfzKiYHM)
+
+![venom-green](asset/venom-black.png)
 
 # USAGE
 
