@@ -5,7 +5,7 @@ venom \- GNOME Themes for Debian-8 system
 
 .SH SYNOPSIS
 .B
-venom 
+venom
 list
 
 .B
@@ -22,7 +22,7 @@ It is help people focus on work, without effected from
 complicated things. And it also improve performance of GNOME as a result.
 
 .B
-venom list 
+venom list
 show them names.
 .B
 venom use
@@ -72,15 +72,18 @@ Directory contains icons of theme.
 Venom repository at https://github.com/kevin-leptons/venom.
 
 .SH BUGS
+Some monochrome icons are missing. Dont' wory about it, it's still
+appears but in colored.
+
 venom won't actives any themes after installed or restore default theme before
-removed because installing and removing is runs under root account, 
-current user won't be affected by 
+removed because installing and removing is runs under root account,
+current user won't be affected by
 .B
 gsettings
 command.
 
 venom doesn't contains cursor theme, because it's dangerous. If error occurs,
-or venom was removed before restores default icon cursor then your cursor will 
+or venom was removed before restores default icon cursor then your cursor will
 disapears.
 
 So you must run command
@@ -102,8 +105,8 @@ and
 killall -HUP gnome-shell
 had bugs. If something isn't correct, use
 .B
-Alt + F2 
-then type  
+Alt + F2
+then type
 .B
 r
 to restart GNOME shell.
