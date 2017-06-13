@@ -8,7 +8,7 @@ GNOME theme for Debian-8 system
 
 Kevin Leptons <kevin.leptons@gmail.com> <br>
 LGPL License <br>
-May, 2017
+June, 2017
 
 # FEATURES
 
@@ -38,7 +38,7 @@ apt-get install -f
 venom use black
 
 # if your system is first time install
-# restart gnome to enable gnome use extension
+# restart gnome to enable gnome user extension
 # by Alt + F2, type 'r' then enter
 
 # for detail manual, look man page
