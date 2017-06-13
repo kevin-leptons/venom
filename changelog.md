@@ -1,5 +1,10 @@
 # venom change log
 
+# v1.4.0
+
+- Fix missing python3-gi dependency
+- Add detail installation instructions for first time
+
 # v1.3.0
 
 - fix wrong command 'venom --help'

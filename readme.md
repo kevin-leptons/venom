@@ -25,17 +25,21 @@ May, 2017
 
 # USAGE
 
-Download [venom_1.3.0-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vYU5KdVJWRVo4YWc),
+Download [venom_1.4.0-0_all.deb](https://drive.google.com/open?id=0B6Eqm2oY7b1vWjdOc05xNmFIVDA),
 then follow instructions
 
 ```bash
 # install
-dpkg -i venom_1.3.0-0_all.deb
+dpkg -i venom_1.4.0-0_all.deb
 apt-get install -f
 
 # use theme
 # you can replace black with green or orange
 venom use black
+
+# if your system is first time install
+# restart gnome to enable gnome use extension
+# by Alt + F2, type 'r' then enter
 
 # for detail manual, look man page
 man venom
